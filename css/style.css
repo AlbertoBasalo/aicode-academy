@@ -26,9 +26,11 @@
 
 body {
     font-family: var(--font);
+    font-size: 18px;
+    line-height: 1.7;
+    letter-spacing: 0.02em;
     background: var(--bg);
     color: var(--text);
-    line-height: 1.6;
     transition: background-color 0.3s, color 0.3s;
     min-height: 100vh;
     display: flex;
@@ -91,7 +93,8 @@ a:hover {
 
 .hero h1 {
     font-family: var(--font-display);
-    font-size: 3rem;
+    font-size: 3.5rem;
+    line-height: 1.2;
     margin-bottom: 1rem;
     letter-spacing: -0.02em;
 }
@@ -205,7 +208,7 @@ a:hover {
     }
     
     .hero h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     .hamburger {
@@ -432,11 +435,12 @@ main {
 }
 
 .info-card p {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
+    font-size: 1.8rem;
+    margin-bottom: 0.8em;
 }
 
 .info-card small {
+    font-size: 1rem;
     opacity: 0.8;
 }
 
@@ -491,6 +495,7 @@ table {
     width: 100%;
     border-collapse: collapse;
     font-family: var(--font);
+    font-size: 1.1rem;
 }
 
 th, td {
