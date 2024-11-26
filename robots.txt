@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://aicodeacademy.com/sitemap.xml 
+Sitemap: https://aicode.academy/sitemap.xml 
