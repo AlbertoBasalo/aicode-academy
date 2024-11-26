@@ -514,4 +514,14 @@ tr:hover {
     th, td {
         padding: 0.5rem;
     }
+}
+
+.tools-disclaimer {
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    color: var(--text);
+    opacity: 0.8;
+    font-style: italic;
+    padding-left: 1rem;
+    border-left: 2px solid var(--primary);
 } 
