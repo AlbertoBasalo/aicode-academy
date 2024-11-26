@@ -1,16 +1,21 @@
 :root {
-    --primary: #00ff00;
+    --primary: #47d469;
+    --primary-light: #6bde88;
+    --primary-dark: #39aa54;
     --bg: #000;
     --text: #fff;
-    --accent: #0f0;
+    --accent: rgba(71, 212, 105, 0.1);
+    --font-display: 'Major Mono Display', 'Share Tech Mono', monospace;
     --font: 'Share Tech Mono', monospace;
 }
 
 [data-theme="light"] {
-    --primary: #0a0;
+    --primary: #47d469;
+    --primary-light: #39aa54;
+    --primary-dark: #2d8843;
     --bg: #fff;
     --text: #000;
-    --accent: #0c0;
+    --accent: rgba(71, 212, 105, 0.05);
 }
 
 * {
@@ -60,6 +65,7 @@ nav ul {
 }
 
 .logo {
+    font-family: var(--font-display);
     font-size: 1.5rem;
     color: var(--primary);
     text-decoration: none;
@@ -84,8 +90,10 @@ a:hover {
 }
 
 .hero h1 {
+    font-family: var(--font-display);
     font-size: 3rem;
     margin-bottom: 1rem;
+    letter-spacing: -0.02em;
 }
 
 .typewriter {
@@ -93,6 +101,7 @@ a:hover {
     border-right: 2px solid var(--primary);
     white-space: nowrap;
     animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+    font-family: var(--font-display);
 }
 
 .cta {
