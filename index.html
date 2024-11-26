@@ -14,9 +14,34 @@
     <meta property="og:image" content="https://aicode.academy/images/og-image.png">
     <link rel="canonical" href="https://aicode.academy">
     <title>AI Code Academy - Learn AI-Driven Development</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap">
+    </noscript>
+    <style>
+        /* Critical CSS only */
+        :root {
+            --primary: #47d469;
+            --bg: #000;
+            --text: #fff;
+            --font-display: 'Major Mono Display', 'Share Tech Mono', monospace;
+            --font: 'Share Tech Mono', monospace;
+        }
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--text);
+            font-family: var(--font);
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+    </style>
+    <link rel="stylesheet" href="css/style.css" media="print" onload="this.media='all'">
 </head>
 <body>
     <nav>

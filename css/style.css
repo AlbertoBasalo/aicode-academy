@@ -529,4 +529,15 @@ tr:hover {
     font-style: italic;
     padding-left: 1rem;
     border-left: 2px solid var(--primary);
+}
+
+/* Add font-display property */
+@font-face {
+    font-family: 'Share Tech Mono';
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Major Mono Display';
+    font-display: swap;
 } 
