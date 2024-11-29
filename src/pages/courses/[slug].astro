@@ -1,8 +1,8 @@
 ---
-import { getCollection } from 'astro:content';
-import Layout from '../../layouts/Layout.astro';
+import { getCollection, type CollectionEntry } from 'astro:content';
 import CourseHeader from '../../components/CourseHeader.astro';
 import Curriculum from '../../components/Curriculum.astro';
+import Layout from '../../layouts/Layout.astro';
 
 export async function getStaticPaths() {
   const courses = await getCollection('courses');
@@ -10,6 +10,10 @@ export async function getStaticPaths() {
     params: { slug: entry.slug },
     props: { entry },
   }));
+}
+
+interface Props {
+  entry: CollectionEntry<'courses'>;
 }
 
 const { entry } = Astro.props;
