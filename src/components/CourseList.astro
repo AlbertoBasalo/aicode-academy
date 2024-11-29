@@ -1,0 +1,112 @@
+---
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  courses: CollectionEntry<'courses'>[];
+  showDetails?: boolean;
+}
+
+const { courses, showDetails = false } = Astro.props;
+---
+
+<div class="course-grid">
+  {courses.map(course => (
+    <div class="course-card matrix-shadow">
+      <h3>{course.data.title}</h3>
+      <div class="course-meta">
+        <span class="pill">{course.data.level}</span>
+        <span class="pill">{course.data.duration}</span>
+        {showDetails && <span class="pill">{course.data.price}</span>}
+      </div>
+      <p>{course.data.description}</p>
+      {showDetails && (
+        <>
+          <h4>Prerequisites</h4>
+          <ul>
+            {course.data.prerequisites.map(prereq => (
+              <li>{prereq}</li>
+            ))}
+          </ul>
+          <h4>Learning Outcomes</h4>
+          <ul>
+            {course.data.outcomes.map(outcome => (
+              <li>{outcome}</li>
+            ))}
+          </ul>
+        </>
+      )}
+      <a href={`/courses/${course.slug}`} class="cta-button">
+        Learn More
+      </a>
+    </div>
+  ))}
+</div>
+
+<style>
+  .course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .course-card {
+    padding: 2rem;
+    background-color: rgba(71, 212, 105, 0.05);
+    border: 1px solid var(--brand-color);
+  }
+
+  .course-card h3 {
+    margin-bottom: 1rem;
+    color: var(--brand-color);
+  }
+
+  .course-card h4 {
+    margin: 1.5rem 0 0.5rem;
+    color: var(--brand-color);
+  }
+
+  .course-meta {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+  }
+
+  .pill {
+    padding: 0.25rem 0.75rem;
+    border: 1px solid var(--brand-color);
+    border-radius: 1rem;
+    font-size: 0.875rem;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+  }
+
+  li::before {
+    content: ">";
+    position: absolute;
+    left: 0;
+    color: var(--brand-color);
+  }
+
+  .cta-button {
+    display: inline-block;
+    margin-top: 1.5rem;
+  }
+
+  @media (max-width: 768px) {
+    .course-meta {
+      gap: 0.5rem;
+    }
+  }
+</style> 

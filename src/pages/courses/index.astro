@@ -1,5 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
+import CourseList from '../../components/CourseList.astro';
 import Layout from '../../layouts/Layout.astro';
 
 const courses = await getCollection('courses');
@@ -11,24 +12,8 @@ const courses = await getCollection('courses');
 >
   <div class="container">
     <h1>AI Code Academy Courses</h1>
-    <div class="course-grid">
-      {courses.map(course => {
-        const { title, level, description, duration, price } = course.data;
-        
-        return (
-          <div class="course-card matrix-shadow">
-            <h2>{title}</h2>
-            <div class="course-meta">
-              <span class="pill">{level}</span>
-              <span class="pill">{duration}</span>
-              <span class="pill">{price}</span>
-            </div>
-            <p>{description}</p>
-            <a href={`/courses/${course.slug}`} class="cta-button">Learn More</a>
-          </div>
-        );
-      })}
-    </div>
+    <p class="lead">Discover our comprehensive curriculum designed to take you from beginner to AI expert.</p>
+    <CourseList courses={courses} showDetails={true} />
   </div>
 </Layout>
 
@@ -39,30 +24,14 @@ const courses = await getCollection('courses');
 
   h1 {
     text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .lead {
+    text-align: center;
+    font-size: 1.2rem;
     margin-bottom: 2rem;
-  }
-
-  .course-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-  }
-
-  .course-card {
-    padding: 2rem;
-    background-color: rgba(71, 212, 105, 0.05);
-    border: 1px solid var(--brand-color);
-  }
-
-  .course-meta {
-    display: flex;
-    gap: 1rem;
-    margin: 1rem 0;
-    flex-wrap: wrap;
-  }
-
-  .course-card p {
-    margin-bottom: 1.5rem;
+    color: var(--text-color);
   }
 
   @media (max-width: 768px) {
