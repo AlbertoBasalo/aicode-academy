@@ -35,11 +35,32 @@ const navItems = [
 </script>
 
 <style>
+  /* Layout variables */
+  :root {
+    --nav-padding: 1rem;
+    --nav-gap: 2rem;
+    --nav-gap-mobile: 1rem;
+    --toggle-padding: 0.5rem;
+    --hamburger-size: 24px;
+    --hamburger-thickness: 2px;
+    --hamburger-gap: 8px;
+    
+    /* Typography */
+    --logo-size: 1.5rem;
+    
+    /* Z-index layers */
+    --z-toggle: 1000;
+    --z-menu: 999;
+    
+    /* Colors */
+    --nav-bg: #13151a;
+  }
+
   .main-nav {
-    padding: 1rem 0;
+    padding: var(--nav-padding) 0;
     border-bottom: 1px solid var(--brand-color);
     position: relative;
-    background: #13151a;
+    background: var(--nav-bg);
   }
 
   .nav-container {
@@ -50,22 +71,21 @@ const navItems = [
 
   .logo {
     font-family: var(--header-font);
-    font-size: 1.5rem;
+    font-size: var(--logo-size);
     color: var(--brand-color);
   }
 
   .nav-links {
     display: flex;
-    gap: 2rem;
+    gap: var(--nav-gap);
     list-style: none;
     margin: 0;
     padding: 0;
   }
 
   .nav-links a {
-    font-family: var(--body-font);
+    font-family: var(--mono-font);
     text-transform: uppercase;
-    letter-spacing: 1px;
   }
 
   .mobile-nav-toggle {
@@ -89,13 +109,13 @@ const navItems = [
       background: none;
       border: none;
       cursor: pointer;
-      padding: 0.5rem;
-      z-index: 1000;
+      padding: var(--toggle-padding);
+      z-index: var(--z-toggle);
     }
 
     .hamburger {
-      width: 24px;
-      height: 2px;
+      width: var(--hamburger-size);
+      height: var(--hamburger-thickness);
       background: var(--brand-color);
       position: relative;
       transition: background-color 0.3s ease;
@@ -105,18 +125,18 @@ const navItems = [
     .hamburger::after {
       content: '';
       position: absolute;
-      width: 24px;
-      height: 2px;
+      width: var(--hamburger-size);
+      height: var(--hamburger-thickness);
       background: var(--brand-color);
       transition: transform 0.3s ease;
     }
 
     .hamburger::before {
-      top: -8px;
+      top: calc(var(--hamburger-gap) * -1);
     }
 
     .hamburger::after {
-      bottom: -8px;
+      bottom: calc(var(--hamburger-gap) * -1);
     }
 
     [aria-expanded="true"] .hamburger {
@@ -139,13 +159,13 @@ const navItems = [
       top: 100%;
       left: 0;
       right: 0;
-      background: #13151a;
-      padding: 1rem;
+      background: var(--nav-bg);
+      padding: var(--nav-padding);
       flex-direction: column;
       align-items: center;
-      gap: 1rem;
+      gap: var(--nav-gap-mobile);
       border-bottom: 1px solid var(--brand-color);
-      z-index: 999;
+      z-index: var(--z-menu);
     }
 
     .nav-links.show {
@@ -159,7 +179,7 @@ const navItems = [
 
     .nav-links a {
       display: block;
-      padding: 0.5rem 0;
+      padding: calc(var(--nav-padding) * 0.5) 0;
     }
   }
 </style>

@@ -76,22 +76,35 @@ const {
 </Layout>
 
 <style>
+  /* Layout variables */
+  :root {
+    --section-spacing: 2rem;
+    --section-spacing-mobile: 1rem;
+    --content-padding: 2rem;
+    --element-spacing: 1.5rem;
+    --list-item-spacing: 0.5rem;
+    --list-item-indent: 1.5rem;
+    
+    /* Colors with opacity */
+    --section-bg: rgba(71, 212, 105, 0.05);
+  }
+
   .course-content {
-    padding: 2rem 0;
+    padding: var(--section-spacing) 0;
   }
 
   .prerequisites,
   .outcomes,
   .course-details,
   .enroll-section {
-    padding: 2rem;
-    background-color: rgba(71, 212, 105, 0.05);
+    padding: var(--content-padding);
+    background-color: var(--section-bg);
     border: 1px solid var(--brand-color);
-    margin-bottom: 2rem;
+    margin-bottom: var(--section-spacing);
   }
 
   h2 {
-    margin-bottom: 1.5rem;
+    margin-bottom: var(--element-spacing);
   }
 
   ul {
@@ -101,8 +114,8 @@ const {
   }
 
   li {
-    margin-bottom: 0.5rem;
-    padding-left: 1.5rem;
+    margin-bottom: var(--list-item-spacing);
+    padding-left: var(--list-item-indent);
     position: relative;
   }
 
@@ -118,12 +131,12 @@ const {
   }
 
   .enroll-section p {
-    margin-bottom: 1.5rem;
+    margin-bottom: var(--element-spacing);
   }
 
   @media (max-width: 768px) {
     .course-content {
-      padding: 1rem 0;
+      padding: var(--section-spacing-mobile) 0;
     }
   }
 </style>

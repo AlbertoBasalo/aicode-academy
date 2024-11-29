@@ -44,64 +44,81 @@ const { courses, showDetails = false } = Astro.props;
 </div>
 
 <style>
+  /* Layout variables */
   :root {
-    --mono-font: 'IBM Plex Mono', monospace;
+    --grid-gap: 2rem;
+    --card-padding: 2rem;
+    --element-spacing: 1rem;
+    --meta-gap: 1rem;
+    --meta-gap-mobile: 0.5rem;
+    --list-indent: 1.5rem;
+    
+    /* Typography */
+    --text-base: 0.95rem;
+    --text-sm: 0.875rem;
+    --line-height-base: 1.6;
+    
+    /* Heights */
+    --title-height: 2em;
+    --meta-height: 2.5rem;
+    --description-height: 4.5em;
+    
+    /* Colors */
+    --card-bg: rgba(71, 212, 105, 0.05);
   }
 
   .course-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
+    gap: var(--grid-gap);
+    margin-top: var(--grid-gap);
   }
 
   .course-card {
-    padding: 2rem;
-    background-color: rgba(71, 212, 105, 0.05);
+    padding: var(--card-padding);
+    background-color: var(--card-bg);
     border: 1px solid var(--brand-color);
     display: flex;
     flex-direction: column;
   }
 
   .course-card h3 {
-    margin-bottom: 1rem;
+    margin-bottom: var(--element-spacing);
     color: var(--brand-color);
-    min-height: 2em;
+    min-height: var(--title-height);
     display: flex;
     align-items: center;
     font-family: var(--header-font);
   }
 
   .course-card h4 {
-    margin: 1.5rem 0 0.5rem;
+    margin: var(--element-spacing) 0 calc(var(--element-spacing) * 0.5);
     color: var(--brand-color);
     font-family: var(--header-font);
   }
 
   .course-meta {
     display: flex;
-    gap: 1rem;
+    gap: var(--meta-gap);
     flex-wrap: wrap;
-    margin-bottom: 1rem;
-    min-height: 2.5rem;
+    margin-bottom: var(--element-spacing);
+    min-height: var(--meta-height);
     align-items: center;
   }
 
   .course-description {
-    min-height: 4.5em;
-    margin-bottom: 1rem;
-    line-height: 1.6;
+    min-height: var(--description-height);
+    margin-bottom: var(--element-spacing);
+    line-height: var(--line-height-base);
     font-family: var(--mono-font);
-    font-size: 0.95rem;
-    letter-spacing: 0;
+    font-size: var(--text-base);
   }
 
   .pill {
     padding: 0.25rem 0.75rem;
     border: 1px solid var(--brand-color);
-    font-size: 0.875rem;
+    font-size: var(--text-sm);
     font-family: var(--mono-font);
-    letter-spacing: 0;
   }
 
   ul {
@@ -109,15 +126,14 @@ const { courses, showDetails = false } = Astro.props;
     margin: 0;
     padding: 0;
     font-family: var(--mono-font);
-    font-size: 0.95rem;
+    font-size: var(--text-base);
   }
 
   li {
-    margin-bottom: 0.5rem;
-    padding-left: 1.5rem;
+    margin-bottom: calc(var(--element-spacing) * 0.5);
+    padding-left: var(--list-indent);
     position: relative;
-    line-height: 1.6;
-    letter-spacing: 0;
+    line-height: var(--line-height-base);
   }
 
   li::before {
@@ -132,14 +148,13 @@ const { courses, showDetails = false } = Astro.props;
     margin-top: auto;
     align-self: flex-start;
     font-family: var(--mono-font);
-    font-size: 0.95rem;
-    letter-spacing: 0;
+    font-size: var(--text-base);
     text-transform: uppercase;
   }
 
   @media (max-width: 768px) {
     .course-meta {
-      gap: 0.5rem;
+      gap: var(--meta-gap-mobile);
     }
   }
 </style> 

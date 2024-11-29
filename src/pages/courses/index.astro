@@ -18,25 +18,36 @@ const courses = await getCollection('courses');
 </Layout>
 
 <style>
+  /* Layout variables */
+  :root {
+    --section-padding: 2rem;
+    --section-padding-mobile: 1rem;
+    --title-spacing: 1rem;
+    
+    /* Typography */
+    --lead-size: 1.2rem;
+  }
+
   .container {
-    padding: 2rem 0;
+    padding: var(--section-padding) 0;
   }
 
   h1 {
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: var(--title-spacing);
   }
 
   .lead {
     text-align: center;
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
+    font-size: var(--lead-size);
+    margin-bottom: var(--section-padding);
     color: var(--text-color);
+    font-family: var(--mono-font);
   }
 
   @media (max-width: 768px) {
     .container {
-      padding: 1rem 0;
+      padding: var(--section-padding-mobile) 0;
     }
   }
 </style>
