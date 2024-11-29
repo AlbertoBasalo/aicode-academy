@@ -9,7 +9,11 @@ const navItems = [
 <nav class="main-nav">
   <div class="container nav-container">
     <a href="/" class="logo">AI.CODE</a>
-    <ul class="nav-links">
+    <button class="mobile-nav-toggle" aria-controls="nav-links" aria-expanded="false">
+      <span class="sr-only">Menu</span>
+      <div class="hamburger"></div>
+    </button>
+    <ul id="nav-links" class="nav-links">
       {navItems.map(item => (
         <li>
           <a href={item.href}>{item.text}</a>
@@ -19,10 +23,23 @@ const navItems = [
   </div>
 </nav>
 
+<script>
+  const navToggle = document.querySelector('.mobile-nav-toggle');
+  const navLinks = document.querySelector('.nav-links');
+
+  navToggle?.addEventListener('click', () => {
+    const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
+    navToggle.setAttribute('aria-expanded', !isExpanded ? 'true' : 'false');
+    navLinks?.classList.toggle('show');
+  });
+</script>
+
 <style>
   .main-nav {
     padding: 1rem 0;
     border-bottom: 1px solid var(--brand-color);
+    position: relative;
+    background: #13151a;
   }
 
   .nav-container {
@@ -41,6 +58,8 @@ const navItems = [
     display: flex;
     gap: 2rem;
     list-style: none;
+    margin: 0;
+    padding: 0;
   }
 
   .nav-links a {
@@ -49,9 +68,98 @@ const navItems = [
     letter-spacing: 1px;
   }
 
+  .mobile-nav-toggle {
+    display: none;
+  }
+
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+
   @media (max-width: 768px) {
+    .mobile-nav-toggle {
+      display: block;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0.5rem;
+      z-index: 1000;
+    }
+
+    .hamburger {
+      width: 24px;
+      height: 2px;
+      background: var(--brand-color);
+      position: relative;
+      transition: background-color 0.3s ease;
+    }
+
+    .hamburger::before,
+    .hamburger::after {
+      content: '';
+      position: absolute;
+      width: 24px;
+      height: 2px;
+      background: var(--brand-color);
+      transition: transform 0.3s ease;
+    }
+
+    .hamburger::before {
+      top: -8px;
+    }
+
+    .hamburger::after {
+      bottom: -8px;
+    }
+
+    [aria-expanded="true"] .hamburger {
+      background: transparent;
+    }
+
+    [aria-expanded="true"] .hamburger::before {
+      transform: rotate(45deg);
+      top: 0;
+    }
+
+    [aria-expanded="true"] .hamburger::after {
+      transform: rotate(-45deg);
+      bottom: 0;
+    }
+
     .nav-links {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: #13151a;
+      padding: 1rem;
+      flex-direction: column;
+      align-items: center;
       gap: 1rem;
+      border-bottom: 1px solid var(--brand-color);
+      z-index: 999;
+    }
+
+    .nav-links.show {
+      display: flex;
+    }
+
+    .nav-links li {
+      width: 100%;
+      text-align: center;
+    }
+
+    .nav-links a {
+      display: block;
+      padding: 0.5rem 0;
     }
   }
 </style>

@@ -1,8 +1,7 @@
 ---
-interface Topic {
-  module: string;
-  topics: string[];
-}
+import type { CollectionEntry } from 'astro:content';
+
+type Topic = CollectionEntry<'courses'>['data']['curriculum'][number];
 
 interface Props {
   curriculum: Topic[];
