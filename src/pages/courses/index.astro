@@ -6,11 +6,11 @@ const courses = await getCollection('courses');
 ---
 
 <Layout 
-  title="Our Courses"
+  title="AI Code Academy Courses"
   description="Explore our comprehensive AI development courses. From fundamentals to advanced topics, find the perfect course for your journey."
 >
   <div class="container">
-    <h1>Our Courses</h1>
+    <h1>AI Code Academy Courses</h1>
     <div class="course-grid">
       {courses.map(course => {
         const { title, level, description, duration, price } = course.data;
