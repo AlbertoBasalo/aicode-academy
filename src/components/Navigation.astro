@@ -1,0 +1,58 @@
+---
+const navItems = [
+  { href: '/', text: 'Home' },
+  { href: '/courses', text: 'Courses' },
+  { href: '/about', text: 'About' },
+  { href: '/contact', text: 'Contact' }
+];
+---
+
+<nav class="main-nav">
+  <div class="container nav-container">
+    <a href="/" class="logo">AI.CODE</a>
+    <ul class="nav-links">
+      {navItems.map(item => (
+        <li>
+          <a href={item.href}>{item.text}</a>
+        </li>
+      ))}
+    </ul>
+  </div>
+</nav>
+
+<style>
+  .main-nav {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--brand-color);
+  }
+
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    font-family: var(--header-font);
+    font-size: 1.5rem;
+    color: var(--brand-color);
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+  }
+
+  .nav-links a {
+    font-family: var(--body-font);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  @media (max-width: 768px) {
+    .nav-links {
+      gap: 1rem;
+    }
+  }
+</style>

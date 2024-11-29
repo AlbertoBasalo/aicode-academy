@@ -1,0 +1,85 @@
+/* Modern CSS Reset and Global Styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --brand-color: #47d469;
+  --bg-color: #0a0a0a;
+  --text-color: #e0e0e0;
+  --header-font: 'Major Mono Display', monospace;
+  --body-font: 'Share Tech Mono', monospace;
+  --shadow-color: rgba(71, 212, 105, 0.2);
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--body-font);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--header-font);
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--brand-color);
+}
+
+a {
+  color: var(--brand-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--text-color);
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.matrix-shadow {
+  box-shadow: 4px 4px 0 var(--shadow-color);
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 0.8rem 1.6rem;
+  background-color: var(--brand-color);
+  color: var(--bg-color);
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: var(--text-color);
+  color: var(--bg-color);
+  box-shadow: 4px 4px 0 var(--shadow-color);
+}
+
+.pill {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid var(--brand-color);
+  color: var(--brand-color);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}

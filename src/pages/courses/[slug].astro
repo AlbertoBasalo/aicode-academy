@@ -1,0 +1,125 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import CourseHeader from '../../components/CourseHeader.astro';
+import Curriculum from '../../components/Curriculum.astro';
+
+export async function getStaticPaths() {
+  const courses = await getCollection('courses');
+  return courses.map(entry => ({
+    params: { slug: entry.slug },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+const {
+  title,
+  level,
+  duration,
+  price,
+  description,
+  prerequisites,
+  outcomes,
+  curriculum
+} = entry.data;
+---
+
+<Layout 
+  title={title}
+  description={description}
+>
+  <article class="course-content container">
+    <CourseHeader
+      title={title}
+      level={level}
+      duration={duration}
+      price={price}
+      description={description}
+    />
+
+    <div class="prerequisites matrix-shadow">
+      <h2>Prerequisites</h2>
+      <ul>
+        {prerequisites.map(prereq => (
+          <li>{prereq}</li>
+        ))}
+      </ul>
+    </div>
+
+    <div class="outcomes matrix-shadow">
+      <h2>Learning Outcomes</h2>
+      <ul>
+        {outcomes.map(outcome => (
+          <li>{outcome}</li>
+        ))}
+      </ul>
+    </div>
+
+    <Curriculum curriculum={curriculum} />
+
+    <div class="course-details matrix-shadow">
+      <Content />
+    </div>
+
+    <div class="enroll-section matrix-shadow">
+      <h2>Ready to Begin?</h2>
+      <p>Start your journey in {title} today.</p>
+      <a href="/enroll" class="cta-button">Enroll Now</a>
+    </div>
+  </article>
+</Layout>
+
+<style>
+  .course-content {
+    padding: 2rem 0;
+  }
+
+  .prerequisites,
+  .outcomes,
+  .course-details,
+  .enroll-section {
+    padding: 2rem;
+    background-color: rgba(71, 212, 105, 0.05);
+    border: 1px solid var(--brand-color);
+    margin-bottom: 2rem;
+  }
+
+  h2 {
+    margin-bottom: 1.5rem;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+  }
+
+  li::before {
+    content: ">";
+    position: absolute;
+    left: 0;
+    color: var(--brand-color);
+  }
+
+  .enroll-section {
+    text-align: center;
+  }
+
+  .enroll-section p {
+    margin-bottom: 1.5rem;
+  }
+
+  @media (max-width: 768px) {
+    .course-content {
+      padding: 1rem 0;
+    }
+  }
+</style>

@@ -1,0 +1,75 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+  title="Cookie Policy"
+  description="Learn about how AI Code Academy uses cookies and similar technologies."
+>
+  <div class="container legal-content">
+    <h1>Cookie Policy</h1>
+    
+    <section class="policy-section matrix-shadow">
+      <h2>1. What Are Cookies</h2>
+      <p>Cookies are small text files that are placed on your device when you visit our website. They help us provide you with a better experience and allow certain features to work.</p>
+    </section>
+
+    <section class="policy-section matrix-shadow">
+      <h2>2. Types of Cookies We Use</h2>
+      <div class="cookie-types">
+        <div class="cookie-type">
+          <h3>Essential Cookies</h3>
+          <p>Required for the website to function properly. Cannot be disabled.</p>
+        </div>
+        <div class="cookie-type">
+          <h3>Functional Cookies</h3>
+          <p>Enable enhanced functionality and personalization.</p>
+        </div>
+        <div class="cookie-type">
+          <h3>Analytics Cookies</h3>
+          <p>Help us understand how visitors interact with our website.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="policy-section matrix-shadow">
+      <h2>3. Managing Cookies</h2>
+      <p>You can control and/or delete cookies as you wish. You can delete all cookies that are already on your computer and you can set most browsers to prevent them from being placed.</p>
+    </section>
+  </div>
+</Layout>
+
+<style>
+  .legal-content {
+    padding: 2rem 0;
+  }
+
+  h1 {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .policy-section {
+    padding: 2rem;
+    margin-bottom: 2rem;
+    background-color: rgba(71, 212, 105, 0.05);
+    border: 1px solid var(--brand-color);
+  }
+
+  .cookie-types {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 1rem;
+  }
+
+  .cookie-type {
+    padding: 1rem;
+    border: 1px solid var(--shadow-color);
+  }
+
+  .cookie-type h3 {
+    margin-bottom: 0.5rem;
+    color: var(--brand-color);
+  }
+</style>

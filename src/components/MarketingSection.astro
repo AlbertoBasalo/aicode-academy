@@ -1,0 +1,137 @@
+---
+const features = [
+  {
+    title: "Industry-Led Curriculum",
+    description: "Courses designed with input from leading AI companies and professionals"
+  },
+  {
+    title: "Hands-On Learning",
+    description: "Build real AI systems and models throughout your learning journey"
+  },
+  {
+    title: "Career Support",
+    description: "Direct pathway to AI careers with our industry partnerships"
+  }
+];
+
+const stats = [
+  { number: "94%", label: "Employment Rate" },
+  { number: "150+", label: "Industry Partners" },
+  { number: "50k+", label: "Active Students" }
+];
+---
+
+<section class="marketing">
+  <div class="container">
+    <div class="value-prop matrix-shadow">
+      <h2>Why Choose AI Code Academy?</h2>
+      <div class="features-grid">
+        {features.map(feature => (
+          <div class="feature">
+            <h3>{feature.title}</h3>
+            <p>{feature.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <div class="stats-container">
+      {stats.map(stat => (
+        <div class="stat matrix-shadow">
+          <span class="stat-number">{stat.number}</span>
+          <span class="stat-label">{stat.label}</span>
+        </div>
+      ))}
+    </div>
+
+    <div class="cta-container matrix-shadow">
+      <h2>Ready to Master AI Development?</h2>
+      <p>Join thousands of successful graduates who transformed their careers with AI Code Academy</p>
+      <a href="/courses" class="cta-button">View Our Programs</a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .marketing {
+    padding: 4rem 0;
+    background-color: rgba(71, 212, 105, 0.05);
+  }
+
+  .value-prop {
+    padding: 2rem;
+    margin-bottom: 3rem;
+    border: 1px solid var(--brand-color);
+  }
+
+  .value-prop h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+
+  .feature h3 {
+    margin-bottom: 1rem;
+    color: var(--brand-color);
+  }
+
+  .stats-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .stat {
+    padding: 2rem;
+    text-align: center;
+    border: 1px solid var(--brand-color);
+  }
+
+  .stat-number {
+    display: block;
+    font-size: 2.5rem;
+    font-family: var(--header-font);
+    color: var(--brand-color);
+    margin-bottom: 0.5rem;
+  }
+
+  .stat-label {
+    font-size: 1.1rem;
+    color: var(--text-color);
+  }
+
+  .cta-container {
+    padding: 3rem 2rem;
+    text-align: center;
+    border: 1px solid var(--brand-color);
+  }
+
+  .cta-container h2 {
+    margin-bottom: 1rem;
+  }
+
+  .cta-container p {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+  }
+
+  @media (max-width: 768px) {
+    .marketing {
+      padding: 2rem 0;
+    }
+
+    .stats-container {
+      grid-template-columns: 1fr;
+    }
+
+    .stat-number {
+      font-size: 2rem;
+    }
+  }
+</style>
