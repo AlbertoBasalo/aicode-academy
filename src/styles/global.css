@@ -8,23 +8,23 @@
 }
 
 :root {
-  --brand-color: #47d469;
-  --bg-color: #0a0a0a;
-  --text-color: #e0e0e0;
   --header-font: 'Major Mono Display', monospace;
-  --body-font: 'Share Tech Mono', monospace;
+  --mono-font: 'IBM Plex Mono', monospace;
+  --brand-color: rgb(71, 212, 105);
+  --text-color: rgb(200, 200, 200);
   --shadow-color: rgba(71, 212, 105, 0.2);
+  --bg-color: #13151a;
 }
 
 html {
-  font-size: 16px;
+  font-family: var(--mono-font);
+  background: var(--bg-color);
+  color: var(--text-color);
   scroll-behavior: smooth;
+  font-size: 16px;
 }
 
 body {
-  font-family: var(--body-font);
-  background-color: var(--bg-color);
-  color: var(--text-color);
   line-height: 1.6;
 }
 
@@ -42,44 +42,39 @@ a {
 }
 
 a:hover {
-  color: var(--text-color);
+  text-decoration: underline;
 }
 
 .container {
-  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem;
 }
 
 .matrix-shadow {
-  box-shadow: 4px 4px 0 var(--shadow-color);
+  box-shadow: 0 0 10px var(--shadow-color);
 }
 
 .cta-button {
   display: inline-block;
-  padding: 0.8rem 1.6rem;
+  padding: 0.5rem 1.5rem;
   background-color: var(--brand-color);
   color: var(--bg-color);
-  border: none;
-  cursor: pointer;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  font-weight: bold;
   transition: all 0.3s ease;
 }
 
 .cta-button:hover {
-  background-color: var(--text-color);
-  color: var(--bg-color);
-  box-shadow: 4px 4px 0 var(--shadow-color);
+  background-color: transparent;
+  color: var(--brand-color);
+  text-decoration: none;
 }
 
 .pill {
-  display: inline-block;
-  padding: 0.25rem 0.5rem;
+  background-color: var(--bg-color);
   border: 1px solid var(--brand-color);
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
   color: var(--brand-color);
-  font-size: 0.9rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
 }
