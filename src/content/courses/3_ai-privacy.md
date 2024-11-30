@@ -4,7 +4,7 @@ level: "Professional"
 duration: "2 hours"
 price: "$19"
 description: "Use local AI models to protect your code and comply with privacy regulations."
-prerequisites: ["Basic Python skills"]
+prerequisites: ["Proficient Python skills"]
 outcomes:
   - "Local model running"
   - "LLM models for privacy"

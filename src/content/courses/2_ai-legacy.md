@@ -4,7 +4,7 @@ level: "Professional"
 duration: "2 hours"
 price: "$19"
 description: "Work with legacy codebases and apply AI to refactor, evolve or even rewrite them."
-prerequisites: ["Strong Java or C# skills"]
+prerequisites: ["Basic Java or C# skills"]
 outcomes:
   - "Understanding legacy codebases"
   - "Add tests to favor refactoring"
