@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import CourseList from '../components/CourseList.astro';
 import MarketingSection from '../components/MarketingSection.astro';
 import MatrixText from '../components/MatrixText.astro';
+import Testimonials from '../components/Testimonials.astro';
 import Layout from '../layouts/Layout.astro';
 
 const courses = await getCollection('courses');
@@ -13,8 +14,8 @@ const courses = await getCollection('courses');
   description="Learn AI development with our cutting-edge curriculum. Master machine learning, deep learning, and ethical AI development."
 >
   <section class="hero">
-    <div class="container">
-      <h1>MASTER <MatrixText text="AI-DRIVEN" />DEVELOPMENT</h1>
+    <div class="container" aria-label="MASTER AI-DRIVEN DEVELOPMENT" role="heading" aria-level="1">
+      <h1>MASTER <MatrixText text="AI-DRIVEN" /> DEVELOPMENT</h1>
       <p class="hero-text">Learn to Code Smarter, not harder.<span class="cursor"> |</span></p>
       <a href="/courses" class="cta-button">Explore Courses</a>
     </div>
@@ -22,6 +23,7 @@ const courses = await getCollection('courses');
 
   <MarketingSection />
 
+  <Testimonials />
   <section class="courses">
     <div class="container">
       <h2>Our Courses</h2>
@@ -29,21 +31,6 @@ const courses = await getCollection('courses');
     </div>
   </section>
 
-  <section class="testimonials">
-    <div class="container">
-      <h2>Student Success Stories</h2>
-      <div class="testimonial-grid">
-        <blockquote class="matrix-shadow">
-          <p>"AI Code Academy transformed my career. I'm now working as an AI Engineer at a top tech company."</p>
-          <cite>- Sarah Chen, AI Engineer</cite>
-        </blockquote>
-        <blockquote class="matrix-shadow">
-          <p>"The practical approach to learning AI development here is unmatched."</p>
-          <cite>- James Wilson, ML Researcher</cite>
-        </blockquote>
-      </div>
-    </div>
-  </section>
 </Layout>
 
 <style>
@@ -78,33 +65,6 @@ const courses = await getCollection('courses');
 
   .courses {
     padding: 4rem 0;
-  }
-
-  .testimonials {
-    padding: 4rem 0;
-    background-color: rgba(71, 212, 105, 0.05);
-  }
-
-  .testimonial-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
-  }
-
-  blockquote {
-    padding: 2rem;
-    background-color: var(--bg-color);
-    border: 1px solid var(--brand-color);
-  }
-
-  blockquote p {
-    margin-bottom: 1rem;
-  }
-
-  cite {
-    color: var(--brand-color);
-    font-style: normal;
   }
 
   @media (max-width: 768px) {

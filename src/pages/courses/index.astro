@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import CourseList from '../../components/CourseList.astro';
+import MatrixText from '../../components/MatrixText.astro';
 import Layout from '../../layouts/Layout.astro';
 
 const courses = await getCollection('courses');
@@ -10,9 +11,9 @@ const courses = await getCollection('courses');
   title="AI Code Academy Courses"
   description="Explore our comprehensive AI development courses. From fundamentals to advanced topics, find the perfect course for your journey."
 >
-  <div class="container">
-    <h1>AI Code Academy Courses</h1>
-    <p class="lead">Discover our comprehensive curriculum designed to take you from beginner to AI expert.</p>
+  <div class="container" aria-label="AI Code Academy Courses" role="heading" aria-level="1">
+    <h1>AI Code <MatrixText text="ACADEMY" /> Courses</h1>
+    <p class="lead">Discover our comprehensive curriculum designed to take you from beginner to AI expert.<span class="cursor"> |</span></p>
     <CourseList courses={courses} showDetails={true} />
   </div>
 </Layout>
@@ -37,6 +38,15 @@ const courses = await getCollection('courses');
     margin-bottom: var(--title-spacing);
   }
 
+  .cursor {
+    color: var(--brand-color);
+    font-weight: bold;
+    animation: blink 2s step-end infinite;
+  }
+   @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
   .lead {
     text-align: center;
     font-size: var(--lead-size);

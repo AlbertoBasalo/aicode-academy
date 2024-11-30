@@ -1,0 +1,63 @@
+---
+interface Testimonial {
+  quote: string;
+  author: string;
+  role: string;
+}
+
+const testimonials: Testimonial[] = [
+  {
+    quote: "AI Code Academy transformed my career. I'm now working as an AI Engineer at a top tech company.",
+    author: "Sarah Chen",
+    role: "AI Engineer"
+  },
+  {
+    quote: "The practical approach to learning AI development here is unmatched.",
+    author: "James Wilson",
+    role: "ML Researcher"
+  }
+];
+---
+
+<section class="testimonials">
+  <div class="container">
+    <h2>Student Success Stories</h2>
+    <div class="testimonial-grid">
+      {testimonials.map(({ quote, author, role }) => (
+        <blockquote class="matrix-shadow">
+          <p>"{quote}"</p>
+          <cite>- {author}, {role}</cite>
+        </blockquote>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .testimonials {
+    padding: 4rem 0;
+    background-color: rgba(71, 212, 105, 0.05);
+  }
+
+  .testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  blockquote {
+    padding: 2rem;
+    background-color: var(--bg-color);
+    border: 1px solid var(--brand-color);
+  }
+
+  blockquote p {
+    margin-bottom: 1rem;
+  }
+
+  cite {
+    color: var(--brand-color);
+    font-style: normal;
+  }
+</style> 
