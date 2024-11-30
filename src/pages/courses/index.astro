@@ -1,19 +1,21 @@
 ---
-import { getCollection } from 'astro:content';
+import { getCollection, getEntry } from 'astro:content';
 import CourseList from '../../components/CourseList.astro';
 import MatrixText from '../../components/MatrixText.astro';
 import Layout from '../../layouts/Layout.astro';
 
 const courses = await getCollection('courses');
+const metadata = await getEntry('metadata', 'pages');
+const { courses: coursesMetadata } = metadata.data.pages;
 ---
 
 <Layout 
-  title="AI Code Academy Courses"
-  description="Explore our comprehensive AI development courses. From fundamentals to advanced topics, find the perfect course for your journey."
+  title={coursesMetadata.layout.title}
+  description={coursesMetadata.layout.description}
 >
-  <div class="container" aria-label="AI Code Academy Courses" role="heading" aria-level="1">
+  <div class="container" aria-label={coursesMetadata.title} role="heading" aria-level="1">
     <h1>AI Code <MatrixText text="ACADEMY" /> Courses</h1>
-    <p class="lead">Discover our comprehensive curriculum designed to take you from beginner to AI expert.<span class="cursor"> |</span></p>
+    <p class="lead">{coursesMetadata.lead.text}<span class="cursor"> |</span></p>
     <CourseList courses={courses} showDetails={true} />
   </div>
 </Layout>

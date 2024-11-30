@@ -1,5 +1,5 @@
 ---
-import { getCollection } from 'astro:content';
+import { getCollection, getEntry } from 'astro:content';
 import CourseList from '../components/CourseList.astro';
 import MarketingSection from '../components/MarketingSection.astro';
 import MatrixText from '../components/MatrixText.astro';
@@ -7,17 +7,19 @@ import Testimonials from '../components/Testimonials.astro';
 import Layout from '../layouts/Layout.astro';
 
 const courses = await getCollection('courses');
+const metadata = await getEntry('metadata', 'pages');
+const { home } = metadata.data.pages;
 ---
 
 <Layout 
-  title="Welcome to AI Code Academy" 
-  description="Learn AI development with our cutting-edge curriculum. Master machine learning, deep learning, and ethical AI development."
+  title={home.layout.title}
+  description={home.layout.description}
 >
   <section class="hero">
-    <div class="container" aria-label="MASTER AI-DRIVEN DEVELOPMENT" role="heading" aria-level="1">
+    <div class="container" aria-label={home.title} role="heading" aria-level="1">
       <h1>MASTER <MatrixText text="AI-DRIVEN" /> DEVELOPMENT</h1>
-      <p class="hero-text">Learn to Code Smarter, not harder.<span class="cursor"> |</span></p>
-      <a href="/courses" class="cta-button">Explore Courses</a>
+      <p class="hero-text">{home.hero.subtitle}<span class="cursor"> |</span></p>
+      <a href="/courses" class="cta-button">{home.hero.cta}</a>
     </div>
   </section>
 

@@ -1,0 +1,28 @@
+{
+  "pages": {
+    "home": {
+      "title": "Welcome to AI Code Academy",
+      "description": "Learn AI development with our cutting-edge curriculum. Master machine learning, deep learning, and ethical AI development.",
+      "layout": {
+        "title": "Welcome | AI Code Academy",
+        "description": "Learn AI development with our cutting-edge curriculum. Master machine learning, deep learning, and ethical AI development."
+      },
+      "hero": {
+        "title": "MASTER AI-DRIVEN DEVELOPMENT",
+        "subtitle": "Learn to Code Smarter, not harder",
+        "cta": "Explore Courses"
+      }
+    },
+    "courses": {
+      "title": "AI Code Academy Courses",
+      "description": "Explore our comprehensive AI development courses. From fundamentals to advanced topics, find the perfect course for your journey.",
+      "layout": {
+        "title": "Courses | AI Code Academy",
+        "description": "Explore our comprehensive AI development courses. From fundamentals to advanced topics, find the perfect course for your journey."
+      },
+      "lead": {
+        "text": "Discover our comprehensive curriculum designed to take you from beginner to AI expert"
+      }
+    }
+  }
+} 
