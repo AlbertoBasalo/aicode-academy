@@ -1,0 +1,54 @@
+---
+const stats = [
+  { number: "94%", label: "Employment Rate" },
+  { number: "150+", label: "Industry Partners" },
+  { number: "50k+", label: "Active Students" }
+];
+---
+
+<div class="stats-container">
+  {stats.map(stat => (
+    <div class="stat matrix-shadow">
+      <span class="stat-number">{stat.number}</span>
+      <span class="stat-label">{stat.label}</span>
+    </div>
+  ))}
+</div>
+
+<style>
+  .stats-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .stat {
+    padding: 2rem;
+    text-align: center;
+    border: 1px solid var(--brand-color);
+  }
+
+  .stat-number {
+    display: block;
+    font-size: 2.5rem;
+    font-family: var(--header-font);
+    color: var(--brand-color);
+    margin-bottom: 0.5rem;
+  }
+
+  .stat-label {
+    font-size: 1.1rem;
+    color: var(--text-color);
+  }
+
+  @media (max-width: 768px) {
+    .stats-container {
+      grid-template-columns: 1fr;
+    }
+
+    .stat-number {
+      font-size: 2rem;
+    }
+  }
+</style> 

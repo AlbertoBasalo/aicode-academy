@@ -3,7 +3,7 @@ import { getCollection, getEntry } from 'astro:content';
 import CourseList from '../components/CourseList.astro';
 import MarketingSection from '../components/MarketingSection.astro';
 import MatrixText from '../components/MatrixText.astro';
-import Testimonials from '../components/Testimonials.astro';
+
 import Layout from '../layouts/Layout.astro';
 
 const courses = await getCollection('courses');
@@ -25,7 +25,6 @@ const { home } = metadata.data.pages;
 
   <MarketingSection />
 
-  <Testimonials />
   <section class="courses">
     <div class="container">
       <h2>Our Courses</h2>

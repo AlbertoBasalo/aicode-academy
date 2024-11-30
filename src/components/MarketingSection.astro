@@ -1,24 +1,8 @@
 ---
-const features = [
-  {
-    title: "AI-Driven Curriculum",
-    description: "Courses focused on best practices, not only on the latest AI tools."
-  },
-  {
-    title: "Real-World Projects",
-    description: "Build production-ready applications using AI assistance."
-  },
-  {
-    title: "Industry Expertise",
-    description: "Learn from experienced developers who use AI daily."
-  }
-];
+import { getEntry } from 'astro:content';
 
-const stats = [
-  { number: "94%", label: "Employment Rate" },
-  { number: "150+", label: "Industry Partners" },
-  { number: "50k+", label: "Active Students" }
-];
+const marketingData = await getEntry('site', 'marketing');
+const { features } = marketingData.data;
 ---
 
 <section class="marketing">
@@ -35,20 +19,11 @@ const stats = [
       </div>
     </div>
 
-    <div class="stats-container">
-      {stats.map(stat => (
-        <div class="stat matrix-shadow">
-          <span class="stat-number">{stat.number}</span>
-          <span class="stat-label">{stat.label}</span>
-        </div>
-      ))}
-    </div>
-
-    <div class="cta-container matrix-shadow">
-      <h2>Ready to Master AI Development?</h2>
-      <p>Join thousands of successful graduates who transformed their careers with AI Code Academy</p>
-      <a href="/courses" class="cta-button">View Our Programs</a>
-    </div>
+<!--     
+    <Stats />
+    <Testimonials />
+    <CtaSection /> 
+    -->
   </div>
 </section>
 
@@ -80,58 +55,9 @@ const stats = [
     color: var(--brand-color);
   }
 
-  .stats-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 2rem;
-    margin-bottom: 3rem;
-  }
-
-  .stat {
-    padding: 2rem;
-    text-align: center;
-    border: 1px solid var(--brand-color);
-  }
-
-  .stat-number {
-    display: block;
-    font-size: 2.5rem;
-    font-family: var(--header-font);
-    color: var(--brand-color);
-    margin-bottom: 0.5rem;
-  }
-
-  .stat-label {
-    font-size: 1.1rem;
-    color: var(--text-color);
-  }
-
-  .cta-container {
-    padding: 3rem 2rem;
-    text-align: center;
-    border: 1px solid var(--brand-color);
-  }
-
-  .cta-container h2 {
-    margin-bottom: 1rem;
-  }
-
-  .cta-container p {
-    margin-bottom: 2rem;
-    font-size: 1.2rem;
-  }
-
   @media (max-width: 768px) {
     .marketing {
       padding: 2rem 0;
-    }
-
-    .stats-container {
-      grid-template-columns: 1fr;
-    }
-
-    .stat-number {
-      font-size: 2rem;
     }
   }
 </style>

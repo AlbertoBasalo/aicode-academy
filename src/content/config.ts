@@ -17,6 +17,17 @@ const courseCollection = defineCollection({
   })
 });
 
+const siteCollection = defineCollection({
+  type: 'data',
+  schema: z.object({
+    features: z.array(z.object({
+      title: z.string(),
+      description: z.string()
+    })).optional()
+  })
+});
+
 export const collections = {
-  courses: courseCollection
+  courses: courseCollection,
+  site: siteCollection
 };

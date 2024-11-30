@@ -19,45 +19,47 @@ const testimonials: Testimonial[] = [
 ];
 ---
 
-<section class="testimonials">
-  <div class="container">
-    <h2>Student Success Stories</h2>
-    <div class="testimonial-grid">
-      {testimonials.map(({ quote, author, role }) => (
-        <blockquote class="matrix-shadow">
-          <p>"{quote}"</p>
-          <cite>- {author}, {role}</cite>
-        </blockquote>
-      ))}
-    </div>
+<div class="testimonials-container">
+  <h2>Student Success Stories</h2>
+  <div class="testimonials-grid">
+    {testimonials.map(({ quote, author, role }) => (
+      <blockquote class="testimonial matrix-shadow">
+        <p>"{quote}"</p>
+        <cite>- {author}, {role}</cite>
+      </blockquote>
+    ))}
   </div>
-</section>
+</div>
 
 <style>
-  .testimonials {
-    padding: 4rem 0;
-    background-color: rgba(71, 212, 105, 0.05);
+  .testimonials-container {
+    margin-bottom: 3rem;
   }
 
-  .testimonial-grid {
+  .testimonials-container h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .testimonials-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
-    margin-top: 2rem;
   }
 
-  blockquote {
+  .testimonial {
     padding: 2rem;
-    background-color: var(--bg-color);
     border: 1px solid var(--brand-color);
   }
 
-  blockquote p {
+  .testimonial p {
     margin-bottom: 1rem;
+    font-family: var(--mono-font);
   }
 
-  cite {
+  .testimonial cite {
     color: var(--brand-color);
     font-style: normal;
+    font-family: var(--mono-font);
   }
 </style> 
