@@ -1,15 +1,15 @@
 ---
-title: "AI Fundamentals"
-level: "Beginner"
-duration: "12 weeks"
-price: "$999"
-prerequisites: ["Basic Python knowledge", "Mathematics fundamentals"]
-description: "Master the basics of artificial intelligence and machine learning in this comprehensive course."
+title: "AI Privacy"
+level: "Professional"
+duration: "2 hours"
+price: "$19"
+description: "Use local AI models to protect your code and comply with privacy regulations."
+prerequisites: ["Command line skills"]
 outcomes:
-  - "Understanding core AI concepts and terminology"
-  - "Implementing basic neural networks from scratch"
-  - "Working with popular AI frameworks"
-  - "Building real-world AI applications"
+  - "Local model running"
+  - "LLM models for privacy"
+  - "IDEs and extension integrations"
+  - "Fine-tuning models"
 curriculum:
   - module: "Introduction to AI"
     topics:

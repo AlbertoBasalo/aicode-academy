@@ -1,27 +1,27 @@
 ---
-title: "Advanced ML"
-level: "Intermediate"
-duration: "16 weeks"
-price: "$1499"
-prerequisites: ["AI Fundamentals or equivalent", "Strong Python skills", "Basic ML knowledge"]
-description: "Deep dive into machine learning algorithms and implementations with hands-on projects."
+title: "AI Methodology"
+level: "Beginner"
+duration: "1 hour"
+price: "FREE"
+description: "Learn the basics of AI-Driven Development methodology and how to apply it to your projects."
+prerequisites: ["Programming skills"]
 outcomes:
-  - "Mastering deep learning architectures"
-  - "Building and optimizing ML models"
-  - "Implementing advanced neural networks"
-  - "Deploying ML systems to production"
+  - "Understand the basics of AI-Driven Development"
+  - "Know the AI tools and technologies for programming"
+  - "Procedures for applying AI to your coding workflow"
+  - "AI-Driven Development Manifesto"
 curriculum:
-  - module: "Advanced Neural Networks"
+  - module: "AI Tools"
     topics:
-      - "CNN architectures"
+      - "AI Code Editor"
       - "RNN and LSTM networks"
       - "Transformer models"
-  - module: "Model Optimization"
+  - module: "AI-Driven Development"
     topics:
       - "Hyperparameter tuning"
       - "Model compression"
       - "Performance optimization"
-  - module: "Production ML"
+  - module: "AI-Driven Development"
     topics:
       - "Model deployment"
       - "Scaling ML systems"

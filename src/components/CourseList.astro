@@ -7,9 +7,10 @@ interface Props {
 }
 
 const { courses, showDetails = false } = Astro.props;
+const isEven = courses.length % 2 === 0;
 ---
 
-<div class="course-grid">
+<div class={`course-grid ${isEven ? 'even' : 'odd'}`}>
   {courses.map(course => (
     <div class="course-card matrix-shadow">
       <h3>{course.data.title}</h3>
@@ -68,9 +69,16 @@ const { courses, showDetails = false } = Astro.props;
 
   .course-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: var(--grid-gap);
     margin-top: var(--grid-gap);
+  }
+
+  .course-grid.even {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .course-grid.odd {
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .course-card {
@@ -151,7 +159,18 @@ const { courses, showDetails = false } = Astro.props;
     text-transform: uppercase;
   }
 
+  @media (max-width: 1024px) {
+    .course-grid.odd {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
   @media (max-width: 768px) {
+    .course-grid.even,
+    .course-grid.odd {
+      grid-template-columns: 1fr;
+    }
+
     .course-meta {
       gap: var(--meta-gap-mobile);
     }

@@ -1,17 +1,17 @@
 ---
-title: "AI Ethics"
-level: "All Levels"
-duration: "8 weeks"
-price: "$799"
-prerequisites: ["Basic understanding of AI concepts"]
-description: "Explore the ethical implications and responsibilities in AI development."
+title: "AI Legacy"
+level: "Professional"
+duration: "2 hours"
+price: "$19"
+description: "Work with legacy codebases and apply AI to refactor, evolve or even rewrite them."
+prerequisites: ["Strong Java or C# skills"]
 outcomes:
-  - "Understanding ethical AI principles"
-  - "Identifying and mitigating bias"
-  - "Implementing responsible AI practices"
-  - "Creating ethical AI frameworks"
+  - "Understanding legacy codebases"
+  - "Add tests to favor refactoring"
+  - "Evolve codebases with AI best practices"
+  - "Rewrite with modern languages or frameworks"
 curriculum:
-  - module: "Ethics Fundamentals"
+  - module: "Legacy Codebases"
     topics:
       - "AI ethics principles"
       - "Moral philosophy in AI"
