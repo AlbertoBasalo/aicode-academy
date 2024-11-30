@@ -1,0 +1,63 @@
+---
+import { getEntry } from 'astro:content';
+
+const marketingData = await getEntry('site', 'marketing');
+const { features } = marketingData.data;
+---
+
+<section class="marketing">
+  <div class="container">
+    <div class="value-prop matrix-shadow">
+      <h2>Why Choose AI Code Academy?</h2>
+      <div class="features-grid">
+        {features.map(feature => (
+          <div class="feature">
+            <h3>{feature.title}</h3>
+            <p>{feature.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+
+<!--     
+    <Stats />
+    <Testimonials />
+    <CtaSection /> 
+    -->
+  </div>
+</section>
+
+<style>
+  .marketing {
+    padding: 4rem 0;
+    background-color: rgba(71, 212, 105, 0.05);
+  }
+
+  .value-prop {
+    padding: 2rem;
+    margin-bottom: 3rem;
+    border: 1px solid var(--brand-color);
+  }
+
+  .value-prop h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+
+  .feature h3 {
+    margin-bottom: 1rem;
+    color: var(--brand-color);
+  }
+
+  @media (max-width: 768px) {
+    .marketing {
+      padding: 2rem 0;
+    }
+  }
+</style>

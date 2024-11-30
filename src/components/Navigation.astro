@@ -1,0 +1,183 @@
+---
+const navItems = [
+  { href: '/courses', text: 'Courses' },
+];
+---
+
+<nav class="main-nav">
+  <div class="container nav-container">
+    <a href="/" class="logo">AI.CODE</a>
+    <button class="mobile-nav-toggle" aria-controls="nav-links" aria-expanded="false">
+      <span class="sr-only">Menu</span>
+      <div class="hamburger"></div>
+    </button>
+    <ul id="nav-links" class="nav-links">
+      {navItems.map(item => (
+        <li>
+          <a href={item.href}>{item.text}</a>
+        </li>
+      ))}
+    </ul>
+  </div>
+</nav>
+
+<script>
+  const navToggle = document.querySelector('.mobile-nav-toggle');
+  const navLinks = document.querySelector('.nav-links');
+
+  navToggle?.addEventListener('click', () => {
+    const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
+    navToggle.setAttribute('aria-expanded', !isExpanded ? 'true' : 'false');
+    navLinks?.classList.toggle('show');
+  });
+</script>
+
+<style>
+  /* Layout variables */
+  :root {
+    --nav-padding: 1rem;
+    --nav-gap: 2rem;
+    --nav-gap-mobile: 1rem;
+    --toggle-padding: 0.5rem;
+    --hamburger-size: 24px;
+    --hamburger-thickness: 2px;
+    --hamburger-gap: 8px;
+    
+    /* Typography */
+    --logo-size: 1.5rem;
+    
+    /* Z-index layers */
+    --z-toggle: 1000;
+    --z-menu: 999;
+    
+    /* Colors */
+    --nav-bg: #13151a;
+  }
+
+  .main-nav {
+    padding: var(--nav-padding) 0;
+    border-bottom: 1px solid var(--brand-color);
+    position: relative;
+    background: var(--nav-bg);
+  }
+
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    font-family: var(--header-font);
+    font-size: var(--logo-size);
+    color: var(--brand-color);
+  }
+
+  .nav-links {
+    display: flex;
+    gap: var(--nav-gap);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-links a {
+    font-family: var(--mono-font);
+    text-transform: uppercase;
+  }
+
+  .mobile-nav-toggle {
+    display: none;
+  }
+
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+
+  @media (max-width: 768px) {
+    .mobile-nav-toggle {
+      display: block;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: var(--toggle-padding);
+      z-index: var(--z-toggle);
+    }
+
+    .hamburger {
+      width: var(--hamburger-size);
+      height: var(--hamburger-thickness);
+      background: var(--brand-color);
+      position: relative;
+      transition: background-color 0.3s ease;
+    }
+
+    .hamburger::before,
+    .hamburger::after {
+      content: '';
+      position: absolute;
+      width: var(--hamburger-size);
+      height: var(--hamburger-thickness);
+      background: var(--brand-color);
+      transition: transform 0.3s ease;
+    }
+
+    .hamburger::before {
+      top: calc(var(--hamburger-gap) * -1);
+    }
+
+    .hamburger::after {
+      bottom: calc(var(--hamburger-gap) * -1);
+    }
+
+    [aria-expanded="true"] .hamburger {
+      background: transparent;
+    }
+
+    [aria-expanded="true"] .hamburger::before {
+      transform: rotate(45deg);
+      top: 0;
+    }
+
+    [aria-expanded="true"] .hamburger::after {
+      transform: rotate(-45deg);
+      bottom: 0;
+    }
+
+    .nav-links {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: var(--nav-bg);
+      padding: var(--nav-padding);
+      flex-direction: column;
+      align-items: center;
+      gap: var(--nav-gap-mobile);
+      border-bottom: 1px solid var(--brand-color);
+      z-index: var(--z-menu);
+    }
+
+    .nav-links.show {
+      display: flex;
+    }
+
+    .nav-links li {
+      width: 100%;
+      text-align: center;
+    }
+
+    .nav-links a {
+      display: block;
+      padding: calc(var(--nav-padding) * 0.5) 0;
+    }
+  }
+</style>

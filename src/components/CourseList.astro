@@ -1,0 +1,178 @@
+---
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  courses: CollectionEntry<'courses'>[];
+  showDetails?: boolean;
+}
+
+const { courses, showDetails = false } = Astro.props;
+const isEven = courses.length % 2 === 0;
+---
+
+<div class={`course-grid ${isEven ? 'even' : 'odd'}`}>
+  {courses.map(course => (
+    <div class="course-card matrix-shadow">
+      <h3>{course.data.title}</h3>
+      <div class="course-meta">
+        <span class="pill">{course.data.level}</span>
+        <span class="pill">{course.data.duration}</span>
+        {showDetails && <span class="pill">{course.data.price}</span>}
+      </div>
+      <p class="course-description">{course.data.description}</p>
+      {showDetails && (
+        <section>
+          <h4>Prerequisites</h4>
+          <ul>
+            {course.data.prerequisites.map(prereq => (
+              <li>{prereq}</li>
+            ))}
+          </ul>
+          <h4>Learning Outcomes</h4>
+          <ul>
+            {course.data.outcomes.map(outcome => (
+              <li>{outcome}</li>
+            ))}
+          </ul>
+        </section>
+      )}
+      <a href={`/courses/${course.slug}`} class="cta-button" aria-label={`Learn more about ${course.data.title} course`}>
+        Explore {course.data.title} Course
+      </a>
+    </div>
+  ))}
+</div>
+
+<style>
+  /* Layout variables */
+  :root {
+    --grid-gap: 2rem;
+    --card-padding: 2rem;
+    --element-spacing: 1rem;
+    --meta-gap: 1rem;
+    --meta-gap-mobile: 0.5rem;
+    --list-indent: 1.5rem;
+    
+    /* Typography */
+    --text-base: 0.95rem;
+    --text-sm: 0.875rem;
+    --line-height-base: 1.6;
+    
+    /* Heights */
+    --title-height: 2em;
+    --meta-height: 2.5rem;
+    --description-height: 4.5em;
+    
+    /* Colors */
+    --card-bg: rgba(71, 212, 105, 0.05);
+  }
+
+  .course-grid {
+    display: grid;
+    gap: var(--grid-gap);
+    margin-top: var(--grid-gap);
+  }
+
+  .course-grid.even {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .course-grid.odd {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .course-card {
+    padding: var(--card-padding);
+    background-color: var(--card-bg);
+    border: 1px solid var(--brand-color);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .course-card h3 {
+    margin-bottom: var(--element-spacing);
+    color: var(--brand-color);
+    min-height: var(--title-height);
+    display: flex;
+    align-items: center;
+    font-family: var(--header-font);
+  }
+
+  .course-card h4 {
+    margin: var(--element-spacing) 0 calc(var(--element-spacing) * 0.5);
+    color: var(--brand-color);
+    font-family: var(--header-font);
+  }
+
+  .course-meta {
+    display: flex;
+    gap: var(--meta-gap);
+    flex-wrap: wrap;
+    margin-bottom: var(--element-spacing);
+    min-height: var(--meta-height);
+    align-items: center;
+  }
+
+  .course-description {
+    min-height: var(--description-height);
+    margin-bottom: var(--element-spacing);
+    line-height: var(--line-height-base);
+    font-family: var(--mono-font);
+    font-size: var(--text-base);
+  }
+
+  .pill {
+    padding: 0.25rem 0.75rem;
+    border: 1px solid var(--brand-color);
+    font-size: var(--text-sm);
+    font-family: var(--mono-font);
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: var(--mono-font);
+    font-size: var(--text-base);
+  }
+
+  li {
+    margin-bottom: calc(var(--element-spacing) * 0.5);
+    padding-left: var(--list-indent);
+    position: relative;
+    line-height: var(--line-height-base);
+  }
+
+  li::before {
+    content: ">";
+    position: absolute;
+    left: 0;
+    color: var(--brand-color);
+  }
+
+  .cta-button {
+    display: inline-block;
+    margin-top: 2rem;
+    align-self: flex-start;
+    font-family: var(--mono-font);
+    font-size: var(--text-base);
+    text-transform: uppercase;
+  }
+
+  @media (max-width: 1024px) {
+    .course-grid.odd {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .course-grid.even,
+    .course-grid.odd {
+      grid-template-columns: 1fr;
+    }
+
+    .course-meta {
+      gap: var(--meta-gap-mobile);
+    }
+  }
+</style> 

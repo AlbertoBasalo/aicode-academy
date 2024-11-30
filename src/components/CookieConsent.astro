@@ -1,0 +1,82 @@
+---
+---
+
+<div class="cookie-consent matrix-shadow">
+  <p>
+    We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies.
+    <a href="/legal/cookies" aria-label="Read our cookie policy">View Cookie Policy Details</a>
+  </p>
+  <button class="accept-button">Accept</button>
+</div>
+
+<style>
+  .cookie-consent {
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+    padding: 1rem;
+    background-color: var(--bg-color);
+    border: 1px solid var(--brand-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    z-index: 1000;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  p {
+    margin: 0;
+    font-family: var(--mono-font);
+  }
+
+  a {
+    color: var(--brand-color);
+    text-decoration: underline;
+    margin-left: 0.5rem;
+  }
+
+  .accept-button {
+    padding: 0.5rem 1rem;
+    background-color: var(--brand-color);
+    color: var(--bg-color);
+    border: none;
+    cursor: pointer;
+    font-family: var(--mono-font);
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  .accept-button:hover {
+    background-color: transparent;
+    color: var(--brand-color);
+    outline: 1px solid var(--brand-color);
+  }
+
+  @media (max-width: 768px) {
+    .cookie-consent {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+</style>
+
+<script>
+  const cookieConsent = document.querySelector('.cookie-consent') as HTMLElement;
+  const acceptButton = document.querySelector('.accept-button') as HTMLButtonElement;
+
+  if (cookieConsent && acceptButton) {
+    if (!localStorage.getItem('cookieConsent')) {
+      cookieConsent.style.display = 'flex';
+    } else {
+      cookieConsent.style.display = 'none';
+    }
+
+    acceptButton.addEventListener('click', () => {
+      localStorage.setItem('cookieConsent', 'true');
+      cookieConsent.style.display = 'none';
+    });
+  }
+</script>

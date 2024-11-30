@@ -1,0 +1,80 @@
+---
+import { getCollection, getEntry } from 'astro:content';
+import CourseList from '../components/CourseList.astro';
+import MarketingSection from '../components/MarketingSection.astro';
+import MatrixText from '../components/MatrixText.astro';
+
+import Layout from '../layouts/Layout.astro';
+
+const courses = await getCollection('courses');
+const metadata = await getEntry('metadata', 'pages');
+const { home } = metadata.data.pages;
+---
+
+<Layout 
+  title={home.layout.title}
+  description={home.layout.description}
+>
+  <section class="hero">
+    <div class="container" aria-label={home.title} role="heading" aria-level="1">
+      <h1>MASTER <MatrixText text="AI-DRIVEN" /> DEVELOPMENT</h1>
+      <p class="hero-text">{home.hero.subtitle}<span class="cursor"> |</span></p>
+      <a href="/courses" class="cta-button">{home.hero.cta}</a>
+    </div>
+  </section>
+
+  <MarketingSection />
+
+  <section class="courses">
+    <div class="container">
+      <h2>Our Courses</h2>
+      <CourseList courses={courses} showDetails={false} />
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+  .hero {
+    padding: 4rem 0;
+    text-align: center;
+    border-bottom: 1px solid var(--shadow-color);
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+  }
+
+  .hero-text {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: var(--text-color);
+  }
+
+  .cursor {
+    color: var(--brand-color);
+    font-weight: bold;
+    animation: blink 2s step-end infinite;
+  }
+
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+
+  .courses {
+    padding: 4rem 0;
+  }
+
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2rem;
+    }
+
+    .hero-text {
+      font-size: 1.2rem;
+    }
+  }
+</style>

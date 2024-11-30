@@ -1,0 +1,80 @@
+/* Modern CSS Reset and Global Styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --header-font: 'Major Mono Display', monospace;
+  --mono-font: 'IBM Plex Mono', monospace;
+  --brand-color: rgb(71, 212, 105);
+  --text-color: rgb(200, 200, 200);
+  --shadow-color: rgba(71, 212, 105, 0.2);
+  --bg-color: #13151a;
+}
+
+html {
+  font-family: var(--mono-font);
+  background: var(--bg-color);
+  color: var(--text-color);
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--header-font);
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--brand-color);
+}
+
+a {
+  color: var(--brand-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.matrix-shadow {
+  box-shadow: 0 0 10px var(--shadow-color);
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  background-color: var(--brand-color);
+  color: var(--bg-color);
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: transparent;
+  color: var(--brand-color);
+  text-decoration: none;
+}
+
+.pill {
+  background-color: var(--bg-color);
+  border: 1px solid var(--brand-color);
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  color: var(--brand-color);
+}
