@@ -1,0 +1,59 @@
+---
+interface Props {
+  title: string;
+  level: string;
+  duration: string;
+  price: string;
+  description: string;
+}
+
+const { title, level, duration, price, description } = Astro.props;
+---
+
+<header class="course-header matrix-shadow">
+  <div class="header-content">
+    <h1>{title}</h1>
+    <div class="course-meta">
+      <span class="pill">{level}</span>
+      <span class="pill">{duration}</span>
+      <span class="pill">{price}</span>
+    </div>
+    <p class="description">{description}</p>
+  </div>
+</header>
+
+<style>
+  .course-header {
+    padding: 2rem;
+    background-color: rgba(71, 212, 105, 0.05);
+    border: 1px solid var(--brand-color);
+    margin-bottom: 2rem;
+  }
+
+  .header-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  h1 {
+    margin-bottom: 1rem;
+  }
+
+  .course-meta {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+
+  @media (max-width: 768px) {
+    .course-meta {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  }
+</style>
