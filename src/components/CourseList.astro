@@ -21,7 +21,7 @@ const isEven = courses.length % 2 === 0;
       </div>
       <p class="course-description">{course.data.description}</p>
       {showDetails && (
-        <>
+        <section>
           <h4>Prerequisites</h4>
           <ul>
             {course.data.prerequisites.map(prereq => (
@@ -34,7 +34,7 @@ const isEven = courses.length % 2 === 0;
               <li>{outcome}</li>
             ))}
           </ul>
-        </>
+        </section>
       )}
       <a href={`/courses/${course.slug}`} class="cta-button" aria-label={`Learn more about ${course.data.title} course`}>
         Explore {course.data.title} Course
@@ -152,7 +152,7 @@ const isEven = courses.length % 2 === 0;
 
   .cta-button {
     display: inline-block;
-    margin-top: auto;
+    margin-top: 2rem;
     align-self: flex-start;
     font-family: var(--mono-font);
     font-size: var(--text-base);
