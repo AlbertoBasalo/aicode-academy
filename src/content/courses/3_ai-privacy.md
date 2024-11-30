@@ -4,49 +4,45 @@ level: "Professional"
 duration: "2 hours"
 price: "$19"
 description: "Use local AI models to protect your code and comply with privacy regulations."
-prerequisites: ["Command line skills"]
+prerequisites: ["Basic Python skills"]
 outcomes:
   - "Local model running"
   - "LLM models for privacy"
   - "IDEs and extension integrations"
   - "Fine-tuning models"
 curriculum:
-  - module: "Introduction to AI"
+  - module: "Local LLM running"
     topics:
-      - "History of AI"
-      - "Types of AI systems"
-      - "AI applications in industry"
-  - module: "Python for AI"
+      - "Install and configure runners"
+      - "Download models"
+      - "Run locally"
+  - module: "IDE and extensions"
     topics:
-      - "NumPy fundamentals"
-      - "Data manipulation with Pandas"
-      - "Visualization with Matplotlib"
-  - module: "Machine Learning Basics"
-    topics:
-      - "Supervised vs Unsupervised learning"
-      - "Model training and evaluation"
-      - "Feature engineering"
+      - "Connect to your IDE"
+      - "Extensions for privacy"
+      - "Fine-tuning models"
+
 ---
 
-# AI Fundamentals
+# AI Privacy
 
-Welcome to our foundational AI course! This comprehensive program is designed to take you from the basics of AI to building your first neural networks.
+This course will teach you how to use local LLM models to protect your code and comply with privacy regulations.
 
-## Course Overview
+## Course sample application : DocsScraper
 
-This course provides a solid foundation in artificial intelligence and machine learning. You'll start with the fundamentals and progress to implementing basic AI systems.
+A working Python application that scrapes content from the web documentation sites and saves it as text files ready to be used for fine-tuning.
 
-## What You'll Learn
+### Tools and technologies
 
-- Core AI concepts and terminology
-- Python programming for AI development
-- Basic neural network architectures
-- Real-world AI applications
-- Best practices in AI development
+> You will need a computer with a modern CPU, 16GB of RAM and a GPU with at least 8GB of VRAM.
+
+- Ollama and llama.cpp
+- Gemini LLM
+- Continue IDE extensions
 
 ## Who Should Take This Course
 
 This course is perfect for:
-- Software developers looking to transition into AI
-- Students interested in AI careers
-- Professionals seeking to understand AI capabilities
+- Software developers seeking to protect their code 
+- Companies seeking to comply with privacy regulations
+- Enthusiasts wanting to get the most of their machines.

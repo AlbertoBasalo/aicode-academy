@@ -1,6 +1,7 @@
 ---
 import { getCollection, type CollectionEntry } from 'astro:content';
 import CourseHeader from '../../components/CourseHeader.astro';
+import Curriculum from '../../components/Curriculum.astro';
 import Layout from '../../layouts/Layout.astro';
 
 export async function getStaticPaths() {
@@ -60,11 +61,11 @@ const {
       </ul>
     </div>
 
- <!--    <Curriculum curriculum={curriculum} /> -->
+    <Curriculum curriculum={curriculum} />
 
-<!--     <div class="course-details matrix-shadow">
+<!--      <div class="course-details matrix-shadow">
       <Content />
-    </div> -->
+    </div>   -->
 
     <div class="enroll-section matrix-shadow">
       <h2>Ready to Begin?</h2>
@@ -100,6 +101,16 @@ const {
     background-color: var(--section-bg);
     border: 1px solid var(--brand-color);
     margin-bottom: var(--section-spacing);
+  }
+
+  .course-details {
+    display: flex;
+    flex-direction: column;
+    gap: var(--element-spacing);
+  }
+
+  .course-details h2 {
+    margin-bottom: var(--element-spacing);
   }
 
   h2 {

@@ -11,21 +11,26 @@ outcomes:
   - "Procedures for applying AI to your coding workflow"
   - "AI-Driven Development Manifesto"
 curriculum:
+  - module: "AI Development"
+    topics:
+      - "The AI in the Code World"
+      - "Opportunities and Challenges"
+      - "A tool for increase productivity"
   - module: "AI Tools"
     topics:
-      - "AI Code Editor"
-      - "RNN and LSTM networks"
-      - "Transformer models"
-  - module: "AI-Driven Development"
+      - "LLM, the intelligence behind the curtain"
+      - "Code editors with AI capabilities"
+      - "Local, remote and everything in between"
+  - module: "AI Procedures"
     topics:
-      - "Hyperparameter tuning"
-      - "Model compression"
-      - "Performance optimization"
-  - module: "AI-Driven Development"
+      - "Ask well to get better results"
+      - "Context is king"
+      - "Evaluate and repeat"
+  - module: "AI-DD Manifesto"
     topics:
-      - "Model deployment"
-      - "Scaling ML systems"
-      - "Monitoring and maintenance"
+      - "Human in the Loop"
+      - "Prompt as Code"
+      - "AI Quality"
 ---
 
 # Advanced Machine Learning

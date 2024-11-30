@@ -11,21 +11,26 @@ outcomes:
   - "Documentation and testing"
   - "Deployment automation"
 curriculum:
-  - module: "Advanced Neural Networks"
+  - module: "Use AI for Analysis"
     topics:
-      - "CNN architectures"
-      - "RNN and LSTM networks"
-      - "Transformer models"
-  - module: "Model Optimization"
+      - "Refining requirements"
+      - "Architectural design"
+      - "Domain modeling"
+  - module: "Code generation"
     topics:
-      - "Hyperparameter tuning"
-      - "Model compression"
+      - "Tech stack considerations"
+      - "Your code, your style"
       - "Performance optimization"
-  - module: "Production ML"
+  - module: "Quality and maintainability"
     topics:
-      - "Model deployment"
-      - "Scaling ML systems"
+      - "Testing and debugging"
+      - "Code reviews"
+      - "Documentation"
+  - module: "Deployment and operations"
+    topics:
+      - "Configuration and automation"
       - "Monitoring and maintenance"
+      - "AI in the Cloud"
 ---
 
 # Advanced Machine Learning

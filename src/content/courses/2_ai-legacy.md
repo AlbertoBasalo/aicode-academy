@@ -11,21 +11,19 @@ outcomes:
   - "Evolve codebases with AI best practices"
   - "Rewrite with modern languages or frameworks"
 curriculum:
-  - module: "Legacy Codebases"
+  - module: "AI for Legacy Code"
     topics:
-      - "AI ethics principles"
-      - "Moral philosophy in AI"
-      - "Case studies in AI ethics"
-  - module: "Bias and Fairness"
+      - "Understand structure and context"
+      - "Document the code"
+  - module: "Change with confidence"
     topics:
-      - "Types of AI bias"
-      - "Fairness metrics"
-      - "Bias mitigation strategies"
-  - module: "Responsible AI"
+      - "Add tests"
+      - "Refactor"
+      - "Evolve"
+  - module: "Future proof"
     topics:
-      - "Transparency and explainability"
-      - "Privacy considerations"
-      - "Ethical guidelines"
+      - "Port to modern frameworks"
+      - "Rewrite in another language"
 ---
 
 # AI Ethics

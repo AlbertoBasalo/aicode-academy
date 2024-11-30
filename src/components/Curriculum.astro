@@ -15,7 +15,7 @@ const { curriculum } = Astro.props;
   <div class="modules">
     {curriculum.map((module, index) => (
       <div class="module">
-        <h3>Module {index + 1}: {module.module}</h3>
+        <h3>Module <strong>{index + 1}</strong>: {module.module}</h3>
         <ul>
           {module.topics.map(topic => (
             <li>{topic}</li>
