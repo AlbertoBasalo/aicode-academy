@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import CourseList from '../components/CourseList.astro';
 import MarketingSection from '../components/MarketingSection.astro';
+import MatrixText from '../components/MatrixText.astro';
 import Layout from '../layouts/Layout.astro';
 
 const courses = await getCollection('courses');
@@ -13,8 +14,8 @@ const courses = await getCollection('courses');
 >
   <section class="hero">
     <div class="container">
-      <h1>Master AI-Driven Development</h1>
-      <p class="hero-text">Learn to Code Smarter, not harder.</p>
+      <h1>MASTER <MatrixText text="AI-DRIVEN" />DEVELOPMENT</h1>
+      <p class="hero-text">Learn to Code Smarter, not harder.<span class="cursor"> |</span></p>
       <a href="/courses" class="cta-button">Explore Courses</a>
     </div>
   </section>
@@ -55,12 +56,24 @@ const courses = await getCollection('courses');
   .hero h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
+    line-height: 1.2;
   }
 
   .hero-text {
     font-size: 1.5rem;
     margin-bottom: 2rem;
     color: var(--text-color);
+  }
+
+  .cursor {
+    color: var(--brand-color);
+    font-weight: bold;
+    animation: blink 2s step-end infinite;
+  }
+
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
   }
 
   .courses {

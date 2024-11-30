@@ -35,8 +35,8 @@ const { courses, showDetails = false } = Astro.props;
           </ul>
         </>
       )}
-      <a href={`/courses/${course.slug}`} class="cta-button">
-        Learn More
+      <a href={`/courses/${course.slug}`} class="cta-button" aria-label={`Learn more about ${course.data.title} course`}>
+        Explore {course.data.title} Course
       </a>
     </div>
   ))}
