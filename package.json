@@ -13,6 +13,7 @@
     "update": "npm update --save && npm outdated"
   },
   "dependencies": {
+    "@astrojs/sitemap": "^3.2.1",
     "@fontsource/ibm-plex-mono": "^5.1.0",
     "@fontsource/major-mono-display": "^5.1.0",
     "astro": "^4.16.16"
