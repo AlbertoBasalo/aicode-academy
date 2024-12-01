@@ -1,20 +1,21 @@
 # AI-Driven Development
 
-Desarrolla el potencial de la IA en tu desarrollo de software con esta formación profesional de 8 horas. Dirigida a desarrolladores experimentados que están listos para revolucionar su enfoque de codificación, esta formación proporciona un enfoque profundo en metodologías de desarrollo impulsadas por IA.
+La IA está revolucionando el desarrollo de software. Programar no va a ser lo que era. Prepárate para un cambio de paradigma, que no te quitará tu trabajo, pero que lo cambiará para siempre. Este curso para desarrolladores experimentados, te proporciona un enfoque profundo en metodologías de programación impulsadas por IA; para que aumentes tu productividad y consigas code smarter, not harder.
 
 ## Resumen del Curso
 
-Domina el futuro de la programación con nuestra formación en **AI-Driven Development**! Esta formación te equipa para aplicar de manera efectiva metodologías, herramientas y prácticas de IA en tu flujo de trabajo de desarrollo. Aprenderás a modernizar sistemas legados, asegurar la privacidad de tus aplicaciones y integrar IA en tus herramientas y frameworks favoritos. ¡Transforma tu flujo de trabajo y eleva tu productividad con IA!
+El curso se compone de 4 módulos. El primero es una introducción a la metodología AIDD, de desarrollo impulsada por IA. El segundo módulo es implementación práctica de la IA en un ciclo de desarrollo completo. Los dos siguientes módulos son casos de uso de la IA en sistemas legados y en privacidad.
+
+Durante el curso se desarrollarán varios proyectos prácticos, usando distintas herramientas y lenguajes de programación. Entre otros trabajaremos con Cursor, Copilot, Ollama, Gemini... y los pondremos a prueba con TypeScript, Python, Java y C#.
 
 ---
 
 ## ¿Por qué unirte a este curso?
 
-- **Desarrolla tus habilidades de programación con IA.**
-- **Aprende a aplicar IA en tu flujo de trabajo de desarrollo.**
-- **Moderniza sistemas legados y asegura la privacidad de tus aplicaciones.**
-- **Integra IA en tus herramientas y frameworks favoritos.**
-- **Eleva tu productividad con IA.**
+- **Quieres mejorar tus habilidades de programación con IA.**
+- **Quieres aplicar IA en tu flujo de trabajo para ser más productivo.**
+- **Quieres modernizar sistemas legados y asegurar la privacidad de tu código.**
+- **Quieres seguir siendo relevante en la industria del desarrollo de software.**
 
 ---
 
@@ -22,11 +23,9 @@ Domina el futuro de la programación con nuestra formación en **AI-Driven Devel
 
 Al finalizar este curso, podrás:
 
-- Comprender los fundamentos de la IA en el desarrollo de software.
-- Utilizar herramientas y técnicas de IA para aumentar la productividad.
-- Modernizar sistemas legados y asegurar la privacidad de tus aplicaciones.
-- Integrar IA en tus herramientas y frameworks favoritos.
-- Aplicar prácticas de IA en tu flujo de trabajo de desarrollo.
+- Conocer las principales herramientas IA para el desarrollo de software.
+- Dominar las técnicas y procedimientos para programar con IA.
+- Aplicarlas según la metodología AIDD.
 
 ---
 
@@ -40,44 +39,45 @@ Este curso está diseñado para desarrolladores experimentados que buscan incorp
 
 ### 1. Introducción a la IA en el Desarrollo de Software
 
-- **IA en el Desarrollo de Software:** Oportunidades, desafíos y herramientas.
-- **Herramientas:** Explora LLMs, editores de código y opciones de despliegue.  
-- **Procedimientos:** Cómo formular preguntas efectivas y refinar respuestas.
-- **AIDD Manifesto:** Prácticas recomendadas para el desarrollo impulsado por IA.
+- **IA en el Desarrollo de Software:** Oportunidades y desafíos.
+- **Herramientas:** Explora LLMs y editores de código.  
+- **Procedimientos:** Buenas prácticas para incorporar asistentes de IA.
+- **AIDD Manifesto:** Metodología de Desarrollo impulsado por IA.
 
 ### 2. IA Mastery
 
-- **Análisis:** Utiliza IA para refinar requisitos, diseño arquitectónico y modelado de dominio.
-- **Generación de Código:** Adaptar salidas de IA a tu stack tecnológico y estilo de codificación.
-- **Calidad:** Automatiza pruebas, depuración y documentación con IA.
+- **Análisis:** Utiliza IA para refinar requisitos, diseño técnico y modelado de dominio.
+- **Generación de Código:** Adaptar tu asistente de IA a tu stack tecnológico y estilo de codificación.
+- **Calidad:** Incluye pruebas, revisión de código y documentación.
 - **Despliegue:** Automatiza operaciones con IA.
 
-### 3. IA en Sistemas Legados
+### 3. IA Legacy
 
 - **Legacy Code:** Entiende, documenta y transforma código antiguo.
-- **Refactoring:** Añade pruebas, refactoriza con confianza y moderniza.
-- **Future-Proofing:** Reescribe en frameworks o lenguajes modernos.
+- **Refactoring:** Añade pruebas y moderniza con confianza.
+- **Evolving:** Corrige, aumenta y evoluciona tu viejo código.
+- **Future-Proofing:** Reescribe en frameworks o lenguajes actuales.
 
-### 4. IA en Privacidad
+### 4. IA Privacy
 
-- **Modelos Locales LLM:** Instala, configura y ejecuta modelos locales.
-- **Integración en IDEs:** Conecta a IDEs, usa extensiones de privacidad y fine-tunes AI tools.
+- **Local LLM:** Instala, configura y ejecuta modelos locales.
+- **Local Assistant:** Conecta a tu IDE, usa extensiones de privacidad.
+- **Fine-Tuning:** Ajusta tu modelo para tu caso de uso, y tu hardware.
+- **Cloud LLM:** Explora opciones privadas de IA en la nube.
 
 ---
 
 ## Apúntate hoy!
 
-No te pierdas la oportunidad de revolucionar tu flujo de trabajo y convertirte en un experto en desarrollo impulsado por IA. ¡Apúntate hoy y comienza tu viaje hacia la era de la IA en el desarrollo de software!
+No te pierdas la oportunidad de mejorar tu flujo de trabajo y convertirte en un experto en desarrollo impulsado por IA. 
 
 ### ¿Por qué elegir este curso?
 
 - **Práctica:** Aprende a aplicar IA en tu flujo de trabajo de desarrollo.
 - **Relevancia:** Mantente a la vanguardia con las últimas herramientas y técnicas de IA.
 - **Eficiencia:** Aumenta tu productividad con IA.
-- **Instrucción:** Beneficia de una estructura curricular diseñada por profesionales de la industria.
+- **Instrucción:** Estructura curricular diseñada para profesionales de la industria.
 
-Conviértete en un experto en IA en desarrollo de software. ¡Apúntate hoy y comienza tu viaje hacia la era de la IA en el desarrollo de software!
+¡Apúntate hoy y comienza tu viaje hacia la era de la IA en el desarrollo de software!
 
----
-
-**Codifica más inteligentemente, no más duro!**
+**Programa más inteligentemente, no más duro!**
