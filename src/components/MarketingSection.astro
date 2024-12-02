@@ -1,5 +1,6 @@
 ---
 import { getEntry } from 'astro:content';
+import CtaSection from './CtaSection.astro';
 
 const marketingData = await getEntry('site', 'marketing');
 const { features } = marketingData.data;
@@ -7,6 +8,7 @@ const { features } = marketingData.data;
 
 <section class="marketing">
   <div class="container">
+    <CtaSection /> 
     <div class="value-prop matrix-shadow">
       <h2>Why Choose AI Code Academy?</h2>
       <div class="features-grid">
@@ -22,8 +24,9 @@ const { features } = marketingData.data;
 <!--     
     <Stats />
     <Testimonials />
-    <CtaSection /> 
     -->
+
+
   </div>
 </section>
 

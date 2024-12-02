@@ -1,6 +1,6 @@
 # AI-Driven Development
 
-La IA está revolucionando el desarrollo de software. Programar no va a ser lo que era. Prepárate para un cambio de paradigma, que no te quitará tu trabajo, pero que lo cambiará para siempre. Este curso para desarrolladores experimentados, te proporciona un enfoque profundo en metodologías de programación impulsadas por IA; para que aumentes tu productividad y consigas code smarter, not harder.
+La IA está revolucionando el desarrollo de software. Programar no va a ser lo que era. Prepárate para un cambio de paradigma, que no te quitará tu trabajo, pero que lo cambiará para siempre. Este curso para desarrolladores experimentados, te proporciona un enfoque profundo en metodologías de programación impulsadas por IA; para que aumentes tu productividad y consigas el objetivo _code smarter, not harder_.
 
 ## Resumen del Curso
 
@@ -26,6 +26,8 @@ Al finalizar este curso, podrás:
 - Conocer las principales herramientas IA para el desarrollo de software.
 - Dominar las técnicas y procedimientos para programar con IA.
 - Aplicarlas según la metodología AIDD.
+
+Este curso no es solo de uso de herramientas, sino de metodología para integrar la IA en cada etapa del ciclo de desarrollo. 
 
 ---
 
@@ -78,6 +80,6 @@ No te pierdas la oportunidad de mejorar tu flujo de trabajo y convertirte en un 
 - **Eficiencia:** Aumenta tu productividad con IA.
 - **Instrucción:** Estructura curricular diseñada para profesionales de la industria.
 
-¡Apúntate hoy y comienza tu viaje hacia la era de la IA en el desarrollo de software!
+No te quedes atrás en la revolución de la programación. ¡Inscríbete ahora y transforma tu forma de desarrollar software con IA! 
 
-**Programa más inteligentemente, no más duro!**
+**Code smarter, not harder!**
