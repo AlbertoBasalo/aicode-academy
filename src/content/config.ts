@@ -27,7 +27,30 @@ const siteCollection = defineCollection({
   })
 });
 
+const metadata = defineCollection({
+  type: 'data',
+  schema: z.object({
+    pages: z.record(z.object({
+      title: z.string(),
+      description: z.string(),
+      layout: z.object({
+        title: z.string(),
+        description: z.string()
+      }),
+      hero: z.object({
+        title: z.string(),
+        subtitle: z.string(),
+        cta: z.string()
+      }).optional(),
+      lead: z.object({
+        text: z.string()
+      }).optional()
+    }))
+  })
+});
+
 export const collections = {
   courses: courseCollection,
-  site: siteCollection
+  site: siteCollection,
+  metadata
 };

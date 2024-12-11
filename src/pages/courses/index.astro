@@ -6,16 +6,16 @@ import Layout from '../../layouts/Layout.astro';
 
 const courses = await getCollection('courses');
 const metadata = await getEntry('metadata', 'pages');
-const { courses: coursesMetadata } = metadata.data.pages;
+const pageData = metadata.data.pages.courses;
 ---
 
 <Layout 
-  title={coursesMetadata.layout.title}
-  description={coursesMetadata.layout.description}
+  title={pageData.layout.title}
+  description={pageData.layout.description}
 >
-  <div class="container" aria-label={coursesMetadata.title} role="heading" aria-level="1">
+  <div class="container" aria-label={pageData.title} role="heading" aria-level="1">
     <h1>AI Code <MatrixText text="ACADEMY" /> Courses</h1>
-    <p class="lead">{coursesMetadata.lead.text}<span class="cursor"> |</span></p>
+    <p class="lead">{pageData.lead.text}<span class="cursor"> |</span></p>
     <CourseList courses={courses} showDetails={true} />
   </div>
 </Layout>
