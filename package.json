@@ -10,7 +10,8 @@
     "serve": "npm run build && serve dist",
     "preview": "astro preview",
     "astro": "astro",
-    "update": "npm update --save && npm outdated"
+    "update": "npm update --save && npm outdated",
+    "deploy": "git checkout production && git merge master && git push origin production && git checkout master"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.2.1",
