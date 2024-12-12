@@ -22,12 +22,6 @@ const isEven = courses.length % 2 === 0;
       <p class="course-description">{course.data.description}</p>
       {showDetails && (
         <section>
-          <h4>Prerequisites</h4>
-          <ul>
-            {course.data.prerequisites.map(prereq => (
-              <li>{prereq}</li>
-            ))}
-          </ul>
           <h4>Learning Outcomes</h4>
           <ul>
             {course.data.outcomes.map(outcome => (
@@ -65,6 +59,10 @@ const isEven = courses.length % 2 === 0;
     
     /* Colors */
     --card-bg: rgba(71, 212, 105, 0.05);
+  }
+
+  h4 {
+    padding-bottom: 0.5rem;
   }
 
   .course-grid {

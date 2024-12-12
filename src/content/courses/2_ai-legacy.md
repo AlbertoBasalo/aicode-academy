@@ -1,5 +1,6 @@
 ---
 title: "AI Legacy"
+subtitle: "Refactor and modernize legacy codebases."
 level: "Professional"
 duration: "2 hours"
 price: "$19"
@@ -26,25 +27,3 @@ curriculum:
       - "Rewrite in another language"
 ---
 
-# AI Ethics
-
-Learn to develop AI systems responsibly and ethically in this comprehensive course on AI ethics and fairness.
-
-## Course Overview
-
-This course addresses the critical ethical considerations in AI development and deployment. You'll learn to identify, assess, and mitigate ethical risks in AI systems.
-
-## What You'll Learn
-
-- Ethical principles in AI development
-- Bias detection and mitigation
-- Privacy and security considerations
-- Responsible AI frameworks
-
-## Who Should Take This Course
-
-This course is valuable for:
-- AI developers and engineers
-- Project managers
-- Policy makers and regulators
-- Anyone involved in AI development

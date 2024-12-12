@@ -1,5 +1,6 @@
 ---
 title: "AI Privacy"
+subtitle: "Local models and open source tools."
 level: "Professional"
 duration: "2 hours"
 price: "$19"

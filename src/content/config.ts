@@ -4,6 +4,7 @@ const courseCollection = defineCollection({
   type: 'content',
   schema: z.object({
     title: z.string(),
+    subtitle: z.string(),
     level: z.string(),
     duration: z.string(),
     price: z.string(),

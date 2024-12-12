@@ -20,7 +20,7 @@ const { text } = Astro.props;
   document.querySelectorAll(".matrix-text").forEach((element) => {
     const el = element as HTMLElement;
     const text = el.getAttribute("data-value") || "";
-    let interval: number | null = null;
+    let interval: NodeJS.Timeout | null = null;
     let iteration = 0;
     
     const animate = () => {

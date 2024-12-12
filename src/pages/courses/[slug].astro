@@ -20,6 +20,7 @@ const { entry } = Astro.props;
 const { Content } = await entry.render();
 const {
   title,
+  subtitle,
   level,
   duration,
   price,
@@ -37,6 +38,7 @@ const {
   <article class="course-content container">
     <CourseHeader
       title={title}
+      subtitle={subtitle}
       level={level}
       duration={duration}
       price={price}
@@ -72,6 +74,10 @@ const {
       <p>We are working on {title}, please be patient.</p>
       <a href="https://albertobasalo.dev/#contact" class="cta-button">Get in touch meanwhile</a>
     </div>
+
+    <footer>
+      <p>This course is part of the <a href="../courses">AI-Driven Development</a> methodology curriculum.</p>
+    </footer>
   </article>
 </Layout>
 

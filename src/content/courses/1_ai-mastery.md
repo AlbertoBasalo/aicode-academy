@@ -1,5 +1,6 @@
 ---
 title: "AI Mastery"
+subtitle: "Full development cycle using AI tools."
 level: "Professional"
 duration: "4 hours"
 price: "$29"
@@ -33,24 +34,3 @@ curriculum:
       - "AI in the Cloud"
 ---
 
-# Advanced Machine Learning
-
-Take your ML skills to the next level with our advanced course in machine learning and deep neural networks.
-
-## Course Overview
-
-This advanced course focuses on implementing and optimizing complex machine learning systems. You'll work with cutting-edge architectures and learn production-ready practices.
-
-## What You'll Learn
-
-- Advanced neural network architectures
-- Model optimization techniques
-- Production deployment strategies
-- Performance tuning and scaling
-
-## Who Should Take This Course
-
-This course is designed for:
-- ML engineers seeking advanced knowledge
-- Data scientists expanding their skillset
-- AI developers working on complex projects

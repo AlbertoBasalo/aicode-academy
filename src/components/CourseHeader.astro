@@ -1,18 +1,22 @@
 ---
+import MatrixText from './MatrixText.astro';
+
 interface Props {
   title: string;
+  subtitle: string;
   level: string;
   duration: string;
   price: string;
   description: string;
 }
 
-const { title, level, duration, price, description } = Astro.props;
+const { title, subtitle, level, duration, price, description } = Astro.props;
 ---
 
 <header class="course-header matrix-shadow">
+  <h1><MatrixText text={title} /></h1>
   <div class="header-content">
-    <h1>{title}</h1>
+    <h3>{subtitle}</h3>
     <div class="course-meta">
       <span class="pill">{level}</span>
       <span class="pill">{duration}</span>
@@ -35,7 +39,7 @@ const { title, level, duration, price, description } = Astro.props;
     margin: 0 auto;
   }
 
-  h1 {
+  h1, h3 {
     margin-bottom: 1rem;
   }
 

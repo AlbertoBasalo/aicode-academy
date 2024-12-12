@@ -1,5 +1,6 @@
 ---
 title: "AI Methodology"
+subtitle: "Introduction to AI-Driven Development methodology."
 level: "Beginner"
 duration: "1 hour"
 price: "FREE"
