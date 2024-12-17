@@ -25,25 +25,29 @@ curriculum:
 
 ---
 
-# AI Privacy
+# Tools we will use
 
-This course will teach you how to use local LLM models to protect your code and comply with privacy regulations.
+During this course we will use the following tools:
 
-## Course sample application : DocsScraper
+### [1 - Ollama](https://ollama.ai/)
 
-A working Python application that scrapes content from the web documentation sites and saves it as text files ready to be used for fine-tuning.
+### [2 - Google Gemma LLM](https://ai.google.dev/gemma/docs)
 
-### Tools and technologies
+### [3 - Continue IDE](https://continue.dev/)
 
-> You will need a computer with a modern CPU, 16GB of RAM and a GPU with at least 8GB of VRAM.
+### [4 - Aider Chat](https://aider.chat/)
 
-- Ollama and llama.cpp
-- Gemini LLM
-- Continue IDE extensions
+# Example of a real project
+
+As a demo, we will build a real deployable project.
+
+### AgentLib
+
+A documentation scrapper that can be used to feed your LLM models.
 
 ## Who Should Take This Course
 
 This course is perfect for:
 - Software developers seeking to protect their code 
-- Companies seeking to comply with privacy regulations
+- Companies in the need to comply with privacy regulations
 - Enthusiasts wanting to get the most of their machines.

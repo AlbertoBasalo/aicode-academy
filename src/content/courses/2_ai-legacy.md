@@ -27,3 +27,24 @@ curriculum:
       - "Rewrite in another language"
 ---
 
+# Tools we will use
+
+During this course we will use the following tools:
+
+### [1 - ChatGPT](https://chatgpt.com/)
+
+### [2 - GitHub Copilot](https://github.com/copilot/)
+
+# Example of a real project
+
+As a demo, we will build a real deployable project.
+
+### APIbeta 
+
+A fake API server that can be used to test your code while you are developing.
+
+## Who Should Take This Course
+
+This course is perfect for:
+- Software developers who must refactor legacy codebases
+- Companies seeking to modernize their codebases

@@ -34,3 +34,30 @@ curriculum:
       - "AI Quality"
 ---
 
+# Tools we will use
+
+During this course we will use the following tools:
+
+### [1 - Anthropic Claude](https://claude.ai/)
+
+### [2 - Bolt](https://bolt.new/)
+
+### [3 - Cursor](https://www.cursor.com/)
+
+# Example of a real project
+
+As a demo, we will build a real deployable project.
+
+### AcademyBlog 
+
+A blog for an academy, that can be used to showcase their courses.
+
+## Who Should Take This Course
+
+This course is perfect for:
+- Software developers who want to learn how to use AI to improve their coding skills
+- Companies that want to implement AI in their development team
+
+  
+
+
