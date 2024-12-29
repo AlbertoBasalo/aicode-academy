@@ -1,5 +1,12 @@
 # AI-Driven Development
 
+> To Do: 
+> - dividirlo en dos cursos, uno para desarrolladores y otro para empresas
+> - Laboratorio/pet-project, ejemplos y prácticas unificados para todos los cursos
+> - AssetsBoard
+> - TravelPlanner
+> - ApiBeta ? AppBeta
+
 La IA está revolucionando el desarrollo de software. Programar no va a ser lo que era. Prepárate para un cambio de paradigma, que no te quitará tu trabajo, pero que lo cambiará para siempre. Este curso para desarrolladores experimentados, te proporciona un enfoque profundo en metodologías de programación impulsadas por IA; para que aumentes tu productividad y consigas el objetivo _code smarter, not harder_.
 
 ## Resumen del Curso

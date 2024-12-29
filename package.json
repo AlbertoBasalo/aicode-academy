@@ -15,8 +15,8 @@
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.2.1",
-    "@fontsource/ibm-plex-mono": "^5.1.0",
-    "@fontsource/major-mono-display": "^5.1.0",
-    "astro": "^5.0.3"
+    "@fontsource/fira-mono": "^5.1.0",
+    "@fontsource/tomorrow": "^5.1.0",
+    "astro": "^5.1.1"
   }
 }

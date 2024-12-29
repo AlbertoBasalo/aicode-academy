@@ -8,8 +8,8 @@
 }
 
 :root {
-  --header-font: 'Major Mono Display', monospace;
-  --mono-font: 'IBM Plex Mono', monospace;
+  --header-font: Tomorrow, monospace;
+  --mono-font: 'Fira Mono', monospace;
   --brand-color: rgb(71, 212, 105);
   --text-color: rgb(200, 200, 200);
   --shadow-color: rgba(71, 212, 105, 0.2);
