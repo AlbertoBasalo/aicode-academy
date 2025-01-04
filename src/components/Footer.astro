@@ -2,13 +2,13 @@
 const currentYear = new Date().getFullYear();
 ---
 
-<footer class="main-footer">
-  <div class="container footer-content">
-    <div class="footer-section">
+<footer class="container">
+  <main class="grid">
+    <div >
       <h3>AI Code Academy</h3>
       <p>Learn to Code Smarter, not harder.</p>
     </div>
-    <div class="footer-section">
+    <div >
       <h3>Connect</h3>
       <ul>
         <li><a href="https://aiddbot.com" target="_blank"><b>AIDDbot </b></a></li>
@@ -17,7 +17,7 @@ const currentYear = new Date().getFullYear();
         <li><a href="https://linkedin.com/in/albertobasalo" target="_blank">LinkedIn</a></li>
       </ul>
     </div>
-    <div class="footer-section">
+    <div >
       <h3>Legal</h3>
       <ul>
         <li><a href="https://albertobasalo.dev/#contact" target="_blank"><b>Contact</b></a></li>
@@ -26,45 +26,9 @@ const currentYear = new Date().getFullYear();
         <li><a href="/legal/cookies">Cookie Policy</a></li>
       </ul>
     </div>
-  </div>
-  <div class="footer-bottom">
-    <div class="container">
-      <p>&copy; {currentYear} AI Code Academy. All rights reserved.</p>
-    </div>
+  </main>
+  <div>
+   <p>&copy; {currentYear} AI Code Academy. All rights reserved.</p>
   </div>
 </footer>
 
-<style>
-  .main-footer {
-    margin-top: 4rem;
-    padding: 2rem 0 0;
-    border-top: 1px solid var(--brand-color);
-  }
-
-  .footer-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    padding-bottom: 2rem;
-  }
-
-  .footer-section h3 {
-    margin-bottom: 1rem;
-    font-size: 1.2rem;
-  }
-
-  .footer-section ul {
-    list-style: none;
-  }
-
-  .footer-section ul li {
-    margin-bottom: 0.5rem;
-  }
-
-  .footer-bottom {
-    padding: 1rem 0;
-    border-top: 1px solid var(--shadow-color);
-    text-align: center;
-    font-size: 0.9rem;
-  }
-</style>

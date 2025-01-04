@@ -17,6 +17,7 @@
     "@astrojs/sitemap": "^3.2.1",
     "@fontsource/fira-mono": "^5.1.0",
     "@fontsource/tomorrow": "^5.1.0",
+    "@picocss/pico": "^2.0.6",
     "astro": "^5.1.1"
   }
 }

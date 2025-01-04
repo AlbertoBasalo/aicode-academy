@@ -1,80 +1,65 @@
 /* Modern CSS Reset and Global Styles */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+
 
 :root {
-  --header-font: Tomorrow, monospace;
-  --mono-font: 'Fira Mono', monospace;
-  --brand-color: rgb(71, 212, 105);
-  --text-color: rgb(200, 200, 200);
-  --shadow-color: rgba(71, 212, 105, 0.2);
-  --bg-color: #13151a;
-}
-
-html {
-  font-family: var(--mono-font);
-  background: var(--bg-color);
-  color: var(--text-color);
-  scroll-behavior: smooth;
-  font-size: 16px;
-}
-
-body {
-  line-height: 1.6;
+  --pico-font-family: 'Fira Mono', Consolas,  monospace;
+  --pico-font-family-emoji: 'Fira Mono', Consolas, monospace;
+  --pico-font-family-sans-serif: Tomorrow, Roboto, Helvetica, Arial, sans-serif;
+  --pico-font-family-monospace:'Fira Mono', Consolas,  monospace;
+  --pico-border-radius: 0rem;
+  --ab-green: #47d469;
+  --ab-cyan: #33c1ee;
+  --ab-blue: #0783d8;
+  --ab-dark-blue: #0e4d90;
+  --ab-dark-green: #063831;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--header-font);
-  font-weight: 400;
-  line-height: 1.2;
-  color: var(--brand-color);
+  font-family: var(--pico-font-family-sans-serif);
 }
 
-a {
-  color: var(--brand-color);
-  text-decoration: none;
-  transition: color 0.3s ease;
+body {
+  margin: 1rem;
+  font-family: var(--pico-font-family);
 }
 
-a:hover {
-  text-decoration: underline;
+/* Green color for light color scheme (Default) */
+/* Can be forced with data-theme="light" */
+[data-theme=light],
+:root:not([data-theme=dark]) {
+  --pico-text-selection-color: var(--ab-dark-green);
+  --pico-primary: var(--ab-green);
+  --pico-primary-background: var(--ab-dark-green);
+  --pico-primary-underline: var(--ab-green);
+  --pico-primary-hover: var(--ab-cyan);
+  --pico-primary-hover-background: var(--ab-dark-blue);
+  --pico-primary-focus: var(--ab-green);
+  --pico-primary-inverse: #fff;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
+/* Green color for dark color scheme (Auto) */
+/* Automatically enabled if user has Dark mode enabled */
+@media only screen and (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    --pico-text-selection-color: var(--ab-dark-green);
+    --pico-primary: var(--ab-green);
+    --pico-primary-background: var(--ab-dark-green);
+    --pico-primary-underline: var(--ab-green);
+    --pico-primary-hover: var(--ab-cyan);
+    --pico-primary-hover-background: var(--ab-dark-blue);
+    --pico-primary-focus: var(--ab-green);
+    --pico-primary-inverse: #fff;
+  }
 }
-
-.matrix-shadow {
-  box-shadow: 0 0 10px var(--shadow-color);
-}
-
-.cta-button {
-  display: inline-block;
-  padding: 0.5rem 1.5rem;
-  background-color: var(--brand-color);
-  color: var(--bg-color);
-  text-transform: uppercase;
-  font-weight: bold;
-  transition: all 0.3s ease;
-}
-
-.cta-button:hover {
-  background-color: transparent;
-  color: var(--brand-color);
-  text-decoration: none;
-}
-
-.pill {
-  background-color: var(--bg-color);
-  border: 1px solid var(--brand-color);
-  padding: 0.25rem 0.5rem;
-  font-size: 0.875rem;
-  color: var(--brand-color);
+/* Green color for dark color scheme (Forced) */
+/* Enabled if forced with data-theme="dark" */
+[data-theme=dark] {
+  --pico-text-selection-color: var(--ab-dark-green);
+  --pico-primary: var(--ab-green);
+  --pico-primary-background: var(--ab-dark-green);
+  --pico-primary-underline: var(--ab-green);
+  --pico-primary-hover: var(--ab-cyan);
+  --pico-primary-hover-background: var(--ab-dark-blue);
+  --pico-primary-focus: var(--ab-green);
+  --pico-primary-inverse: #fff;
 }

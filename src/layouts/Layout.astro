@@ -1,10 +1,12 @@
 ---
 import '@fontsource/fira-mono';
 import '@fontsource/tomorrow';
+import '@picocss/pico';
 import CookieConsent from '../components/CookieConsent.astro';
 import Footer from '../components/Footer.astro';
 import Navigation from '../components/Navigation.astro';
 import '../styles/global.css';
+// import '../styles/colors.css';
 
 interface Props {
   title: string;
@@ -24,6 +26,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <link rel="icon" type="image/png" href="/aicode-academy-32.png" />
     <link rel="apple-touch-icon" href="/aicode-academy-192.png" />
     <link rel="manifest" href="/manifest.json" />
+    <link rel="stylesheet" href="css/pico.min.css">
     <meta name="theme-color" content="#47d469" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
@@ -52,7 +55,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
         "@context": "https://schema.org",
         "@type": "EducationalOrganization",
         "name": "AI Code Academy",
-        "description": "Learn AI development with our cutting-edge curriculum",
+        "description": "Desarrollo profesional con IA",
         "url": "https://aicode.academy",
         "logo": "https://aicode.academy/aicode-academy-192.png"
       }
