@@ -4,20 +4,24 @@ interface Props {
 }
 
 const { text } = Astro.props;
+
 ---
 
 <span class="matrix-text" data-value={text}>{text}</span>
 
 <style>
+
   .matrix-text {
     display: inline-block;
   }
+
 </style>
 
 <script>
+
   const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   
-  document.querySelectorAll(".matrix-text").forEach((element) => {
+    document.querySelectorAll(".matrix-text").forEach((element) => {
     const el = element as HTMLElement;
     const text = el.getAttribute("data-value") || "";
     let interval: NodeJS.Timeout | null = null;
@@ -52,4 +56,5 @@ const { text } = Astro.props;
       interval = setInterval(animate, 30);
     });
   });
+  
 </script> 

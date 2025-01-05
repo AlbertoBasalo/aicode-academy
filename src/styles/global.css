@@ -14,13 +14,18 @@
   --ab-dark-green: #063831;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--pico-font-family-sans-serif);
-}
+
 
 body {
-  margin: 1rem;
+  padding-top: 1rem;
+  padding-left: 5rem;
+  padding-right: 5rem;  
+  padding-bottom: 1rem;
   font-family: var(--pico-font-family);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--pico-font-family-sans-serif);
 }
 
 /* Green color for light color scheme (Default) */
@@ -63,3 +68,14 @@ body {
   --pico-primary-focus: var(--ab-green);
   --pico-primary-inverse: #fff;
 }
+
+ .center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .primary {
+    color: var(--pico-primary);
+  }

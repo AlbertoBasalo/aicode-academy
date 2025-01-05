@@ -1,23 +1,22 @@
 ---
 ---
 
-<div class="cookie-consent matrix-shadow">
+<aside id="cookie-consent">
   <p>
-    We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies.
-    <a href="/legal/cookies" aria-label="Read our cookie policy">View Cookie Policy Details</a>
+    Usamos cookies para mejorar tu experiencia. Al continuar visitando este sitio aceptas nuestro uso de cookies.
+    <a href="/legal/cookies" aria-label="Read our cookie policy">Ver Política de Cookies</a>
   </p>
-  <button class="accept-button">Accept</button>
-</div>
+  <button id="cookie-consent-accept" class="outline">Aceptar</button>
+</aside>
 
 <style>
-  .cookie-consent {
+  #cookie-consent {
     position: fixed;
     bottom: 1rem;
     left: 1rem;
     right: 1rem;
     padding: 1rem;
-    background-color: var(--bg-color);
-    border: 1px solid var(--brand-color);
+    border: 1px solid var(--pico-primary);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,36 +26,8 @@
     margin: 0 auto;
   }
 
-  p {
-    margin: 0;
-    font-family: var(--mono-font);
-  }
-
-  a {
-    color: var(--brand-color);
-    text-decoration: underline;
-    margin-left: 0.5rem;
-  }
-
-  .accept-button {
-    padding: 0.5rem 1rem;
-    background-color: var(--brand-color);
-    color: var(--bg-color);
-    border: none;
-    cursor: pointer;
-    font-family: var(--mono-font);
-    text-transform: uppercase;
-    white-space: nowrap;
-  }
-
-  .accept-button:hover {
-    background-color: transparent;
-    color: var(--brand-color);
-    outline: 1px solid var(--brand-color);
-  }
-
   @media (max-width: 768px) {
-    .cookie-consent {
+    #cookie-consent {
       flex-direction: column;
       text-align: center;
     }
@@ -64,8 +35,8 @@
 </style>
 
 <script>
-  const cookieConsent = document.querySelector('.cookie-consent') as HTMLElement;
-  const acceptButton = document.querySelector('.accept-button') as HTMLButtonElement;
+  const cookieConsent = document.querySelector('#cookie-consent') as HTMLElement;
+  const acceptButton = document.querySelector('#cookie-consent-accept') as HTMLButtonElement;
 
   if (cookieConsent && acceptButton) {
     if (!localStorage.getItem('cookieConsent')) {

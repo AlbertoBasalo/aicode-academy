@@ -1,45 +1,72 @@
 ---
 
+import BlinkCursor from '../components/BlinkCursor.astro';
 import MatrixText from '../components/MatrixText.astro';
-import home from '../content/metadata/home';
+import PrimaryComment from '../components/PrimaryComment.astro';
+import { HOME } from '../content/metadata/home';
 import Layout from '../layouts/Layout.astro';
+
 ---
 
 <Layout 
-  title={home.layout.title}
-  description={home.layout.description}
+  title={HOME.layout.title}
+  description={HOME.layout.description}
 >
-  <article >
-    <header class="center">  
-      <h1>MASTER <MatrixText text="AI-DRIVEN" /> DEVELOPMENT</h1>
-    </header>
-    <main class="center" aria-label={home.title} role="heading" aria-level="1">
-      <p><b>{home.hero.subtitle}</b><span class="cursor"> |</span></p>
-    </main>
-    <footer class="center">
-      <a role="button" href="/courses">{home.hero.cta}</a>
-    </footer>
-  </article>
+  
+<section id="hero" class="container">
+  <header class="center">  
+    <h1>MASTER <MatrixText text="AI-DRIVEN" /> DEVELOPMENT</h1>
+  </header>
+  <main class="center" aria-label={HOME.title} role="heading" aria-level="1">
+    <p><b>{HOME.hero.subtitle}</b><BlinkCursor /></p>
+  </main>
+  <footer class="center">
+    <a role="button" class="outline" href={HOME.hero.cta.link}>{HOME.hero.cta.text}</a>
+  </footer>
+</section>
+
+<section id="why" class="container"> 
+  <header class="center">
+    <h2>{HOME.why.title}</h2>
+  </header>
+  <main class="grid">
+    <article>
+      <h3><PrimaryComment /> {HOME.why.reason1.title}</h3>
+      <p>{HOME.why.reason1.description}</p>
+    </article >
+      <article>
+      <h3><PrimaryComment /> {HOME.why.reason2.title}</h3>
+      <p>{HOME.why.reason2.description}</p>
+    </article >
+      <article>
+      <h3><PrimaryComment /> {HOME.why.reason3.title}</h3>
+      <p>{HOME.why.reason3.description}</p>
+    </article >
+  </main>
+</section>
+
+<section id="us" class="container">
+  <header class="center">
+    <h2>{HOME.us.title}</h2>
+  </header>
+  <main class="center">
+    <p>{HOME.us.subtitle}</p>
+  </main>
+  <footer class="center">
+    <a href={HOME.us.cta.link} target="_blank">{HOME.us.cta.text}</a>
+  </footer>
+</section>
 
 </Layout>
 
 <style>
 
-  .center {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  section.container {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
-
-  .cursor {
-    color: var(--pico-primary);
-    font-weight: bold;
-    animation: blink 2s step-end infinite;
-  }
-
-  @keyframes blink {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0; }
-  }
+  
 </style>
+

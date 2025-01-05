@@ -5,23 +5,26 @@ const navItems = [
 ];
 ---
 
-<nav>
-  <ul>
-    <li><strong><a href="/">AI Code Academy</a></strong></li>
+<header>
+  <nav>
+    <ul>
+      <li><strong><a href="/">AI Code Academy</a></strong></li>
   </ul>
   <ul>
     {navItems.map(item => (
         <li>
           <a href={item.href}>{item.text}</a>
         </li>
-      ))}
-  </ul>
-</nav>
+        ))}
+    </ul>
+  </nav>
+</header>
 
 
 <style>
-  nav {
-    padding-right: 2rem;
+  header {
+    border-bottom: 1px solid var(--pico-primary);
+    margin-bottom: 1rem;
   }
 </style>
 
