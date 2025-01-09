@@ -13,11 +13,11 @@ import Layout from '../layouts/Layout.astro';
   description={HOME.layout.description}
 >
   
-<section id="hero" class="container">
+<section id="hero" class="container"  aria-label={HOME.title} role="heading" aria-level="1">
   <header class="center">  
     <h1>MASTER <MatrixText text="Ai-driven" /> DEVELOPMENT</h1>
   </header>
-  <main class="center" aria-label={HOME.title} role="heading" aria-level="1">
+  <main class="center">
     <p><b>{HOME.hero.subtitle}</b><BlinkCursor /></p>
   </main>
   <footer class="center">

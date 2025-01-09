@@ -39,5 +39,8 @@ const { title, description } = Astro.props;
         setTheme(currentTheme === 'dark' ? 'light' : 'dark');
       });
     </script>
+    <link rel="stylesheet" href="../styles/colors.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="../styles/custom.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="../styles/global.css" media="print" onload="this.media='all'">
   </body>
 </html>
