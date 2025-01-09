@@ -1,15 +1,14 @@
 ---
+import "@picocss/pico";
 
-import '@picocss/pico';
+import "../styles/colors.css";
+import "../styles/custom.css";
+import "../styles/global.css";
 
-import '../styles/colors.css';
-import '../styles/custom.css';
-import '../styles/global.css';
-
-import CookieConsent from './CookieConsent.astro';
-import Footer from './Footer.astro';
-import Head from './Head.astro';
-import Header from './Header.astro';
+import CookieConsent from "./CookieConsent.astro";
+import Footer from "./Footer.astro";
+import Head from "./Head.astro";
+import Header from "./Header.astro";
 
 interface Props {
   title: string;
@@ -17,13 +16,27 @@ interface Props {
 }
 
 const { title, description } = Astro.props;
-
 ---
 
-<!DOCTYPE html>
-<html lang="es" data-theme="dark">
-  <Head title={title} description={description} />
+<!doctype html>
+<html
+  lang="es"
+  data-theme="dark">
+  <Head
+    title={title}
+    description={description}
+  />
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+      <iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-M6TP6G8B"
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden">
+      </iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <Header />
     <main>
       <slot />
@@ -31,16 +44,31 @@ const { title, description } = Astro.props;
     <Footer />
     <CookieConsent />
     <script>
-      const getTheme = () => document.documentElement.getAttribute('data-theme');
-      const setTheme = (theme) => document.documentElement.setAttribute('data-theme', theme);
-      
-      document.addEventListener('theme-toggle', () => {
+      const getTheme = () => document.documentElement.getAttribute("data-theme");
+      const setTheme = (theme) => document.documentElement.setAttribute("data-theme", theme);
+
+      document.addEventListener("theme-toggle", () => {
         const currentTheme = getTheme();
-        setTheme(currentTheme === 'dark' ? 'light' : 'dark');
+        setTheme(currentTheme === "dark" ? "light" : "dark");
       });
     </script>
-    <link rel="stylesheet" href="../styles/colors.css" media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="../styles/custom.css" media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="../styles/global.css" media="print" onload="this.media='all'">
+    <link
+      rel="stylesheet"
+      href="../styles/colors.css"
+      media="print"
+      onload="this.media='all'"
+    />
+    <link
+      rel="stylesheet"
+      href="../styles/custom.css"
+      media="print"
+      onload="this.media='all'"
+    />
+    <link
+      rel="stylesheet"
+      href="../styles/global.css"
+      media="print"
+      onload="this.media='all'"
+    />
   </body>
 </html>
