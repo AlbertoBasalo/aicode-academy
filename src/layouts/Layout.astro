@@ -8,7 +8,7 @@ import '../styles/global.css';
 
 import CookieConsent from './CookieConsent.astro';
 import Footer from './Footer.astro';
-import HeadC from './HeadC.astro';
+import Head from './Head.astro';
 import Header from './Header.astro';
 
 interface Props {
@@ -22,13 +22,22 @@ const { title, description } = Astro.props;
 
 <!DOCTYPE html>
 <html lang="es" data-theme="dark">
-  <HeadC title={title} description={description} />
+  <Head title={title} description={description} />
   <body>
-    <Header  />
+    <Header />
     <main>
       <slot />
     </main>
     <Footer />
     <CookieConsent />
+    <script>
+      const getTheme = () => document.documentElement.getAttribute('data-theme');
+      const setTheme = (theme) => document.documentElement.setAttribute('data-theme', theme);
+      
+      document.addEventListener('theme-toggle', () => {
+        const currentTheme = getTheme();
+        setTheme(currentTheme === 'dark' ? 'light' : 'dark');
+      });
+    </script>
   </body>
 </html>
