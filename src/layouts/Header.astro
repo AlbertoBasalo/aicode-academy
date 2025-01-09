@@ -1,0 +1,31 @@
+---
+const navItems = [
+  { href: 'https://es.aiddbot.com', text: 'AI-DD bot', external: true },
+  { href: '/cursos', text: 'Cursos' },
+];
+---
+
+<header>
+  <nav>
+    <ul>
+      <li><strong><a href="/" class="logo">Ai code Academy</a></strong></li>
+    </ul>
+    <ul>
+      {navItems.map(item => (
+        <li>
+          <a href={item.href} {...item.external && { target: '_blank', rel: 'noopener' }}>{item.text}</a>
+        </li>
+      ))}
+    </ul>
+  </nav>
+</header>
+
+
+<style>
+  header {
+    border-bottom: 1px solid var(--pico-primary);
+    margin-bottom: 1rem;
+  }
+</style>
+
+

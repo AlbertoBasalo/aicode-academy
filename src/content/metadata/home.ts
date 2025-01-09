@@ -43,7 +43,7 @@ export const HOME: Home = {
     "description": "Learn AI development with our cutting-edge curriculum. Master machine learning, deep learning, and ethical AI development."
   },
   "hero": {
-    "title": "MASTER AI-DRIVEN DEVELOPMENT",
+    "title": "Master Ai-Driven DEVELOPMENT",
     "subtitle": "La IA no te quitará el trabajo, pero lo cambiará para siempre",
     "cta": {
       "text": "Learn to code smarter",

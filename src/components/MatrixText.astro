@@ -7,12 +7,13 @@ const { text } = Astro.props;
 
 ---
 
-<span class="matrix-text" data-value={text}>{text}</span>
+<span class="matrix-text logo" data-value={text}>{text}</span>
 
 <style>
 
   .matrix-text {
     display: inline-block;
+    padding: 0 0.2rem;
   }
 
 </style>
@@ -24,22 +25,24 @@ const { text } = Astro.props;
     document.querySelectorAll(".matrix-text").forEach((element) => {
     const el = element as HTMLElement;
     const text = el.getAttribute("data-value") || "";
+    const speed = 30;
     let interval: NodeJS.Timeout | null = null;
     let iteration = 0;
     
-    const animate = () => {
+    const performIteration = () => {
       el.innerText = text
         .split("")
-        .map((letter, index) => {
+        .map((_letter, index) => {
           if (index < iteration) {
             return text[index];
           }
-          return letters[Math.floor(Math.random() * 26)];
+          const randomIndex = Math.floor(Math.random() * 26);
+          return letters[randomIndex];
         })
         .join("");
       
       if (iteration >= text.length) {
-        if (interval) clearInterval(interval);
+        clearInterval(interval);
         return;
       }
       
@@ -47,13 +50,13 @@ const { text } = Astro.props;
     };
 
     // Start animation on page load
-    interval = setInterval(animate, 30);
+    interval = setInterval(performIteration, speed);
 
     // Restart animation on hover
     el.addEventListener("mouseover", () => {
       iteration = 0;
-      if (interval) clearInterval(interval);
-      interval = setInterval(animate, 30);
+      clearInterval(interval);
+      interval = setInterval(performIteration, speed);
     });
   });
   

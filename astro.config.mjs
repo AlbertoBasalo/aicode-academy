@@ -2,12 +2,12 @@ import sitemap from '@astrojs/sitemap';
 import { defineConfig } from 'astro/config';
 
 export default defineConfig({
+  site: 'https://aicode.academy',
   markdown: {
     shikiConfig: {
       theme: 'dark-plus'
     }
   },
-  site: 'https://aicode.academy',
   integrations: [
     sitemap({
       changefreq: 'weekly',

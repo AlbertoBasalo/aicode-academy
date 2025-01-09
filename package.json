@@ -4,7 +4,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "astro dev",
+    "dev": "npm run chrome && astro dev",
+    "chrome": "start chrome -incognito -auto-open-devtools-for-tabs http://localhost:4321",
     "start": "astro dev",
     "build": "astro build",
     "serve": "npm run build && serve dist",
@@ -17,6 +18,7 @@
     "@astrojs/sitemap": "^3.2.1",
     "@fontsource/fira-mono": "^5.1.0",
     "@fontsource/tomorrow": "^5.1.0",
+    "@fontsource/major-mono-display": "^5.1.0",
     "@picocss/pico": "^2.0.6",
     "astro": "^5.1.1"
   }

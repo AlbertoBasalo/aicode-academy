@@ -1,0 +1,23 @@
+---
+
+import { getEntry, render } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+
+export function getStaticPaths() {
+  return [
+    { params: { slug: 'terms' } }, 
+    { params: { slug: 'privacy' } },
+    { params: { slug: 'cookies' } },
+  ]
+}
+
+const {slug} = Astro.params;
+
+const entry = await getEntry('legal', slug);
+const { Content } = await render(entry);
+
+const { title, description } = entry.data;
+---
+<Layout title={title} description={description}>
+<Content />
+</Layout>

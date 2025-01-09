@@ -1,0 +1,52 @@
+---
+interface Props {
+  title: string;
+  description: string;
+}
+
+const { title, description } = Astro.props;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+---
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/png" href="/aicode-academy-32.png" />
+    <link rel="apple-touch-icon" href="/aicode-academy-192.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="stylesheet" href="css/pico.min.css">
+    <meta name="theme-color" content="#47d469" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href={canonicalURL} />
+
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:site_name" content="AI Code Academy" />
+    <meta property="og:image" content="/site-og-image.png" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@AICodeAcademy" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content="/site-og-image.png" />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "EducationalOrganization",
+        "name": "AI Code Academy",
+        "description": "Desarrollo profesional con IA",
+        "url": "https://aicode.academy",
+        "logo": "https://aicode.academy/aicode-academy-192.png"
+      }
+    </script>
+  </head>
