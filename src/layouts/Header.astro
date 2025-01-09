@@ -5,7 +5,7 @@ const navItems = [
 ];
 ---
 
-<header>
+<header >
   <nav>
     <ul>
       <li><strong><a href="/" class="logo">Ai code Academy</a></strong></li>
@@ -16,6 +16,7 @@ const navItems = [
           <a href={item.href} {...item.external && { target: '_blank', rel: 'noopener' }}>{item.text}</a>
         </li>
       ))}
+
     </ul>
   </nav>
 </header>

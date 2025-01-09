@@ -12,3 +12,10 @@
     .logo {
     font-family: 'Major Mono Display';
   }
+  
+  section.container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }

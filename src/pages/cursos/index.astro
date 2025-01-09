@@ -1,1 +1,53 @@
-<h1>hola cursos</h1>
+---
+import BlinkCursor from "../../components/BlinkCursor.astro";
+import MatrixText from "../../components/MatrixText.astro";
+import Layout from "../../layouts/Layout.astro";
+
+const { title, description } = {
+  title: "Cursos de IA",
+  description: "Cursos de IA para programadores",
+};
+---
+
+<Layout title={title} description={description}>
+  <section id="hero" class="container">
+    <header class="center">  
+      <h1>Cursos <MatrixText text="Ai-code" /> Academy</h1>
+    </header>
+  <main class="center" aria-label="Catálogo de cursos" role="heading" aria-level="1">
+    <p>Diseñados para llevarte desde principiante hasta experto</p>
+  </main>
+  <footer class="center">
+    <p><i>Próximamente<BlinkCursor /></i></p>
+  </footer>
+</section>
+
+<section id="cursos" class="container">
+  <details>
+    <summary >Metodología AI-Driven Development <span><MatrixText text="Training_It" /></span></summary>
+    <li>Introducción La IA en el Desarrollo de Software</li>
+    <li>El ABC del desarrollo con IA</li>
+    <li>Análisis y diseño con IA</li>
+    <li>Generación de código con IA</li>
+    <li>Verificación y mantenimiento con IA</li>
+    <li>Conclusión Generando confianza con el manifiesto AIDD</li>
+  </d>
+</section>
+
+<blockquote>
+    <p>La IA no te quitará el trabajo, pero lo cambiará para siempre.</p> 
+    <p>También puedo ofrecerte este curso en directo en tu empresa o centro de formación.</p>
+    <p><b>Learn to code smarter.</b></p>
+  <footer>
+    <cite>— <a href="https://albertobasalo.dev/#contact" target="_blank">Contacta con Alberto Basalo</a></cite>
+  </footer>
+</blockquote>
+
+</Layout>
+<style>
+ summary {
+  background-color: var(--primary);
+  font-size: 1.5rem;
+  font-weight: bold;
+ }
+</style>

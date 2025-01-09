@@ -47,7 +47,7 @@ export const HOME: Home = {
     "subtitle": "La IA no te quitará el trabajo, pero lo cambiará para siempre",
     "cta": {
       "text": "Learn to code smarter",
-      "link": "/courses"
+      "link": "/cursos"
     }
   },
   "why": {
