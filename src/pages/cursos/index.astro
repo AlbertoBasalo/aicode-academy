@@ -19,10 +19,7 @@ const { title, description } = {
       <h1>Cursos <MatrixText text="Ai-code" /> Academy</h1>
     </header>
     <main
-      class="center"
-      aria-label="Catálogo de cursos"
-      role="heading"
-      aria-level="1">
+      class="center">
       <p>Diseñados para llevarte desde principiante hasta experto</p>
     </main>
     <footer class="center">
@@ -35,23 +32,26 @@ const { title, description } = {
     class="container">
     <header>
       <h2>Metodología AI-Driven Development</h2>
-      <p>En video bonificado por FUNDAE con <span><MatrixText text="Training_It" /></span></p>
+      <p>Curso en video bonificado por FUNDAE con <span><MatrixText text="Training_It" /></span></p>
     </header>
     <main>
-      <li>Introducción La IA en el Desarrollo de Software</li>
-      <li>El ABC del desarrollo con IA</li>
-      <li>Análisis y diseño con IA</li>
-      <li>Generación de código con IA</li>
-      <li>Verificación y mantenimiento con IA</li>
-      <li>Conclusión Generando confianza con el manifiesto AIDD</li>
+      <ul>
+        <li>Introducción La IA en el Desarrollo de Software</li>
+        <li>El ABC del desarrollo con IA</li>
+        <li>Análisis y diseño con IA</li>
+        <li>Generación de código con IA</li>
+        <li>Verificación y mantenimiento con IA</li>
+        <li>Conclusión Generando confianza con el manifiesto AIDD</li>
+      </ul>
     </main>
   </article>
 
-  <blockquote>
-    <p>La IA no te quitará el trabajo, pero lo cambiará para siempre.</p>
-    <p>También puedo ofrecerte este curso en directo en tu empresa o centro de formación.</p>
-    <p><b>Learn to code smarter.</b></p>
-    <footer>
+  <section id="cta" class="container">
+    <blockquote>
+      <p>La IA no te quitará el trabajo, pero lo cambiará para siempre.</p>
+      <p>También puedo ofrecerte este curso en directo en tu empresa o centro de formación.</p>
+      <p><b>Learn to code smarter.</b></p>
+      <footer>
       <cite>
         — <a
           href="https://albertobasalo.dev/#contact"
@@ -59,13 +59,10 @@ const { title, description } = {
           Contacta con Alberto Basalo
         </a>
       </cite>
-    </footer>
-  </blockquote>
+      </footer>
+    </blockquote>
+  </section>
 </Layout>
 <style>
-  summary {
-    background-color: var(--primary);
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
+
 </style>
