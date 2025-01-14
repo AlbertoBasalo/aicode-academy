@@ -23,6 +23,28 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--pico-font-family-sans-serif);
 }
 
+
+h3 {
+  --pico-font-size: 1.125rem;
+  --pico-line-height: 1.225;
+  --pico-typography-spacing-top: 1.6875rem;
+}
+
+h4 {
+  --pico-font-size: 1.125rem;
+  --pico-line-height: 1.225;
+  --pico-typography-spacing-top: 1.6875rem;
+}
+
+h5,
+h6 {
+  --pico-font-size: 1rem;
+  --pico-line-height: 1.25;
+  --pico-typography-spacing-top: 1.5rem;
+}
+
+
+
 [data-theme=light] .light {
   display: none;
 }

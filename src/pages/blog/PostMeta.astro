@@ -25,13 +25,19 @@ const titleCaseCategory = category
 ---
 
 <div class="">
-  <time
-    datetime={date}
-    data-tooltip={fullDate}>
-    {formattedDate}
-  </time>
-  <a class="category" href={`/blog/es/${category}`}>{titleCaseCategory}</a>
+  <nav aria-label="breadcrumb">
+    <ul>
+      <li><a href="/blog/es/">Blog</a></li>
+      <li><a href={`/blog/es/${category}`}>{titleCaseCategory}</a></li>
+      <li>
+        <time
+          datetime={date}
+          data-tooltip={fullDate}>
+          {formattedDate}
+        </time>
+      </li>
+    </ul>
+  </nav>
 </div>
 
 <style></style>
-

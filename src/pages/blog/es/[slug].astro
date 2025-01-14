@@ -5,10 +5,7 @@ import PostMeta from "../PostMeta.astro";
 
 export async function getStaticPaths() {
   const posts = await getCollection("blog");
-  console.log(
-    "Found posts:",
-    posts.map((p) => p.id)
-  );
+
   return posts.map((post) => ({
     params: { slug: post.id.replace("es/", "") },
     props: { entry: post },
@@ -30,3 +27,9 @@ const { Content } = await render(entry);
     <Content />
   </article>
 </Layout>
+
+<style>
+  h2 {
+    color: red;
+  }
+</style>

@@ -17,12 +17,15 @@ const sortedPosts = posts.sort((a, b) => {
   <main>
     <h1>Blog en español</h1>
     <p>
-      <a href="/blog/es/herramientas">Herramientas </a>
+      Artículos sobre metodologías, herramientas y procedimientos para programar mejor con IA. AI-Driven Development en
+      español.
     </p>
-    <p>
-      <a href="/blog/es/procedimientos">Procedimientos </a>
-    </p>
-
+    <nav aria-label="Categorías">
+      <ul>
+        <li><a href="/blog/es/herramientas">Herramientas</a></li>
+        <li><a href="/blog/es/procedimientos">Procedimientos</a></li>
+      </ul>
+    </nav>
     <div>
       {
         sortedPosts.map((post) => (
