@@ -19,9 +19,11 @@ const fullDate = new Date(date).toLocaleDateString("en-US", {
 });
 
 const titleCaseCategory = category
-  .split("-")
-  .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-  .join(" ");
+  ? category
+      .split("-")
+      .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(" ")
+  : "";
 ---
 
 <div class="">
