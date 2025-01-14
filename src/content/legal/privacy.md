@@ -1,7 +1,7 @@
 ---
-title: Privacy Policy
-description: Privacy Policy
-slug: privacy
+title: "Privacy Policy"
+description: "Privacy Policy"
+slug: "privacy"
 ---
 
 # Privacy Policy

@@ -1,7 +1,7 @@
 ---
-title: Terms of Service
-description: Terms of Service
-slug: terms
+title: "Terms of Service"
+description: "Terms of Service"
+slug: "terms"
 ---
 
 # Terms of Service

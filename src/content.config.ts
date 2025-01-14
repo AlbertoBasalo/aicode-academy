@@ -1,24 +1,38 @@
+// 1. Import utilities from `astro:content`
 import { defineCollection, z } from 'astro:content';
 
+// 2. Import loader(s)
+import { glob } from 'astro/loaders';
+
+const baseSchema = z.object({
+  title: z.string().min(1),
+  description: z.string().min(1),
+  slug: z.string().min(1)
+});
+
 const legalCollection = defineCollection({
-  type: 'content',
-  schema: z.object({
-    title: z.string(),
-    description: z.string(),
-    slug: z.string()
-  })
+  loader: glob({ pattern: "**/*.md", base: "./src/content/legal" }),
+  schema: baseSchema
 });
 
 const blogCollection = defineCollection({
+  loader: glob({ pattern: "**/*.md", base: "./src/content/blog/es" }),
+  schema: baseSchema
+});
+
+const cursosCollection = defineCollection({
+  loader: glob({ pattern: "**/*.md", base: "./src/content/cursos" }),
+  schema: baseSchema
+});
+
+const metadataCollection = defineCollection({
   type: 'content',
-  schema: z.object({
-    title: z.string(),
-    description: z.string(),
-    slug: z.string()
-  })
+  schema: baseSchema
 });
 
 export const collections = {
-  legal: legalCollection,
-  blog: blogCollection
+  'legal': legalCollection,
+  'blog': blogCollection,
+  'cursos': cursosCollection,
+  'metadata': metadataCollection
 };

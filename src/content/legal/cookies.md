@@ -1,7 +1,7 @@
 ---
-title: Cookie Policy
-description: Cookie Policy
-slug: cookies
+title: "Cookie Policy"
+description: "Cookie Policy"
+slug: "cookies"
 ---
 
 # Cookie Policy

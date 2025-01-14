@@ -1,6 +1,11 @@
 ---
-const navItems = [
-  { href: 'https://es.aiddbot.com', text: 'Blog', external: true },
+type NavItem = {
+  href: string;
+  text: string;
+  external?: boolean;
+};
+const navItems: NavItem[] = [
+  { href: '/blog/es', text: 'Blog' },
   { href: '/cursos', text: 'Cursos' },
 ];
 ---
