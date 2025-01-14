@@ -7,14 +7,19 @@ import { glob } from 'astro/loaders';
 const baseSchema = z.object({
   title: z.string().min(1),
   description: z.string().min(1),
-  slug: z.string().min(1)
+  slug: z.string().min(1),
+  category: z.string().optional(),
+  date: z.string().optional()
 });
 
-const blogSchema = baseSchema.extend({
+/*  const blogSchema = z.object({
+  title: z.string().min(1),
+  description: z.string().min(1),
+  slug: z.string().min(1),
   category: z.string().min(1),
   date: z.string().min(1)
 });
-
+*/
 const legalCollection = defineCollection({
   loader: glob({ pattern: "**/*.md", base: "./src/content/legal" }),
   schema: baseSchema

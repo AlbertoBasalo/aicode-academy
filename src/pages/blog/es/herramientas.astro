@@ -4,7 +4,8 @@ import Layout from "../../../layouts/Layout.astro";
 import PostMeta from "../PostMeta.astro";
 
 const posts = await getCollection("blog");
-const sortedPosts = posts.sort((a, b) => {
+const filteredPosts = posts.filter((post) => post.data.category === "herramientas");
+const sortedPosts = filteredPosts.sort((a, b) => {
   const dateA = new Date(a.data.date ?? "0");
   const dateB = new Date(b.data.date ?? "0");
   return dateB.getTime() - dateA.getTime(); // Reverse order, newest first
@@ -15,14 +16,11 @@ const sortedPosts = posts.sort((a, b) => {
   title="Blog - AICode Academy"
   description="Artículos sobre programación con IA">
   <main>
-    <h1>Blog en español</h1>
+    <h1>Herramientas</h1>
+    <p>Editores, extensiones, asistentes y modelos que te ayudarán a programar mejor: code smarter, not harder.</p>
     <p>
-      <a href="/blog/es/herramientas">Herramientas </a>
+      <a href="/blog/es/">Todos los artículos</a>
     </p>
-    <p>
-      <a href="/blog/es/procedimientos">Procedimientos </a>
-    </p>
-
     <div>
       {
         sortedPosts.map((post) => (
@@ -35,7 +33,10 @@ const sortedPosts = posts.sort((a, b) => {
                   {post.data.title}
                 </a>
               </h2>
-              <PostMeta date={post.data.date ?? ""} category={post.data.category ?? ""} />
+              <PostMeta
+                date={post.data.date ?? ""}
+                category={post.data.category ?? ""}
+              />
             </header>
             <p>{post.data.description}</p>
           </article>

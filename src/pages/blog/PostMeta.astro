@@ -1,0 +1,37 @@
+---
+interface Props {
+  date: string;
+  category: string;
+}
+
+const { date, category } = Astro.props;
+
+const formattedDate = new Date(date).toLocaleDateString("es-ES", {
+  day: "2-digit",
+  month: "short",
+  year: "numeric",
+});
+
+const fullDate = new Date(date).toLocaleDateString("en-US", {
+  day: "2-digit",
+  month: "long",
+  year: "numeric",
+});
+
+const titleCaseCategory = category
+  .split("-")
+  .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+  .join(" ");
+---
+
+<div class="">
+  <time
+    datetime={date}
+    data-tooltip={fullDate}>
+    {formattedDate}
+  </time>
+  <a class="category" href={`/blog/es/${category}`}>{titleCaseCategory}</a>
+</div>
+
+<style></style>
+
