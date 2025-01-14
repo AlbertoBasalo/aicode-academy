@@ -10,6 +10,11 @@ const baseSchema = z.object({
   slug: z.string().min(1)
 });
 
+const blogSchema = baseSchema.extend({
+  category: z.string().min(1),
+  date: z.string().min(1)
+});
+
 const legalCollection = defineCollection({
   loader: glob({ pattern: "**/*.md", base: "./src/content/legal" }),
   schema: baseSchema
