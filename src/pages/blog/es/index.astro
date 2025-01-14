@@ -1,0 +1,36 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../../../layouts/Layout.astro";
+
+const posts = await getCollection("blog");
+const sortedPosts = posts
+  .sort((a, b) => {
+    const numA = parseInt(a.id.split(".")[0]);
+    const numB = parseInt(b.id.split(".")[0]);
+    return numB - numA; // Reverse order, newest first
+  });
+---
+
+<Layout
+  title="Blog - AICode Academy"
+  description="Artículos sobre programación con IA">
+  <main class="max-w-4xl mx-auto px-4 py-8">
+    <h1 class="text-4xl font-bold mb-8">Blog</h1>
+    <div class="space-y-8">
+      {
+        sortedPosts.map((post) => (
+          <article class="prose">
+            <h2 class="mb-2">
+              <a
+                href={`/blog/es/${post.id.replace("es/", "").replace(".md", "")}`}
+                class="text-blue-600 hover:text-blue-800 no-underline">
+                {post.data.title}
+              </a>
+            </h2>
+            <p class="text-gray-600">{post.data.description}</p>
+          </article>
+        ))
+      }
+    </div>
+  </main>
+</Layout>
