@@ -1,7 +1,6 @@
 ---
 import { getCollection } from "astro:content";
 import Layout from "../../../layouts/Layout.astro";
-import PostMeta from "../PostMeta.astro";
 
 const posts = await getCollection("blog");
 const filteredPosts = posts.filter((post) => post.data.category === "procedimientos");
@@ -36,10 +35,7 @@ const sortedPosts = filteredPosts.sort((a, b) => {
                   {post.data.title}
                 </a>
               </h2>
-              <PostMeta
-                date={post.data.date ?? ""}
-                category={post.data.category ?? ""}
-              />
+              <p>{post.data.subtitle}</p>
             </header>
             <p>{post.data.description}</p>
           </article>

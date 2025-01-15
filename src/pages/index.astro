@@ -1,65 +1,76 @@
 ---
-
-import BlinkCursor from '../components/BlinkCursor.astro';
-import MatrixText from '../components/MatrixText.astro';
-import PrimaryComment from '../components/PrimaryComment.astro';
-import { HOME } from '../content/metadata/home';
-import Layout from '../layouts/Layout.astro';
-
+import BlinkCursor from "../components/BlinkCursor.astro";
+import MatrixText from "../components/MatrixText.astro";
+import PrimaryComment from "../components/PrimaryComment.astro";
+import { HOME } from "../content/metadata/home";
+import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout 
-  title={HOME.layout.title}
-  description={HOME.layout.description}
->
-  
-<section id="hero" class="container" >
-  <header class="center">  
-    <h1>MASTER <MatrixText text="Ai-driven" /> DEVELOPMENT</h1>
-  </header>
-  <main class="center">
-    <p><b>{HOME.hero.subtitle}</b><BlinkCursor /></p>
-  </main>
-  <footer class="center">
-    <a role="button" class="outline" href={HOME.hero.cta.link}>{HOME.hero.cta.text}</a>
-  </footer>
-</section>
-
-<section id="why" class="container"> 
-  <header class="center">
-    <h2>{HOME.why.title}</h2>
-  </header>
-  <main class="grid">
-    <article>
-      <h3><PrimaryComment /> {HOME.why.reason1.title}</h3>
-      <p>{HOME.why.reason1.description}</p>
-    </article >
-      <article>
-      <h3><PrimaryComment /> {HOME.why.reason2.title}</h3>
-      <p>{HOME.why.reason2.description}</p>
-    </article >
-      <article>
-      <h3><PrimaryComment /> {HOME.why.reason3.title}</h3>
-      <p>{HOME.why.reason3.description}</p>
-    </article >
-  </main>
-</section>
-
-<section id="us" class="container">
-  <header class="center">
-    <h2>{HOME.us.title}</h2>
-  </header>
-  <main class="center">
-    <p>{HOME.us.subtitle}</p>
-  </main>
-  <footer class="center">
-    <a href={HOME.us.cta.link} target="_blank">{HOME.us.cta.text}</a>
-  </footer>
-</section>
-
-</Layout>
-
 <style>
- 
+  .red {
+    color: red !important;
+  }
 </style>
 
+<Layout
+  title={HOME.layout.title}
+  description={HOME.layout.description}>
+  <section
+    id="hero"
+    class="container">
+    <header class="center">
+      <h1>MASTER <MatrixText text="Ai-driven" /> DEVELOPMENT</h1>
+    </header>
+    <main class="center">
+      <p><b>{HOME.hero.subtitle}</b><BlinkCursor /></p>
+    </main>
+    <footer class="center">
+      <a
+        role="button"
+        class="outline"
+        href={HOME.hero.cta.link}>
+        {HOME.hero.cta.text}
+      </a>
+    </footer>
+  </section>
+
+  <section
+    id="why"
+    class="container">
+    <header class="center">
+      <h2>{HOME.why.title}</h2>
+    </header>
+    <main class="grid">
+      <article>
+        <h3><PrimaryComment /> {HOME.why.reason1.title}</h3>
+        <p>{HOME.why.reason1.description}</p>
+      </article>
+      <article>
+        <h3><PrimaryComment /> {HOME.why.reason2.title}</h3>
+        <p>{HOME.why.reason2.description}</p>
+      </article>
+      <article>
+        <h3><PrimaryComment /> {HOME.why.reason3.title}</h3>
+        <p>{HOME.why.reason3.description}</p>
+      </article>
+    </main>
+  </section>
+
+  <section
+    id="us"
+    class="container">
+    <header class="center red">
+      <h2>{HOME.us.title}</h2>
+    </header>
+    <main class="center">
+      <p>{HOME.us.subtitle}</p>
+    </main>
+    <footer class="center">
+      <a
+        href={HOME.us.cta.link}
+        target="_blank">
+        {HOME.us.cta.text}
+      </a>
+    </footer>
+  </section>
+</Layout>

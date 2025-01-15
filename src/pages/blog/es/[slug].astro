@@ -17,19 +17,31 @@ const { Content } = await render(entry);
 ---
 
 <Layout
-  title={entry.data.title}
+  title={entry.data.title + " - " + entry.data.subtitle}
   description={entry.data.description}>
   <article>
     <header>
       <h1>{entry.data.title}</h1>
-      <PostMeta date={entry.data.date ?? ""} category={entry.data.category ?? ""} />
+      <p>{entry.data.subtitle}</p>
+      <PostMeta
+        date={entry.data.date ?? ""}
+        category={entry.data.category ?? ""}
+      />
     </header>
     <Content />
+    <footer>
+      <blockquote>
+        <p>Learn to Code Smarter.</p>
+        <footer>
+          <cite>— Alberto Basalo</cite>
+        </footer>
+      </blockquote>
+      <p>
+        <PostMeta
+          date={entry.data.date ?? ""}
+          category={entry.data.category ?? ""}
+        />
+      </p>
+    </footer>
   </article>
 </Layout>
-
-<style>
-  h2 {
-    color: red;
-  }
-</style>
