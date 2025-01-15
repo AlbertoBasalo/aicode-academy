@@ -15,7 +15,7 @@
 :root:not([data-theme=dark]) {
   --pico-text-selection-color: var(--ab-dark-green);
   --pico-color: var(--ab-dark-green);
-    --pico-code-color: var(--ab-blue);
+  --pico-code-color: var(--ab-blue);
   --pico-code-background: var(--ab-dark-green);
   --pico-primary: var(--ab-green);
   --pico-primary-background: var(--pico-primary-inverse);
@@ -57,3 +57,14 @@
   --pico-primary-inverse: #fff;
 }
 
+strong {
+  color: var(--ab-blue);
+}
+
+em {
+  color: var(--ab-cyan);
+}
+
+code {
+  color: var(--ab-blue);
+}
