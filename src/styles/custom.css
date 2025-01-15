@@ -9,7 +9,12 @@
     color: var(--pico-primary);
   }
 
-    .logo {
+  .primary-comment {
+    color: var(--pico-primary);
+    padding-right: 1rem;
+  }
+
+  .logo {
     font-family: 'Major Mono Display';
   }
   

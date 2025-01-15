@@ -12,10 +12,7 @@
 
 
 body {
-  padding-top: 1rem;
-  padding-left: 5rem;
-  padding-right: 5rem;  
-  padding-bottom: 1rem;
+  padding:1rem;
   font-family: var(--pico-font-family);
 }
 
@@ -23,27 +20,17 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--pico-font-family-sans-serif);
 }
 
-
-h3 {
-  --pico-font-size: 1.125rem;
-  --pico-line-height: 1.225;
-  --pico-typography-spacing-top: 1.6875rem;
+h1 {
+  --pico-font-size: 2.5rem;
+  --pico-line-height: 1.5;
+  --pico-typography-spacing-top: 3.5rem;
 }
 
-h4 {
-  --pico-font-size: 1.125rem;
-  --pico-line-height: 1.225;
-  --pico-typography-spacing-top: 1.6875rem;
+h2 {
+  --pico-font-size: 2rem;
+  --pico-line-height: 1.125;
+  --pico-typography-spacing-top: 3rem;
 }
-
-h5,
-h6 {
-  --pico-font-size: 1rem;
-  --pico-line-height: 1.25;
-  --pico-typography-spacing-top: 1.5rem;
-}
-
-
 
 [data-theme=light] .light {
   display: none;

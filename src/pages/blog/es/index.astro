@@ -39,8 +39,8 @@ const sortedPosts = posts.sort((a, b) => {
                 </a>
               </h2>
               <PostMeta date={post.data.date ?? ""} category={post.data.category ?? ""} />
-            </header>
-            <p>{post.data.description}</p>
+              <p>{post.data.subtitle}</p>
+            </header>          
           </article>
         ))
       }

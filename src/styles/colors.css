@@ -15,6 +15,8 @@
 :root:not([data-theme=dark]) {
   --pico-text-selection-color: var(--ab-dark-green);
   --pico-color: var(--ab-dark-green);
+    --pico-code-color: var(--ab-blue);
+  --pico-code-background: var(--ab-dark-green);
   --pico-primary: var(--ab-green);
   --pico-primary-background: var(--pico-primary-inverse);
   --pico-primary-underline: var(--ab-green);
@@ -30,6 +32,7 @@
   :root:not([data-theme]) {
     --pico-text-selection-color: var(--ab-dark-green);
     --pico-color: var(--ab-white);
+    --pico-code-color: var(--ab-dark-green);
     --pico-primary: var(--ab-green);
     --pico-primary-background: var(--ab-dark-green);
     --pico-primary-underline: var(--ab-green);
@@ -44,6 +47,8 @@
 [data-theme=dark] {
   --pico-text-selection-color: var(--ab-dark-green);
   --pico-primary: var(--ab-green);
+  --pico-code-color: var(--ab-blue);
+  --pico-code-background: var(--ab-dark-green);
   --pico-primary-background: var(--ab-dark-green);
   --pico-primary-underline: var(--ab-green);
   --pico-primary-hover: var(--ab-cyan);
