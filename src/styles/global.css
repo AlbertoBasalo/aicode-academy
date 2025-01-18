@@ -12,8 +12,39 @@
 
 
 body {
-  padding:1%;
+  padding: 2%;
   font-family: var(--pico-font-family);
+}
+
+@media (min-width: 576px) {
+  body {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+}
+@media (min-width: 768px) {
+  body {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+}
+@media (min-width: 1024px) {
+  body {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+}
+@media (min-width: 1280px) {
+  body {
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+}
+@media (min-width: 1536px) {
+  body {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {

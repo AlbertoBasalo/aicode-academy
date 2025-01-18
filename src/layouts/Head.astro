@@ -8,7 +8,7 @@ const { title, description } = Astro.props;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 ---
 
-<head>
+<head >
   <meta charset="UTF-8" />
   <meta
     name="viewport"
@@ -21,11 +21,11 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
   <link
     rel="icon"
     type="image/png"
-    href="/aicode-academy-32.png"
+    href="/logoAiCodeAcademy.png"
   />
   <link
     rel="apple-touch-icon"
-    href="/aicode-academy-192.png"
+    href="/logoAiCodeAcademy.png"
   />
   <link
     rel="manifest"
@@ -64,7 +64,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
   <!-- Open Graph / Social Media Meta Tags -->
   <meta
     property="og:title"
-    content={title}
+    content={title + " | Learn to code smarter"}
   />
   <meta
     property="og:description"
@@ -114,8 +114,8 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     {
       "@context": "https://schema.org",
       "@type": "EducationalOrganization",
-      "name": "AI Code Academy",
-      "description": "Desarrollo profesional con IA",
+      "name": "AI Code Academy | Learn to code smarter",
+      "description": "Academia de IA para programadores profesionales",
       "url": "https://aicode.academy",
       "logo": "https://aicode.academy/aicode-academy-192.png"
     }
