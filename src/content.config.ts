@@ -36,6 +36,11 @@ const cursosCollection = defineCollection({
   schema: baseSchema
 });
 
+const meetupsCollection = defineCollection({
+  loader: glob({ pattern: "**/*.md", base: "./src/content/meetups" }),
+  schema: baseSchema
+});
+
 const metadataCollection = defineCollection({
   type: 'content',
   schema: baseSchema
@@ -45,5 +50,6 @@ export const collections = {
   'legal': legalCollection,
   'blog': blogCollection,
   'cursos': cursosCollection,
+  'meetups': meetupsCollection,
   'metadata': metadataCollection
 };

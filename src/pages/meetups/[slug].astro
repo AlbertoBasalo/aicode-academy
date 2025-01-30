@@ -1,0 +1,25 @@
+---
+import { getCollection, render } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+
+export async function getStaticPaths() {
+  const posts = await getCollection("meetups");
+  console.log(
+    "Found posts:",
+    posts.map((p) => p.id)
+  );
+  return posts.map((post) => ({
+    params: { slug: post.id.replace("meetups/", "") },
+    props: { entry: post },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+---
+
+<Layout
+  title={entry.data.title}
+  description={entry.data.description}>
+  <Content />
+</Layout>
