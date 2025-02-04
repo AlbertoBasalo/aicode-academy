@@ -1,70 +1,52 @@
+/* dark theme */
+[data-theme="dark"] {
+  --pico-color: white;
+  --pico-background-color: black;
+  --pico-primary: lime;
+  --pico-primary-hover: LimeGreen;
+  --pico-primary-background: lime;
+  --pico-primary-hover-background: LimeGreen;
+  --pico-primary-inverse: black;
+  --pico-underline: LimeGreen;
+  --pico-primary-underline: LimeGreen;
+  --pico-secondary: cyan;
+  --pico-secondary-hover: turquoise;
+  --pico-secondary-background: cyan;
+  --pico-secondary-hover-background: turquoise;
+  color-scheme: dark;
+}
+
+/* light theme */
+[data-theme="light"],
+:root:not([data-theme="dark"]) {
+  --pico-color: black;
+  --pico-background-color: white;
+  --pico-primary: LimeGreen;
+  --pico-primary-hover: lime;
+  --pico-primary-background: LimeGreen;
+  --pico-primary-hover-background: lime;
+  --pico-primary-inverse: white;
+  --pico-underline: lime;
+  --pico-primary-underline: lime;
+  --pico-secondary: turquoise;
+  --pico-secondary-hover: cyan;
+  --pico-secondary-background: turquoise;
+  --pico-secondary-hover-background: cyan;
+  color-scheme: light;
+}
+
 :root {
-
-  --ab-green: #47d469;
-  --ab-cyan: #33c1ee;
-  --ab-blue: #0783d8;
-  --ab-dark-blue: #0e4d90;
-  --ab-dark-green: #063831;
-  --ab-white: #fff;
-}
-
-
-/* Green color for light color scheme (Default) */
-/* Can be forced with data-theme="light" */
-[data-theme=light],
-:root:not([data-theme=dark]) {
-  --pico-text-selection-color: var(--ab-dark-green);
-  --pico-color: var(--ab-dark-green);
-  --pico-code-color: var(--ab-blue);
-  --pico-code-background: var(--ab-dark-green);
-  --pico-primary: var(--ab-green);
-  --pico-primary-background: var(--pico-primary-inverse);
-  --pico-primary-underline: var(--ab-green);
-  --pico-primary-hover: var(--ab-cyan);
-  --pico-primary-hover-background: var(--ab-dark-blue);
-  --pico-primary-focus: var(--ab-green);
-  --pico-primary-inverse: #fff;
-}
-
-/* Green color for dark color scheme (Auto) */
-/* Automatically enabled if user has Dark mode enabled */
-@media only screen and (prefers-color-scheme: dark) {
-  :root:not([data-theme]) {
-    --pico-text-selection-color: var(--ab-dark-green);
-    --pico-color: var(--ab-white);
-    --pico-code-color: var(--ab-dark-green);
-    --pico-primary: var(--ab-green);
-    --pico-primary-background: var(--ab-dark-green);
-    --pico-primary-underline: var(--ab-green);
-    --pico-primary-hover: var(--ab-cyan);
-    --pico-primary-hover-background: var(--ab-dark-blue);
-    --pico-primary-focus: var(--ab-green);
-    --pico-primary-inverse: #fff;
-  }
-}
-/* Green color for dark color scheme (Forced) */
-/* Enabled if forced with data-theme="dark" */
-[data-theme=dark] {
-  --pico-text-selection-color: var(--ab-dark-green);
-  --pico-primary: var(--ab-green);
-  --pico-code-color: var(--ab-blue);
-  --pico-code-background: var(--ab-dark-green);
-  --pico-primary-background: var(--ab-dark-green);
-  --pico-primary-underline: var(--ab-green);
-  --pico-primary-hover: var(--ab-cyan);
-  --pico-primary-hover-background: var(--ab-dark-blue);
-  --pico-primary-focus: var(--ab-green);
-  --pico-primary-inverse: #fff;
+  background-color: var(--pico-background-color);
 }
 
 strong {
-  color: var(--ab-blue);
+  color: var(--pico-secondary);
 }
 
 em {
-  color: var(--ab-cyan);
+  color: var(--pico-secondary-hover);
 }
 
 code {
-  color: var(--ab-blue);
+  color: var(--pico-secondary);
 }

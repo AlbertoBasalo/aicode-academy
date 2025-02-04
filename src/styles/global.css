@@ -1,53 +1,58 @@
 /* Modern CSS Reset and Global Styles */
 
-
 :root {
-  --pico-font-family: 'Fira Mono', Consolas,  monospace;
-  --pico-font-family-emoji: 'Major Mono Display', Consolas, monospace;
+  --pico-font-family: "Fira Mono", Consolas, monospace;
+  --pico-font-family-emoji: "Major Mono Display", Consolas, monospace;
   --pico-font-family-sans-serif: Tomorrow, Roboto, Helvetica, Arial, sans-serif;
-  --pico-font-family-monospace:'Fira Mono', Consolas,  monospace;
+  --pico-font-family-monospace: "Fira Mono", Consolas, monospace;
   --pico-border-radius: 0rem;
 }
 
-
-
 body {
-  padding: 2%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 3%;
+  padding-right: 3%;
   font-family: var(--pico-font-family);
 }
 
 @media (min-width: 576px) {
   body {
-    padding-left: 3%;
-    padding-right: 3%;
-  }
-}
-@media (min-width: 768px) {
-  body {
     padding-left: 4%;
     padding-right: 4%;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   body {
-    padding-left: 6%;
-    padding-right: 6%;
+    padding-left: 5%;
+    padding-right: 5%;
   }
 }
-@media (min-width: 1280px) {
+@media (min-width: 1024px) {
   body {
     padding-left: 8%;
     padding-right: 8%;
   }
 }
-@media (min-width: 1536px) {
+@media (min-width: 1280px) {
   body {
     padding-left: 10%;
     padding-right: 10%;
   }
 }
+@media (min-width: 1536px) {
+  body {
+    padding-left: 12%;
+    padding-right: 12%;
+  }
+}
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--pico-font-family-sans-serif);
 }
 
@@ -63,11 +68,10 @@ h2 {
   --pico-typography-spacing-top: 3rem;
 }
 
-[data-theme=light] .light {
+[data-theme="light"] .light {
   display: none;
 }
 
-[data-theme=dark] .dark {
+[data-theme="dark"] .dark {
   display: none;
 }
-
