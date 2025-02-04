@@ -1,18 +1,25 @@
+:root {
+  --light-green: LimeGreen;
+  --dark-green: SeaGreen;
+  --light-blue: Cyan;
+  --dark-blue: DodgerBlue;
+}
+
 /* dark theme */
 [data-theme="dark"] {
   --pico-color: white;
   --pico-background-color: black;
-  --pico-primary: lime;
-  --pico-primary-hover: limegreen;
-  --pico-primary-background: lime;
-  --pico-primary-hover-background: #32cd32;
+  --pico-primary: var(--light-green);
+  --pico-primary-hover: var(--dark-green);
+  --pico-primary-background: var(--light-green);
+  --pico-primary-hover-background: var(--dark-green);
   --pico-primary-inverse: black;
-  --pico-underline: lime;
-  --pico-primary-underline: lime;
-  --pico-secondary: #00ffff;
-  --pico-secondary-hover: turquoise;
-  --pico-secondary-background: cyan;
-  --pico-secondary-hover-background: turquoise;
+  --pico-underline: var(--light-green);
+  --pico-primary-underline: var(--light-green);
+  --pico-secondary: var(--light-blue);
+  --pico-secondary-hover: var(--dark-blue);
+  --pico-secondary-background: var(--light-blue);
+  --pico-secondary-hover-background: var(--dark-blue);
   color-scheme: dark;
 }
 
@@ -21,17 +28,17 @@
 :root:not([data-theme="dark"]) {
   --pico-color: black;
   --pico-background-color: white;
-  --pico-primary: limegreen;
-  --pico-primary-hover: lime;
-  --pico-primary-background: limegreen;
-  --pico-primary-hover-background: lime;
+  --pico-primary: var(--dark-green);
+  --pico-primary-hover: var(--light-green);
+  --pico-primary-background: var(--dark-green);
+  --pico-primary-hover-background: var(--light-green);
   --pico-primary-inverse: white;
-  --pico-underline: limegreen;
-  --pico-primary-underline: limegreen;
-  --pico-secondary: turquoise;
-  --pico-secondary-hover: cyan;
-  --pico-secondary-background: turquoise;
-  --pico-secondary-hover-background: cyan;
+  --pico-underline: var(--dark-green);
+  --pico-primary-underline: var(--dark-green);
+  --pico-secondary: var(--dark-blue);
+  --pico-secondary-hover: var(--light-blue);
+  --pico-secondary-background: var(--dark-blue);
+  --pico-secondary-hover-background: var(--light-blue);
   color-scheme: light;
 }
 
