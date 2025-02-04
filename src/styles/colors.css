@@ -1,8 +1,8 @@
 :root {
-  --light-green: LimeGreen;
-  --dark-green: SeaGreen;
-  --light-blue: Cyan;
-  --dark-blue: DodgerBlue;
+  --light-green: #00ff00;
+  --dark-green: #00aa00;
+  --light-blue: #00ccff;
+  --dark-blue: #007fff;
 }
 
 /* dark theme */
