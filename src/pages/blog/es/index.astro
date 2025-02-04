@@ -31,13 +31,13 @@ const sortedPosts = posts.sort((a, b) => {
         sortedPosts.map((post) => (
           <article>
             <header>
-              <h2>
+              <h3>
                 <a
                   href={`/blog/es/${post.data.slug}`}
-                  class="">
+                  >
                   {post.data.title}
                 </a>
-              </h2>
+              </h3>
               <PostMeta date={post.data.date ?? ""} category={post.data.category ?? ""} />
               <p>{post.data.subtitle}</p>
             </header>          

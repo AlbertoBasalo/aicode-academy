@@ -8,14 +8,14 @@
   "theme_color": "#47d469",
   "icons": [
     {
-      "src": "./logoAiCodeAcademy.png",
+      "src": "./logo.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "./logoAiCodeAcademy.png",
+      "src": "./logo.png",
       "sizes": "512x512",
       "type": "image/png"
     }
   ]
-} 
+}

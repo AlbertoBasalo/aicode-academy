@@ -3,13 +3,13 @@
   --pico-color: white;
   --pico-background-color: black;
   --pico-primary: lime;
-  --pico-primary-hover: LimeGreen;
+  --pico-primary-hover: limegreen;
   --pico-primary-background: lime;
-  --pico-primary-hover-background: LimeGreen;
+  --pico-primary-hover-background: #32cd32;
   --pico-primary-inverse: black;
-  --pico-underline: LimeGreen;
-  --pico-primary-underline: LimeGreen;
-  --pico-secondary: cyan;
+  --pico-underline: lime;
+  --pico-primary-underline: lime;
+  --pico-secondary: #00ffff;
   --pico-secondary-hover: turquoise;
   --pico-secondary-background: cyan;
   --pico-secondary-hover-background: turquoise;
@@ -21,13 +21,13 @@
 :root:not([data-theme="dark"]) {
   --pico-color: black;
   --pico-background-color: white;
-  --pico-primary: LimeGreen;
+  --pico-primary: limegreen;
   --pico-primary-hover: lime;
-  --pico-primary-background: LimeGreen;
+  --pico-primary-background: limegreen;
   --pico-primary-hover-background: lime;
   --pico-primary-inverse: white;
-  --pico-underline: lime;
-  --pico-primary-underline: lime;
+  --pico-underline: limegreen;
+  --pico-primary-underline: limegreen;
   --pico-secondary: turquoise;
   --pico-secondary-hover: cyan;
   --pico-secondary-background: turquoise;

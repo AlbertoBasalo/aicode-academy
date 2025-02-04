@@ -25,13 +25,13 @@ const sortedPosts = filteredPosts.sort((a, b) => {
         sortedPosts.map((post) => (
           <article>
             <header>
-              <h2>
+              <h3>
                 <a
                   href={`/blog/es/${post.data.slug}`}
-                  class="">
+                  >
                   {post.data.title}
                 </a>
-              </h2>
+              </h3>
               <p>{post.data.subtitle}</p>
             </header>
             <p>{post.data.description}</p>
