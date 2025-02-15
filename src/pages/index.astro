@@ -34,6 +34,20 @@ import Layout from "../layouts/Layout.astro";
     </footer>
   </section>
 
+    <section
+    id="meetups"
+    class="container">
+    <header class="center">
+      <h2>{HOME.meetups.title}</h2>
+    </header>
+    <main class="center">
+      <p>{HOME.meetups.subtitle}</p>
+    </main>
+    <footer class="center">
+      <a href={HOME.meetups.cta.link}>{HOME.meetups.cta.text}</a>
+    </footer>
+  </section>
+
   <section
     id="why"
     class="container">
@@ -73,4 +87,6 @@ import Layout from "../layouts/Layout.astro";
       </a>
     </footer>
   </section>
+
+
 </Layout>
