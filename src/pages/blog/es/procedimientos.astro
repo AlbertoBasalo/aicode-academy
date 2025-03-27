@@ -1,15 +1,6 @@
 ---
-import { getCollection } from "astro:content";
 import Layout from "../../../layouts/Layout.astro";
-import BlogArticle from "./BlogArticle.astro";
-
-const posts = await getCollection("blog");
-const filteredPosts = posts.filter((post) => post.data.category === "procedimientos");
-const sortedPosts = filteredPosts.sort((a, b) => {
-  const dateA = new Date(a.data.date ?? "0");
-  const dateB = new Date(b.data.date ?? "0");
-  return dateB.getTime() - dateA.getTime(); // Reverse order, newest first
-});
+import BlogList from "./BlogList.astro";
 ---
 
 <Layout
@@ -24,12 +15,6 @@ const sortedPosts = filteredPosts.sort((a, b) => {
     <p>
       <a href="/blog/es/"><b>Todos los artículos</b></a>
     </p>
-    <div>
-      {
-        sortedPosts.map((post) => (
-          <BlogArticle post={post} />
-        ))
-      }
-    </div>
+    <BlogList category="procedimientos" />
   </main>
 </Layout>

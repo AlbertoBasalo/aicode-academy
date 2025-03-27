@@ -20,14 +20,10 @@ const { Content } = await render(entry);
   title={entry.data.title + " - " + entry.data.subtitle}
   description={entry.data.description}>
   <article>
-    <header>
-      <h1>{entry.data.title}</h1>
-      <p>{entry.data.subtitle}</p>
-      <PostMeta
-        date={entry.data.date ?? ""}
-        category={entry.data.category ?? ""}
-      />
-    </header>
+    <h1>{entry.data.title}</h1>
+    <h3>{entry.data.subtitle}</h3>
+    <small>{entry.data.description}</small>
+    <PostMeta date={entry.data.date ?? ""} category={entry.data.category ?? ""} />
     <main>
       <Content />
     </main>
