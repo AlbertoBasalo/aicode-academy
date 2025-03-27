@@ -5,24 +5,23 @@ export type Home = {
     title: string;
     description: string;
   };
+  aidd: Reasons;
   hero: Section;
-  why: {
-    title: string;
-    reason1: {
-      title: string;
-      description: string;
-    };
-    reason2: {
-      title: string;
-      description: string;
-    };
-    reason3: {
-      title: string;
-      description: string;
-    };
-  };
+  why: Reasons;
   us: Section;
   meetups: Section;
+};
+
+type Reasons = {
+  title: string;
+  reason1: Reason;
+  reason2: Reason;
+  reason3: Reason;
+};
+
+type Reason = {
+  title: string;
+  description: string;
 };
 
 type Section = {
@@ -37,13 +36,13 @@ type Cta = {
 };
 
 export const HOME: Home = {
-  title: "Welcome to AI Code Academy",
+  title: "AI Code Academy",
   description:
-    "Learn AI development with our cutting-edge curriculum. Master machine learning, deep learning, and ethical AI development.",
+    "Aprende a desarrollar aplicaciones usando herramientas de IA para aumentar tu productividad y la calidad de tu código.",
   layout: {
     title: "AI Code Academy",
     description:
-      "Learn AI development with our cutting-edge curriculum. Master machine learning, deep learning, and ethical AI development.",
+      "Aprende a desarrollar aplicaciones usando herramientas de IA para aumentar tu productividad y la calidad de tu código.",
   },
   hero: {
     title: "Master Ai-Driven DEVELOPMENT",
@@ -51,6 +50,24 @@ export const HOME: Home = {
     cta: {
       text: "Learn to code smarter",
       link: "/cursos",
+    },
+  },
+  aidd: {
+    title: "¿Qué es AI-Driven Development?",
+    reason1: {
+      title: "Human in the Loop",
+      description:
+        "El humano es estratega, colaborador y responsable.",
+    },
+    reason2: {
+      title: "Rules over Tools",
+      description:
+        "Las herramientas se someten a metodologías de desarrollo.",
+    },
+    reason3: {
+      title: "AI Quality",
+      description:
+        "El desarrollo es productivo, mantenible y de calidad.",
     },
   },
   why: {
@@ -72,7 +89,7 @@ export const HOME: Home = {
     },
   },
   us: {
-    title: "¿Quiénes somos?",
+    title: "AI code Academy",
     subtitle:
       "Una academia de IA en español para desarrolladores profesionales.",
     cta: {

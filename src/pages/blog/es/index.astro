@@ -1,7 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 import Layout from "../../../layouts/Layout.astro";
-import PostMeta from "../PostMeta.astro";
+import BlogArticle from "./BlogArticle.astro";
 
 const posts = await getCollection("blog");
 const sortedPosts = posts.sort((a, b) => {
@@ -13,37 +13,24 @@ const sortedPosts = posts.sort((a, b) => {
 
 <Layout
   title="Blog - AICode Academy"
-  description="Artículos sobre programación con IA">
+  description="Artículos sobre programación con Inteligencia Artificial">
   <main>
     <h1>Blog en español</h1>
     <p>
-      Artículos sobre metodologías, herramientas y procedimientos para programar mejor con IA. AI-Driven Development en
-      español.
+      Artículos sobre metodologías, herramientas y procedimientos para programar mejor con IA. AI-Driven Development en español.
     </p>
     <nav aria-label="Categorías">
       <ul>
-        <li><a href="/blog/es/herramientas">Herramientas</a></li>
-        <li><a href="/blog/es/procedimientos">Procedimientos</a></li>
+        <li><a href="/blog/es/herramientas"><b>Herramientas</b></a></li>
+        <li><a href="/blog/es/procedimientos"><b>Procedimientos</b></a></li>
       </ul>
     </nav>
-    <div>
+    <main>
       {
         sortedPosts.map((post) => (
-          <article>
-            <header>
-              <h3>
-                <a
-                  href={`/blog/es/${post.data.slug}`}
-                  >
-                  {post.data.title}
-                </a>
-              </h3>
-              <PostMeta date={post.data.date ?? ""} category={post.data.category ?? ""} />
-              <p>{post.data.subtitle}</p>
-            </header>          
-          </article>
+          <BlogArticle post={post} />
         ))
       }
-    </div>
+    </main>
   </main>
 </Layout>

@@ -27,17 +27,44 @@ import Layout from "../layouts/Layout.astro";
     </footer>
   </section>
 
+
     <section
-    id="meetups"
+    id="aidd"
     class="container">
     <header class="center">
-      <h2>{HOME.meetups.title}</h2>
+      <h2>{HOME.aidd.title}</h2>
+    </header>
+    <main class="grid">
+      <article>
+        <h3><PrimaryComment /> {HOME.aidd.reason1.title}</h3>
+        <p>{HOME.aidd.reason1.description}</p>
+      </article>
+      <article>
+        <h3><PrimaryComment /> {HOME.aidd.reason2.title}</h3>
+        <p>{HOME.aidd.reason2.description}</p>
+      </article>
+      <article>
+        <h3><PrimaryComment /> {HOME.aidd.reason3.title}</h3>
+        <p>{HOME.aidd.reason3.description}</p>
+      </article>
+    </main>
+  </section>
+
+ <section
+    id="us"
+    class="container">
+    <header class="center red">
+      <h2>{HOME.us.title}</h2>
     </header>
     <main class="center">
-      <p>{HOME.meetups.subtitle}</p>
+      <p>{HOME.us.subtitle}</p>
     </main>
     <footer class="center">
-      <a href={HOME.meetups.cta.link}>{HOME.meetups.cta.text}</a>
+      <a
+        href={HOME.us.cta.link}
+        target="_blank">
+        {HOME.us.cta.text}
+      </a>
     </footer>
   </section>
 
@@ -63,21 +90,19 @@ import Layout from "../layouts/Layout.astro";
     </main>
   </section>
 
-  <section
-    id="us"
+ 
+
+    <section
+    id="meetups"
     class="container">
-    <header class="center red">
-      <h2>{HOME.us.title}</h2>
+    <header class="center">
+      <h2>{HOME.meetups.title}</h2>
     </header>
     <main class="center">
-      <p>{HOME.us.subtitle}</p>
+      <p>{HOME.meetups.subtitle}</p>
     </main>
     <footer class="center">
-      <a
-        href={HOME.us.cta.link}
-        target="_blank">
-        {HOME.us.cta.text}
-      </a>
+      <a href={HOME.meetups.cta.link}>{HOME.meetups.cta.text}</a>
     </footer>
   </section>
 </Layout>

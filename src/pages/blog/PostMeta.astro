@@ -26,16 +26,14 @@ const titleCaseCategory = category
   : "";
 ---
 
-<div class="">
-  <nav aria-label="breadcrumb">
-    <ul>
-      <li><a href="/blog/es/">Blog</a></li>
-      <li><a href={`/blog/es/${category}`}>{titleCaseCategory}</a></li>
-      <li>
-        <time datetime={fullDate}>{formattedDate}</time>
-      </li>
-    </ul>
-  </nav>
-</div>
+<nav aria-label="breadcrumb">
+  <ul>
+    <li><a href="/blog/es/">Blog</a></li>
+    <li><a href={`/blog/es/${category}`}>{titleCaseCategory}</a></li>
+    <li>
+      <time datetime={fullDate}>{formattedDate}</time>
+    </li>
+  </ul>
+</nav>
 
-<style></style>
+

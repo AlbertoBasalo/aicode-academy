@@ -1,5 +1,7 @@
 ---
 import { getCollection } from "astro:content";
+import BlogArticle from "./BlogArticle.astro";
+
 import Layout from "../../../layouts/Layout.astro";
 
 const posts = await getCollection("blog");
@@ -18,24 +20,12 @@ const sortedPosts = filteredPosts.sort((a, b) => {
     <h1>Herramientas</h1>
     <p>Editores, extensiones, asistentes y modelos que te ayudarán a programar mejor: code smarter, not harder.</p>
     <p>
-      <a href="/blog/es/">Todos los artículos</a>
+      <a href="/blog/es/"><b>Todos los artículos</b></a>
     </p>
     <div>
       {
         sortedPosts.map((post) => (
-          <article>
-            <header>
-              <h3>
-                <a
-                  href={`/blog/es/${post.data.slug}`}
-                  >
-                  {post.data.title}
-                </a>
-              </h3>
-              <p>{post.data.subtitle}</p>
-            </header>
-            <p>{post.data.description}</p>
-          </article>
+          <BlogArticle post={post} />
         ))
       }
     </div>

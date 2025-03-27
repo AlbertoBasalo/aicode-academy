@@ -1,0 +1,29 @@
+---
+import PostMeta from "../PostMeta.astro";
+
+interface Props {
+  post: {
+    data: {
+      slug: string;
+      title: string;
+      date?: string;
+      category?: string;
+      subtitle?: string;
+      description: string;
+    };
+  };
+}
+
+const { post } = Astro.props;
+---
+
+<article>
+  <h3>
+    <a href={`/blog/es/${post.data.slug}`}>
+      {post.data.title}
+    </a>
+  </h3>
+  <PostMeta date={post.data.date ?? ""} category={post.data.category ?? ""} />
+  <p>{post.data.subtitle}</p>
+  <small>{post.data.description}</small>
+</article> 
