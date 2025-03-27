@@ -16,12 +16,12 @@
     "deploy": "git checkout production && git merge master && git push origin production && git checkout master"
   },
   "dependencies": {
-    "@astrojs/sitemap": "^3.2.1",
-    "@fontsource/fira-mono": "^5.1.0",
-    "@fontsource/tomorrow": "^5.1.0",
-    "@fontsource/major-mono-display": "^5.1.0",
-    "@picocss/pico": "^2.0.6",
-    "astro": "^5.1.1"
+    "@astrojs/sitemap": "^3.3.0",
+    "@fontsource/fira-mono": "^5.2.5",
+    "@fontsource/tomorrow": "^5.2.5",
+    "@fontsource/major-mono-display": "^5.2.5",
+    "@picocss/pico": "^2.1.1",
+    "astro": "^5.5.5"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4"
