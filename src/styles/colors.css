@@ -1,13 +1,13 @@
 :root {
   --ab-light-green: #00ff00;
-  --ab-green: #00aa00;
-  --ab-dark-green: #006400;
-  --ab-light-blue: #00ccff;
-  --ab-blue: #007fff;
-  --ab-dark-blue: #0e4d90;
+  --ab-light-blue: #00ffff;
+  --ab-green: #00ffaa;
+  --ab-blue: #00aaff;
+  --ab-dark-green: #007700;
+  --ab-dark-blue: #0077ff;
   --ab-white: #fff;
   --ab-yellow: #f6fa70;
-  --ab-red: #ff0060;
+  --ab-red: #ff0000;
 }
 
 /* dark theme */

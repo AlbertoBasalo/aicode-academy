@@ -1,33 +1,25 @@
 export type Home = {
-  title: string;
-  description: string;
   layout: {
     title: string;
     description: string;
   };
-  aidd: Reasons;
   hero: Section;
-  why: Reasons;
+  aidd: Section;
+  why: Section;
   us: Section;
   meetups: Section;
-};
-
-type Reasons = {
-  title: string;
-  reason1: Reason;
-  reason2: Reason;
-  reason3: Reason;
-};
-
-type Reason = {
-  title: string;
-  description: string;
 };
 
 type Section = {
   title: string;
   subtitle: string;
+  cards: Card[];
   cta: Cta;
+};
+
+type Card = {
+  title: string;
+  description: string;
 };
 
 type Cta = {
@@ -36,9 +28,6 @@ type Cta = {
 };
 
 export const HOME: Home = {
-  title: "AI Code Academy",
-  description:
-    "Aprende a desarrollar aplicaciones usando herramientas de IA para aumentar tu productividad y la calidad de tu código.",
   layout: {
     title: "AI Code Academy",
     description:
@@ -47,6 +36,7 @@ export const HOME: Home = {
   hero: {
     title: "Master Ai-Driven DEVELOPMENT",
     subtitle: "La IA no te quitará el trabajo, pero lo cambiará para siempre",
+    cards: [],
     cta: {
       text: "Learn to code smarter",
       link: "/cursos",
@@ -54,44 +44,59 @@ export const HOME: Home = {
   },
   aidd: {
     title: "¿Qué es AI-Driven Development?",
-    reason1: {
-      title: "Human in the Loop",
-      description:
-        "El humano es estratega, colaborador y responsable.",
-    },
-    reason2: {
-      title: "Rules over Tools",
-      description:
-        "Las herramientas se someten a metodologías de desarrollo.",
-    },
-    reason3: {
-      title: "AI Quality",
-      description:
-        "El desarrollo es productivo, mantenible y de calidad.",
+    subtitle: "Metodología de desarrollo profesional con herramientas de I.A.",
+    cards: [
+      {
+        title: "Human in the Loop",
+        description:
+          "El humano es estratega, colaborador y responsable.",
+      },
+      {
+        title: "Rules over Tools",
+        description:
+          "Las herramientas se someten a metodologías de desarrollo.",
+      },
+      {
+        title: "AI Quality",
+        description:
+          "El desarrollo es productivo, mantenible y de calidad.",
+      },
+    ],
+    cta: {
+      text: "El manifiesto AI-DD",
+      link: "/blog/es/aidd-manifesto",
     },
   },
   why: {
-    title: "¿Porqué AIcode Academy?",
-    reason1: {
-      title: "Metodología AI-DD",
-      description:
-        "Contenido centrado en las mejores prácticas, no solo en las últimas herramientas de IA.",
-    },
-    reason2: {
-      title: "Proyectos real-world",
-      description:
-        "Ejemplos con aplicaciones listas para producción, no solo ejemplos de juguete.",
-    },
-    reason3: {
-      title: "Experiencia empresarial",
-      description:
-        "Aprende de desarrolladores experimentados, no solo académicos o aficionados.",
+    title: "AIcode Academy",
+    subtitle: "Una academia de IA en español para desarrolladores profesionales.",
+    cards: [
+      {
+        title: "Metodología AI-DD",
+        description:
+          "Contenido centrado en las mejores prácticas, no solo en las últimas herramientas de IA.",
+      },
+      {
+        title: "Proyectos real-world",
+        description:
+          "Ejemplos con aplicaciones listas para producción, no solo ejemplos de juguete.",
+      },
+      {
+        title: "Experiencia empresarial",
+        description:
+          "Aprende de desarrolladores experimentados, no solo académicos o aficionados.",
+      },
+    ],
+    cta: {
+      text: "Por Alberto Basalo",
+      link: "https://albertobasalo.dev",
     },
   },
   us: {
     title: "AI code Academy",
     subtitle:
       "Una academia de IA en español para desarrolladores profesionales.",
+    cards: [],
     cta: {
       text: "Por Alberto Basalo",
       link: "https://albertobasalo.dev",
@@ -100,6 +105,7 @@ export const HOME: Home = {
   meetups: {
     title: "Meetups",
     subtitle: "¿Quieres organizar un meetup en tu empresa?",
+    cards: [],
     cta: {
       text: "Contacta conmigo",
       link: "https://www.linkedin.com/in/albertobasalo/",

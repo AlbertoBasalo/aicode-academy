@@ -27,37 +27,75 @@ import Layout from "../layouts/Layout.astro";
     </footer>
   </section>
 
-
     <section
+    id="why"
+    class="container">
+    <header class="center">
+      <h2>{HOME.why.title}</h2>
+      <p>{HOME.why.subtitle}</p>
+    </header>
+    <main class="grid">
+      <article>
+        <h3><PrimaryComment /> {HOME.why.cards[0].title}</h3>
+        <p>{HOME.why.cards[0].description}</p>
+      </article>
+      <article>
+        <h3><PrimaryComment /> {HOME.why.cards[1].title}</h3>
+        <p>{HOME.why.cards[1].description}</p>
+      </article>
+      <article>
+        <h3><PrimaryComment /> {HOME.why.cards[2].title}</h3>
+        <p>{HOME.why.cards[2].description}</p>
+      </article>
+    </main>
+    <footer class="center">
+      <a
+        href={HOME.why.cta.link}
+        target="_blank">
+        {HOME.why.cta.text}
+      </a>
+    </footer>
+  </section>
+
+
+  <section
     id="aidd"
     class="container">
     <header class="center">
       <h2>{HOME.aidd.title}</h2>
+      <p>{HOME.aidd.subtitle}</p>
     </header>
     <main class="grid">
       <article>
-        <h3><PrimaryComment /> {HOME.aidd.reason1.title}</h3>
-        <p>{HOME.aidd.reason1.description}</p>
+        <h3><PrimaryComment /> {HOME.aidd.cards[0].title}</h3>
+        <p>{HOME.aidd.cards[0].description}</p>
       </article>
       <article>
-        <h3><PrimaryComment /> {HOME.aidd.reason2.title}</h3>
-        <p>{HOME.aidd.reason2.description}</p>
+        <h3><PrimaryComment /> {HOME.aidd.cards[1].title}</h3>
+        <p>{HOME.aidd.cards[1].description}</p>
       </article>
       <article>
-        <h3><PrimaryComment /> {HOME.aidd.reason3.title}</h3>
-        <p>{HOME.aidd.reason3.description}</p>
+        <h3><PrimaryComment /> {HOME.aidd.cards[2].title}</h3>
+        <p>{HOME.aidd.cards[2].description}</p>
       </article>
     </main>
+    <footer class="center">
+      <a
+        href={HOME.aidd.cta.link}
+        target="_blank">
+        {HOME.aidd.cta.text}
+      </a>
+    </footer>
   </section>
 
- <section
+<!--  <section
     id="us"
     class="container">
-    <header class="center red">
+    <header class="center">
       <h2>{HOME.us.title}</h2>
+      <p>{HOME.us.subtitle}</p>
     </header>
     <main class="center">
-      <p>{HOME.us.subtitle}</p>
     </main>
     <footer class="center">
       <a
@@ -66,31 +104,8 @@ import Layout from "../layouts/Layout.astro";
         {HOME.us.cta.text}
       </a>
     </footer>
-  </section>
+  </section> -->
 
-  <section
-    id="why"
-    class="container">
-    <header class="center">
-      <h2>{HOME.why.title}</h2>
-    </header>
-    <main class="grid">
-      <article>
-        <h3><PrimaryComment /> {HOME.why.reason1.title}</h3>
-        <p>{HOME.why.reason1.description}</p>
-      </article>
-      <article>
-        <h3><PrimaryComment /> {HOME.why.reason2.title}</h3>
-        <p>{HOME.why.reason2.description}</p>
-      </article>
-      <article>
-        <h3><PrimaryComment /> {HOME.why.reason3.title}</h3>
-        <p>{HOME.why.reason3.description}</p>
-      </article>
-    </main>
-  </section>
-
- 
 
     <section
     id="meetups"

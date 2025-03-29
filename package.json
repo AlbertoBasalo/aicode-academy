@@ -4,8 +4,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "npm run chrome && astro dev",
-    "chrome": "start chrome -incognito -auto-open-devtools-for-tabs http://localhost:4321",
+    "dev": "bun browser && astro dev",
+    "browser": "bun start brave -incognito  http://localhost:4321",
     "start": "astro dev",
     "build": "astro build",
     "serve": "npm run build && serve dist",
