@@ -1,8 +1,13 @@
 :root {
-  --light-green: #00ff00;
-  --dark-green: #00aa00;
-  --light-blue: #00ccff;
-  --dark-blue: #007fff;
+  --ab-light-green: #00ff00;
+  --ab-green: #00aa00;
+  --ab-dark-green: #006400;
+  --ab-light-blue: #00ccff;
+  --ab-blue: #007fff;
+  --ab-dark-blue: #0e4d90;
+  --ab-white: #fff;
+  --ab-yellow: #f6fa70;
+  --ab-red: #ff0060;
 }
 
 /* dark theme */
