@@ -31,7 +31,7 @@ export const HOME: Home = {
   layout: {
     title: "AI Code Academy",
     description:
-      "Aprende a desarrollar aplicaciones usando herramientas de IA para aumentar tu productividad y la calidad de tu código.",
+      "Aprende a desarrollar aplicaciones usando herramientas de IA para aumentar tu productividad y la calidad de tu código. Learn to code smarter con la academia de IA en español de Alberto Basalo.",
   },
   hero: {
     title: "Master Ai-Driven DEVELOPMENT",
@@ -88,7 +88,7 @@ export const HOME: Home = {
       },
     ],
     cta: {
-      text: "Por Alberto Basalo",
+      text: "Learn to code smarter con Alberto Basalo",
       link: "https://albertobasalo.dev",
     },
   },
