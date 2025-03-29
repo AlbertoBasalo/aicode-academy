@@ -9,11 +9,13 @@
     color: var(--pico-primary);
   }
 
-  .primary-comment {
-    color: var(--pico-primary);
+  .comment {
+    color: var(--pico-secondary);
     padding-right: 1rem;
   }
 
   .logo {
     font-family: 'Major Mono Display', monospace;
   }
+
+
