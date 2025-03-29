@@ -1,12 +1,12 @@
 :root {
   --ab-light-green: #00ff00;
-  --ab-light-blue: #00ffff;
-  --ab-green: #00ffaa;
-  --ab-blue: #00aaff;
+  --ab-green: #00aa00;
   --ab-dark-green: #007700;
+  --ab-light-blue: #00ffff;
+  --ab-blue: #00aaff;
   --ab-dark-blue: #0077ff;
   --ab-white: #fff;
-  --ab-yellow: #f6fa70;
+  --ab-yellow: #fafa00;
   --ab-red: #ff0000;
 }
 
