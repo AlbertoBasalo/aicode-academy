@@ -29,7 +29,7 @@ type Cta = {
 
 export const HOME: Home = {
   layout: {
-    title: "AI Code Academy",
+    title: "A.I. Code Academy",
     description:
       "Aprende a desarrollar aplicaciones usando herramientas de IA para aumentar tu productividad y la calidad de tu código. Learn to code smarter con la academia de IA en español de Alberto Basalo.",
   },
@@ -48,8 +48,7 @@ export const HOME: Home = {
     cards: [
       {
         title: "Human in the Loop",
-        description:
-          "El humano es estratega, colaborador y responsable.",
+        description: "El humano es estratega, colaborador y responsable.",
       },
       {
         title: "Rules over Tools",
@@ -58,8 +57,7 @@ export const HOME: Home = {
       },
       {
         title: "AI Quality",
-        description:
-          "El desarrollo es productivo, mantenible y de calidad.",
+        description: "El desarrollo es productivo, mantenible y de calidad.",
       },
     ],
     cta: {
@@ -68,8 +66,9 @@ export const HOME: Home = {
     },
   },
   why: {
-    title: "AIcode Academy",
-    subtitle: "Una academia de IA en español para desarrolladores profesionales.",
+    title: "A.I. Code Academy",
+    subtitle:
+      "Una academia de IA en español para desarrolladores profesionales.",
     cards: [
       {
         title: "Metodología AI-DD",
@@ -88,7 +87,7 @@ export const HOME: Home = {
       },
     ],
     cta: {
-      text: "Learn to code smarter con Alberto Basalo",
+      text: "Aprende a usar la IA para programar con Alberto Basalo",
       link: "https://albertobasalo.dev",
     },
   },
