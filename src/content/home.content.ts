@@ -1,31 +1,17 @@
+import type { SectionProps } from "../components/Section.astro";
+
 export type Home = {
   layout: {
     title: string;
     description: string;
   };
-  hero: Section;
-  aidd: Section;
-  why: Section;
-  us: Section;
-  meetups: Section;
+  hero: SectionProps;
+  aidd: SectionProps;
+  why: SectionProps;
+  us: SectionProps;
+  meetups: SectionProps;
 };
 
-type Section = {
-  title: string;
-  subtitle: string;
-  cards: Card[];
-  cta: Cta;
-};
-
-type Card = {
-  title: string;
-  description: string;
-};
-
-type Cta = {
-  text: string;
-  link: string;
-};
 
 export const HOME: Home = {
   layout: {

@@ -1,11 +1,14 @@
 ---
 import BlogList from "../../../components/BlogList.astro";
-import Layout from "../../../layouts/Layout.astro";
----
+import Layout, { type LayoutProps } from "../../../layouts/Layout.astro";
 
+const layout: LayoutProps = {
+  title: "Blog - AICode Academy",
+  description: "Artículos sobre programación con Inteligencia Artificial"
+};
+---
 <Layout
-  title="Blog - AICode Academy"
-  description="Artículos sobre programación con Inteligencia Artificial">
+  layout={layout}>
   <main>
     <h1>Blog en español</h1>
     <p>

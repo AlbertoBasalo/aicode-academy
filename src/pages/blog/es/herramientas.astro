@@ -1,12 +1,15 @@
 ---
 import BlogList from "../../../components/BlogList.astro";
-import Layout from "../../../layouts/Layout.astro";
+import Layout, { type LayoutProps } from "../../../layouts/Layout.astro";
 
+const layout: LayoutProps = {
+  title: "Herramientas IA para desarrolladores",
+  description: "Editores, extensiones, asistentes y modelos que te ayudarán a programar mejor: code smarter, not harder."
+};  
 ---
 
 <Layout
-  title="Herramientas IA para desarrolladores"
-  description="Editores, extensiones, asistentes y modelos que te ayudarán a programar mejor: code smarter, not harder.">
+  layout={layout}>
   <main>
     <h1>Herramientas</h1>
     <p>Editores, extensiones, asistentes y modelos que te ayudarán a programar mejor: code smarter, not harder.</p>

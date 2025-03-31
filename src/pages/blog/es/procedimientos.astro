@@ -1,11 +1,15 @@
 ---
 import BlogList from "../../../components/BlogList.astro";
-import Layout from "../../../layouts/Layout.astro";
+import Layout, { type LayoutProps } from "../../../layouts/Layout.astro";
+
+const layout: LayoutProps = {
+  title: "Procedimientos IA para desarrolladores",
+  description: "Indicaciones, reglas y plantillas para que tu colega de IA te ayude a codificar de forma más inteligente, no más difícil."
+};  
 ---
 
 <Layout
-  title="Procedimientos IA para desarrolladores"
-  description="Indicaciones, reglas y plantillas para que tu colega de IA te ayude a codificar de forma más inteligente, no más difícil.">
+  layout={layout}>
   <main>
     <h1>Procedimientos</h1>
     <p>

@@ -1,6 +1,6 @@
 ---
 import { getCollection, render } from "astro:content";
-import Layout from "../../../layouts/Layout.astro";
+import Layout, { type LayoutProps } from "../../../layouts/Layout.astro";
 import PostMeta from "../PostMeta.astro";
 
 export async function getStaticPaths() {
@@ -14,11 +14,15 @@ export async function getStaticPaths() {
 
 const { entry } = Astro.props;
 const { Content } = await render(entry);
+
+const layout: LayoutProps = {
+  title: `${entry.data.title} - ${entry.data.subtitle}`,
+  description: entry.data.description
+};
 ---
 
 <Layout
-  title={entry.data.title + " - " + entry.data.subtitle}
-  description={entry.data.description}>
+  layout={layout}>
   <article>
     <h1>{entry.data.title}</h1>
     <h3>{entry.data.subtitle}</h3>
