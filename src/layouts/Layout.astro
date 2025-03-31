@@ -33,16 +33,6 @@ const { layout } = Astro.props as { layout: LayoutProps };
       <slot />
     </main>
     <Footer />
-    
-    <script>
-      const getTheme = () => document.documentElement.getAttribute("data-theme");
-      const setTheme = (theme) => document.documentElement.setAttribute("data-theme", theme);
-
-      document.addEventListener("theme-toggle", () => {
-        const currentTheme = getTheme();
-        setTheme(currentTheme === "dark" ? "light" : "dark");
-      });
-    </script>
-    
+  
   </body>
 </html>

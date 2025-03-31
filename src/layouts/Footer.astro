@@ -1,5 +1,18 @@
 ---
 const currentYear = new Date().getFullYear();
+
+const links = [
+  { href: "https://github.com/AlbertoBasalo", text: "GitHub" },
+  { href: "https://linkedin.com/in/albertobasalo", text: "LinkedIn" },
+  { href: "https://twitter.com/AlbertoBasalo", text: "Twitter" },
+];
+
+const legalLinks = [
+  { href: "https://albertobasalo.dev/#contact", text: "Contact" },
+  { href: "/legal/privacy/", text: "Privacy Policy" },
+  { href: "/legal/terms/", text: "Terms of Service" },
+  { href: "/legal/cookies/", text: "Cookie Policy" },
+];
 ---
 
 <footer class="container">
@@ -12,18 +25,17 @@ const currentYear = new Date().getFullYear();
       <h3>Connect</h3>
       <ul>
         <!--<li><a href="https://aiddbot.com" target="_blank"><b>AIDDbot </b></a></li>-->
-        <li><a href="https://github.com/AlbertoBasalo" target="_blank">GitHub</a></li>
-        <li><a href="https://linkedin.com/in/albertobasalo" target="_blank">LinkedIn</a></li>
-        <li><a href="https://twitter.com/AlbertoBasalo" target="_blank">Twitter</a></li>
+        {links.map(link => (
+          <li><a href={link.href} target="_blank">{link.text}</a></li>
+        ))}
       </ul>
     </div>
     <div >
       <h3>Legal</h3>
       <ul>
-        <li><a href="https://albertobasalo.dev/#contact" target="_blank"><b>Contact</b></a></li>
-        <li><a href="/legal/privacy/">Privacy Policy</a></li>
-        <li><a href="/legal/terms/">Terms of Service</a></li>
-        <li><a href="/legal/cookies/">Cookie Policy</a></li>
+        {legalLinks.map(link => (
+          <li><a href={link.href} target="_blank">{link.text}</a></li>
+        ))}
       </ul>
     </div>
   </main>
