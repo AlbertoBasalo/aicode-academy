@@ -60,4 +60,18 @@ strong, em, i, b, code {
   color: var(--pico-secondary);
 }
 
+h1, h2, h3{
+   background: linear-gradient( var(--pico-primary), var(--pico-secondary));
+    -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+a:hover {
+  background: linear-gradient(var(--pico-primary-background), var(--pico-secondary-background));
+    -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
 

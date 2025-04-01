@@ -73,9 +73,10 @@ export const HOME: Home = {
       },
     ],
     cta: {
-      text: "Aprende a usar la IA para programar con Alberto Basalo",
-      link: "https://albertobasalo.dev",
+      text: "",
+      link: "",
     },
+  
   },
   us: {
     title: "AI code Academy",
@@ -92,7 +93,7 @@ export const HOME: Home = {
     subtitle: "¿Quieres organizar un meetup en tu empresa?",
     cards: [],
     cta: {
-      text: "Contacta conmigo",
+      text: "Contacta con Alberto Basalo",
       link: "https://www.linkedin.com/in/albertobasalo/",
     },
   },
