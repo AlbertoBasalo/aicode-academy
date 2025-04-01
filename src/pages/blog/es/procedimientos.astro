@@ -10,15 +10,16 @@ const layout: LayoutProps = {
 
 <Layout
   layout={layout}>
-  <main>
-    <h1>Procedimientos</h1>
-    <p>
-      Indicaciones, reglas y plantillas para que tu colega de IA te ayude a codificar de forma más inteligente, no más
-      difícil.
-    </p>
-    <p>
-      <a href="/blog/es/"><b>Todos los artículos</b></a>
-    </p>
-    <BlogList category="procedimientos" />
-  </main>
+  <section>
+    <header>    
+      <h1>Procedimientos</h1>
+      <p>
+        Indicaciones, reglas y plantillas para que tu colega de IA te ayude a codificar de forma más inteligente, no más
+        difícil.
+      </p>
+    </header>
+    <main>
+      <BlogList category="procedimientos" />
+    </main>
+  </section>
 </Layout>

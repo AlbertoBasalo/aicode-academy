@@ -42,8 +42,8 @@ body {
 }
 @media (min-width: 1536px) {
   body {
-    padding-left: 12%;
-    padding-right: 12%;
+    padding-left: 15%;
+    padding-right: 15%;
   }
 }
 
@@ -68,26 +68,8 @@ h2 {
   --pico-typography-spacing-top: 3rem;
 }
 
-section.container {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
-article header {
-  margin-left: 2rem;
-  margin-right: 2rem;
-}
-
-article main {
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
-article footer {
-  margin-left: 2rem;
-  margin-right: 2rem;
+article, section  {
+  padding: 4%;
 }
 
 [data-theme="light"] .light {

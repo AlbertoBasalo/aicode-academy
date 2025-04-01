@@ -20,10 +20,8 @@ const sortedPosts = filteredPosts.sort((a, b) => {
 });
 ---
 
-<div>
-  {
-    sortedPosts.map((post) => (
-      <BlogArticle post={post} />
-    ))
-  }
-</div> 
+{
+  sortedPosts.map((post) => (
+    <BlogArticle post={post} />
+  ))
+}

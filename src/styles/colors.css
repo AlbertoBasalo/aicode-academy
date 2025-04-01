@@ -28,6 +28,7 @@
   --pico-secondary-hover: var(--ab-blue);
   --pico-secondary-background: var(--ab-light-blue);
   --pico-secondary-hover-background: var(--ab-blue);
+  --pico-box-shadow: 0 0 1px 0 var(--pico-primary);
   color-scheme: dark;
 }
 
@@ -47,6 +48,7 @@
   --pico-secondary-hover: var(--ab-blue);
   --pico-secondary-background: var(--ab-dark-blue);
   --pico-secondary-hover-background: var(--ab-blue);
+  --pico-box-shadow: 0 0 1px 0 var(--pico-primary);
   color-scheme: light;
 }
 
@@ -54,14 +56,8 @@
   background-color: var(--pico-background-color);
 }
 
-strong {
+strong, em, i, b, code {
   color: var(--pico-secondary);
 }
 
-em {
-  color: var(--pico-secondary-hover);
-}
 
-code {
-  color: var(--pico-secondary);
-}

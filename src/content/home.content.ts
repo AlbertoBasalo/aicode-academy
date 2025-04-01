@@ -42,7 +42,7 @@ export const HOME: Home = {
           "Las herramientas se someten a metodologías de desarrollo.",
       },
       {
-        title: "AI Quality",
+        title: "A.I. Quality code",
         description: "El desarrollo es productivo, mantenible y de calidad.",
       },
     ],
