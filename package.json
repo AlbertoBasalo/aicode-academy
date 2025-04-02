@@ -3,7 +3,7 @@
   "description": "Web site y blog de Aicode Academy",
   "author": {
     "name": "Alberto Basalo",
-    "email": "alberto@aicode.academy"
+    "email": "albertobasalo@aicode.academy"
   },
   "type": "module",
   "version": "1.0.0",
@@ -16,7 +16,8 @@
     "astro": "astro",
     "update": "npm update --save && npm outdated",
     "master": "git checkout master && git merge blog",
-    "deploy": "git checkout production && git merge master && git push origin production && git checkout master"
+    "predeploy": "bun run build",
+    "deploy": "git add . && git commit -m 'Deploy' && git push origin master"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.3.0",

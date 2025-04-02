@@ -1,35 +1,15 @@
 ---
-import BlinkCursor from "@components/BlinkCursor.astro";
-import MatrixText from "@components/MatrixText.astro";
 import Section from "@components/Section.astro";
 import { HOME } from "@content/home.content";
 import Layout from "@layouts/Layout.astro";
+import Hero from "../components/Hero.astro";
 ---
 <Layout
   layout={HOME.layout}>
 
-  <section
-    id="hero"
-    class="container">
-    <header class="center">
-      <h1 class="color">MASTER <MatrixText text="Ai-driven" /> DEVELOPMENT</h1>
-    </header>
-    <main class="center">
-      <p>{HOME.hero.subtitle}<BlinkCursor /></p>
-    </main>
-    <footer class="center">
-      <a
-        role="button"
-        class="outline"
-        href={HOME.hero.cta.link}>
-        {HOME.hero.cta.text}
-      </a>
-    </footer>
-  </section>
+  <Hero hero={HOME.hero} />
 
   <Section section={HOME.why} />
-
   <Section section={HOME.aidd} />
-
   <Section section={HOME.meetups} />
 </Layout>

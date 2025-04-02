@@ -5,25 +5,24 @@
    justify-content: center;
  }
 
-.color {
-   background: linear-gradient( var(--pico-primary), var(--pico-secondary));
-    -webkit-background-clip: text;
-            background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
+ .color {
+   background: var(--ab-gradient-primary);
+   -webkit-background-clip: text;
+   background-clip: text;
+   -webkit-text-fill-color: transparent;
+ }
 
 
-.colored-headers h2
- {
-   background: linear-gradient( var(--pico-primary), var(--pico-secondary));
-    -webkit-background-clip: text;
-            background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
+ .colored-headers h2 {
+   background: var(--ab-gradient-primary);
+   -webkit-background-clip: text;
+   background-clip: text;
+   -webkit-text-fill-color: transparent;
+ }
 
  .comment {
    color: var(--pico-secondary);
-   margin-right: 2%;
+   margin-right: 4%;
  }
 
  .container {

@@ -30,6 +30,7 @@
   --pico-secondary-hover-background: var(--ab-blue);
   --pico-box-shadow: 0 0 1px 0 var(--pico-primary);
   --ab-theme-gray: var(--ab-dark-gray);
+  --ab-gradient-primary: linear-gradient(var(--pico-primary-background), var(--pico-secondary-background));
   color-scheme: dark;
 }
 
@@ -51,6 +52,7 @@
   --pico-secondary-hover-background: var(--ab-blue);
   --pico-box-shadow: 0 0 1px 0 var(--pico-primary);
   --ab-theme-gray: var(--ab-light-gray);
+    --ab-gradient-primary: linear-gradient(var(--pico-primary-background), var(--pico-secondary-background));
   color-scheme: light;
 }
 
@@ -69,7 +71,7 @@ code {
 
 
 a:hover {
-  background: linear-gradient(var(--pico-primary-background), var(--pico-secondary-background));
+  background: var(--ab-gradient-primary);
     -webkit-background-clip: text;
             background-clip: text;
     -webkit-text-fill-color: transparent;

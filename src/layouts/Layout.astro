@@ -4,7 +4,7 @@ import "@picocss/pico";
 import "@styles/colors.css";
 import "@styles/custom.css";
 import "@styles/global.css";
-
+import type { HeroProps } from "@components/Hero.astro";
 
 // import CookieConsent from "./CookieConsent.astro";
 import Footer from "./Footer.astro";
@@ -14,6 +14,7 @@ import Header from "./Header.astro";
 export type LayoutProps=  {
   title: string;
   description: string;
+  hero?: HeroProps;
 }
 
 const { layout } = Astro.props as { layout: LayoutProps };

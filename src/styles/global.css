@@ -60,12 +60,14 @@ h1 {
   --pico-font-size: 2.5rem;
   --pico-line-height: 1.5;
   --pico-typography-spacing-top: 3.5rem;
+  margin-bottom: 1rem;
 }
 
 h2 {
   --pico-font-size: 2rem;
   --pico-line-height: 1.125;
   --pico-typography-spacing-top: 3rem;
+  margin-bottom: 1rem;
 }
 
 article, section  {

@@ -20,7 +20,7 @@ export const HOME: Home = {
       "Aprende a desarrollar aplicaciones usando herramientas de IA para aumentar tu productividad y la calidad de tu código. Learn to code smarter con la academia de IA en español de Alberto Basalo.",
   },
   hero: {
-    title: "Master Ai-Driven DEVELOPMENT",
+    title: "Ai-Driven Development",
     subtitle: "La IA no te quitará el trabajo, pero lo cambiará para siempre",
     cards: [],
     cta: {

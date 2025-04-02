@@ -4,13 +4,12 @@ import PrimaryComment from "@components/PrimaryComment.astro";
 const currentYear = new Date().getFullYear();
 
 const links = [
-  { href: "https://github.com/AlbertoBasalo", text: "GitHub" },
   { href: "https://linkedin.com/in/albertobasalo", text: "LinkedIn" },
+  { href: "https://github.com/AlbertoBasalo", text: "GitHub" },
   { href: "https://twitter.com/AlbertoBasalo", text: "Twitter" },
 ];
 
 const legalLinks = [
-  { href: "https://albertobasalo.dev/#contact", text: "Contact" },
   { href: "/legal/privacy/", text: "Privacy Policy" },
   { href: "/legal/terms/", text: "Terms of Service" },
   //{ href: "/legal/cookies/", text: "Cookie Policy" },
@@ -20,7 +19,7 @@ const legalLinks = [
 <footer>
   <main class="grid">
     <section>
-      <h3 class="logo">Ai code Academy</h3>
+      <h3 class="logo"><a href="/">Ai code Academy</a></h3>
       <h4><PrimaryComment />Learn to code smarter.</h4>
     </section>
     <section>

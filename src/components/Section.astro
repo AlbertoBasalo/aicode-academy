@@ -5,7 +5,7 @@ export type SectionProps = {
   title: string;
   subtitle: string;
   cards: Card[];
-  cta: Cta;
+  cta?: Cta;
 };
 
 type Card = {
@@ -13,7 +13,7 @@ type Card = {
   description: string;
 };
 
-type Cta = {
+export type Cta = {
   text: string;
   link: string;
 };

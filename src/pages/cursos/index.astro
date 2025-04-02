@@ -1,5 +1,5 @@
 ---
-import MatrixText from "@components/MatrixText.astro";
+import Hero from "@/src/components/Hero.astro";
 import PrimaryComment from "@components/PrimaryComment.astro";
 import Section from "@components/Section.astro";
 import Layout, { type LayoutProps } from "@layouts/Layout.astro";
@@ -7,7 +7,15 @@ import { getCollection } from "astro:content";
 
 const layout: LayoutProps = {
   title: "Blog - AICode Academy",
-  description: "Artículos sobre programación con Inteligencia Artificial"
+  description: "Artículos sobre programación con Inteligencia Artificial",
+  hero: {
+    title: "Cursos I.A.",
+    subtitle: "Aprende metodologías, herramientas y procedimientos para programar mejor con IA.",
+    cta: {
+      link: "",
+      text: "Learn to code smarter"
+    }
+  }
 };
 const cursos = await getCollection("cursos");
 
@@ -22,16 +30,7 @@ const cta = {
 ---
 <Layout
   layout={layout}>
-  <section
-    id="hero"
-    class="container">
-    <header class="center">
-      <h1 class="color">Cursos <MatrixText text="Ai-code" /> Academy</h1>
-      <p>
-        Aprende metodologías, herramientas y procedimientos para programar mejor con IA.
-      </p>
-    </header>
-  </section>
+  <Hero hero={layout.hero} />
   <main>
     {
       cursos.map((curso) => (

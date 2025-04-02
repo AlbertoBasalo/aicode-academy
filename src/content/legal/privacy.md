@@ -32,4 +32,4 @@ You have the right to:
 - Request data deletion
 - Opt out of analytics
 
-Contact us for any privacy concerns at privacy@aicodeacademy.dev 
+Contact us for any privacy concerns at albertobasalo@aicode.academy
