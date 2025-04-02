@@ -5,10 +5,25 @@
    justify-content: center;
  }
 
+.color {
+   background: linear-gradient( var(--pico-primary), var(--pico-secondary));
+    -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.colored-headers h2
+ {
+   background: linear-gradient( var(--pico-primary), var(--pico-secondary));
+    -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
  .comment {
    color: var(--pico-secondary);
-   padding-right: 1%;
-   font-family: var(--pico-font-family-monospace);
+   margin-right: 2%;
  }
 
  .container {

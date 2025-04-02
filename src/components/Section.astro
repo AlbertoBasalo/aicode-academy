@@ -1,5 +1,6 @@
 ---
 import PrimaryComment from "./PrimaryComment.astro";
+
  
 export type SectionProps = {
   title: string;
@@ -26,14 +27,14 @@ const id = section.title?.toLowerCase().replace(/ /g, "-").replace(/\./g, "-").r
 
 <section id={id} class="container">
   <header class="center">
-    <h2>{section.title}</h2>
+    <h2 class="color">{section.title}</h2>
     <p>{section.subtitle}</p>
   </header>
   {section.cards && section.cards.length > 0 && (
     <main class="grid">
       {section.cards.map((card) => (
         <article>
-          <h3><PrimaryComment /> {card.title}</h3>
+          <h3><PrimaryComment/>{card.title}</h3>
           <p>{card.description}</p>
         </article>
       ))}

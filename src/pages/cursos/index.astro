@@ -1,6 +1,7 @@
 ---
 import BlinkCursor from "../../components/BlinkCursor.astro";
 import MatrixText from "../../components/MatrixText.astro";
+import PrimaryComment from "../../components/PrimaryComment.astro";
 import Layout, { type LayoutProps } from "../../layouts/Layout.astro";
 
 const layout: LayoutProps = {
@@ -15,11 +16,11 @@ const layout: LayoutProps = {
     id="hero"
     class="container">
     <header class="center">
-      <h1>Cursos <MatrixText text="Ai-code" /> Academy</h1>
+      <h1 class="color">Cursos <MatrixText text="Ai-code" /> Academy</h1>
     </header>
     <main
       class="center">
-      <p><b>Learn to code smarter.</b><BlinkCursor/></p>
+      <p>Learn to code smarter.<BlinkCursor/></p>
     </main>
     <footer class="center">
       <a href="https://www.trainingit.es/index.php/producto/metodologia-ai-driven-development/" target="_blank" role="button" class="outline">Accede al curso</a>
@@ -29,7 +30,7 @@ const layout: LayoutProps = {
   <article
     id="cursos">
     <header>
-      <h2>Metodología AI-Driven Development</h2>
+      <h2><PrimaryComment />Metodología AI-Driven Development</h2>
       <p>La IA no te quitará el trabajo, pero lo cambiará para siempre.</p>
     </header>
     <main>
@@ -48,7 +49,8 @@ const layout: LayoutProps = {
       </ul>
     </main>
     <footer>
-      <a href="#content">
+      <a href="#content" role="button"
+        class="outline"  >
         <b>Contenido del curso</b>
       </a>
     </footer>

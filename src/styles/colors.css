@@ -8,7 +8,7 @@
   --ab-white: #fff;
   --ab-yellow: #fafa00;
   --ab-red: #ff0000;
-  --ab-light-gray: #cccccc;
+  --ab-light-gray: #dddddd;
   --ab-gray: #777777;
   --ab-dark-gray: #333333;
 }
@@ -29,6 +29,7 @@
   --pico-secondary-background: var(--ab-light-blue);
   --pico-secondary-hover-background: var(--ab-blue);
   --pico-box-shadow: 0 0 1px 0 var(--pico-primary);
+  --ab-theme-gray: var(--ab-dark-gray);
   color-scheme: dark;
 }
 
@@ -49,6 +50,7 @@
   --pico-secondary-background: var(--ab-dark-blue);
   --pico-secondary-hover-background: var(--ab-blue);
   --pico-box-shadow: 0 0 1px 0 var(--pico-primary);
+  --ab-theme-gray: var(--ab-light-gray);
   color-scheme: light;
 }
 
@@ -56,16 +58,15 @@
   background-color: var(--pico-background-color);
 }
 
-strong, em, i, b, code {
-  color: var(--pico-secondary);
+strong, em, i, b {
+  color: var(--pico-color);
 }
 
-h1, h2, h3{
-   background: linear-gradient( var(--pico-primary), var(--pico-secondary));
-    -webkit-background-clip: text;
-            background-clip: text;
-    -webkit-text-fill-color: transparent;
+code {
+  color: var(--pico-color);
+  background-color: var(--ab-theme-gray);
 }
+
 
 a:hover {
   background: linear-gradient(var(--pico-primary-background), var(--pico-secondary-background));
