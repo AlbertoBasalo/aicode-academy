@@ -1,15 +1,26 @@
 ---
-import BlinkCursor from "../../components/BlinkCursor.astro";
+
+import { getCollection } from "astro:content";
 import MatrixText from "../../components/MatrixText.astro";
 import PrimaryComment from "../../components/PrimaryComment.astro";
+import Section from "../../components/Section.astro";
 import Layout, { type LayoutProps } from "../../layouts/Layout.astro";
 
 const layout: LayoutProps = {
-  title: "Cursos de IA",
-  description: "Cursos de IA para programadores",
+  title: "Blog - AICode Academy",
+  description: "Artículos sobre programación con Inteligencia Artificial"
 };
----
+const cursos = await getCollection("cursos");
 
+const cta = {
+  title: "¿Quieres organizar un curso en tu empresa?",
+  subtitle: "Puedo ajustar el temario y herramientas a tus necesidades",
+  cta: {
+    link: "https://www.linkedin.com/in/albertobasalo/",
+    text: "Contacta con Alberto Basalo"
+  }
+}
+---
 <Layout
   layout={layout}>
   <section
@@ -17,112 +28,22 @@ const layout: LayoutProps = {
     class="container">
     <header class="center">
       <h1 class="color">Cursos <MatrixText text="Ai-code" /> Academy</h1>
+      <p>
+        Aprende metodologías, herramientas y procedimientos para programar mejor con IA.
+      </p>
     </header>
-    <main
-      class="center">
-      <p>Learn to code smarter.<BlinkCursor/></p>
-    </main>
-    <footer class="center">
-      <a href="https://www.trainingit.es/index.php/producto/metodologia-ai-driven-development/" target="_blank" role="button" class="outline">Accede al curso</a>
-    </footer>
   </section>
-
-  <article
-    id="cursos">
-    <header>
-      <h2><PrimaryComment />Metodología AI-Driven Development</h2>
-      <p>La IA no te quitará el trabajo, pero lo cambiará para siempre.</p>
-    </header>
-    <main>
-      <h3>Motivación</h3>
-      <p>La IA está revolucionando el desarrollo de software. <b>Programar no va a ser lo que era</b>. En los entornos profesionales se exige calidad además de productividad. La IA puede darte ambas, si sabes usarla bien.</p>
-      <p>Este curso para desarrolladores experimentados, te proporciona los conocimientos en <b>metodologías de programación impulsadas por IA</b> para que aumentes tu productividad y la calidad de tu código.</p>
-      <p>Durante el curso se mostrarán varios proyectos prácticos usando distintas herramientas y lenguajes de programación. Entre otros trabajaremos con <i>Cursor, y Claude</i>... y los pondremos a prueba con <i>TypeScript</i>, aunque tú podrás hacerlo en cualquier otro lenguaje, editor y modelo.</p>
-      <h3>Objetivos del curso</h3>
-      <ul>
-        <li>Conocer las implicaciones del IA en la programación.</li>
-        <li>Aplicar herramientas y procedimientos de IA.</li>
-        <li>Integrar IA desde el análisis y diseño del proyecto.</li>
-        <li>Automatizar la generación de código.</li>
-        <li>Verificar y documentar la solución.</li>
-        <li>Generar confianza con el manifiesto AI-DD.</li>
-      </ul>
-    </main>
+  <main>
+    {
+      cursos.map((curso) => (
+        <article>
+        <h2><PrimaryComment /><a href={`/cursos/${curso.data.slug}`}>{curso.data.title}</a></h2>
+        <p>{curso.data.subtitle}</p>
+        <small>{curso.data.description}</small>
+      </article>
+    ))
+  }
     <footer>
-      <a href="#content" role="button"
-        class="outline"  >
-        <b>Contenido del curso</b>
-      </a>
+      <Section section={cta} />
     </footer>
-  </article>
-
-  <section id="trainingIT" class="container">
-    <header class="center red">
-      <h2>Ediciones</h2>
-    </header>
-    <main class="center">
-      <ul>
-        <li>
-          <p>Curso en video con <a href="https://www.trainingit.es/index.php/producto/metodologia-ai-driven-development/" target="_blank">Training_It</a> bonificado por  <span><MatrixText text="FUNDAE" /></span></p>
-        </li>
-        <li>
-          <p>Curso en directo en tu empresa o centro de formación</p>
-        </li>
-        <li>
-          <p>Udemy o similares para latinoamérica <i>(en proceso)</i></p>
-        </li>
-      </ul>
-    </main>
-    <footer class="center"> 
-      <a href="https://albertobasalo.dev/#contact"target="_blank"> Contacta con Alberto Basalo</a>
-    </footer>
-  </section>
-    
-
-  <section id="content" class="container">
-    <h3>Contenido del curso</h3>
-
-    <h4>0. Introducción La IA en el Desarrollo de Software</h4>
-    <ul>
-      <li>0.1. La industria del software y la IA</li>
-      <li>0.2. Amenazas y oportunidades de la IA</li>
-      <li>0.3. Herramientas IA para analistas y programadores</li>
-    </ul>
-
-    <h4>1. El ABC del desarrollo con IA</h4>
-    <ul>
-      <li>1.1. Procedimientos del ciclo de desarrollo IA-Driven</li>
-      <li>1.2. Architect-Builder-Craftsman</li>
-      <li>1.3. Pruebas de concepto, MVP y aplicaciones simples</li>
-    </ul>
-
-    <h4>2. Análisis y diseño con IA</h4>
-    <ul>
-      <li>2.1. Análisis de requisitos</li>
-      <li>2.2. Diseño de la solución</li>
-      <li>2.3. Documentos para la generación de código</li>
-    </ul>
-
-    <h4>3. Generación de código con IA</h4>
-    <ul>
-      <li>3.1. Generación aplicando reglas</li>
-      <li>3.2. Uso de agentes para procesos complejos</li>
-      <li>3.3. Planificación e implementación</li>
-    </ul>
-
-    <h4>4. Verificación y mantenimiento con IA</h4>
-    <ul>
-      <li>4.1. Testing de integración</li>
-      <li>4.2. Refactorización y patrones</li>
-      <li>4.3. Documentación y versionado</li>
-    </ul>
-
-    <h4>5. Conclusión Generando confianza con el manifiesto AIDD</h4>
-    <ul>
-      <li>5.1. Human in the loop</li>
-      <li>5.2. AI Quality</li>
-      <li>5.3. Confianza en el futuro</li>
-    </ul>
-  </section>
 </Layout>
-

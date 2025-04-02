@@ -4,30 +4,43 @@ import { defineCollection, z } from 'astro:content';
 // 2. Import loader(s)
 import { glob } from 'astro/loaders';
 
+/**
+ * Base schema for all collections
+ * Defines a page with a title, subtitle, description, slug
+ */
 const baseSchema = z.object({
   title: z.string().min(1),
   subtitle: z.string().optional(),
   description: z.string().min(1),
   slug: z.string().min(1),
-  category: z.string().optional(),
-  date: z.string().optional()
 });
 
-/*  const blogSchema = z.object({
+/**
+ * Blog schema
+ * Defines a blog post adding a category and date
+ */
+const blogSchema = z.object({
   title: z.string().min(1),
+  subtitle: z.string().min(1),
   description: z.string().min(1),
   slug: z.string().min(1),
   category: z.string().min(1),
   date: z.string().min(1)
 });
-*/
-const legalCollection = defineCollection({
-  loader: glob({ pattern: "**/*.md", base: "./src/content/legal" }),
-  schema: baseSchema
-});
 
+/**
+ * Blog collection
+ * Defines a collection of blog posts
+ */
 const blogCollection = defineCollection({
   loader: glob({ pattern: "**/*.md", base: "./src/content/blog/es" }),
+  schema: blogSchema
+});
+
+// Other content collections
+
+const legalCollection = defineCollection({
+  loader: glob({ pattern: "**/*.md", base: "./src/content/legal" }),
   schema: baseSchema
 });
 
@@ -46,9 +59,14 @@ const metadataCollection = defineCollection({
   schema: baseSchema
 });
 
+/**
+ * Content collections
+ * - Blog, cursos, meetups, legal...
+ * Each collection has a loader from the content folder and a schema for the content
+ */
 export const collections = {
-  'legal': legalCollection,
   'blog': blogCollection,
+  'legal': legalCollection,
   'cursos': cursosCollection,
   'meetups': meetupsCollection,
   'metadata': metadataCollection

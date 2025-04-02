@@ -5,14 +5,15 @@ import PrimaryComment from "../../components/PrimaryComment.astro";
 import Section from "../../components/Section.astro";
 import Layout, { type LayoutProps } from "../../layouts/Layout.astro";
 
+
+
 export async function getStaticPaths() {
-  const posts = await getCollection("meetups");
-  return posts.map((post) => ({
-    params: { slug: post.id.replace("meetups/", "") },
+  const cursos = await getCollection("cursos");
+  return cursos.map((post) => ({
+    params: { slug: post.id.replace("cursos/", "") },
     props: { entry: post },
   }));
 }
-
 const { entry } = Astro.props;
 const { Content } = await render(entry);
 
@@ -20,9 +21,10 @@ const layout: LayoutProps = {
   title: entry.data.title,
   description: entry.data.description
 };
+
 const cta = {
-  title: "¿Quieres organizar un meetup en tu empresa?",
-  subtitle: "Presencial o virtual, difunde la IA en tu comunidad",
+  title: "¿Quieres organizar este curso en tu empresa?",
+  subtitle: "Puedo ajustar el temario y herramientas a tus necesidades",
   cta: {
     link: "https://www.linkedin.com/in/albertobasalo/",
     text: "Contacta con Alberto Basalo"
@@ -35,13 +37,16 @@ const cta = {
   <article>
     <header>
       <h1><PrimaryComment />{entry.data.title}</h1>
-      <h3>{entry.data.subtitle}<BlinkCursor /></h3>
+      <p>{entry.data.subtitle}<BlinkCursor/></p>
     </header>
+    
     <main class="colored-headers">
       <Content />
     </main>
+
     <footer>
       <Section section={cta} />
     </footer>
   </article>
 </Layout>
+
