@@ -1,12 +1,15 @@
 {
   "name": "aicode-academy",
+  "description": "Web site y blog de Aicode Academy",
+  "author": {
+    "name": "Alberto Basalo",
+    "email": "alberto@aicode.academy"
+  },
   "type": "module",
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "bun browser && astro dev",
-    "browser": "bun start brave -incognito  http://localhost:4321",
-    "start": "astro dev",
+    "dev": "astro dev",
     "build": "astro build",
     "serve": "npm run build && serve dist",
     "preview": "astro preview",

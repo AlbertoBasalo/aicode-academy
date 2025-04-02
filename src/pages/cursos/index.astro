@@ -1,10 +1,9 @@
 ---
-
+import MatrixText from "@components/MatrixText.astro";
+import PrimaryComment from "@components/PrimaryComment.astro";
+import Section from "@components/Section.astro";
+import Layout, { type LayoutProps } from "@layouts/Layout.astro";
 import { getCollection } from "astro:content";
-import MatrixText from "../../components/MatrixText.astro";
-import PrimaryComment from "../../components/PrimaryComment.astro";
-import Section from "../../components/Section.astro";
-import Layout, { type LayoutProps } from "../../layouts/Layout.astro";
 
 const layout: LayoutProps = {
   title: "Blog - AICode Academy",

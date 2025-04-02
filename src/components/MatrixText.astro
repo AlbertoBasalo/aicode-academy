@@ -2,31 +2,26 @@
 interface Props {
   text: string;
 }
-
 const { text } = Astro.props;
-
 ---
 
 <span class="matrix-text logo" data-value={text}>{text}</span>
 
 <style>
-
   .matrix-text {
     display: inline-block;
     padding: 0 0.2rem;
   }
-
 </style>
 
 <script>
-
   const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   
     document.querySelectorAll(".matrix-text").forEach((element) => {
     const el = element as HTMLElement;
     const text = el.getAttribute("data-value") || "";
     const speed = 30;
-    let interval: NodeJS.Timeout | null = null;
+    let interval: NodeJS.Timer | undefined = undefined;
     let iteration = 0;
     
     const performIteration = () => {
@@ -42,7 +37,7 @@ const { text } = Astro.props;
         .join("");
       
       if (iteration >= text.length) {
-        clearInterval(interval);
+        if (interval) clearInterval(interval);
         return;
       }
       
@@ -55,7 +50,7 @@ const { text } = Astro.props;
     // Restart animation on hover
     el.addEventListener("mouseover", () => {
       iteration = 0;
-      clearInterval(interval);
+      if (interval) clearInterval(interval);
       interval = setInterval(performIteration, speed);
     });
   });
