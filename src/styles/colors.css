@@ -28,7 +28,7 @@
   --pico-secondary-hover: var(--ab-blue);
   --pico-secondary-background: var(--ab-light-blue);
   --pico-secondary-hover-background: var(--ab-blue);
-  --pico-box-shadow: 0 0 1px 0 var(--pico-primary);
+  --pico-box-shadow: 0 0 2px 0 var(--pico-secondary);
   --ab-theme-gray: var(--ab-dark-gray);
   --ab-gradient-primary: linear-gradient(var(--pico-primary-background), var(--pico-secondary-background));
   color-scheme: dark;
@@ -50,9 +50,9 @@
   --pico-secondary-hover: var(--ab-blue);
   --pico-secondary-background: var(--ab-dark-blue);
   --pico-secondary-hover-background: var(--ab-blue);
-  --pico-box-shadow: 0 0 1px 0 var(--pico-primary);
   --ab-theme-gray: var(--ab-light-gray);
-    --ab-gradient-primary: linear-gradient(var(--pico-primary-background), var(--pico-secondary-background));
+  --pico-box-shadow: 0 0 2px 0 var(--pico-secondary);
+  --ab-gradient-primary: linear-gradient(var(--pico-primary-background), var(--pico-secondary-background));
   color-scheme: light;
 }
 

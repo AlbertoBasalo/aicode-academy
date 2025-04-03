@@ -1,8 +1,7 @@
 ---
-import BlinkCursor from "@components/BlinkCursor.astro";
-import PrimaryComment from "@components/PrimaryComment.astro";
+import Hero from "@/src/components/Hero.astro";
 import Section from "@components/Section.astro";
-import Layout, { type LayoutProps } from "@layouts/Layout.astro";
+import Layout from "@layouts/Layout.astro";
 import { getCollection, render } from "astro:content";
 
 export async function getStaticPaths() {
@@ -16,9 +15,19 @@ export async function getStaticPaths() {
 const { entry } = Astro.props;
 const { Content } = await render(entry);
 
-const layout: LayoutProps = {
-  title: entry.data.title,
-  description: entry.data.description
+const MEETUP = {
+  layout: {
+    title: "AI code Meetups",
+    description: "Encuentros, charlas y talleres para AI developers"
+  },
+  hero: {
+    title: "Ai code MeetUps",
+    subtitle: "Encuentros, charlas y talleres para AI developers",
+    cta: {
+      link: "https://www.linkedin.com/in/albertobasalo/",
+      text: "Contacta para organizar"
+    }
+  }
 };
 const cta = {
   title: "¿Quieres organizar un meetup en tu empresa?",
@@ -31,11 +40,10 @@ const cta = {
 ---
 
 <Layout
-  layout={layout}>
+  layout={MEETUP.layout}>
   <article>
     <header>
-      <h1><PrimaryComment />{entry.data.title}</h1>
-      <h3>{entry.data.subtitle}<BlinkCursor /></h3>
+      <Hero hero={MEETUP.hero} />
     </header>
     <main class="colored-headers">
       <Content />

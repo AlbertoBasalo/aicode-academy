@@ -1,27 +1,35 @@
 ---
+import Hero from "@/src/components/Hero.astro";
 import BlogList from "@components/BlogList.astro";
-import Layout, { type LayoutProps } from "@layouts/Layout.astro";
+import Layout from "@layouts/Layout.astro";
 
-const layout: LayoutProps = {
-  title: "Blog - AICode Academy",
-  description: "Artículos sobre programación con Inteligencia Artificial"
+const BLOG = {
+  layout: {
+    title: "Blog - AI-Driven Development en español.",
+    description: "Artículos sobre programación con Inteligencia Artificial"
+  },
+  hero: {
+    title: "Todo el blog",
+    subtitle: "Metodologías, herramientas y procedimientos para programar mejor con IA. ",
+    cards: [],
+    cta: {
+      text: "code smarter, not harder",
+      link: "",
+    },
+  }
 };
-
 
 ---
 <Layout
-  layout={layout}>
+  layout={BLOG.layout}>
+  <Hero hero={BLOG.hero} />
+  <nav aria-label="Categorías">
+    <ul>
+      <li><a href="/blog/es/herramientas" role="button" class="outline">Herramientas</a></li>
+      <li><a href="/blog/es/procedimientos" role="button" class="outline">Procedimientos</a></li>
+    </ul>
+  </nav>
   <main>
-    <h1>Blog en español</h1>
-    <p>
-      Artículos sobre metodologías, herramientas y procedimientos para programar mejor con IA. AI-Driven Development en español.
-    </p>
-    <nav aria-label="Categorías">
-      <ul>
-        <li><a href="/blog/es/herramientas" role="button" class="outline">Herramientas</a></li>
-        <li><a href="/blog/es/procedimientos" role="button" class="outline">Procedimientos</a></li>
-      </ul>
-    </nav>
     <BlogList />
   </main>
 </Layout>

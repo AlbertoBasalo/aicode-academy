@@ -1,20 +1,29 @@
 ---
+import Hero from "@/src/components/Hero.astro";
 import BlogList from "@components/BlogList.astro";
-import Layout, { type LayoutProps } from "@layouts/Layout.astro";
+import Layout from "@layouts/Layout.astro";
 
-const layout: LayoutProps = {
-  title: "Herramientas IA para desarrolladores",
-  description: "Editores, extensiones, asistentes y modelos que te ayudarán a programar mejor: code smarter, not harder."
-};  
+const BLOG = {
+  layout: {
+    title: "Herramientas IA para desarrolladores",
+    description: "Editores, extensiones, asistentes y modelos que te ayudarán a programar mejor: code smarter, not harder."
+  },
+  hero: {
+    title: "Herramientas",
+    subtitle: "Editores, extensiones, asistentes y modelos para programar mejor con IA.",
+    cards: [],
+    cta: {
+      text: "code smarter, not harder",
+      link: "",
+    },
+  }
+}
 ---
 
-<Layout
-  layout={layout}>
+<Layout 
+  layout={BLOG. layout}>
+  <Hero hero={BLOG.hero} />
   <main>
-    <header>
-      <h1>Herramientas</h1>
-      <p>Editores, extensiones, asistentes y modelos que te ayudarán a programar mejor: code smarter, not harder.</p>
-    </header>
     <BlogList category="herramientas" />
   </main>
 </Layout>
