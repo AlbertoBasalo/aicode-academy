@@ -48,11 +48,11 @@ const { text } = Astro.props;
     interval = setInterval(performIteration, speed);
 
     // Restart animation on hover
-    el.addEventListener("mouseover", () => {
+/*     el.addEventListener("mouseover", () => {
       iteration = 0;
       if (interval) clearInterval(interval);
       interval = setInterval(performIteration, speed);
-    });
+    }); */
   });
   
 </script> 

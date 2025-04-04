@@ -39,16 +39,16 @@
 :root:not([data-theme="dark"]) {
   --pico-color: black;
   --pico-background-color: white;
-  --pico-primary: var(--ab-dark-green);
-  --pico-primary-hover: var(--ab-green);
-  --pico-primary-background: var(--ab-dark-green);
-  --pico-primary-hover-background: var(--ab-green);
+  --pico-primary: var(--ab-green);
+  --pico-primary-hover: var(--ab-light-green);
+  --pico-primary-background: var(--ab-green);
+  --pico-primary-hover-background: var(--ab-light-green);
   --pico-primary-inverse: white;
-  --pico-underline: var(--ab-dark-green);
-  --pico-primary-underline: var(--ab-dark-green);
-  --pico-secondary: var(--ab-dark-blue);
+  --pico-underline: var(--ab-green);
+  --pico-primary-underline: var(--ab-green);
+  --pico-secondary: var(--ab-blue);
   --pico-secondary-hover: var(--ab-blue);
-  --pico-secondary-background: var(--ab-dark-blue);
+  --pico-secondary-background: var(--ab-blue);
   --pico-secondary-hover-background: var(--ab-blue);
   --ab-theme-gray: var(--ab-light-gray);
   --pico-box-shadow: 0 0 2px 0 var(--pico-secondary);
@@ -68,7 +68,6 @@ code {
   color: var(--pico-color);
   background-color: var(--ab-theme-gray);
 }
-
 
 a:hover {
   background: var(--ab-gradient-primary);
