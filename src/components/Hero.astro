@@ -18,9 +18,9 @@ const { title, subtitle, cta } = hero;
     class="container">
     <header class="center">
       <h1 class="color"><MatrixText text={title} /></h1>
+      <p>{subtitle}<BlinkCursor /></p>
     </header>
     <main class="center">
-      <p>{subtitle}<BlinkCursor /></p>
     </main>
     {cta && (
       <footer class="center">
