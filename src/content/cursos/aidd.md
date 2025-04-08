@@ -9,7 +9,7 @@ slug: "aidd"
 
 La IA no te quitará el trabajo, pero lo cambiará para siempre. Este curso te enseña los fundamentos y las herramientas que necesitas para mejorar tu productividad y la calidad de tu código
 
-[Edición bonificada Fundae con TrainingIT](https://www.trainingit.es/index.php/producto/metodologia-ai-driven-development/)
+[Edición bonificada Fundae con TrainingIT](https://www.trainingit.es/producto/metodologia-ai-driven-development/?email=abasalo@trainingit.es)
 
 ### Motivación
 
@@ -30,7 +30,7 @@ Durante el curso se mostrarán varios proyectos prácticos usando distintas herr
 
 ### Ediciones
 
-- [Edición bonificada Fundae con TrainingIT](https://www.trainingit.es/index.php/producto/metodologia-ai-driven-development/)
+- [Edición bonificada Fundae con TrainingIT](https://www.trainingit.es/producto/metodologia-ai-driven-development/?email=abasalo@trainingit.es)
 
 - Curso en directo en tu empresa o centro de formación
 
@@ -73,3 +73,5 @@ Durante el curso se mostrarán varios proyectos prácticos usando distintas herr
 - 5.1. Human in the loop
 - 5.2. AI Quality
 - 5.3. Confianza en el futuro
+
+> [Edición bonificada Fundae con TrainingIT](https://www.trainingit.es/producto/metodologia-ai-driven-development/?email=abasalo@trainingit.es)
