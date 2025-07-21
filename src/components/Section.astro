@@ -11,6 +11,7 @@ export type SectionProps = {
 type Card = {
   title: string;
   description: string;
+  cta?: Cta;
 };
 
 export type Cta = {
@@ -21,27 +22,46 @@ export type Cta = {
 const { section } = Astro.props as { section: SectionProps };
 
 // replace spaces and dots with dashes ensure single dash
-const id = section.title?.toLowerCase().replace(/ /g, "-").replace(/\./g, "-").replace(/-+/g, "-");
+const id = section.title
+  ?.toLowerCase()
+  .replace(/ /g, "-")
+  .replace(/\./g, "-")
+  .replace(/-+/g, "-");
 ---
 
 <section id={id} class="container">
   <header class="center">
     <h2 class="color">{section.title}</h2>
-    <p>{section.subtitle}</p>
+    <span>{section.subtitle}</span>
   </header>
-  {section.cards && section.cards.length > 0 && (
-    <main class="grid">
-      {section.cards.map((card) => (
-        <article>
-          <h3><PrimaryComment/>{card.title}</h3>
-          <p>{card.description}</p>
-        </article>
-      ))}
-    </main>
-  )}  
-  {section.cta && (
-    <footer class="center">
-      <a href={section.cta.link} target="_blank"><b>{section.cta.text}</b></a>
-    </footer>
-  )}
+  {
+    section.cards && section.cards.length > 0 && (
+      <main class="grid">
+        {section.cards.map((card) => (
+          <article>
+            <h3>
+              <PrimaryComment />
+              {card.title}
+            </h3>
+            <p>{card.description}</p>
+            {card.cta && <a href={card.cta.link}>{card.cta.text}</a>}
+          </article>
+        ))}
+      </main>
+    )
+  }
+  {
+    section.cta && (
+      <footer class="center">
+        <a
+          href={section.cta.link}
+          role="button"
+          class="outline"
+          target="_blank"
+        >
+          {section.cta.text}
+        </a>
+      </footer>
+    )
+  }
 </section>

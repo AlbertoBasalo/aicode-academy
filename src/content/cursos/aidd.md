@@ -32,9 +32,9 @@ Durante el curso se mostrarán varios proyectos prácticos usando distintas herr
 
 - [Edición bonificada Fundae con TrainingIT](https://www.trainingit.es/producto/metodologia-ai-driven-development/?email=abasalo@trainingit.es)
 
-- Curso en directo en tu empresa o centro de formación
+- [Edición lite con EscuelaIT](https://escuela.it/cursos/metodologias-desarrollo-inteligencia-artificial)
 
-- Udemy o similares para Latinoamérica _(en proceso)_
+- Curso **en directo y a medida** en tu empresa o centro de formación. [Contacta con Alberto Basalo](https://www.linkedin.com/in/albertobasalo/)
 
 ## Contenido
 
@@ -75,3 +75,7 @@ Durante el curso se mostrarán varios proyectos prácticos usando distintas herr
 - 5.3. Confianza en el futuro
 
 > [Edición bonificada Fundae con TrainingIT](https://www.trainingit.es/producto/metodologia-ai-driven-development/?email=abasalo@trainingit.es)
+
+> [Edición lite con EscuelaIT](https://escuela.it/cursos/metodologias-desarrollo-inteligencia-artificial)
+
+> Curso **en directo y a medida** en tu empresa o centro de formación. [Contacta con Alberto Basalo](https://www.linkedin.com/in/albertobasalo/)
