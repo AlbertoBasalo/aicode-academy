@@ -11,6 +11,8 @@ La IA no te quitará el trabajo, pero lo cambiará para siempre. Este curso te e
 
 [Edición bonificada Fundae con TrainingIT](https://www.trainingit.es/producto/metodologia-ai-driven-development/?email=abasalo@trainingit.es)
 
+[Edición lite con EscuelaIT](https://escuela.it/cursos/metodologias-desarrollo-inteligencia-artificial)
+
 ### Motivación
 
 La IA está revolucionando el desarrollo de software. **Programar no va a ser lo que era**. En los entornos profesionales se exige calidad además de productividad. La IA puede darte ambas, si sabes usarla bien.
@@ -78,4 +80,3 @@ Durante el curso se mostrarán varios proyectos prácticos usando distintas herr
 
 > [Edición lite con EscuelaIT](https://escuela.it/cursos/metodologias-desarrollo-inteligencia-artificial)
 
-> Curso **en directo y a medida** en tu empresa o centro de formación. [Contacta con Alberto Basalo](https://www.linkedin.com/in/albertobasalo/)

@@ -22,7 +22,7 @@ export const HOME: Home = {
   },
   hero: {
     title: "Ai_Code Academy",
-    subtitle: "La IA no te quitará el trabajo, pero lo cambiará para siempre",
+    subtitle: "La IA no te quitará el trabajo, pero lo cambiará para siempre.",
     cards: [],
     cta: {
       text: "Learn to code smarter",
@@ -37,17 +37,17 @@ export const HOME: Home = {
       {
         title: "Metodología AI-DD",
         description:
-          "Contenido centrado en las mejores prácticas, no solo en las últimas herramientas de IA.",
+          "Las mejores herramientas I.A. de la mejor manera",
       },
       {
         title: "Proyectos real-world",
         description:
-          "Ejemplos con aplicaciones listas para producción, no solo ejemplos de juguete.",
+          "Ejemplos con aplicaciones no triviales listas para producción.",
       },
       {
         title: "Experiencia empresarial",
         description:
-          "Aprende de desarrolladores experimentados, no solo académicos o aficionados.",
+          "Experiencia y adaptación a las necesidades de tu empresa.",
       },
     ],
     cta: {
@@ -57,20 +57,20 @@ export const HOME: Home = {
   },
   aidd: {
     title: "¿Qué es AI-Driven Development?",
-    subtitle: "Una metodología de desarrollo profesional con herramientas de I.A.",
+    subtitle: "Una metodología de desarrollo profesional en tres fases (agentes)",
     cards: [
       {
-        title: "Human in the Loop",
-        description: "El humano es estratega, colaborador y responsable.",
+        title: "Architect",
+        description: "Definición de requerimientos, modelo de dominio y diseño del sistema.",
       },
       {
-        title: "Rules over Tools",
+        title: "Builder",
         description:
-          "Las herramientas se someten a metodologías de desarrollo.",
+          "Arquetipos y reglas para planificar tareas y generar código.",
       },
       {
-        title: "A.I. Quality code",
-        description: "El desarrollo es productivo, mantenible y de calidad.",
+        title: "Craftsman",
+        description: "Mantenimiento y calidad con pruebas y documentación.",
       },
     ],
     cta: {
@@ -81,17 +81,17 @@ export const HOME: Home = {
   technologies: {
     title: "Tecnologías usadas",
     subtitle:
-      "Esta lista es siempre provisional y adaptada a tus necesidades.",
+      "Esta lista es siempre provisional y adaptable a tus necesidades.",
     cards: [
       {
         title: "Agentes",
         description:
-          "Cursor, GeminiCLI, Github Copilot...",
+          "Cursor, Gemini CLI, Github Copilot, Claude Code, Kiro...",
       },
       {
         title: "Modelos",
         description:
-          "OpenAI, Claude, Gemini...",
+          "OpenAI, Claude, Gemini, Grok...",
       },
       {
         title: "Herramientas",
