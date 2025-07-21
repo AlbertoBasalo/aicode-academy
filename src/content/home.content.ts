@@ -51,10 +51,9 @@ export const HOME: Home = {
       },
     ],
     cta: {
-      text: "",
-      link: "",
+      text: "Por Alberto Basalo",
+      link: "https://albertobasalo.dev",
     },
-
   },
   aidd: {
     title: "¿Qué es AI-Driven Development?",
