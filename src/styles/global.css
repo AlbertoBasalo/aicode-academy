@@ -6,6 +6,7 @@
   --pico-font-family-sans-serif: Tomorrow, Roboto, Helvetica, Arial, sans-serif;
   --pico-font-family-monospace: "Fira Mono", Consolas, monospace;
   --pico-border-radius: 0rem;
+  --pico-typography-spacing-vertical: 0.6rem;
 }
 
 body {
@@ -22,24 +23,28 @@ body {
     padding-right: 4%;
   }
 }
+
 @media (min-width: 768px) {
   body {
     padding-left: 5%;
     padding-right: 5%;
   }
 }
+
 @media (min-width: 1024px) {
   body {
     padding-left: 8%;
     padding-right: 8%;
   }
 }
+
 @media (min-width: 1280px) {
   body {
     padding-left: 10%;
     padding-right: 10%;
   }
 }
+
 @media (min-width: 1536px) {
   body {
     padding-left: 15%;
@@ -65,13 +70,18 @@ h1 {
 
 h2 {
   --pico-font-size: 2rem;
-  --pico-line-height: 1.125;
+  --pico-line-height: 1.5;
   --pico-typography-spacing-top: 3rem;
   margin-bottom: 1rem;
 }
 
-article, section  {
+article,
+section {
   padding: 4%;
+}
+
+header {
+  margin-bottom: 1rem;
 }
 
 [data-theme="light"] .light {

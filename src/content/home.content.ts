@@ -9,7 +9,7 @@ export type Home = {
   aidd: SectionProps;
   why: SectionProps;
   us: SectionProps;
-  meetups: SectionProps;
+  cursos: SectionProps;
 };
 
 
@@ -20,41 +20,18 @@ export const HOME: Home = {
       "Aprende a desarrollar aplicaciones usando herramientas de IA para aumentar tu productividad y la calidad de tu código. Learn to code smarter con la academia de IA en español de Alberto Basalo.",
   },
   hero: {
-    title: "Ai-Driven Development",
+    title: "Ai_Code Academy",
     subtitle: "La IA no te quitará el trabajo, pero lo cambiará para siempre",
     cards: [],
     cta: {
       text: "Learn to code smarter",
-      link: "/cursos",
-    },
-  },
-  aidd: {
-    title: "¿Qué es AI-Driven Development?",
-    subtitle: "Metodología de desarrollo profesional con herramientas de I.A.",
-    cards: [
-      {
-        title: "Human in the Loop",
-        description: "El humano es estratega, colaborador y responsable.",
-      },
-      {
-        title: "Rules over Tools",
-        description:
-          "Las herramientas se someten a metodologías de desarrollo.",
-      },
-      {
-        title: "A.I. Quality code",
-        description: "El desarrollo es productivo, mantenible y de calidad.",
-      },
-    ],
-    cta: {
-      text: "El manifiesto AI-DD",
-      link: "/blog/es/aidd-manifesto",
+      link: "",
     },
   },
   why: {
-    title: "A.I. Code Academy",
+    title: "¿Qué es AI-Code Academy?",
     subtitle:
-      "Una academia de IA en español para desarrolladores profesionales.",
+      "Formación en español basada en la metodología AI-Driven Development.",
     cards: [
       {
         title: "Metodología AI-DD",
@@ -76,7 +53,30 @@ export const HOME: Home = {
       text: "",
       link: "",
     },
-  
+
+  },
+  aidd: {
+    title: "¿Qué es AI-Driven Development?",
+    subtitle: "Una metodología de desarrollo profesional con herramientas de I.A.",
+    cards: [
+      {
+        title: "Human in the Loop",
+        description: "El humano es estratega, colaborador y responsable.",
+      },
+      {
+        title: "Rules over Tools",
+        description:
+          "Las herramientas se someten a metodologías de desarrollo.",
+      },
+      {
+        title: "A.I. Quality code",
+        description: "El desarrollo es productivo, mantenible y de calidad.",
+      },
+    ],
+    cta: {
+      text: "El manifiesto AI-DD",
+      link: "/blog/es/aidd-manifesto",
+    },
   },
   us: {
     title: "AI code Academy",
@@ -88,9 +88,9 @@ export const HOME: Home = {
       link: "https://albertobasalo.dev",
     },
   },
-  meetups: {
-    title: "Meetups",
-    subtitle: "¿Quieres organizar un meetup en tu empresa?",
+  cursos: {
+    title: "Cursos",
+    subtitle: "¿Quieres organizar un curso en tu empresa?",
     cards: [],
     cta: {
       text: "Contacta con Alberto Basalo",

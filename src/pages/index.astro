@@ -4,12 +4,11 @@ import { HOME } from "@content/home.content";
 import Layout from "@layouts/Layout.astro";
 import Hero from "../components/Hero.astro";
 ---
-<Layout
-  layout={HOME.layout}>
 
+<Layout layout={HOME.layout}>
   <Hero hero={HOME.hero} />
 
   <Section section={HOME.why} />
   <Section section={HOME.aidd} />
-  <Section section={HOME.meetups} />
+  <Section section={HOME.cursos} />
 </Layout>

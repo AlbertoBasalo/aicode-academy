@@ -9,14 +9,14 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
+    "start": "bun run build &&npm run preview",
+    "test": "echo 'No tests :-('",
     "dev": "astro dev",
     "build": "astro build",
-    "serve": "bun run build && serve dist",
-    "cloud": "echo 'Deploying to Cloudflare...'",
     "preview": "astro preview",
     "astro": "astro",
-    "preprod": "bun run build",
-    "prod": "git add . && git commit -m 'Deploy' && git push origin master"
+    "prerelease": "bun run build",
+    "release": "git add . && git commit -m 'Release' && git push origin master"
   },
   "dependencies": {
     "@picocss/pico": "^2.1.1"
