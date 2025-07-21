@@ -11,11 +11,10 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
-    "serve": "npm run build && serve dist",
+    "serve": "bun run build && serve dist",
+    "cloud": "echo 'Deploying to Cloudflare...'",
     "preview": "astro preview",
     "astro": "astro",
-    "update": "npm update --save && npm outdated",
-    "master": "git checkout master && git merge blog",
     "preprod": "bun run build",
     "prod": "git add . && git commit -m 'Deploy' && git push origin master"
   },
@@ -23,8 +22,7 @@
     "@picocss/pico": "^2.1.1"
   },
   "devDependencies": {
-    "@astrojs/sitemap": "^3.3.0",
-    "@biomejs/biome": "^1.9.4",
-    "astro": "^5.7.10"
+    "@astrojs/sitemap": "^3.4.1",
+    "astro": "^5.12.0"
   }
 }
