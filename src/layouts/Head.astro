@@ -1,20 +1,20 @@
 ---
 interface Props {
-	title: string;
-	description: string;
+  title: string;
+  description: string;
 }
 
 const { title, description } = Astro.props;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const logo = "/logo_6.png";
 const fontAPI = "https://fonts.googleapis.com";
-const fontFamilies = "family=Fira+Mono&family=Major+Mono+Display&family=Tomorrow";
-// "https://fonts.googleapis.com/css2?family=Fira+Mono&family=Major+Mono+Display&family=Tomorrow&display=swap"
+const fontFamilies =
+  "family=Fira+Mono&family=Major+Mono+Display&family=Tomorrow";
 const fonts = `${fontAPI}/css2?${fontFamilies}&display=swap`;
 const motto = "Learn to code smarter";
 const twitterHandle = "@AlbertoBasalo";
 const siteName = "AI Code Academy";
-const image = `https://aicode.academy/site-og-image.png?${new Date().toISOString().split('T')[0]}`;
+const image = `https://aicode.academy/site-og-image.png?${new Date().toISOString().split("T")[0]}`;
 ---
 
 <head lang="es" data-theme="dark">
@@ -28,7 +28,7 @@ const image = `https://aicode.academy/site-og-image.png?${new Date().toISOString
   <!-- Google Fonts -->
   <link rel="preconnect" href={fontAPI} />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href={fonts}  />
+  <link rel="stylesheet" href={fonts} />
 
   <!-- Main Meta Tags -->
   <title>{title}</title>
@@ -48,4 +48,4 @@ const image = `https://aicode.academy/site-og-image.png?${new Date().toISOString
   <meta name="twitter:title" content={title + " | " + motto} />
   <meta name="twitter:description" content={description} />
   <meta name="twitter:image" content={image} />
-
+</head>

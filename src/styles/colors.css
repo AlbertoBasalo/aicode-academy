@@ -30,9 +30,9 @@
   --pico-secondary-hover-background: var(--ab-blue);
   --pico-box-shadow: 0 0 2px 0 var(--pico-secondary);
   --ab-theme-gray: var(--ab-dark-gray);
-  --ab-gradient-primary: linear-gradient(var(--ab-dark-green),
+  --ab-gradient-primary: linear-gradient(270deg, var(--ab-light-blue),
       var(--ab-light-green));
-  --ab-gradient-secondary: linear-gradient(var(--ab-dark-blue),
+  --ab-gradient-secondary: linear-gradient(270deg, var(--ab-dark-blue),
       var(--ab-light-blue));
   color-scheme: dark;
 }
@@ -55,9 +55,9 @@
   --pico-secondary-hover-background: var(--ab-blue);
   --pico-box-shadow: 0 0 2px 0 var(--pico-secondary);
   --ab-theme-gray: var(--ab-light-gray);
-  --ab-gradient-primary: linear-gradient(var(--ab-dark-green),
-      var(--ab-light-green));
-  --ab-gradient-secondary: linear-gradient(var(--ab-dark-blue),
+  --ab-gradient-primary: linear-gradient(270deg, var(--ab-dark-blue),
+      var(--ab-dark-green));
+  --ab-gradient-secondary: linear-gradient(270deg, var(--ab-dark-blue),
       var(--ab-light-blue));
   color-scheme: light;
 }

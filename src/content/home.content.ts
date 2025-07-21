@@ -8,6 +8,7 @@ export type Home = {
   hero: SectionProps;
   aidd: SectionProps;
   why: SectionProps;
+  technologies: SectionProps;
   us: SectionProps;
   cursos: SectionProps;
 };
@@ -78,6 +79,28 @@ export const HOME: Home = {
       link: "/blog/es/aidd-manifesto",
     },
   },
+  technologies: {
+    title: "Tecnologías usadas",
+    subtitle:
+      "Esta lista es siempre provisional y adaptada a tus necesidades.",
+    cards: [
+      {
+        title: "Agentes",
+        description:
+          "Cursor, GeminiCLI, Github Copilot...",
+      },
+      {
+        title: "Modelos",
+        description:
+          "OpenAI, Claude, Gemini...",
+      },
+      {
+        title: "Herramientas",
+        description:
+          "MCPs, background agents...",
+      }
+    ],
+  },
   us: {
     title: "AI code Academy",
     subtitle:
@@ -89,7 +112,7 @@ export const HOME: Home = {
     },
   },
   cursos: {
-    title: "Cursos",
+    title: "Cursos a medida",
     subtitle: "¿Quieres organizar un curso en tu empresa?",
     cards: [],
     cta: {
