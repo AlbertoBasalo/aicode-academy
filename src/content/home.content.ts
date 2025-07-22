@@ -37,17 +37,17 @@ export const HOME: Home = {
       {
         title: "Metodología AI-DD",
         description:
-          "Las mejores herramientas I.A. de la mejor manera",
+          "Las mejores prácticas para sacarle el máximo partido a las herramientas de IA.",
       },
       {
         title: "Proyectos real-world",
         description:
-          "Ejemplos con aplicaciones no triviales listas para producción.",
+          "Ejemplos con aplicaciones no triviales listas para producción. Con documentación y pruebas.",
       },
       {
         title: "Experiencia empresarial",
         description:
-          "Experiencia y adaptación a las necesidades de tu empresa.",
+          "Experiencia y adaptación a las necesidades (editor, lenguaje, etc.) de tu empresa.",
       },
     ],
     cta: {
@@ -84,14 +84,14 @@ export const HOME: Home = {
       "Esta lista es siempre provisional y adaptable a tus necesidades.",
     cards: [
       {
-        title: "Agentes",
+        title: "Editores",
         description:
-          "Cursor, Gemini CLI, Github Copilot, Claude Code, Kiro...",
+          "Claude Code, Cursor, Gemini CLI, Github Copilot, Kiro...",
       },
       {
         title: "Modelos",
         description:
-          "OpenAI, Claude, Gemini, Grok...",
+          "Claude, Gemini, GPT, Grok...",
       },
       {
         title: "Herramientas",

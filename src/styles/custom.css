@@ -1,39 +1,46 @@
- .center {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
- }
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
 
- .color {
-   background: var(--ab-gradient-primary);
-   -webkit-background-clip: text;
-   background-clip: text;
-   -webkit-text-fill-color: transparent;
- }
+.color {
+  background: var(--ab-gradient-primary);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
+.colored-headers h2 {
+  background: var(--ab-gradient-primary);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
- .colored-headers h2 {
-   background: var(--ab-gradient-primary);
-   -webkit-background-clip: text;
-   background-clip: text;
-   -webkit-text-fill-color: transparent;
- }
+.comment {
+  color: var(--pico-secondary);
+  margin-right: 1%;
+}
 
- .comment {
-   color: var(--pico-secondary);
-   margin-right: 4%;
- }
+.container {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
 
- .container {
-   margin-top: 4%;
-   margin-bottom: 4%;
- }
+.logo {
+  font-family: var(--pico-font-family-emoji);
+}
 
- .logo {
-   font-family: var(--pico-font-family-emoji);
- }
+.primary {
+  color: var(--pico-primary);
+}
 
- .primary {
-   color: var(--pico-primary);
- }
+.secondary {
+  background: var(--ab-gradient-secondary);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

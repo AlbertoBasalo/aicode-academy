@@ -10,12 +10,13 @@ const layout: LayoutProps = {
   description: "Artículos sobre programación con Inteligencia Artificial",
   hero: {
     title: "Cursos i.A.",
-    subtitle: "Aprende metodologías, herramientas y procedimientos para programar mejor con IA.",
+    subtitle:
+      "Aprende metodologías, herramientas y procedimientos para programar mejor con IA.",
     cta: {
       link: "",
-      text: "Learn to code smarter"
-    }
-  }
+      text: "Learn to code smarter",
+    },
+  },
 };
 const cursos = await getCollection("cursos");
 
@@ -23,25 +24,31 @@ const cta = {
   title: "¿Quieres organizar un curso en tu empresa?",
   subtitle: "Puedo ajustar el temario y herramientas a tus necesidades",
   cta: {
-    link: "https://www.trainingit.es/producto/metodologia-ai-driven-development/?email=abasalo@trainingit.es",
-    text: "Edición en video bonificable Fundae"
-  }
-}
+    text: "Contacta con Alberto Basalo",
+    link: "https://www.linkedin.com/in/albertobasalo/",
+  },
+};
 ---
-<Layout
-  layout={layout}>
+
+<Layout layout={layout}>
   <Hero hero={layout.hero} />
   <main>
     {
       cursos.map((curso) => (
         <article>
-        <h2><PrimaryComment /><a href={`/cursos/${curso.data.slug}`}>{curso.data.title}</a></h2>
-        <p>{curso.data.subtitle}</p>
-        <small>{curso.data.description}</small>
-      </article>
-    ))
-  }
+          <h2>
+            <>
+              <PrimaryComment />
+              <a href={`/cursos/${curso.data.slug}`}>{curso.data.title}</a>
+            </>
+          </h2>
+          <p>{curso.data.subtitle}</p>
+          <small>{curso.data.description}</small>
+        </article>
+      ))
+    }
     <footer>
       <Section section={cta} />
     </footer>
+  </main>
 </Layout>
