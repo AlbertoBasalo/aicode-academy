@@ -83,7 +83,7 @@ export const HOME: Home = {
       {
         title: "Editores",
         description:
-          "Claude Code, Cursor, Gemini CLI, Github Copilot, Kiro...",
+          "ClaudeCode, Cursor, GeminiCLI, Github-Copilot, Kiro...",
       },
       {
         title: "Modelos",
@@ -113,15 +113,15 @@ export const HOME: Home = {
     cards: [
       {
         title: "Tu contenido",
-        description: "Escoge editor, modelo, lenguaje, etc. .",
+        description: "Escoge editor, modelo, lenguaje...",
       },
       {
         title: "Tu formato",
-        description: "En directo, tu calendario, tu bonificación, etc.",
+        description: "En directo, con tu calendario, tu bonificación...",
       },
     ],
     cta: {
-      text: "Contacta con Alberto Basalo",
+      text: "Contacta con LinkedIn",
       link: "https://www.linkedin.com/in/albertobasalo/",
     },
   },
