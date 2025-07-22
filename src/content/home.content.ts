@@ -81,7 +81,7 @@ export const HOME: Home = {
   technologies: {
     title: "Tecnologías usadas",
     subtitle:
-      "Esta lista es siempre provisional y adaptable a tus necesidades.",
+      "Esta lista es siempre provisional...",
     cards: [
       {
         title: "Editores",
@@ -111,9 +111,18 @@ export const HOME: Home = {
     },
   },
   cursos: {
-    title: "Cursos a medida",
-    subtitle: "¿Quieres organizar un curso en tu empresa?",
-    cards: [],
+    title: "Cursos a medida para tu empresa/academia",
+    subtitle: "La IA y AIcode Academy se adaptan a tus necesidades",
+    cards: [
+      {
+        title: "Tu contenido",
+        description: "Escoge editor, modelo, lenguaje, etc. .",
+      },
+      {
+        title: "Tu formato",
+        description: "En directo, tu calendario, tu bonificación, etc.",
+      },
+    ],
     cta: {
       text: "Contacta con Alberto Basalo",
       link: "https://www.linkedin.com/in/albertobasalo/",
