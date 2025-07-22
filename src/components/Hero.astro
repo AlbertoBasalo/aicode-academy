@@ -17,7 +17,7 @@ const { title, subtitle, cta } = hero;
     <h1 class="color"><MatrixText text={title} /></h1>
   </header>
   <main class="center">
-    <span>{subtitle}<BlinkCursor /></span>
+    <span>{subtitle}</span>
   </main>
   {
     cta && (
@@ -33,7 +33,14 @@ const { title, subtitle, cta } = hero;
             {cta.text}
           </a>
         )}
-        {!cta.link && <h2 class="center primary">{cta.text}</h2>}
+        {!cta.link && (
+          <h2 class="center primary">
+            <span>
+              {cta.text}
+              <BlinkCursor />
+            </span>
+          </h2>
+        )}
       </footer>
     )
   }

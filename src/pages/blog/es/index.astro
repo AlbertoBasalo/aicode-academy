@@ -6,27 +6,33 @@ import Layout from "@layouts/Layout.astro";
 const BLOG = {
   layout: {
     title: "Blog - AI-Driven Development en español.",
-    description: "Artículos sobre programación con Inteligencia Artificial"
+    description: "Artículos sobre programación con Inteligencia Artificial",
   },
   hero: {
     title: "Ai-DD blog",
-    subtitle: "Metodologías, herramientas y procedimientos para programar mejor con IA. ",
+    subtitle:
+      "Metodologías, herramientas y procedimientos para programar mejor con IA. ",
     cards: [],
     cta: {
-      text: "code smarter, not harder",
+      text: "Learn to code smarter",
       link: "",
     },
-  }
+  },
 };
-
 ---
-<Layout
-  layout={BLOG.layout}>
+
+<Layout layout={BLOG.layout}>
   <Hero hero={BLOG.hero} />
   <nav aria-label="Categorías">
     <ul>
-      <li><a href="/blog/es/herramientas" role="button" class="outline">Herramientas</a></li>
-      <li><a href="/blog/es/procedimientos" role="button" class="outline">Procedimientos</a></li>
+      <li>
+        <a href="/blog/es/herramientas" role="button" class="outline"
+          >Herramientas</a>
+      </li>
+      <li>
+        <a href="/blog/es/procedimientos" role="button" class="outline"
+          >Procedimientos</a>
+      </li>
     </ul>
   </nav>
   <main>

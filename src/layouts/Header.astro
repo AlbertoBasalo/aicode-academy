@@ -5,23 +5,32 @@ type NavItem = {
   external?: boolean;
 };
 const navItems: NavItem[] = [
-  { href: '/blog/es', text: 'Blog' },
-  { href: '/cursos', text: 'Cursos' },
-  { href: '/meetups/v01', text: 'Meetups' },
+  { href: "/blog/es", text: "Blog" },
+  { href: "/cursos", text: "Cursos" },
+  { href: "/meetups/v01", text: "Meetups" },
 ];
 ---
 
 <header>
   <nav>
     <ul>
-      <li><strong><a href="/" class="logo">Ai code Academy</a></strong></li>
+      <li>
+        <strong><a href="/" class="logo color">Ai code Academy</a></strong>
+      </li>
     </ul>
     <ul>
-      {navItems.map(item => (
-        <li>
-          <a href={item.href} {...item.external && { target: '_blank', rel: 'noopener' }}>{item.text}</a>
-        </li>
-      ))}
+      {
+        navItems.map((item) => (
+          <li>
+            <a
+              href={item.href}
+              {...(item.external && { target: "_blank", rel: "noopener" })}
+            >
+              {item.text}
+            </a>
+          </li>
+        ))
+      }
       <li>
         <span id="theme-toggle" aria-label="Toggle theme">
           <span class="light">🔳</span>
@@ -40,15 +49,13 @@ const navItems: NavItem[] = [
 </style>
 
 <script>
-  const htmlElement = document.documentElement; 
+  const htmlElement = document.documentElement;
   const getTheme = () => htmlElement.getAttribute("data-theme");
   const setTheme = (theme) => htmlElement.setAttribute("data-theme", theme);
   const saveTheme = (theme) => localStorage.setItem("theme", theme);
-  document.getElementById('theme-toggle')?.addEventListener('click', () => {
+  document.getElementById("theme-toggle")?.addEventListener("click", () => {
     const newTheme = getTheme() === "dark" ? "light" : "dark";
     setTheme(newTheme);
     saveTheme(newTheme);
   });
 </script>
-
-

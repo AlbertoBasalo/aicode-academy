@@ -57,7 +57,7 @@ export const HOME: Home = {
   },
   aidd: {
     title: "¿Qué es AI-Driven Development?",
-    subtitle: "Una metodología de desarrollo profesional en tres fases (agentes)",
+    subtitle: "Una metodología de desarrollo profesional en tres fases (agentes).",
     cards: [
       {
         title: "Architect",
@@ -73,10 +73,7 @@ export const HOME: Home = {
         description: "Mantenimiento y calidad con pruebas y documentación.",
       },
     ],
-    cta: {
-      text: "El manifiesto AI-DD",
-      link: "/blog/es/aidd-manifesto",
-    },
+
   },
   technologies: {
     title: "Tecnologías usadas",
@@ -112,7 +109,7 @@ export const HOME: Home = {
   },
   cursos: {
     title: "Cursos a medida para tu empresa/academia",
-    subtitle: "La IA y AIcode Academy se adaptan a tus necesidades",
+    subtitle: "La IA y AIcode Academy se adaptan a tus necesidades.",
     cards: [
       {
         title: "Tu contenido",
