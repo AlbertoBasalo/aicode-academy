@@ -19,8 +19,12 @@ const { post } = Astro.props;
 ---
 
 <article>
-  <h3><PrimaryComment /><a href={`/blog/es/${post.data.slug}`}>{post.data.title}</a></h3>
+  <h3>
+    <PrimaryComment /><a href={`/blog/es/${post.data.slug}`}
+      >{post.data.title}</a>
+  </h3>
   <PostMeta date={post.data.date ?? ""} category={post.data.category ?? ""} />
-  <p>{post.data.subtitle}</p>
+  <p class="color">{post.data.subtitle}</p>
   <small>{post.data.description}</small>
-</article> 
+</article>
+

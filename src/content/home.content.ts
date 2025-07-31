@@ -51,8 +51,8 @@ export const HOME: Home = {
       },
     ],
     cta: {
-      text: "Por Alberto Basalo",
-      link: "https://albertobasalo.dev",
+      text: "Ver cursos",
+      link: "/cursos/",
     },
   },
   aidd: {
@@ -73,7 +73,10 @@ export const HOME: Home = {
         description: "Mantenimiento y calidad con pruebas y documentación.",
       },
     ],
-
+    cta: {
+      text: "Conoce a AIDDbot",
+      link: "https://aiddbot.com",
+    },
   },
   technologies: {
     title: "Tecnologías usadas",

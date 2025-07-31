@@ -94,3 +94,16 @@ header {
 [data-theme="dark"] .dark {
   display: none;
 }
+
+mark {
+  color: var(--pico-secondary);
+  background-color: var(--pico-primary);
+}
+
+kbd {
+  background-color: transparent;
+  color: var(--pico-color);
+  border: 1px solid var(--pico-primary);
+  padding: 0.2rem 0.5rem;
+  font-weight: bold;
+}

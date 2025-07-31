@@ -1,0 +1,22 @@
+---
+import { getCollection } from "astro:content";
+import CursoArticle from "./CursoArticle.astro";
+
+interface Props {
+  category?: string;
+}
+
+const { category } = Astro.props;
+
+const cursos = await getCollection("cursos");
+const filteredCursos = category
+  ? cursos.filter((curso) => curso.data.category === category)
+  : cursos;
+
+const sortedCursos = filteredCursos.sort((a, b) => {
+  // Ordenar por título alfabéticamente
+  return a.data.title.localeCompare(b.data.title);
+});
+---
+
+{sortedCursos.map((curso) => <CursoArticle curso={curso} />)}

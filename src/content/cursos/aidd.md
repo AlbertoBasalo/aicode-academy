@@ -1,8 +1,20 @@
 ---
-title: "AI- Driven development"
+title: "AI-Driven Development"
 subtitle: "Curso de metodología de programación con Inteligencia Artificial"
-description: "Aprende la metodología AI-Driven Development para mejorar tu productividad y la calidad de tu código."
+description: "Aprende la metodología AI-Driven Development para mejorar tu productividad y la calidad de tu código. Metodología completa para programar con IA."
 slug: "aidd"
+category: "metodología"
+duration: "16-20 horas"
+level: "intermedio"
+instructor: "Alberto Basalo"
+tags: ["IA", "programación", "metodología", "productividad", "calidad", "AI-Driven Development"]
+featured: true
+seo:
+  title: "Curso AI-Driven Development | Metodología de Programación con IA"
+  description: "Aprende la metodología AI-Driven Development para mejorar tu productividad y calidad de código. Curso completo con herramientas y procedimientos prácticos."
+  keywords: ["AI-Driven Development", "programación con IA", "metodología desarrollo", "productividad programador", "calidad código", "herramientas IA"]
+  image: "/aicode_meetup_v01.png"
+  canonical: "https://aicode.academy/cursos/aidd"
 ---
 
 ## Metodología AI-Driven Development
@@ -75,6 +87,21 @@ Durante el curso se mostrarán varios proyectos prácticos usando distintas herr
 - 5.1. Human in the loop
 - 5.2. AI Quality
 - 5.3. Confianza en el futuro
+
+## Características
+
+### Prerrequisitos
+
+- Conocimientos básicos de TypeScript (válido para Java y C#)
+- Experiencia en desarrollo profesional
+- Interés en mejorar la productividad con IA
+
+### Herramientas que Utilizaremos
+
+- **Claude Sonnet**: Modelo de lenguaje
+- **Cursor**: Editor con IA integrada
+- **VsCode + GitHub Copilot**: Editor con plugin de IA integrada
+- **TypeScript**: Lenguaje de programación ubicuo
 
 > [Edición bonificada Fundae con TrainingIT](https://www.trainingit.es/producto/metodologia-ai-driven-development/?email=abasalo@trainingit.es)
 

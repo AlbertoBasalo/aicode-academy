@@ -1,24 +1,23 @@
 ---
 import Hero from "@/src/components/Hero.astro";
-import PrimaryComment from "@components/PrimaryComment.astro";
+import CursoList from "@components/CursoList.astro";
 import Section from "@components/Section.astro";
 import Layout, { type LayoutProps } from "@layouts/Layout.astro";
-import { getCollection } from "astro:content";
 
 const layout: LayoutProps = {
-  title: "Blog - AICode Academy",
-  description: "Artículos sobre programación con Inteligencia Artificial",
+  title: "Cursos de Programación con IA | AICode Academy",
+  description:
+    "Cursos especializados en programación con Inteligencia Artificial. Aprende metodologías, herramientas y procedimientos para mejorar tu productividad y calidad de código.",
   hero: {
-    title: "Cursos i.A.",
+    title: "AI courses",
     subtitle:
-      "Aprende metodologías, herramientas y procedimientos para programar mejor con IA.",
+      "Aprende metodologías, herramientas y procedimientos para programar mejor con Inteligencia Artificial.",
     cta: {
       link: "",
       text: "Learn to code smarter",
     },
   },
 };
-const cursos = await getCollection("cursos");
 
 const cta = {
   title: "¿Quieres organizar un curso en tu empresa/academia?",
@@ -33,20 +32,7 @@ const cta = {
 <Layout layout={layout}>
   <Hero hero={layout.hero} />
   <main>
-    {
-      cursos.map((curso) => (
-        <article>
-          <h2>
-            <>
-              <PrimaryComment />
-              <a href={`/cursos/${curso.data.slug}`}>{curso.data.title}</a>
-            </>
-          </h2>
-          <p>{curso.data.subtitle}</p>
-          <small>{curso.data.description}</small>
-        </article>
-      ))
-    }
+    <CursoList />
     <footer>
       <Section section={cta} />
     </footer>

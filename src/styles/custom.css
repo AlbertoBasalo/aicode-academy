@@ -13,7 +13,8 @@
   -webkit-text-fill-color: transparent;
 }
 
-.colored-headers h2 {
+.colored-headers h2,
+.colored-headers h3 {
   background: var(--ab-gradient-primary);
   -webkit-background-clip: text;
   background-clip: text;

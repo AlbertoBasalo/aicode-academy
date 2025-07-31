@@ -1,0 +1,85 @@
+---
+import PrimaryComment from "./PrimaryComment.astro";
+
+interface Props {
+  curso: {
+    data: {
+      slug: string;
+      title: string;
+      category?: string;
+      subtitle?: string;
+      description: string;
+      duration?: string;
+      level?: string;
+      instructor?: string;
+      tags?: string[];
+      featured?: boolean;
+    };
+  };
+}
+
+const { curso } = Astro.props;
+---
+
+<article>
+  <header>
+    <h3>
+      <PrimaryComment />
+      <a
+        href={`/cursos/${curso.data.slug}`}
+        title={`Ver curso: ${curso.data.title}`}
+      >
+        {curso.data.title}
+      </a>
+    </h3>
+    <nav aria-label="curso metadata">
+      <ul>
+        {
+          curso.data.category && (
+            <li>
+              <kbd>{curso.data.category}</kbd>
+            </li>
+          )
+        }
+        {
+          curso.data.level && (
+            <li>
+              <kbd>{curso.data.level}</kbd>
+            </li>
+          )
+        }
+        {
+          curso.data.duration && (
+            <li>
+              <kbd class="outline">{curso.data.duration}</kbd>
+            </li>
+          )
+        }
+        {
+          curso.data.featured && (
+            <li>
+              <mark>Destacado</mark>
+            </li>
+          )
+        }
+      </ul>
+    </nav>
+
+    {curso.data.subtitle && <h4 class="secondary">{curso.data.subtitle}</h4>}
+    <p>{curso.data.description}</p>
+
+    {
+      curso.data.tags && curso.data.tags.length > 0 && (
+        <nav aria-label="etiquetas del curso">
+          <ul>
+            {curso.data.tags.map((tag) => (
+              <li>
+                <kbd>{tag}</kbd>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      )
+    }
+  </header>
+</article>

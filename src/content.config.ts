@@ -46,7 +46,22 @@ const legalCollection = defineCollection({
 
 const cursosCollection = defineCollection({
   loader: glob({ pattern: "**/*.md", base: "./src/content/cursos" }),
-  schema: baseSchema
+  schema: baseSchema.extend({
+    category: z.string().optional(),
+    duration: z.string().optional(),
+    level: z.enum(["básico", "intermedio", "avanzado"]).optional(),
+    price: z.string().optional(),
+    instructor: z.string().optional(),
+    tags: z.array(z.string()).optional(),
+    featured: z.boolean().optional(),
+    seo: z.object({
+      title: z.string().optional(),
+      description: z.string().optional(),
+      keywords: z.array(z.string()).optional(),
+      image: z.string().optional(),
+      canonical: z.string().optional()
+    }).optional()
+  })
 });
 
 const meetupsCollection = defineCollection({

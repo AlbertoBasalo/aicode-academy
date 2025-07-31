@@ -1,4 +1,14 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://aicode.academy/sitemap-index.xml 
+# Permitir acceso a recursos importantes
+Allow: /cursos/
+Allow: /blog/
+Allow: /meetups/
+
+# Sitemaps
+Sitemap: https://aicode.academy/sitemap-index.xml
+Sitemap: https://aicode.academy/cursos/sitemap.xml
+
+# Crawl-delay para ser respetuoso con el servidor
+Crawl-delay: 1 
