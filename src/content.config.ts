@@ -54,13 +54,7 @@ const cursosCollection = defineCollection({
     instructor: z.string().optional(),
     tags: z.array(z.string()).optional(),
     featured: z.boolean().optional(),
-    seo: z.object({
-      title: z.string().optional(),
-      description: z.string().optional(),
-      keywords: z.array(z.string()).optional(),
-      image: z.string().optional(),
-      canonical: z.string().optional()
-    }).optional()
+    order: z.number().optional()
   })
 });
 

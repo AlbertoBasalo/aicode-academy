@@ -9,17 +9,18 @@ level: "avanzado"
 instructor: "Alberto Basalo"
 tags: ["Documentación", "Patrones", "C4", "ADR"]
 featured: false
+order: 3
 ---
 
-# Arquitectura de Software en tiempos de IA
+## Estilos y patrones para aplicar con IA
 
 Diseña software profesional con una visión completa: desde los patrones clásicos hasta las decisiones estratégicas que exige la integración de inteligencia artificial, pasando por documentación clara y modelos comprensibles por humanos y máquinas.
 
-## Motivación
+### Motivación
 
 Las decisiones arquitectónicas definen el futuro de cualquier producto digital. En un entorno donde la IA gana protagonismo, es más importante que nunca contar con modelos sólidos, bien documentados y adaptables a distintas estrategias de desarrollo y despliegue. Este curso no solo repasa las arquitecturas más relevantes, sino que también incorpora prácticas modernas de documentación como los diagramas C4, los ADR o el uso de modelos comprensibles para asistentes de IA.
 
-## Objetivos del Curso
+### Objetivos del Curso
 
 - Comprender los fundamentos de diseño arquitectónico: capas, responsabilidad, desacoplo.
 - Comparar distintos estilos: monolitos, microservicios, modularización, serverless.
@@ -27,6 +28,10 @@ Las decisiones arquitectónicas definen el futuro de cualquier producto digital.
 - Elaborar documentación útil y mantenible: C4, ADR, decision logs.
 - Incorporar el razonamiento y generación asistida por IA en tareas arquitectónicas.
 - Aplicar patrones y tácticas arquitectónicas en sistemas reales.
+
+### Ediciones
+
+- Curso **en directo y a medida** en tu empresa o centro de formación. [Contacta con Alberto Basalo](https://www.linkedin.com/in/albertobasalo/)
 
 ## Contenido
 

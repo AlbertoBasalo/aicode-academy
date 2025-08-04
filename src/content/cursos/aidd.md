@@ -9,6 +9,7 @@ level: "básico"
 instructor: "Alberto Basalo"
 tags: ["Programación", "Herramientas", "Productividad", "Calidad"]
 featured: true
+order: 1
 ---
 
 ## Metodología AI-Driven Development

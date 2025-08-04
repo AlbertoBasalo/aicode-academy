@@ -9,25 +9,30 @@ level: "intermedio"
 instructor: "Alberto Basalo"
 tags: ["VsCode", "GitHub", "Copilot", "Productividad"]
 featured: false
+order: 2
 ---
 
-# Github Copilot y VsCode
+## Configura y exprime GitHub Copilot en VsCode
 
 Aprende a desarrollar aplicaciones usando las herramientas de Microsoft más utilizadas en entornos profesionales: confiables, robustas y con un respaldo asegurado durante años.
 
-## Motivación
+### Motivación
 
 Frente a la proliferación de nuevas soluciones y herramientas experimentales, muchas empresas apuestan por tecnologías consolidadas, con soporte continuado y un amplio ecosistema. Este curso se apoya precisamente en dos pilares sólidos: **Visual Studio Code** y **GitHub Copilot**, productos de Microsoft con millones de usuarios y una integración fluida en entornos reales de desarrollo.
 
 No necesitas reinventar tu flujo de trabajo ni adoptar soluciones inestables: aquí aprenderás a sacar el máximo partido a lo que ya se está utilizando hoy en departamentos técnicos de todo el mundo.
 
-## Objetivos del Curso
+### Objetivos del Curso
 
 - Integrar GitHub Copilot de forma efectiva en VsCode para asistir durante el desarrollo.
 - Comprender las capacidades y limitaciones de Copilot en distintos contextos.
 - Aplicar buenas prácticas en el uso de asistentes IA para mantener la calidad del software.
 - Aprender técnicas de prompt engineering aplicadas al desarrollo con Copilot.
 - Mejorar la productividad individual y en equipo mediante la colaboración asistida por IA.
+
+### Ediciones
+
+- Curso **en directo y a medida** en tu empresa o centro de formación. [Contacta con Alberto Basalo](https://www.linkedin.com/in/albertobasalo/)
 
 ## Contenido
 

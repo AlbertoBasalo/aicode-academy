@@ -14,8 +14,7 @@ const filteredCursos = category
   : cursos;
 
 const sortedCursos = filteredCursos.sort((a, b) => {
-  // Ordenar por título alfabéticamente
-  return a.data.title.localeCompare(b.data.title);
+  return (a.data.order || 0) - (b.data.order || 0);
 });
 ---
 
