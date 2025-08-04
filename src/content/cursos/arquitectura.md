@@ -7,14 +7,8 @@ category: "arquitectura"
 duration: "20-24 horas"
 level: "avanzado"
 instructor: "Alberto Basalo"
-tags: ["arquitectura", "software", "IA", "microservicios", "hexagonal", "documentación", "patrones", "C4", "ADR"]
+tags: ["Documentación", "Patrones", "C4", "ADR"]
 featured: false
-seo:
-  title: "Arquitectura de Software en tiempos de IA | Curso avanzado"
-  description: "Domina los fundamentos y las decisiones modernas de arquitectura de software incluyendo capas, microservicios, documentación C4, ADR y patrones adaptados al uso de IA."
-  keywords: ["arquitectura software", "IA", "microservicios", "C4", "ADR", "patrones", "hexagonal", "documentación"]
-  image: "/arquitectura_software.png"
-  canonical: "https://aicode.academy/cursos/arquitectura"
 ---
 
 # Arquitectura de Software en tiempos de IA

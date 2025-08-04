@@ -17,7 +17,7 @@ const { title, subtitle, cta } = hero;
     <h1 class="color"><MatrixText text={title} /></h1>
   </header>
   <main class="center">
-    <span>{subtitle}</span>
+    <p>{subtitle}</p>
   </main>
   {
     cta && (
@@ -25,7 +25,7 @@ const { title, subtitle, cta } = hero;
         {cta.link && (
           <a
             role="button"
-            class="outline"
+            class="outline secondary"
             href={cta.link}
             target="_blank"
             rel="noopener"

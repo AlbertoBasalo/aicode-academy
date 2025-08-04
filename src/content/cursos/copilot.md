@@ -7,14 +7,8 @@ category: "programación"
 duration: "16-20 horas"
 level: "intermedio"
 instructor: "Alberto Basalo"
-tags: ["VsCode", "IA", "programación", "GitHub", "Copilot", "productividad"]
+tags: ["VsCode", "GitHub", "Copilot", "Productividad"]
 featured: false
-seo:
-  title: "Github Copilot y VsCode | Desarrollo con herramientas IA de Microsoft"
-  description: "Aprende a desarrollar aplicaciones con herramientas consolidadas de Microsoft ampliamente adoptadas en el entorno empresarial."
-  keywords: ["VsCode", "IA", "programación", "GitHub", "Copilot", "productividad"]
-  image: "/logo_1.png"
-  canonical: "https://aicode.academy/cursos/vs-code-copilot"
 ---
 
 # Github Copilot y VsCode

@@ -5,16 +5,10 @@ description: "Aprende la metodología AI-Driven Development para mejorar tu prod
 slug: "aidd"
 category: "metodología"
 duration: "16-20 horas"
-level: "intermedio"
+level: "básico"
 instructor: "Alberto Basalo"
-tags: ["IA", "programación", "metodología", "productividad", "calidad", "AI-Driven Development"]
+tags: ["Programación", "Herramientas", "Productividad", "Calidad"]
 featured: true
-seo:
-  title: "Curso AI-Driven Development | Metodología de Programación con IA"
-  description: "Aprende la metodología AI-Driven Development para mejorar tu productividad y calidad de código. Curso completo con herramientas y procedimientos prácticos."
-  keywords: ["AI-Driven Development", "programación con IA", "metodología desarrollo", "productividad programador", "calidad código", "herramientas IA"]
-  image: "/aicode_meetup_v01.png"
-  canonical: "https://aicode.academy/cursos/aidd"
 ---
 
 ## Metodología AI-Driven Development

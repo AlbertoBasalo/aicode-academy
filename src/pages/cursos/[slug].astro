@@ -16,10 +16,8 @@ const { entry } = Astro.props;
 const { Content } = await render(entry);
 
 const layout: LayoutProps = {
-  title: entry.data.seo?.title || entry.data.title,
-  description: entry.data.seo?.description || entry.data.description,
-  image: entry.data.seo?.image,
-  canonical: entry.data.seo?.canonical,
+  title: entry.data.title,
+  description: entry.data.description,
 };
 
 const cta = {
