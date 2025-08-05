@@ -1,0 +1,101 @@
+---
+import Hero from "@/src/components/Hero.astro";
+import Section from "@components/Section.astro";
+import Layout from "@layouts/Layout.astro";
+import { getCollection } from "astro:content";
+
+const communityEntries = await getCollection("community");
+const opensourceEntries = communityEntries.filter((entry) =>
+  entry.data.slug.startsWith("community/opensource"),
+);
+const meetupsEntries = communityEntries.filter((entry) =>
+  entry.data.slug.startsWith("community/meetups"),
+);
+
+const COMMUNITY = {
+  layout: {
+    title: "Community - AI Code Academy",
+    description:
+      "Comunidad de desarrolladores de AI Code Academy - OpenSource y Meetups",
+  },
+  hero: {
+    title: "Community",
+    subtitle: "Construyendo la comunidad de AI-Driven Development",
+    cta: {
+      link: "https://www.linkedin.com/in/albertobasalo/",
+      text: "Contactame y únete a la comunidad",
+    },
+  },
+  opensource: {
+    title: "OpenSource",
+    subtitle:
+      "Proyectos de código abierto que facilitan la implementación de AI-Driven Development",
+    cards: opensourceEntries.map((entry) => ({
+      title: entry.data.title,
+      description: entry.data.description,
+      cta: {
+        text: "Ver AIDDbot",
+        link: `/${entry.data.slug}`,
+      },
+    })),
+  },
+  meetups: {
+    title: "Meetups",
+    subtitle: "Encuentros, charlas y talleres para AI developers",
+    cards: meetupsEntries.map((entry) => ({
+      title: entry.data.title,
+      description: entry.data.description,
+      cta: {
+        text: "Ver meetup",
+        link: `/${entry.data.slug}`,
+      },
+    })),
+  },
+  participation: {
+    title: "¿Cómo participar?",
+    subtitle: "Únete a nuestra comunidad de AI-Driven Development",
+    cards: [
+      {
+        title: "Como desarrollador",
+        description:
+          "Únete a nuestros meetups, contribuye a los proyectos open source y comparte tu experiencia en la comunidad.",
+      },
+      {
+        title: "Como empresa",
+        description:
+          "Organiza un meetup en tu oficina, patrocina eventos de la comunidad y colabora en proyectos open source.",
+      },
+      {
+        title: "Como speaker",
+        description:
+          "Propón charlas sobre IA y desarrollo, comparte casos de uso reales y ayuda a otros desarrolladores.",
+      },
+    ],
+  },
+  cta: {
+    title: "¿Quieres organizar un meetup o contribuir?",
+    subtitle: "Presencial o virtual, difunde la IA en tu comunidad",
+    cards: [],
+    cta: {
+      link: "https://www.linkedin.com/in/albertobasalo/",
+      text: "Contacta con Alberto Basalo",
+    },
+  },
+};
+---
+
+<Layout layout={COMMUNITY.layout}>
+  <article>
+    <header>
+      <Hero hero={COMMUNITY.hero} />
+    </header>
+    <main class="colored-headers">
+      <Section section={COMMUNITY.opensource} />
+      <Section section={COMMUNITY.meetups} />
+      <Section section={COMMUNITY.participation} />
+    </main>
+    <footer>
+      <Section section={COMMUNITY.cta} />
+    </footer>
+  </article>
+</Layout>

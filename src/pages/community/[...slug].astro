@@ -5,9 +5,9 @@ import Layout from "@layouts/Layout.astro";
 import { getCollection, render } from "astro:content";
 
 export async function getStaticPaths() {
-  const posts = await getCollection("meetups");
+  const posts = await getCollection("community");
   return posts.map((post) => ({
-    params: { slug: post.id.replace("meetups/", "") },
+    params: { slug: post.data.slug.replace("community/", "") },
     props: { entry: post },
   }));
 }
@@ -15,35 +15,36 @@ export async function getStaticPaths() {
 const { entry } = Astro.props;
 const { Content } = await render(entry);
 
-const MEETUP = {
+const COMMUNITY = {
   layout: {
-    title: "AI code Meetups",
-    description: "Encuentros, charlas y talleres para AI developers"
+    title: "Community - AI Code Academy",
+    description: "Comunidad de desarrolladores de AI Code Academy",
   },
   hero: {
-    title: "Ai code MeetUps",
-    subtitle: "Encuentros, charlas y talleres para AI developers",
+    title: entry.data.title,
+    subtitle: entry.data.subtitle || "Comunidad de AI-Driven Development",
     cta: {
-      link: "https://www.linkedin.com/in/albertobasalo/",
-      text: "Contacta para organizar"
-    }
-  }
+      link:
+        entry.data.cta?.link || "https://www.linkedin.com/in/albertobasalo/",
+      text: entry.data.cta?.text || "Únete a la comunidad",
+    },
+  },
 };
+
 const cta = {
-  title: "¿Quieres organizar un meetup en tu empresa?",
+  title: "¿Quieres organizar un meetup o contribuir?",
   subtitle: "Presencial o virtual, difunde la IA en tu comunidad",
   cta: {
     link: "https://www.linkedin.com/in/albertobasalo/",
-    text: "Contacta con Alberto Basalo"
-  }
-}
+    text: "Contacta con Alberto Basalo",
+  },
+};
 ---
 
-<Layout
-  layout={MEETUP.layout}>
+<Layout layout={COMMUNITY.layout}>
   <article>
     <header>
-      <Hero hero={MEETUP.hero} />
+      <Hero hero={COMMUNITY.hero} />
     </header>
     <main class="colored-headers">
       <Content />

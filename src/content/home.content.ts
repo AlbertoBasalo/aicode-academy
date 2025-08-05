@@ -57,25 +57,26 @@ export const HOME: Home = {
   },
   aidd: {
     title: "¿Qué es AI-Driven Development?",
-    subtitle: "Una metodología de desarrollo profesional en tres fases (agentes).",
+    subtitle:
+      "Una metodología de desarrollo profesional para programadores de cualquier lenguaje.",
     cards: [
       {
-        title: "Architect",
-        description: "Definición de requerimientos, modelo de dominio y diseño del sistema.",
+        title: "Agentes",
+        description: "La IA afecta a todo el ciclo de vida del desarrollo. AIDD te ayuda a usarla con los tres modos: Architect, Builder y Craftsman.",
       },
       {
-        title: "Builder",
+        title: "Tecnologías",
         description:
-          "Arquetipos y reglas para planificar tareas y generar código.",
+          "Cualquier modelo, editor y agente es bienvenido. AIDD te permite sacarle el máximo partido actual y adaptarte a los cambios.",
       },
       {
-        title: "Craftsman",
-        description: "Mantenimiento y calidad con pruebas y documentación.",
+        title: "Calidad",
+        description: "Generar código rápidamente no vale de nada si no es de calidad y mantenible. Se necesitan pruebas y documentación.",
       },
     ],
     cta: {
       text: "Conoce a AIDDbot",
-      link: "https://aiddbot.com",
+      link: "/community/opensource/aiddbot",
     },
   },
   technologies: {

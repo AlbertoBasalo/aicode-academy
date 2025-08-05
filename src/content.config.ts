@@ -58,9 +58,15 @@ const cursosCollection = defineCollection({
   })
 });
 
-const meetupsCollection = defineCollection({
-  loader: glob({ pattern: "**/*.md", base: "./src/content/meetups" }),
-  schema: baseSchema
+const communityCollection = defineCollection({
+  loader: glob({ pattern: "**/*.md", base: "./src/content/community" }),
+  schema: baseSchema.extend({
+    date: z.string().optional(),
+    cta: z.object({
+      link: z.string(),
+      text: z.string()
+    }).optional()
+  })
 });
 
 const metadataCollection = defineCollection({
@@ -70,13 +76,13 @@ const metadataCollection = defineCollection({
 
 /**
  * Content collections
- * - Blog, cursos, meetups, legal...
+ * - Blog, cursos, community, legal...
  * Each collection has a loader from the content folder and a schema for the content
  */
 export const collections = {
   'blog': blogCollection,
   'legal': legalCollection,
   'cursos': cursosCollection,
-  'meetups': meetupsCollection,
+  'community': communityCollection,
   'metadata': metadataCollection
 };
