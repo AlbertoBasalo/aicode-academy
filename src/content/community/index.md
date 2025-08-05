@@ -14,11 +14,11 @@ En AI Code Academy creemos en el poder de la comunidad para acelerar la adopció
 
 ## 🚀 OpenSource
 
-Proyectos de código abierto que facilitan la implementación de AI-Driven Development:
+**AIDDbot**, también conocido como _Ab_ pronunciado `/eibi:/`, es un agente potenciado por IA para asistir a ingenieros de software en sus tareas diarias. Puede ayudar con la documentación de producto, la generación de código, las pruebas de calidad y demás tareas.
 
 ### [AIDDbot](/community/opensource/aiddbot)
 
-Bot de Telegram diseñado para ayudar a los desarrolladores a implementar metodologías de AI-Driven Development en sus proyectos diarios.
+Tu ayudante para AI-Driven Development
 
 **Características principales:**
 - Asistencia en tiempo real sobre AIDD
@@ -74,8 +74,3 @@ Estamos organizando nuevos meetups en diferentes ciudades. ¿Te interesa organiz
 - [AI Code Academy](https://aicodeacademy.com)
 - [GitHub Organization](https://github.com/aicodeAcademy)
 
----
-
-> "La mejor manera de aprender es enseñando"
->
-> <cite>— AI Code Academy</cite> 
