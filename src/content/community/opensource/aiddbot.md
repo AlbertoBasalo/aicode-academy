@@ -11,120 +11,87 @@ cta:
 
 ## Tu ayudante para AI-Driven Development
 
-**AIDDbot**, también conocido como _Ab_ pronunciado `/eibi:/`, es un agente potenciado por IA para asistir a ingenieros de software en sus tareas diarias. Puede ayudar con la documentación de producto, la generación de código, las pruebas de calidad y demás tareas.
+**AIDDbot** es un asistente con IA para el trabajo diario de los ingenieros de software. Ayuda con documentación de producto, generación de código, pruebas de calidad y más.
 
-Consiste en un **conjunto de prompts, instrucciones, reglas y herramientas** que permiten al agente realizar sus tareas de manera efectiva.
+Consiste en un **conjunto de prompts, instrucciones, reglas y herramientas** que permiten al agente ejecutar las tareas de forma eficaz.
 
-Es útil para cualquier lenguaje y tipo de proyecto, aunque está más indicado para desarrollos corporativos y de largo alcance.
+Es útil para cualquier lenguaje o tipo de proyecto, pero es especialmente adecuado para desarrollos corporativos y de largo alcance.
 
-Puede trabajar con cualquier editor de código potenciado por IA, como:
+Puede trabajar con varios editores habilitados con IA:
 
 - **GitHub Copilot** 🟢 Listo [Ver implementación](https://github.com/AIDDbot/AIDDbot/tree/main/.github)
 - _Cursor_, _ClaudeCode_, _GeminiCLI_ 🟡 Próximamente
 
-## Instalación
+## 🔌 Instalación
 
-`AIDDbot` viene como un conjunto de carpetas adaptadas para tu editor de código con IA. Puedes instalarlo clonando este repositorio y colocando la carpeta en el directorio de extensiones o plugins de tu editor. O simplemente usa el _prompt_ de instalación proporcionado.
+`AIDDbot` es solo un conjunto de ficheros Markdown con instrucciones y configuraciones adaptadas a tu editor de código con IA. Instálalo clonando este repositorio y copiando la carpeta adecuada en la raíz de tu proyecto. O simplemente usa el prompt de instalación (para VS Code + GitHub Copilot).
 
 ### Para GitHub Copilot
 
 > Lee más sobre [Personalización de GitHub Copilot](https://code.visualstudio.com/docs/copilot/copilot-customization)
 
 - [ ] Copia el contenido en bruto de [El Prompt de Instalación de AIDDbot](https://raw.githubusercontent.com/AIDDbot/AIDDbot/refs/heads/main/.github/prompts/Ab_install-for-copilot.prompt.md)
-- [ ] Pégalo en tu Chat de Copilot en Modo Agente.
+- [ ] Pégalo en tu Chat de Copilot en `Modo Agente`.
 
 
-## Uso para GitHub Copilot
+## ℹ️ Uso (GitHub Copilot)
 
-> El chat de GitHub Copilot funciona de serie en tres modos, `Ask`, `Edit` y `Agent`. Con AIDDbot se agregan otros tres: `Architect`, `Builder` y `Craftsman`. Lee más sobre [Modos de Chat de GitHub Copilot.](https://code.visualstudio.com/docs/copilot/chat/chat-modes)
+> El chat de GitHub Copilot viene con tres modos nativos: `Ask`, `Edit` y `Agent`. Con `AIDDbot` agregas un nuevo modo orientado a AI Driven Development. Más info: [Modos de Chat](https://code.visualstudio.com/docs/copilot/chat/chat-modes)
 
-### Modos de chat
+### 🤖 Modo de Chat: AIDDbot
 
-Hay tres modos principales de chat disponibles para _Ab_, uno para cada rol de **AIDDbot**:
+Tras la instalación tendrás un nuevo modo de chat: **AIDDbot**.
 
-- **[Modo Arquitecto/Ab_Architect](https://github.com/AIDDbot/AIDDbot/blob/main/.github/chatmodes/Ab_Architect.chatmode.md)**: Para definir requisitos de producto y soluciones técnicas.
-- **[Modo Constructor/Ab_Builder](https://github.com/AIDDbot/AIDDbot/blob/main/.github/chatmodes/Ab_Builder.chatmode.md)**: Para gestión de funcionalidades y generación de código.
-- **[Modo Artesano/Ab_Craftsman](https://github.com/AIDDbot/AIDDbot/blob/main/.github/chatmodes/Ab_Craftsman.chatmode.md)**: Para asegurar la calidad mediante pruebas y documentación.
+- **[Modo de Chat AIDDbot](https://github.com/AIDDbot/AIDDbot/blob/main/.github/chatmodes/AIDDbot.chatmode.md)**: Configurado para flujos de arquitectura, construcción e ingeniería de calidad empresarial.
 
-Cada modo ofrece un conjunto de _prompts_ y elige las _herramientas_ adaptadas a su rol específico, permitiendo al agente realizar sus tareas de manera efectiva.
+En Copilot, el modo de chat fija un contexto y otorga acceso a prompts y herramientas acordes a dicho contexto.
 
-### Prompts
+### 🧑‍💻 Roles
 
-Usando el comando `/`, puedes acceder a varios prompts diseñados para cada modo. Aquí tienes los prompts disponibles y sus resultados para cada rol:
+Hay tres prompts alineados con los roles de AI-Driven Development: Architect / Builder / Craftsman. Llamarlos hace que AIDDbot actúe según el rol elegido.
 
-#### Prompts de Arquitecto(Ab_Architect)
+- **[Prompt de rol Arquitecto](https://github.com/AIDDbot/AIDDbot/tree/main/.github/prompts/Ab_Architect.prompt.md)** `/Ab_Architect` – Documentación general y descubrimiento.
+- **[Prompt de rol Constructor](https://github.com/AIDDbot/AIDDbot/tree/main/.github/prompts/Ab_Builder.prompt.md)** `/Ab_Builder` – Diseño e implementación de funcionalidades.
+- **[Prompt de rol Artesano](https://github.com/AIDDbot/AIDDbot/tree/main/.github/prompts/Ab_Craftsman.prompt.md)** `/Ab_Craftsman` – Validación, limpieza y documentación.
 
-- 📋 **[Generación de PRD](https://github.com/AIDDbot/AIDDbot/blob/main/.github/prompts/PRD.prompt.md)** `/PRD`: para escribir un Documento de Requisitos del Producto.
-  - 📦 **docs/PRD.md**: Objetivos, requisitos y restricciones del proyecto.
+Estos prompts de rol orquestan otros prompts especializados cuando es necesario. Explora la [carpeta de prompts](https://github.com/AIDDbot/AIDDbot/tree/main/.github/prompts) para ver todas las opciones.
 
-- 📋 **[Modelado de Dominio](https://github.com/AIDDbot/AIDDbot/blob/main/.github/prompts/DOMAIN.prompt.md)** `/DOMAIN`: para crear un modelo de dominio.
-  - 📦 **docs/DOMAIN.md**: Entidades, relaciones y reglas de negocio del proyecto.
+### 📚 Instrucciones
 
-- 📋 **[Arquitectura de Sistemas](https://github.com/AIDDbot/AIDDbot/blob/main/.github/prompts/SYSTEMS.prompt.md)** `/SYSTEMS`: para generar la documentación técnica de sistemas.
-  - 📦 **docs/SYSTEMS.md**: Arquitectura del sistema, componentes y detalles de implementación
+GitHub Copilot permite definir ficheros de instrucciones como contexto reutilizable. Funcionan como plantillas, guías o referencias de buenas prácticas — genéricas o muy específicas (librerías, herramientas, patrones).
 
-#### Prompts de Constructor(Ab_Builder)
+**AIDDbot** inyecta automáticamente los ficheros adecuados por prompt. También puedes referenciarlos manualmente usando el prefijo `#file:`.
 
-- 📋 **[Gestión del Backlog](https://github.com/AIDDbot/AIDDbot/blob/main/.github/prompts/BACKLOG.prompt.md)** `/BACKLOG`: Gestiona el backlog del producto y prioriza funcionalidades.
-  - 📦 **docs/BACKLOG.md**: Lista de funcionalidades agrupadas por épicas con sus prioridades y estados.
+Visita la [carpeta de instrucciones](https://github.com/AIDDbot/AIDDbot/tree/main/.github/instructions) para explorarlas.
 
-- 📋 **[Especificación de Funcionalidad](https://github.com/AIDDbot/AIDDbot/blob/main/.github/prompts/feature.spec.prompt.md)** `/feature.spec`: Genera especificaciones para una funcionalidad según los requisitos proporcionados.
-  - 📦 **docs/feats/f_id.spec.md**: Especificaciones de comportamiento para una funcionalidad.
+#### Agregar Instrucciones
 
-- 📋 **Diseño de Funcionalidad** `/feature.design`: Crea un documento de diseño para la funcionalidad.
-  - 📦 **docs/feats/f_id.design.md**: Diseño técnico para una funcionalidad.
+Además del conjunto incorporado puedes crear otros personalizados para tu stack — automáticamente — usando el propio agente.
 
-- 📋 **[Plan de Implementación](https://github.com/AIDDbot/AIDDbot/blob/main/.github/prompts/feature.tasks.prompt.md)** `/feature.tasks`: Esquematiza las tareas necesarias para implementar la funcionalidad.
-  - 📦 **docs/feats/f_id.tasks.md**: Plan de tareas para implementar una funcionalidad.
+- 📋 **[Generación de Instrucciones](https://github.com/AIDDbot/AIDDbot/blob/main/.github/prompts/Ab_add-instructions.prompt.md)** `/Ab_add-instructions`: Genera ficheros de instrucciones específicos del stack.
 
-- 📋 **[Código de la Funcionalidad](https://github.com/AIDDbot/AIDDbot/blob/main/.github/prompts/feature.code.prompt.md)** `/feature.code`: Escribe el código ejecutando el plan de implementación.
-  - 📦 **src/**: Código de implementación para una funcionalidad.
-
-#### Prompts de Artesano(Ab_Craftsman)
-
-- 📋 **[Pruebas Automatizadas](https://github.com/AIDDbot/AIDDbot/blob/main/.github/prompts/feature.test.prompt.md)** `/feature.test`: Planifica y genera pruebas automatizadas para el código proporcionado.
-  - 📦 **docs/feats/f_id.test.md**: Especificaciones de pruebas unitarias e integradas para una funcionalidad.
-  - 📦 **src/**: Pruebas de implementación para una funcionalidad.
-
-- 📋 **[Revisión de Código Limpio](https://github.com/AIDDbot/AIDDbot/blob/main/.github/prompts/feature.clean.prompt.md)** `/feature.clean`: Realiza una revisión de código basada en los cambios de la funcionalidad.
-  - 📦 **src/**: Código limpio
-
-- 📋 **[Generación de Documentación](https://github.com/AIDDbot/AIDDbot/blob/main/.github/prompts/feature.doc.prompt.md)** `/feature.doc`: Crea documentación para el código proporcionado.
-  - 📦 **src/**: Código documentado
-  - 📦 **docs/STRUCTURE.md**: Resumen de la estructura de carpetas y organización de los componentes principales.
-
-### Instrucciones
-
-Los _📋prompts_ usan _📒instrucciones_ para guiar al agente en tareas específicas. A veces son plantillas para documentación, otras son guías de codificación. Aquí algunos **ejemplos**:
-
-- 📒 **[Instrucciones PRD](https://github.com/AIDDbot/AIDDbot/blob/main/.github/instructions/PRD.instructions.md)**: Plantilla para generar un Documento de Requisitos del Producto.
-- 📒 **[Instrucciones de Arquitectura](https://github.com/AIDDbot/AIDDbot/blob/main/.github/instructions/architecture.instructions.md)**: Guía para aplicar patrones de arquitectura.
-- 📒 **[Instrucciones de lenguaje TypeScript](https://github.com/AIDDbot/AIDDbot/blob/main/.github/instructions/lng-typescript.instructions.md)**: Buenas prácticas y estándares de codificación para TypeScript.
-
-Las instrucciones se añaden automáticamente como contexto en los prompts de **AIDDbot**, pero puedes agregarlas manualmente si lo necesitas, solo refiérete a ellas usando el prefijo `#`.
-
-Ejemplo de cómo agregar una instrucción manualmente:
-
+Este prompt se invoca automáticamente desde el prompt del Arquitecto tras identificar dependencias del stack, pero también puedes llamarlo manualmente con un alcance.
+  
 ```txt
-Escribe una función que sume dos números siguiendo #file:lng-typescript.instructions.md 
+/Ab_add-instructions java language
 ```
 
-### Por hacer:
+### 🛠️ En progreso
 
-- Algún tipo de memoria para el flujo de trabajo y características del proyecto.
-- Un diario para que los agentes lleven registro de su trabajo y decisiones.
-- Inclusión automática de arquetipos según los requisitos del proyecto.
-- Auto-mejora de AIDDbot...
+- Memoria del flujo de trabajo y características del proyecto.
+- Diario / log para trazabilidad de decisiones.
+- Inclusión automática de arquetipos según requisitos.
+- Rutinas de auto-mejora para AIDDbot.
 
-## Filosofía AIDD
+## 💭 Filosofía AIDD
 
-AIDD significa AI Driven Development, una filosofía que combina el poder de la IA con las mejores prácticas de desarrollo de software. Busca aumentar la productividad, la calidad del código y la colaboración entre desarrolladores y agentes en todo el ciclo de vida del software.
+AIDD (AI Driven Development) combina capacidades de IA con prácticas consolidadas de ingeniería de software para aumentar productividad, calidad de código y colaboración a lo largo de todo el ciclo de vida.
 
-El agente `AIDDbot` sigue los tres principios del [Manifiesto AIDD](https://aiddbot.com/aidd-manifesto):
+El agente `AIDDbot` se adhiere a los tres principios del [Manifiesto AIDD](https://aiddbot.com/aidd-manifesto):
 
-- **🧑‍💻 Humano en el Bucle (Human in the Loop)**: Tu trabajo es más estratégico, colaborativo y responsable.
-- **🔧 Reglas sobre Herramientas (Rules over Tools)**: Las herramientas son solo un medio, lo importante son las reglas y procesos.
-- **✅ Calidad IA (Quality AI)**: El desarrollo no solo es más productivo, sino también de mayor calidad y fácil de mantener.
+- **🧑‍💻 Humano en el Bucle**: Tu trabajo se vuelve más estratégico, colaborativo y responsable.
+- **🔧 Reglas sobre Herramientas**: Las herramientas son medios; las reglas y procesos aportan valor duradero.
+- **✅ Calidad IA**: No solo más productividad, también software mantenible y de alta calidad.
 
 > Work smarter, not harder, with _Ab_!
 
