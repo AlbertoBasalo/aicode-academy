@@ -75,6 +75,20 @@ h2 {
   margin-bottom: 1rem;
 }
 
+h3 {
+  --pico-font-size: 1.5rem;
+  --pico-line-height: 1.5;
+  --pico-typography-spacing-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+h4 {
+  --pico-font-size: 1.25rem;
+  --pico-line-height: 1.5;
+  --pico-typography-spacing-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
 article,
 section {
   padding-left: 4%;
