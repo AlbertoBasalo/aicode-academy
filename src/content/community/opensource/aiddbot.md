@@ -22,7 +22,7 @@ Puede trabajar con varios editores habilitados con IA:
 - **GitHub Copilot** 🟢 Listo [Ver implementación](https://github.com/AIDDbot/AIDDbot/tree/main/.github)
 - _Cursor_, _ClaudeCode_, _GeminiCLI_ 🟡 Próximamente
 
-## 🔌 Instalación
+## Instalación
 
 `AIDDbot` es solo un conjunto de ficheros Markdown con instrucciones y configuraciones adaptadas a tu editor de código con IA. Instálalo clonando este repositorio y copiando la carpeta adecuada en la raíz de tu proyecto. O simplemente usa el prompt de instalación (para VS Code + GitHub Copilot).
 
@@ -34,15 +34,21 @@ Puede trabajar con varios editores habilitados con IA:
 - [ ] Pégalo en tu Chat de Copilot en `Modo Agente`.
 
 
-## ℹ️ Uso (GitHub Copilot)
+## Uso (GitHub Copilot)
 
-> El chat de GitHub Copilot viene con tres modos nativos: `Ask`, `Edit` y `Agent`. Con `AIDDbot` agregas un nuevo modo orientado a AI Driven Development. Más info: [Modos de Chat](https://code.visualstudio.com/docs/copilot/chat/chat-modes)
+> El chat de GitHub Copilot viene con tres modos nativos: `Ask`, `Edit` y `Agent`. Con `AIDDbot` agregas un nuevo modo orientado a AI Driven Development. 
 
-### 🤖 Modo de Chat: AIDDbot
+> Más info: [Modos de Chat](https://code.visualstudio.com/docs/copilot/chat/chat-modes)
+
+> Más sobre [GitHub Copilot](https://aicode.academy/blog/es/vscode-github-copilot/)
+
+### Modo de Chat: AIDDbot
 
 Tras la instalación tendrás un nuevo modo de chat: **AIDDbot**.
 
 - **[Modo de Chat AIDDbot](https://github.com/AIDDbot/AIDDbot/blob/main/.github/chatmodes/AIDDbot.chatmode.md)**: Configurado para flujos de arquitectura, construcción e ingeniería de calidad empresarial.
+
+> Más sobre [AIDDbot workflow](https://aicode.academy/blog/es/aiddbot-workflow/)
 
 En Copilot, el modo de chat fija un contexto y otorga acceso a prompts y herramientas acordes a dicho contexto.
 
@@ -106,3 +112,6 @@ El agente `AIDDbot` se adhiere a los tres principios del [Manifiesto AIDD](https
 - **Blog de AIDDbot.com**: [AIDDbot.com](https://aiddbot.com)
 - **Organización AIDDbot en GitHub**: [GitHub/AIDDbot](https://github.com/AIDDbot)
 - **El repositorio de AIDDbot**: [GitHub/AIDDbot/AIDDbot](https://github.com/AIDDbot/AIDDbot)
+- **AIDDbot Workflow**: [Tu ayudante para una metodología de programación con IA](https://aicode.academy/blog/es/aiddbot-workflow/)
+- **VsCode y GitHub Copilot**: [Configuración y uso del agente de IA de GitHub](https://aicode.academy/blog/es/vscode-github-copilot/)
+- **Curso de formación**: [Aprende a usar GitHub Copilot](https://aicode.academy/cursos/vs-code-copilot/)
