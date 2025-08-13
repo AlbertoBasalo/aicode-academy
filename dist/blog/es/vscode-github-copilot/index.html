@@ -1,0 +1,264 @@
+<!DOCTYPE html><html lang="es"> <head lang="es" data-theme="dark"><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="icon" type="image/png" href="/logo_6.png"><link rel="apple-touch-icon" href="/logo_6.png"><link rel="manifest" href="/manifest.json"><meta name="generator" content="Astro v5.12.8"><!-- Google Fonts --><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Mono&family=Major+Mono+Display&family=Tomorrow&display=swap"><!-- Main Meta Tags --><title>VScode y GitHub Copilot - Configuración y uso del agente de IA de GitHub</title><meta name="description" content="Descubre cómo configurar VScode y GitHub Copilot para que te ayuden a programar de forma más eficiente y productiva."><link rel="canonical" href="https://aicode.academy/blog/es/vscode-github-copilot/"><!-- Open Graph / Social Media Meta Tags --><meta property="og:title" content="VScode y GitHub Copilot - Configuración y uso del agente de IA de GitHub | Learn to code smarter"><meta property="og:type" content="website"><meta property="og:url" content="https://aicode.academy/blog/es/vscode-github-copilot/"><meta property="og:site_name" content="AI Code Academy"><meta property="og:image" content="https://aicode.academy/site-og-image.png?2025-08-13"><meta property="og:description" content="Descubre cómo configurar VScode y GitHub Copilot para que te ayuden a programar de forma más eficiente y productiva."><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@AlbertoBasalo"><meta name="twitter:title" content="VScode y GitHub Copilot - Configuración y uso del agente de IA de GitHub | Learn to code smarter"><meta name="twitter:description" content="Descubre cómo configurar VScode y GitHub Copilot para que te ayuden a programar de forma más eficiente y productiva."><meta name="twitter:image" content="https://aicode.academy/site-og-image.png?2025-08-13"><style>span[data-astro-cid-n4l55o4l]{color:var(--pico-primary);font-weight:bolder;animation:blink 2s step-end infinite;margin-left:-.2rem}@keyframes blink{0%,to{opacity:1}50%{opacity:0}}
+</style>
+<link rel="stylesheet" href="/_astro/_slug_.C2X7Wd8M.css"></head><body> <header data-astro-cid-xbstl6g3> <nav data-astro-cid-xbstl6g3> <ul data-astro-cid-xbstl6g3> <li data-astro-cid-xbstl6g3> <strong data-astro-cid-xbstl6g3><a href="/" class="logo color" data-astro-cid-xbstl6g3>Ai code Academy</a></strong> </li> </ul> <ul data-astro-cid-xbstl6g3> <li data-astro-cid-xbstl6g3> <a href="/blog/es" class="astro-xbstl6g3" data-astro-cid-xbstl6g3> Blog </a> </li><li data-astro-cid-xbstl6g3> <a href="/cursos" class="astro-xbstl6g3" data-astro-cid-xbstl6g3> Cursos </a> </li><li data-astro-cid-xbstl6g3> <a href="/community" class="astro-xbstl6g3" data-astro-cid-xbstl6g3> Community </a> </li> <li data-astro-cid-xbstl6g3> <span id="theme-toggle" aria-label="Toggle theme" data-astro-cid-xbstl6g3> <span class="light" data-astro-cid-xbstl6g3>🔳</span> <span class="dark" data-astro-cid-xbstl6g3>🔲</span> </span> </li> </ul> </nav> </header>  <script type="module">const t=document.documentElement,m=()=>t.getAttribute("data-theme"),n=e=>t.setAttribute("data-theme",e),c=e=>localStorage.setItem("theme",e);document.getElementById("theme-toggle")?.addEventListener("click",()=>{const e=m()==="dark"?"light":"dark";n(e),c(e)});</script> <main>  <article> <header> <h1><span class="comment">//</span>VScode y GitHub Copilot</h1> <h3>Configuración y uso del agente de IA de GitHub</h3> <small>Descubre cómo configurar VScode y GitHub Copilot para que te ayuden a programar de forma más eficiente y productiva.<span data-astro-cid-n4l55o4l>|</span> </small> <nav aria-label="breadcrumb"> <ul> <li><a href="/blog/es/">Blog</a></li> <li><a href="/blog/es/herramientas">Herramientas</a></li> <li> <time datetime="August 25, 2025">25/08/2025</time> </li> </ul> </nav> </header> <main class="colored-headers"> <p><strong>GitHub Copilot</strong> se ha convertido en el asistente de IA más popular para programadores. Y no es casualidad: su integración con <strong>Visual Studio Code</strong> es tan fluida que a veces olvidas que estás trabajando con una IA.</p>
+<p>Pero, ¿sabes realmente cómo <strong>configurarlo</strong> para que te ayude de la manera más eficiente? ¿Conoces todas las opciones que tienes para personalizar su comportamiento?</p>
+<p>En este artículo vamos a ver cómo <strong>explotar al máximo</strong> las capacidades de GitHub Copilot en VSCode, desde la configuración básica hasta técnicas avanzadas de <strong>prompt y context engineering</strong>.</p>
+<h2 id="configuración-básica">Configuración básica</h2>
+<p>Lo primero es lo primero. Antes de empezar a usar GitHub Copilot, necesitas tener todo <strong>correctamente configurado</strong>.</p>
+<h3 id="configuración-inicial">Configuración inicial</h3>
+<p>En <code>Settings</code> de VSCode, busca “GitHub Copilot” y verás varias opciones:</p>
+<p>Mi recomendación: <strong>activa todo</strong> y luego ajusta según tus preferencias.</p>
+<pre class="astro-code dark-plus" style="background-color:#1E1E1E;color:#D4D4D4; overflow-x: auto;" tabindex="0" data-language="json"><code><span class="line"><span style="color:#D4D4D4">{</span></span>
+<span class="line"><span style="color:#9CDCFE">  "chat.agent.maxRequests"</span><span style="color:#D4D4D4">: </span><span style="color:#B5CEA8">100</span><span style="color:#D4D4D4">,</span></span>
+<span class="line"><span style="color:#9CDCFE">  "chat.tools.autoApprove"</span><span style="color:#D4D4D4">: </span><span style="color:#569CD6">true</span><span style="color:#D4D4D4">,</span></span>
+<span class="line"><span style="color:#9CDCFE">  "github.copilot.advanced"</span><span style="color:#D4D4D4">: {</span></span>
+<span class="line"><span style="color:#9CDCFE">    "inlineSuggest"</span><span style="color:#D4D4D4">: </span><span style="color:#569CD6">true</span><span style="color:#D4D4D4">,</span></span>
+<span class="line"><span style="color:#9CDCFE">    "inlineSuggest.enable"</span><span style="color:#D4D4D4">: </span><span style="color:#569CD6">true</span><span style="color:#D4D4D4">,</span></span>
+<span class="line"><span style="color:#9CDCFE">    "inlineSuggest.showSuggestionsAlways"</span><span style="color:#D4D4D4">: </span><span style="color:#569CD6">true</span></span>
+<span class="line"><span style="color:#D4D4D4">  },</span></span>
+<span class="line"><span style="color:#9CDCFE">  "github.copilot.chat.codesearch.enabled"</span><span style="color:#D4D4D4">: </span><span style="color:#569CD6">true</span><span style="color:#D4D4D4">,</span></span>
+<span class="line"><span style="color:#9CDCFE">  "github.copilot.chat.agent.thinkingTool"</span><span style="color:#D4D4D4">: </span><span style="color:#569CD6">true</span><span style="color:#D4D4D4">,</span></span>
+<span class="line"><span style="color:#9CDCFE">  "github.copilot.chat.languageContext.[your-language].enabled"</span><span style="color:#D4D4D4">: </span><span style="color:#569CD6">true</span><span style="color:#D4D4D4">,</span></span>
+<span class="line"><span style="color:#9CDCFE">  "github.copilot.enable"</span><span style="color:#D4D4D4">: {</span></span>
+<span class="line"><span style="color:#9CDCFE">    "*"</span><span style="color:#D4D4D4">: </span><span style="color:#569CD6">true</span><span style="color:#D4D4D4">,</span></span>
+<span class="line"><span style="color:#9CDCFE">    "inlineSuggest"</span><span style="color:#D4D4D4">: </span><span style="color:#569CD6">true</span><span style="color:#D4D4D4">,</span></span>
+<span class="line"><span style="color:#9CDCFE">    "inlineSuggest.enable"</span><span style="color:#D4D4D4">: </span><span style="color:#569CD6">true</span><span style="color:#D4D4D4">,</span></span>
+<span class="line"><span style="color:#9CDCFE">    "inlineSuggest.showSuggestionsAlways"</span><span style="color:#D4D4D4">: </span><span style="color:#569CD6">true</span></span>
+<span class="line"><span style="color:#D4D4D4">  },</span></span>
+<span class="line"><span style="color:#9CDCFE">  "github.copilot.nextEditSuggestions.enabled"</span><span style="color:#D4D4D4">: </span><span style="color:#569CD6">true</span><span style="color:#D4D4D4">,</span></span>
+<span class="line"><span style="color:#D4D4D4">}</span></span></code></pre>
+<h2 id="instrucciones">Instrucciones</h2>
+<p>Aquí es donde <strong>GitHub Copilot</strong> se diferencia de otros asistentes. Te permite configurar <strong>instrucciones personalizadas</strong> que guían su comportamiento.</p>
+<p>Las instrucciones se escriben en formato Markdown en ficheros <code>.md</code> en la carpeta <code>.github</code> del root de tu proyecto.</p>
+<p>GitHub Copilot maneja las instrucciones de forma <strong>jerárquica</strong> a distintos niveles: organización, usuario o proyecto. Y esto siempre genera un poco de lio. Para empezar vamos a sacar de la ecuación a las instrucciones de organización, porque se activan en eso, una organización de GitHub y requieren licencias especiales.</p>
+<p>Nos quedan dos: A nivel de usuario, es decir que sean válidas para todos tus proyectos, y las de repositorio, es decir que sean válidas para un proyecto concreto. Empecemos por estas, que son las más útiles.</p>
+<h3 id="instrucciones-de-repositorio">Instrucciones de repositorio</h3>
+<p>Se crean en un fichero Markdown <code>.github/copilot-instructions.md</code> en el root de tu proyecto. Ojo al nombre de la carpeta es <code>.github</code> con el punto inicial. Lo que escribas en ese fichero se incluirá en cada petición de Copilot, asi que procura que sea lo más conciso y general posible. Por ejemplo añade:</p>
+<ul>
+<li>Tu <strong>nivel de experiencia</strong> como programador</li>
+<li><strong>Lenguajes preferidos</strong> y frameworks</li>
+<li><strong>Estilo de código</strong> que prefieres</li>
+<li><strong>Patrones de diseño</strong> que sueles usar</li>
+<li><strong>Idioma de respuesta</strong> preferido</li>
+<li><strong>Formato de salida</strong> que necesitas</li>
+</ul>
+<p>Cuando empiezas quizás sea suficiente con un párrafo que agrupe estas preferencias. Repito, ten en cuenta que se agrega a cada petición. Este es un ejemplo de lo que podría contener un fichero de instrucciones (no lo tomes al pie de la letra, es sólo una idea, si quieres ver algo más profesional visita <a href="https://github.com/AIDDbot/AIDDbot/blob/main/.github/copilot-instructions.md">AIDDbot copilot instructions</a>):</p>
+<pre class="astro-code dark-plus" style="background-color:#1E1E1E;color:#D4D4D4; overflow-x: auto;" tabindex="0" data-language="markdown"><code><span class="line"><span style="color:#569CD6;font-weight:bold"># Instrucciones para [Nombre del proyecto]</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6796E6">-</span><span style="color:#D4D4D4"> Usa TypeScript estricto</span></span>
+<span class="line"><span style="color:#6796E6">-</span><span style="color:#D4D4D4"> Estás en un sistema Windows 11</span></span>
+<span class="line"><span style="color:#6796E6">-</span><span style="color:#D4D4D4"> Usa el terminal git bash para todos los comandos de consola</span></span>
+<span class="line"><span style="color:#6796E6">-</span><span style="color:#D4D4D4"> Si no está disponible, usa el comando prompt de Windows</span></span>
+<span class="line"><span style="color:#6796E6">-</span><span style="color:#D4D4D4"> Escribe código y documentación en inglés, pero habla con el usuario en su idioma</span></span>
+<span class="line"><span style="color:#6796E6">-</span><span style="color:#D4D4D4"> Sigue el patrón Repository para acceso a datos</span></span>
+<span class="line"><span style="color:#6796E6">-</span><span style="color:#D4D4D4"> Implementa tests unitarios para todas las funciones</span></span>
+<span class="line"><span style="color:#6796E6">-</span><span style="color:#D4D4D4"> Documenta las APIs con JSDoc</span></span>
+<span class="line"><span style="color:#6796E6">-</span><span style="color:#D4D4D4"> Usa ESLint y Prettier para formateo</span></span>
+<span class="line"><span style="color:#6796E6">-</span><span style="color:#D4D4D4"> Evita el uso de </span><span style="color:#CE9178">`any`</span><span style="color:#D4D4D4">, usa tipos específicos</span></span>
+<span class="line"><span style="color:#6796E6">-</span><span style="color:#D4D4D4"> Implementa manejo de errores con try-catch</span></span>
+<span class="line"><span style="color:#6796E6">-</span><span style="color:#D4D4D4"> Usa constantes para valores mágicos</span></span></code></pre>
+<p><strong>Recomendación práctica</strong>: mantén las instrucciones del repositorio cortas, precisas y orientadas a acciones. Evita instrucciones ambiguas o que dependan de recursos externos no accesibles por Copilot.</p>
+<h3 id="instrucciones-por-contexto">Instrucciones por contexto</h3>
+<p>GitHub Copilot también puede usar instrucciones específicas para cada contexto. Por ejemplo, si estás trabajando en un proyecto de Angular, o si te gusta usar un determinado ORM en Java.</p>
+<p>Estas instrucciones se almacenan en la carpeta <code>.github/instructions</code> del root de tu proyecto en ficheros con este patrón de nombre: <code>[context].instructions.md</code> y una estructura interna con una cabecera en Front-matter que indica propósito y ficheros a los que aplica.</p>
+<p>Por ejemplo, podríamos tener un fichero de instrucciones para Node 24 llamada <code>.github/instructions/node24.instructions.md</code>:</p>
+<pre class="astro-code dark-plus" style="background-color:#1E1E1E;color:#D4D4D4; overflow-x: auto;" tabindex="0" data-language="markdown"><code><span class="line"><span style="color:#D4D4D4">---</span></span>
+<span class="line"><span style="color:#D4D4D4">description: "Node 24 Framework Best Practices"</span></span>
+<span class="line"><span style="color:#D4D4D4">applyTo: "*</span><span style="color:#D4D4D4;font-style:italic">*/*</span><span style="color:#D4D4D4">.ts"</span></span>
+<span class="line"><span style="color:#569CD6;font-weight:bold">---</span></span>
+<span class="line"><span style="color:#569CD6;font-weight:bold"># Node 24 Framework Best Practices</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#569CD6;font-weight:bold">## 🚫 AVOID These Dependencies</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#569CD6;font-weight:bold">**Never install these when using modern Node.js:**</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6796E6">-</span><span style="color:#D4D4D4;font-style:italic"> _ts-node_</span><span style="color:#D4D4D4"> - Not needed with native TypeScript support</span></span>
+<span class="line"><span style="color:#6796E6">-</span><span style="color:#D4D4D4;font-style:italic"> _nodemon_</span><span style="color:#D4D4D4"> - Use </span><span style="color:#CE9178">`node --watch`</span><span style="color:#D4D4D4"> instead</span></span>
+<span class="line"><span style="color:#6796E6">-</span><span style="color:#D4D4D4;font-style:italic"> _jest_</span><span style="color:#D4D4D4"> or any other testing library (Use native </span><span style="color:#CE9178">`node --test`</span><span style="color:#D4D4D4"> instead)</span></span>
+<span class="line"><span style="color:#6796E6">-</span><span style="color:#D4D4D4;font-style:italic"> _axios_</span><span style="color:#D4D4D4"> or any HTTP client library (use native </span><span style="color:#CE9178">`node:http`</span><span style="color:#D4D4D4"> or </span><span style="color:#CE9178">`node:https`</span><span style="color:#D4D4D4">)</span></span>
+<span class="line"><span style="color:#6796E6">-</span><span style="color:#D4D4D4"> Any TypeScript compilation loaders</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#569CD6;font-weight:bold">## Import Instructions</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6796E6">-</span><span style="color:#D4D4D4"> Use the </span><span style="color:#CE9178">`.ts`</span><span style="color:#D4D4D4"> suffix for TypeScript files.</span></span>
+<span class="line"><span style="color:#6796E6">-</span><span style="color:#D4D4D4"> Use </span><span style="color:#CE9178">`type`</span><span style="color:#D4D4D4"> for type imports.</span></span>
+<span class="line"></span></code></pre>
+<p>Este contenido se agregaría como contexto cada vez que el agente de Copilot esté trabajando con ficheros de TypeScript.</p>
+<blockquote>
+<p>Nota: Estos ficheros también se puede guardar en la carpeta local de del perfil de usuario, y así se aplican a todos los proyectos. Pero, es más cómodo y práctico hacerlo custom para cada repositorio y copiar a mano de algún sitio accesible.</p>
+</blockquote>
+<p>Para que te hagas una idea de su potencial, visita estos repositorios de GitHub:</p>
+<ul>
+<li><a href="https://github.com/github/awesome-copilot/tree/main/instructions">GitHub Awesome Copilot</a></li>
+<li><a href="https://github.com/AIDDbot/AIDDbot/tree/main/.github/instructions">AIDDbot</a></li>
+</ul>
+<h3 id="invocación-manual-de-instrucciones">Invocación manual de instrucciones</h3>
+<p>No todo es <strong>sugerencias automáticas</strong> en base al <em>glob</em> <code>applyTo</code> de los ficheros de instrucciones. GitHub Copilot también responde permite invocar ficheros de instrucciones dentro de un <em>prompt</em> para que se tengan en cuenta. A veces se usan como plantillas para generar documentación o simplemente contexto específico para una petición concreta.</p>
+<pre class="astro-code dark-plus" style="background-color:#1E1E1E;color:#D4D4D4; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>Crea un documento de estructura de la aplicación siguiendo las instrucciones #file:instructions/project-structure.instructions.md y confirma el resultado en git según las instrucciones #file:git-commit.instructions.md</span></span></code></pre>
+<p>De esta forma queda explicito qué instrucciones seguir. Y, sí, también se puede hacer simplemente agregando el fichero o ficheros de instrucciones al contexto del chat, pero entonces solo aplica en ese momento y no es fácil reutilizarlo; que es lo siguiente que veremos.</p>
+<h2 id="biblioteca-de-prompts">Biblioteca de prompts</h2>
+<p>Hay cierto tipo de peticiones que hacemos una y otra vez. Tal es así, que Copilot incluye una serie de prompts predefinidos que se invoca como si fuesen comandos. Siguen un convenio de nombres que les identifica. Son los slash-commands.</p>
+<h3 id="comandos-slash">Comandos Slash</h3>
+<p>Los <a href="https://docs.github.com/es/copilot/reference/cheat-sheet#slash-commands">comandos slash</a> son atajos predefinidos que ejecutan acciones específicas:</p>
+<p><strong>Comandos básicos de gestión:</strong></p>
+<ul>
+<li><code>/clear</code>: Inicia una nueva sesión de chat</li>
+<li><code>/help</code>: Referencia rápida y conceptos básicos de GitHub Copilot</li>
+</ul>
+<p><strong>Comandos de análisis y explicación:</strong></p>
+<ul>
+<li><code>/explain</code>: Explica el código seleccionado</li>
+<li><code>/fix</code>: Corrige problemas en el código</li>
+</ul>
+<p><strong>Comandos de generación:</strong></p>
+<ul>
+<li><code>/tests</code>: Genera tests para el código</li>
+<li><code>/new</code>: Crea un nuevo proyecto</li>
+<li><code>/fixTestFailure</code>: Encuentra y corrige una prueba que falla</li>
+</ul>
+<p>Para usar un comando slash, escribe <code>/</code> en la caja de prompt del chat, seguido del nombre del comando. La lista de comandos disponibles puede variar y ser aplicada con tus propios comandos.</p>
+<h3 id="comandos-personalizados">Comandos personalizados</h3>
+<p>Copilot permite crear <a href="https://code.visualstudio.com/docs/copilot/copilot-customization#_prompt-files-experimental">comandos personalizados</a> usando archivos de prompt similares a las instrucciones de repositorio.</p>
+<p>La diferencia es que se almacenan en la carpeta <code>.github/prompts</code> y su nombre debe ser <code>[command].prompt.md</code>. Y, como en el caso de las instrucciones, empiezan con un Front-matter.</p>
+<p>Ejemplo de comando <code>/refactor</code> en el fichero <code>.github/prompts/refactor.prompt.md</code>:</p>
+<pre class="astro-code dark-plus" style="background-color:#1E1E1E;color:#D4D4D4; overflow-x: auto;" tabindex="0" data-language="markdown"><code><span class="line"><span style="color:#569CD6;font-weight:bold"># Refactorización de código</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#D4D4D4">Refactoriza el código seleccionado siguiendo estos principios:</span></span>
+<span class="line"><span style="color:#6796E6">-</span><span style="color:#D4D4D4"> Extrae funciones pequeñas y con una sola responsabilidad</span></span>
+<span class="line"><span style="color:#6796E6">-</span><span style="color:#D4D4D4"> Usa nombres descriptivos para variables y funciones</span></span>
+<span class="line"><span style="color:#6796E6">-</span><span style="color:#D4D4D4"> Elimina código duplicado</span></span>
+<span class="line"><span style="color:#6796E6">-</span><span style="color:#D4D4D4"> Mantén la funcionalidad original</span></span>
+<span class="line"><span style="color:#6796E6">-</span><span style="color:#D4D4D4"> Sigue las instrucciones de #file:clean-code.instructions.md</span></span>
+<span class="line"><span style="color:#6796E6">-</span><span style="color:#D4D4D4"> Al terminar, confirma el resultado ejecutando el comando [</span><span style="color:#CE9178">git-commit.prompt.md</span><span style="color:#D4D4D4">](</span><span style="color:#D4D4D4;text-decoration:underline">.github/prompts/git-commit.prompt.md</span><span style="color:#D4D4D4">)</span></span></code></pre>
+<p>Como ves, los <strong>archivos de prompt</strong> pueden referenciar otros archivos del proyecto usando sintaxis Markdown estándar o la sintaxis específica <code>#file:ruta/archivo.ts</code>. Esto permite proporcionar contexto adicional como especificaciones de API o documentación del producto.</p>
+<p>Te resumo algunas de las <a href="https://docs.github.com/en/copilot/reference/cheat-sheet#chat-variables">variables de chat</a> que puedes usar, tanto en prompts guardados en ficheros como en el prompt que escribes en el chat:</p>
+<p><strong>Variables de chat</strong> enriquecen cualquier modo:</p>
+<ul>
+<li><code>#file</code>: Incluye el contenido del archivo actual</li>
+<li><code>#selection</code>: Incluye el texto seleccionado actualmente</li>
+<li><code>#function</code>: Incluye la función o método actual</li>
+</ul>
+<p><strong>Participantes de chat</strong> actúan como expertos especializados:</p>
+<ul>
+<li><code>@workspace</code>: Considera la estructura completa de tu proyecto</li>
+<li><code>@vscode</code>: Ayuda específica con Visual Studio Code</li>
+<li><code>@terminal</code>: Asistencia con comandos de terminal</li>
+<li><code>@github</code>: Skills específicos de GitHub</li>
+</ul>
+<p>De nuevo, te dejo un par de repositorios de ejemplo para que veas todo lo que se puede hacer:</p>
+<ul>
+<li><a href="https://github.com/AIDDbot/AIDDbot/tree/main/.github/prompts">AIDDbot command prompts</a></li>
+<li><a href="https://github.com/github/awesome-copilot/tree/main/prompts">GitHub Awesome Copilot command prompts</a></li>
+</ul>
+<p>Un último matiz con respecto a las diferencias entre instrucciones y prompts. Los comandos personalizados son siempre voluntarios, no se activan por contexto, así que no tiene <code>applyTo</code>. A cambio te permiten configurar, el modelo, las herramientas y hasta el modo de chat.</p>
+<p>¿No sabes qué son los modos de chat? Sigue leyendo.</p>
+<h2 id="modos-de-chat">Modos de chat</h2>
+<p>VSCode ofrece diferentes <strong>modos de chat</strong> que se adaptan a distintas necesidades durante el desarrollo. Cada modo optimiza la experiencia para tipos específicos de tareas. De fábrica hay tres: Ask, Edit y Agent.</p>
+<h3 id="modo-ask">Modo Ask</h3>
+<p>Para <strong>preguntas rápidas</strong> y consultas. Es el más directo y conversacional. Ideal para consultas generales y conversaciones extensas sobre el código.</p>
+<h3 id="modo-edit">Modo Edit</h3>
+<p>Especializado en <strong>modificar código</strong>. Te permite seleccionar código y pedir cambios específicos. Perfecto para correcciones rápidas, explicaciones de funciones específicas o sugerencias de mejora sin cambiar de contexto.</p>
+<h3 id="modo-agent">Modo Agent</h3>
+<p>El más potente. Actúa como un <strong>agente de desarrollo</strong> que puede:</p>
+<ul>
+<li>Analizar todo tu workspace</li>
+<li>Crear, modificar y borrar archivos y carpetas</li>
+<li>Ejecutar múltiples tareas en secuencia</li>
+<li>Ejecutar comandos</li>
+<li>Usar herramientas MCP</li>
+</ul>
+<p>Este modo es especialmente útil para encargarle a Copilot tareas reales y complejas. Es decir, este es el modo por defecto que usarás a diario… hasta que veas como crear el tuyo propio.</p>
+<h3 id="modos-de-chat-personalizados">Modos de chat personalizados</h3>
+<p>Pues eso, que puedes crear nuevos modos de chat personalizados para tus necesidades. Es similar a la creación de instrucciones y comandos personalizados. Para ello debes crear un fichero <code>*.chatmode.md</code> en la carpeta <code>.github/chatmodes</code> del root de tu proyecto.</p>
+<p>La estructura del Front-matter es la misma que para los comandos, pero su uso es más parecido al de las instrucciones. Me explico. El modo de chat, una vez seleccionado, agrega su contenido a cada prompt. Es como una extensión del fichero de instrucciones general. O como unas instrucciones con glob <code>*.*</code>, pero sin necesidad de explicitarlo.</p>
+<p>Ejemplo de modo de chat <code>revisor</code> personalizado en el fichero <code>.github/chatmodes/revisor.chatmode.md</code>:</p>
+<pre class="astro-code dark-plus" style="background-color:#1E1E1E;color:#D4D4D4; overflow-x: auto;" tabindex="0" data-language="markdown"><code><span class="line"><span style="color:#D4D4D4">---</span></span>
+<span class="line"><span style="color:#D4D4D4">description: "Soy un revisor de código"</span></span>
+<span class="line"><span style="color:#569CD6;font-weight:bold">---</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#569CD6;font-weight:bold"># Soy un revisor de código</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6796E6">-</span><span style="color:#D4D4D4"> No puedo cambiar código</span></span>
+<span class="line"><span style="color:#6796E6">-</span><span style="color:#D4D4D4"> No puedo agregar funcionalidades</span></span>
+<span class="line"><span style="color:#6796E6">-</span><span style="color:#D4D4D4"> Seguiré las instrucciones de #file:clean-code.instructions.md	</span></span>
+<span class="line"><span style="color:#6796E6">-</span><span style="color:#D4D4D4"> Solamente haré un informe de errores y recomendaciones</span></span>
+<span class="line"><span style="color:#6796E6">-</span><span style="color:#D4D4D4"> Será una lista priorizada para que copien y peguen en el chat</span></span></code></pre>
+<p>Para usarlo, simplemente selecciona el modo <code>revisor</code> de chat en el chat de Copilot y haz una petición como esta:</p>
+<pre class="astro-code dark-plus" style="background-color:#1E1E1E;color:#D4D4D4; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>Revisa la clase #file:my-class.ts</span></span></code></pre>
+<p>De nuevo, los ejemplos más interesantes los puedes encontrar en los repositorios de GitHub:</p>
+<ul>
+<li><a href="https://github.com/AIDDbot/AIDDbot/tree/main/.github/chatmodes">AIDDbot chat mode</a></li>
+<li><a href="https://github.com/github/awesome-copilot/tree/main/chatmodes">GitHub Awesome Copilot chatmodes</a></li>
+</ul>
+<p>El potencial de estos modos aumenta cuando además les asignas un conjunto de herramientas que pueden usar. ¿Herramientas? ¿Qué herramientas?. Anda, sigue leyendo, que ya falta poco para que domines todo lo que puedes hacer con GitHub Copilot.</p>
+<h2 id="herramientas-y-mcp">Herramientas y MCP</h2>
+<p>GitHub Copilot puede <strong>extenderse</strong> con herramientas externas usando el protocolo <a href="https://docs.github.com/es/copilot/how-tos/provide-context/use-mcp/extend-copilot-chat-with-mcp">MCP (Model Context Protocol)</a>.</p>
+<h3 id="qué-es-mcp">¿Qué es MCP?</h3>
+<p>El <a href="https://docs.github.com/es/copilot/concepts/about-mcp">protocolo MCP</a> permite a los modelos de IA <strong>interactuar con herramientas externa en lenguaje natural</strong>. Entre otras, puedes solicitar peticiones que incluyan acciones como estas:</p>
+<ul>
+<li>Ejecutar comandos en terminal</li>
+<li>Conectarse a APIs externas</li>
+<li>Acceder a bases de datos</li>
+<li>Usar herramientas de desarrollo específicas</li>
+<li>Consultar documentación de APIs</li>
+<li>Validar código contra reglas de negocio</li>
+<li>Integrar con herramientas de CI/CD</li>
+</ul>
+<p>Por ejemplo, si instalas el MCP de GitHub, podrías pedirle cosas como:</p>
+<ul>
+<li><code>Crea un repositorio en mi cuenta de GitHub llamado "mi-mega-proyecto</code></li>
+<li><code>Dame la lista de repositorios de la organización "mi-empresa"</code></li>
+<li><code>Dame la lista de issues del repositorio "mi-repo"</code></li>
+<li><code>Crea una issue en el repositorio "mi-repo" con el titulo "mi-issue"</code></li>
+</ul>
+<p>Todo, como ves, en lenguaje natural y de usando la herramienta de manera inteligente. Pero también puedes especificar su uso con un prompt.</p>
+<pre class="astro-code dark-plus" style="background-color:#1E1E1E;color:#D4D4D4; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>Crea un repositorio en mi cuenta de GitHub llamado "mi-mega-proyecto" usando #GitHubIssues</span></span></code></pre>
+<h3 id="configuración-de-mcp">Configuración de MCP</h3>
+<p>Lo primero es entender un par de conceptos básicos. Como dije, MCP es un <a href="https://modelcontextprotocol.io/docs/getting-started/intro">protocolo creado por Anthropic</a> para que los modelos de IA puedan usar herramientas externas. La implementación se hace a traves de servidores MCP, los cuales hay que instalar y configurar. Una vez hecho, deben iniciarse antes de usarlos. Recuerda, son servicios que se ejecutan en segundo plano. Una vez en funcionamiento ofrecerán una lista de herramientas, y esas herramientas serán las que usen los LLMs.</p>
+<p>La manera más sencilla de instalar un servidor MCP es usar el <a href="https://code.visualstudio.com/mcp">market place de herramientas MCP</a> que permiten:</p>
+<p>Esto genera un fichero de configuración en la carpeta <code>.vscode/mcp.json</code> que puedes editar para configurar las herramientas que quieres usar.</p>
+<p>Ejemplo de configuración para usar el MCP de GitHub:</p>
+<pre class="astro-code dark-plus" style="background-color:#1E1E1E;color:#D4D4D4; overflow-x: auto;" tabindex="0" data-language="json"><code><span class="line"><span style="color:#D4D4D4">{</span></span>
+<span class="line"><span style="color:#9CDCFE">  "servers"</span><span style="color:#D4D4D4">: {</span></span>
+<span class="line"><span style="color:#9CDCFE">		"github"</span><span style="color:#D4D4D4">: {</span></span>
+<span class="line"><span style="color:#9CDCFE">			"type"</span><span style="color:#D4D4D4">: </span><span style="color:#CE9178">"http"</span><span style="color:#D4D4D4">,</span></span>
+<span class="line"><span style="color:#9CDCFE">			"url"</span><span style="color:#D4D4D4">: </span><span style="color:#CE9178">"https://api.githubcopilot.com/mcp/"</span></span>
+<span class="line"><span style="color:#D4D4D4">		}</span></span>
+<span class="line"><span style="color:#D4D4D4">	}</span></span>
+<span class="line"><span style="color:#D4D4D4">}</span></span></code></pre>
+<p>Normalmente, será necesario un proceso de credenciales y permisos que dependerá del servicio que uses. Puede requerir una API key o un token OAuth.</p>
+<h3 id="conjuntos-de-herramientas">Conjuntos de herramientas</h3>
+<p>Cuando hayas instalado y lanzado unos cuantos servidores MCP, verás que el número de herramientas disponibles es enorme. Copilot lo detecta y te lanza una advertencia si estás usando demasiadas (al final esto influye en su memoria de contexto).</p>
+<p>La idea es que las actives según sea necesario. Esto puedes hacerlo desde la interfaz del chat o en el Front-matter de los ficheros de prompt y chat mode. En cualquier caso, se hace tedioso seleccionar una y otra vez ciertas herramientas. Créeme tendrás muchísimas más herramientas que usar de las que te imaginas.</p>
+<p>Afortunadamente, aparece el concepto de <a href="https://code.visualstudio.com/docs/copilot/chat/mcp-servers#_group-related-tools-in-a-tool-set">conjunto de herramientas</a> que te permite agrupar herramientas en unidades lógicas, darles un nombre y activarlas todas a la vez.</p>
+<p>Una particularidad de algunos servidores, es que tras instalarse, te ofrecen sus propios comandos que ya incluyen sus herramientas. Este es un mundo en constante expansión.</p>
+<h3 id="casos-de-uso-avanzados">Casos de uso avanzados</h3>
+<p>EL protocolo MCP te permite envolver cualquier servicio o incluso utilidades de terminal de forma que se ofrezca a clientes MCP (Copilot es un cliente MCP).</p>
+<p>Por ejemplo, puedes crear un servidor MCP para tu propio servicio o utilidad de terminal. Y luego usarlo en Copilot o desde un chat con un LLM. No me sorprenderá que el la generación de servidores MCP se convierta en una característica más de las aplicaciones que hagamos a partir de ahora.</p>
+<p>Recuerda, el objetivo es manejar cualquier software mediante instrucciones en lenguaje natural, que después los agentes traduzcan a llamadas API, comandos CLI o acciones de usuario.</p>
+<h2 id="conclusión">Conclusión</h2>
+<p><strong>GitHub Copilot</strong> en VSCode es mucho más que un auto-completado inteligente. Es un <strong>ecosistema completo</strong> de desarrollo asistido por IA que puedes personalizar hasta el último detalle.</p>
+<p>La clave está en la <strong>progresión gradual</strong>: comienza con la configuración básica y las instrucciones personales, familiarízate con los comandos slash y variables de chat, experimenta con prompts personalizados, y finalmente explora las posibilidades del MCP cuando tus necesidades lo requieran.</p>
+<ul>
+<li><strong>Configuración</strong>: Ajusta el comportamiento del auto-completado y del chat.</li>
+<li><strong>Instrucciones</strong>: Define instrucciones para librerías, lenguajes, documentación, etc.</li>
+<li><strong>Prompts</strong>: Crea una biblioteca de prompts reutilizables.</li>
+<li><strong>Modos de chat</strong>: Usa modos de chat personalizados para situaciones o casos concretos.</li>
+<li><strong>Herramientas</strong>: Instala servidores MCP y usa sus herramientas.</li>
+</ul>
+<p>La <strong>inversión de tiempo</strong> en configurar correctamente estas herramientas se paga rápidamente. Un agente que entiende tu proyecto específico, tus preferencias de código, y tiene acceso a las herramientas que usas diariamente, se convierte en el compañero de desarrollo que realmente necesitas: uno que no solo sugiere, sino que <strong>comprende y contribuye</strong> de forma significativa a tu trabajo.</p>
+<p>No te conformes con las sugerencias automáticas. <strong>Aprovecha todo el potencial</strong> de GitHub Copilot para transformar tu flujo de trabajo de desarrollo.</p>
+<p>Y recuerda: la IA es una herramienta, no un reemplazo. <strong>Tú sigues siendo el programador</strong>. GitHub Copilot está ahí para <strong>acelerar tu trabajo</strong>, no para hacerlo por ti.</p>
+<p>¿Ya tienes GitHub Copilot configurado? ¿Qué técnicas has descubierto que te funcionan mejor?</p>
+<p>Te sugiero que eches un vistazo a <a href="https://github.com/AIDDbot/AIDDbot">AIDDbot</a> para que te sirva de inspiración. Es un proyecto que usa GitHub Copilot para generar código, documentación, tests, etc. siguiendo la metodología de desarrollo de <a href="https://aicode.academy/blog/es/aiddbot-workflow/">AI-Driven Development</a>.</p> </main> <footer> <blockquote> <p>No es magIA, es Tecnología.</p> <footer> <cite>— Alberto Basalo</cite> </footer> </blockquote> <p> <nav aria-label="breadcrumb"> <ul> <li><a href="/blog/es/">Blog</a></li> <li><a href="/blog/es/herramientas">Herramientas</a></li> <li> <time datetime="August 25, 2025">25/08/2025</time> </li> </ul> </nav> </p> </footer> </article>  </main> <footer data-astro-cid-mtxgg6pp> <main class="grid" data-astro-cid-mtxgg6pp> <section data-astro-cid-mtxgg6pp> <h3 class="logo color" data-astro-cid-mtxgg6pp><a href="/" data-astro-cid-mtxgg6pp>Ai code Academy</a></h3> <h4 data-astro-cid-mtxgg6pp><span class="comment">//</span>Learn to code smarter.</h4> <li data-astro-cid-mtxgg6pp> <a href="/blog/es" data-astro-cid-mtxgg6pp>Blog</a> </li><li data-astro-cid-mtxgg6pp> <a href="/cursos" data-astro-cid-mtxgg6pp>Cursos</a> </li><li data-astro-cid-mtxgg6pp> <a href="/community" data-astro-cid-mtxgg6pp>Community</a> </li> </section> <section data-astro-cid-mtxgg6pp> <h3 data-astro-cid-mtxgg6pp>Connect</h3> <ul data-astro-cid-mtxgg6pp> <li data-astro-cid-mtxgg6pp> <a href="https://linkedin.com/in/albertobasalo" target="_blank" data-astro-cid-mtxgg6pp> LinkedIn </a> </li><li data-astro-cid-mtxgg6pp> <a href="https://github.com/AlbertoBasalo" target="_blank" data-astro-cid-mtxgg6pp> GitHub </a> </li><li data-astro-cid-mtxgg6pp> <a href="https://twitter.com/AlbertoBasalo" target="_blank" data-astro-cid-mtxgg6pp> Twitter </a> </li><li data-astro-cid-mtxgg6pp> <a href="https://www.youtube.com/c/AlbertoBasalo71" target="_blank" data-astro-cid-mtxgg6pp> YouTube </a> </li> </ul> </section> <section data-astro-cid-mtxgg6pp> <h3 data-astro-cid-mtxgg6pp>Legal</h3> <ul data-astro-cid-mtxgg6pp> <li data-astro-cid-mtxgg6pp> <a href="/legal/privacy/" target="_blank" data-astro-cid-mtxgg6pp> Privacy Policy </a> </li><li data-astro-cid-mtxgg6pp> <a href="/legal/terms/" target="_blank" data-astro-cid-mtxgg6pp> Terms of Service </a> </li> </ul> </section> </main> <div data-astro-cid-mtxgg6pp> <p data-astro-cid-mtxgg6pp>
+&copy; 2025 AI Code Academy. All rights reserved. Created by <a href="https://albertobasalo.dev" target="_blank" data-astro-cid-mtxgg6pp>Alberto Basalo</a> </p> </div> </footer>  <script>
+    const setTheme = (theme) =>
+      document.documentElement.setAttribute("data-theme", theme);
+    const loadTheme = () => localStorage.getItem("theme");
+    const winOs = window.matchMedia("(prefers-color-scheme: dark)");
+    const osTheme = winOs.matches ? "dark" : "light";
+    setTheme(loadTheme() || osTheme);
+    winOs.addEventListener("change", (e) =>
+      setTheme(e.matches ? "dark" : "light"),
+    );
+  </script> </body></html>
