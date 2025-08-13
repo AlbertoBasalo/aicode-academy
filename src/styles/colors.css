@@ -33,6 +33,7 @@
   --ab-gradient-primary: linear-gradient(90deg, var(--ab-light-blue), var(--ab-light-green), var(--ab-green));
   --ab-gradient-secondary: linear-gradient(90deg, var(--ab-dark-blue),
       var(--ab-dark-green), var(--ab-green));
+  --pico-primary-underline: var(--pico-primary);
   color-scheme: dark;
 }
 
