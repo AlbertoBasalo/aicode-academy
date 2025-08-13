@@ -18,13 +18,15 @@ interface Props {
 const { post } = Astro.props;
 ---
 
-<article>
-  <h3>
-    <PrimaryComment /><a href={`/blog/es/${post.data.slug}`}
-      >{post.data.title}</a>
-  </h3>
-  <PostMeta date={post.data.date ?? ""} category={post.data.category ?? ""} />
-  <p class="color">{post.data.subtitle}</p>
+<article class="colored-headers">
+  <header>
+    <h2>
+      <PrimaryComment /><a href={`/blog/es/${post.data.slug}`}
+        >{post.data.title}</a
+      >
+    </h2>
+    <PostMeta date={post.data.date ?? ""} category={post.data.category ?? ""} />
+    <p class="color">{post.data.subtitle}</p>
+  </header>
   <small>{post.data.description}</small>
 </article>
-

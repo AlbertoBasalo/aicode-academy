@@ -51,7 +51,7 @@ const cta = {
       educationalLevel: entry.data.level || "intermedio",
       timeRequired: entry.data.duration,
       url: `https://aicode.academy/cursos/${entry.data.slug}/`,
-      image: entry.data.seo?.image || "/aicode_meetup_v01.png",
+      image: "/site-og-image.png",
       keywords: entry.data.tags?.join(", ") || "programación, IA, desarrollo",
       about: entry.data.subtitle,
     })}
@@ -65,7 +65,7 @@ const cta = {
     </ul>
   </nav>
 
-  <article>
+  <article class="colored-headers">
     <header>
       <h1><PrimaryComment />{entry.data.title}</h1>
       <p>{entry.data.subtitle}<BlinkCursor /></p>

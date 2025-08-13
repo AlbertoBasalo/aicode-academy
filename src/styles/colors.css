@@ -30,9 +30,10 @@
   --pico-secondary-hover-background: var(--ab-blue);
   --pico-box-shadow: 0 0 2px 0 var(--pico-primary);
   --ab-theme-gray: var(--ab-dark-gray);
-  --ab-gradient-primary: linear-gradient(90deg, var(--ab-light-blue), var(--ab-light-green), var(--ab-green));
-  --ab-gradient-secondary: linear-gradient(90deg, var(--ab-dark-blue),
-      var(--ab-dark-green), var(--ab-green));
+  --ab-gradient-primary: linear-gradient(90deg, var(--ab-light-blue) 0%,
+      var(--ab-light-green) 30%, var(--ab-green) 60%);
+  --ab-gradient-secondary: linear-gradient(90deg, var(--ab-dark-blue) 0%,
+      var(--ab-dark-green) 30%, var(--ab-green) 60%);
   --pico-primary-underline: var(--pico-primary);
   color-scheme: dark;
 }
@@ -55,10 +56,10 @@
   --pico-secondary-hover-background: var(--ab-blue);
   --pico-box-shadow: 0 0 2px 0 var(--pico-primary);
   --ab-theme-gray: var(--ab-light-gray);
-  --ab-gradient-primary: linear-gradient(90deg, var(--ab-dark-blue),
-      var(--ab-dark-green), var(--ab-green));
-  --ab-gradient-secondary: linear-gradient(90deg, var(--ab-light-blue),
-      var(--ab-light-green), var(--ab-green));
+  --ab-gradient-primary: linear-gradient(90deg, var(--ab-dark-blue) 0%,
+      var(--ab-dark-green) 30%, var(--ab-green) 60%);
+  --ab-gradient-secondary: linear-gradient(90deg, var(--ab-light-blue) 0%,
+      var(--ab-light-green) 30%, var(--ab-green) 60%);
   color-scheme: light;
 }
 

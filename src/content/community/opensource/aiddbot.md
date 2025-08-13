@@ -38,9 +38,7 @@ Puede trabajar con varios editores habilitados con IA:
 
 > El chat de GitHub Copilot viene con tres modos nativos: `Ask`, `Edit` y `Agent`. Con `AIDDbot` agregas un nuevo modo orientado a AI Driven Development. 
 
-> Más info: [Modos de Chat](https://code.visualstudio.com/docs/copilot/chat/chat-modes)
-
-> Más sobre [GitHub Copilot](https://aicode.academy/blog/es/vscode-github-copilot/)
+> Más sobre [GitHub Copilot en VSCode](https://aicode.academy/blog/es/vscode-github-copilot/)
 
 ### Modo de Chat: AIDDbot
 
@@ -62,7 +60,7 @@ Hay tres prompts alineados con los roles de AI-Driven Development: Architect / B
 
 Estos prompts de rol orquestan otros prompts especializados cuando es necesario. Explora la [carpeta de prompts](https://github.com/AIDDbot/AIDDbot/tree/main/.github/prompts) para ver todas las opciones.
 
-### 📚 Instrucciones
+### Instrucciones
 
 GitHub Copilot permite definir ficheros de instrucciones como contexto reutilizable. Funcionan como plantillas, guías o referencias de buenas prácticas — genéricas o muy específicas (librerías, herramientas, patrones).
 
@@ -82,14 +80,14 @@ Este prompt se invoca automáticamente desde el prompt del Arquitecto tras ident
 /Ab_add-instructions java language
 ```
 
-### 🛠️ En progreso
+### En progreso
 
 - Memoria del flujo de trabajo y características del proyecto.
 - Diario / log para trazabilidad de decisiones.
 - Inclusión automática de arquetipos según requisitos.
 - Rutinas de auto-mejora para AIDDbot.
 
-## 💭 Filosofía AIDD
+## Filosofía AIDD
 
 AIDD (AI Driven Development) combina capacidades de IA con prácticas consolidadas de ingeniería de software para aumentar productividad, calidad de código y colaboración a lo largo de todo el ciclo de vida.
 
@@ -114,4 +112,4 @@ El agente `AIDDbot` se adhiere a los tres principios del [Manifiesto AIDD](https
 - **El repositorio de AIDDbot**: [GitHub/AIDDbot/AIDDbot](https://github.com/AIDDbot/AIDDbot)
 - **AIDDbot Workflow**: [Tu ayudante para una metodología de programación con IA](https://aicode.academy/blog/es/aiddbot-workflow/)
 - **VsCode y GitHub Copilot**: [Configuración y uso del agente de IA de GitHub](https://aicode.academy/blog/es/vscode-github-copilot/)
-- **Curso de formación**: [Aprende a usar GitHub Copilot](https://aicode.academy/cursos/vs-code-copilot/)
+- **Curso de formación**: [Aprende a usar GitHub Copilot profesionalmente](https://aicode.academy/cursos/vs-code-copilot/)

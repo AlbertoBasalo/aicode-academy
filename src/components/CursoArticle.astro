@@ -22,9 +22,9 @@ interface Props {
 const { curso } = Astro.props;
 ---
 
-<article>
+<article class="colored-headers">
   <header>
-    <h3>
+    <h2>
       <PrimaryComment />
       <a
         href={`/cursos/${curso.data.slug}`}
@@ -32,7 +32,7 @@ const { curso } = Astro.props;
       >
         {curso.data.title}
       </a>
-    </h3>
+    </h2>
     <nav aria-label="curso metadata">
       <ul>
         {
