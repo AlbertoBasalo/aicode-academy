@@ -1,0 +1,8 @@
+{
+  "markdown-pdf.breaks": true,
+  "markdown-pdf.headerTemplate": "<div style=\"font-size: 9px; margin-left: 1cm;\"> <span class='title'></span></div>",
+  "markdown-pdf.includeDefaultStyles": true,
+  "markdown-pdf.styles": [
+    "temp/global.css"
+  ]
+}

@@ -1,10 +1,10 @@
 :root {
-    --primary: #47d469;
-    --primary-light: #6bde88;
-    --primary-dark: #39aa54;
-    --bg: #000;
-    --text: #fff;
-    --accent: rgba(71, 212, 105, 0.1);
-    --font-display: 'Major Mono Display', 'Share Tech Mono', monospace;
-    --font: 'Share Tech Mono', monospace;
+  --primary: #47d469;
+  --primary-light: #6bde88;
+  --primary-dark: #39aa54;
+  --bg: #000;
+  --text: #fff;
+  --accent: rgba(71, 212, 105, 0.1);
+  --font-display: 'Major Mono Display', 'Share Tech Mono', monospace;
+  --font: 'Share Tech Mono', monospace;
 }

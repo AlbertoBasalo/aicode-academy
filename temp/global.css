@@ -1,0 +1,67 @@
+/* Modern CSS Reset and Global Styles */
+
+:root {
+  --pico-font-family: "Fira Mono", Consolas, monospace;
+  --pico-font-family-emoji: "Major Mono Display", Consolas, monospace;
+  --pico-font-family-sans-serif: Tomorrow, Roboto, Helvetica, Arial, sans-serif;
+  --pico-font-family-monospace: "Fira Mono", Consolas, monospace;
+  --pico-border-radius: 0rem;
+  --pico-typography-spacing-vertical: 0.6rem;
+}
+
+body {
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 3%;
+  padding-right: 3%;
+  font-family: var(--pico-font-family);
+  text-align: justify;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--pico-font-family-sans-serif);
+}
+
+h1 {
+  --pico-font-size: 2.5rem;
+  --pico-line-height: 1.5;
+  --pico-typography-spacing-top: 3.5rem;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+  color: #007700;
+}
+
+h2 {
+  --pico-font-size: 2rem;
+  --pico-line-height: 1.5;
+  --pico-typography-spacing-top: 3rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  color: #00aa00;
+}
+
+h3 {
+  --pico-font-size: 1.5rem;
+  --pico-line-height: 1.5;
+  --pico-typography-spacing-top: 2rem;
+  margin-bottom: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+h4 {
+  --pico-font-size: 1.25rem;
+  --pico-line-height: 1.5;
+  --pico-typography-spacing-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+a {
+  color: #00aaff;
+  text-decoration: none;
+}
