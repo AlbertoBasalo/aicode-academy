@@ -15,7 +15,7 @@
 
 /* dark theme */
 [data-theme="dark"] {
-  --pico-color: white;
+  --pico-color: var(--ab-light-gray);
   --pico-background-color: black;
   --pico-primary: var(--ab-green);
   --pico-primary-hover: var(--ab-green);
@@ -48,7 +48,7 @@
 /* light theme */
 [data-theme="light"],
 :root:not([data-theme="dark"]) {
-  --pico-color: black;
+  --pico-color: var(--ab-dark-gray);
   --pico-background-color: white;
   --pico-primary: var(--ab-green);
   --pico-primary-hover: var(--ab-light-green);
@@ -63,7 +63,6 @@
   --pico-secondary-hover-background: var(--ab-blue);
   --pico-box-shadow: 0 0 2px 0 var(--pico-primary);
   --ab-theme-gray: var(--ab-light-gray);
-
   --ab-gradient-primary:
     linear-gradient(45deg,
       var(--ab-green) 0%,
