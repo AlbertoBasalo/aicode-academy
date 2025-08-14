@@ -51,6 +51,7 @@ h3 {
   --pico-typography-spacing-top: 2rem;
   margin-bottom: 0.75rem;
   margin-top: 0.75rem;
+  color: #00aa00;
 }
 
 h4 {
@@ -63,5 +64,18 @@ h4 {
 
 a {
   color: #00aaff;
-  text-decoration: none;
+  text-decoration: underline;
+}
+
+code {
+  color: #0077ff;
+}
+
+pre {
+  color: #0077ff;
+}
+
+:not(pre):not(.hljs)>code {
+  color: #0077ff;
+  font-size: inherit;
 }
