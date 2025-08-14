@@ -1,5 +1,5 @@
 ---
-title: "AIDDbot"
+title: "AiddBot"
 subtitle: "Agentes de IA para desarrollo corporativo"
 description: "AIDDbot es un conjunto de herramientas (prompts, instrucciones, agentes, etc.) para que puedas usar fácilmente toda la potencia de la IA en tu día a día."
 slug: "community/opensource/aiddbot"
