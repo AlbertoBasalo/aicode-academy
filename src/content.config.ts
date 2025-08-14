@@ -49,7 +49,7 @@ const cursosCollection = defineCollection({
   schema: baseSchema.extend({
     category: z.string().optional(),
     duration: z.string().optional(),
-    level: z.enum(["básico", "intermedio", "avanzado"]).optional(),
+    level: z.enum(["Básico", "Intermedio", "Avanzado"]).optional(),
     price: z.string().optional(),
     instructor: z.string().optional(),
     tags: z.array(z.string()).optional(),

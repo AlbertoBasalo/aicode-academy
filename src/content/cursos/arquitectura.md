@@ -1,11 +1,11 @@
 ---
-title: "Arquitectura de Software en tiempos de IA"
-subtitle: "Diseño moderno con patrones, diagramas y documentación efectiva"
-description: "Aprende a diseñar sistemas robustos y sostenibles aplicando principios de arquitectura clásica y moderna, con una mirada puesta en la era de la inteligencia artificial."
+title: "Arquitectura Inteligente"
+subtitle: "Diseño de software en tiempos de I.A."
+description: "Crea sistemas robustos y sostenibles aplicando principios de arquitectura con patrones, diagramas y documentación efectiva potenciados por y para la IA."
 slug: "arquitectura"
-category: "metodología"
-duration: "20-24 horas"
-level: "avanzado"
+category: "Metodología"
+level: "Avanzado"
+duration: "18-24 horas"
 instructor: "Alberto Basalo"
 tags: ["Documentación", "Patrones", "C4", "ADR"]
 featured: false

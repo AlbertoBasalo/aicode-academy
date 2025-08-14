@@ -1,11 +1,11 @@
 ---
 title: "Github Copilot y VsCode"
 subtitle: "Desarrollo profesional con VsCode y GitHub Copilot"
-description: "Aprende a desarrollar aplicaciones con herramientas consolidadas de Microsoft ampliamente adoptadas en el entorno empresarial."
+description: "Herramientas IA de Microsoft consolidadas en el entorno empresarial. Configuración, instrucciones, modos de chat, herramientas MCP..."
 slug: "vs-code-copilot"
-category: "herramientas"
+category: "Herramientas"
+level: "Básico"
 duration: "15-21 horas"
-level: "básico"
 instructor: "Alberto Basalo"
 tags: ["VsCode", "GitHub", "Copilot"]
 featured: false
@@ -32,7 +32,9 @@ Para aumentar tu productividad y la calidad de tu código usando Inteligencia Ar
 
 ### Ediciones
 
-- Curso **en directo y a medida** en tu empresa o centro de formación. [Contacta con Alberto Basalo](https://www.linkedin.com/in/albertobasalo/)
+- Curso **en directo y a medida** en tu empresa o centro de formación. 
+
+- [Contacta con Alberto Basalo](https://www.linkedin.com/in/albertobasalo/)
 
 ## Contenido
 
