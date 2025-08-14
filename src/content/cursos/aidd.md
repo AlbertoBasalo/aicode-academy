@@ -7,7 +7,7 @@ category: "metodología"
 duration: "16-20 horas"
 level: "básico"
 instructor: "Alberto Basalo"
-tags: ["Programación", "Herramientas", "Productividad", "Calidad"]
+tags: ["AIDD", "Productividad", "Calidad"]
 featured: true
 order: 1
 ---

@@ -3,11 +3,11 @@ title: "Github Copilot y VsCode"
 subtitle: "Desarrollo profesional con VsCode y GitHub Copilot"
 description: "Aprende a desarrollar aplicaciones con herramientas consolidadas de Microsoft ampliamente adoptadas en el entorno empresarial."
 slug: "vs-code-copilot"
-category: "programación"
+category: "herramientas"
 duration: "15-21 horas"
-level: "intermedio"
+level: "básico"
 instructor: "Alberto Basalo"
-tags: ["VsCode", "GitHub", "Copilot", "Productividad"]
+tags: ["VsCode", "GitHub", "Copilot"]
 featured: false
 order: 2
 ---
