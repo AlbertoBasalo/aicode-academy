@@ -1,6 +1,6 @@
 ---
 title: "AiddBot"
-subtitle: "Agentes de IA para desarrollo corporativo"
+subtitle: "Un asistente IA de programación que aumenta tu IDE para desarrollos corporativos."
 description: "AIDDbot es un conjunto de herramientas (prompts, instrucciones, agentes, etc.) para que puedas usar fácilmente toda la potencia de la IA en tu día a día."
 slug: "community/opensource/aiddbot"
 date: "2025-08-05"
@@ -36,7 +36,7 @@ cta:
 
 **Funciona con cualquier LLM** y con varios editores habilitados con IA:
 
--  **VsCode and GitHub Copilot** ✔️ Listo [Instalación y uso](https://github.com/AIDDbot/AIDDbot/blob/main/docs/vscode_aiddbot.md)
+-  **[VsCode and GitHub Copilot](https://github.com/AIDDbot/AIDDbot/blob/main/docs/vscode_aiddbot.md)** ✔️ Listo 
 - _Cursor_, 🚧 En progreso
 - _ClaudeCode_, _GeminiCLI_ ⏳ Próximamente
   
