@@ -19,36 +19,36 @@ body {
 
 @media (min-width: 576px) {
   body {
-    padding-left: 4%;
-    padding-right: 4%;
-  }
-}
-
-@media (min-width: 768px) {
-  body {
     padding-left: 5%;
     padding-right: 5%;
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   body {
     padding-left: 8%;
     padding-right: 8%;
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1024px) {
   body {
     padding-left: 10%;
     padding-right: 10%;
   }
 }
 
-@media (min-width: 1536px) {
+@media (min-width: 1280px) {
   body {
     padding-left: 15%;
     padding-right: 15%;
+  }
+}
+
+@media (min-width: 1536px) {
+  body {
+    padding-left: 20%;
+    padding-right: 20%;
   }
 }
 
