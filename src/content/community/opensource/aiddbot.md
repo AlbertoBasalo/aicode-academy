@@ -20,11 +20,11 @@ cta:
 
 **Aumenta tu IDE y agente de desarrollo** con un conjunto de:
 
-  - prompts, 
-  - instrucciones o reglas 
-  - herramientas y configuraciones.
+- prompts, 
+- instrucciones o reglas 
+- herramientas y configuraciones.
 
-## 🎯 ¿Por qué lo necesitas?
+## 💗 ¿Por qué lo necesitas?
 
 **Para desarrollar proyectos grandes y complejos**, que representan un reto con para los LLMs debido a:
 
@@ -36,7 +36,7 @@ cta:
 
 **Funciona con cualquier LLM** y con varios editores habilitados con IA:
 
-### [VsCode and GitHub Copilot](https://github.com/AIDDbot/AIDDbot/blob/main/docs/vscode_aiddbot.md) ✔️ Listo 
+### [✔️ Listo: VsCode and GitHub Copilot](https://github.com/AIDDbot/AIDDbot/blob/main/docs/vscode_aiddbot.md)  
 
 - _Cursor_, 🚧 En progreso
 - _ClaudeCode_, _GeminiCLI_ ⏳ Próximamente

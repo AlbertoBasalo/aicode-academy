@@ -8,9 +8,9 @@
   --ab-white: #fff;
   --ab-yellow: #fafa00;
   --ab-red: #ff0000;
-  --ab-light-gray: #eeeeee;
+  --ab-light-gray: #dddddd;
   --ab-gray: #777777;
-  --ab-dark-gray: #333333;
+  --ab-dark-gray: #444444;
 }
 
 /* dark theme */
@@ -100,4 +100,8 @@ a {
 
 a:hover {
   font-weight: bold;
+}
+
+blockquote {
+  border-left: 4px solid var(--pico-primary);
 }

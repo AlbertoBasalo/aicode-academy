@@ -63,7 +63,7 @@ Para **aumentar tu productividad y la calidad de tu código usando Inteligencia 
 
 ### 4. SDLC con Copilot
 
-> Tres roles desde los requisitos hasta el despliegue
+> Tres roles y chat-modes desde los requisitos hasta el despliegue
   - Architect: Requerimientos, modelo y backlog
   - Builder: especificaciones, diseño, planificación y ejecución
   - Craftsman: Testing, refactorización y documentación
