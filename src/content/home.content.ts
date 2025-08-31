@@ -87,7 +87,7 @@ export const HOME: Home = {
       {
         title: "Editores",
         description:
-          "ClaudeCode, Cursor, GeminiCLI, Github-Copilot, Kiro...",
+          "ClaudeCode, Cursor, GeminiCLI, Kiro, VsCode+Copilot...",
       },
       {
         title: "Modelos",

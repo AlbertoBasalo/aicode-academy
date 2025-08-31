@@ -5,7 +5,7 @@ description: "Herramientas IA de Microsoft consolidadas en el entorno empresaria
 slug: "vs-code-copilot"
 category: "Herramientas"
 level: "Básico"
-duration: "15-21 horas"
+duration: "15-20 horas"
 instructor: "Alberto Basalo"
 tags: ["VsCode", "GitHub", "Copilot"]
 featured: false
@@ -14,21 +14,21 @@ order: 2
 
 ## Configura y exprime GitHub Copilot en VsCode
 
-Aprende a desarrollar aplicaciones usando las herramientas con IA de Microsoft: confiables, robustas y con un respaldo asegurado durante años.
+Aprende a desarrollar aplicaciones usando las **herramientas con IA de Microsoft**: confiables, robustas y con un respaldo asegurado durante años.
 
 ### Motivación
 
 Frente a la proliferación de nuevas soluciones y herramientas IA, muchas empresas apuestan por tecnologías consolidadas, con soporte continuado y un amplio ecosistema. Este curso se apoya precisamente en dos pilares sólidos: **Visual Studio Code** y **GitHub Copilot**, productos de Microsoft con millones de usuarios y una integración fluida en entornos reales de desarrollo.
 
-Para aumentar tu productividad y la calidad de tu código usando Inteligencia Artificial no necesitas reinventar tu flujo de trabajo ni adoptar soluciones inestables: aquí aprenderás a sacar el máximo partido a lo que ya se está utilizando hoy en departamentos técnicos de todo el mundo.
+Para **aumentar tu productividad y la calidad de tu código usando Inteligencia Artificial** no necesitas reinventar tu flujo de trabajo ni adoptar soluciones inestables: aquí aprenderás a sacar el máximo partido a lo que ya se está utilizando hoy en departamentos técnicos de todo el mundo.
 
 ### Objetivos del Curso
 
-- Integrar GitHub Copilot de forma efectiva en VsCode para asistir durante el desarrollo.
-- Comprender las capacidades y limitaciones de Copilot en distintos contextos.
-- Aplicar buenas prácticas en el uso de asistentes IA para mantener la calidad del software.
-- Aprender técnicas de prompt engineering y de context engineering aplicadas al desarrollo con Copilot.
-- Mejorar la productividad individual y en equipo mediante la colaboración asistida por IA.
+- Integrar GitHub **Copilot de forma efectiva en VsCode** para asistir durante el desarrollo.
+- Comprender las **capacidades y limitaciones** de Copilot en distintos contextos.
+- Aplicar **buenas prácticas en el uso de asistentes** IA para mantener la calidad del software.
+- Aprender técnicas de **prompt engineering y context engineering** aplicadas al desarrollo con Copilot.
+- Mejorar la **productividad individual y en equipo** mediante la colaboración asistida por IA.
 
 ### Ediciones
 
@@ -36,49 +36,44 @@ Para aumentar tu productividad y la calidad de tu código usando Inteligencia Ar
 
 - [Contacta con Alberto Basalo](https://www.linkedin.com/in/albertobasalo/)
 
+- Sesiones impartidas siguiendo la metodología **TBR** (Training from the Back of the Room)
+
 ## Contenido
 
-### 0. Introducción al curso
+### 1. Visual Studio Code y GitHub Copilot
 
-- 0.1. ¿Qué vamos a aprender?
-- 0.2. Presentación de las herramientas: VsCode y GitHub Copilot
-- 0.3. Instalación y configuración básica
+> Por qué usarlo y cómo configurarlo
+  - El IDE y sus extensiones
+  - Auto-completado y sugerencias
+  - El Chat, los modelos y la carpeta `.github`
 
-### 1. Primeros pasos con GitHub Copilot
+### 2. Agent chat mode
 
-- 1.1. Uso en tiempo real: sugerencias y autocompletado
-- 1.2. Casos de uso simples: funciones y clases
-- 1.3. Calidad y mantenimiento del código mediante pruebas y documentación
+> Mantén el control y otorga agencia a Copilot
+  - Herramientas y MCP
+  - Prompts: contexto workflow y validación
+  - Instrucciones: plantillas y guías auto-aplicables
 
-### 2. Ingeniería de prompts y contexto
+### 3. QA con Copilot
 
-- 2.1. Escribir peticiones efectivas con contexto
-- 2.2. Herramientas MCP
-- 2.3. Biblioteca de instrucciones y prompts
+> Mantenimiento a largo plazo
+  - Testing unitario (y otros)
+  - Refactorización y patrones
+  - Documentación de código, de proyecto y de sistema.
 
-### 3. Copilot en equipo
+### 4. SDLC con Copilot
 
-- 3.1. Integración con Git y GitHub
-- 3.2. Código legado y refactorización
-- 3.3. Ética, privacidad y uso responsable de IA
+> Tres roles desde los requisitos hasta el despliegue
+  - Architect: Requerimientos, modelo y backlog
+  - Builder: especificaciones, diseño, planificación y ejecución
+  - Craftsman: Testing, refactorización y documentación
 
-### 4. Agentes de codificación
+### 5. Proyectos reales
 
-- 4.1. Copilot Chat en modo agente
-- 4.2. Modos personalizados
-- 4.3. Ejecución en la nube
-
-### 5. Metodología AI-DD
-
-- 5.1. AI-Driven Development
-- 5.2. Los roles Architect->Builder->Craftsman
-- 5.3. Documentación del proyecto, backlog de funcionalidades y mantenimiento
-
-### 6. Proyectos reales
-
-- 6.1. Scaffolding y arquetipos 
-- 6.2. Refinamiento mediante VibeCoding
-- 6.3. El factor humano, revisión y responsabilidad
+> Adaptación a metodologías y tecnologías existentes y cambiantes
+  - Instrucciones legadas
+  - Instrucciones actualizadas
+  - Abierto al cambio
 
 ## Características
 

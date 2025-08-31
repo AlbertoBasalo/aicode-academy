@@ -58,7 +58,7 @@ El agente `AIDDbot` se adhiere a los tres principios del [Manifiesto AIDD](https
 Estos principios se implementan a través de tres roles:
 
 - **🧑‍💼 Architect**: Se enfoca en el diseño y arquitectura de alto nivel.
-- **👷 Builder**: Se enfoca en la implementación y tareas de codificación.
+- **👷 Builder**: Centrado en la implementación y tareas de codificación.
 - **🧑‍🔧 Craftsman**: Asegura la calidad a través de pruebas y refinamiento.
 
 
