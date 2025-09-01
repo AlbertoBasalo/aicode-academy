@@ -31,7 +31,11 @@ Las decisiones arquitectónicas definen el futuro de cualquier producto digital.
 
 ### Ediciones
 
-- Curso **en directo y a medida** en tu empresa o centro de formación. [Contacta con Alberto Basalo](https://www.linkedin.com/in/albertobasalo/)
+- Curso **en directo y a medida** en tu empresa o centro de formación. 
+
+- [Contacta con Alberto Basalo](https://www.linkedin.com/in/albertobasalo/)
+
+- Sesiones impartidas siguiendo la metodología **TBR** (Training from the Back of the Room)
 
 ## Contenido
 
@@ -85,4 +89,4 @@ Las decisiones arquitectónicas definen el futuro de cualquier producto digital.
 - **Markdown + PlantUML / Mermaid**: Para documentación estructurada
 - **IA (ChatGPT, Copilot, etc.)**: Para generación y validación de escenarios
 - **VSCode + GitHub**: Flujo de trabajo técnico y documentación en repositorio
-
+- **TypeScript**: Lenguaje de programación ubicuo (válido para Java y C#)

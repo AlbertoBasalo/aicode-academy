@@ -5,7 +5,7 @@ description: "Metodología AI-Driven Development para mejorar tu productividad y
 slug: "aidd"
 category: "Metodología"
 level: "Básico"
-duration: "15-21 horas"
+duration: "12-18 horas"
 instructor: "Alberto Basalo"
 tags: ["AIDD", "Productividad", "Calidad"]
 featured: true
@@ -93,12 +93,7 @@ Durante el curso se mostrarán varios proyectos prácticos usando distintas herr
 
 ### Herramientas que Utilizaremos
 
-- **Claude Sonnet**: Modelo de lenguaje
-- **Cursor**: Editor con IA integrada
 - **VsCode + GitHub Copilot**: Editor con plugin de IA integrada
 - **TypeScript**: Lenguaje de programación ubicuo
 
-> [Edición bonificada Fundae con TrainingIT](https://www.trainingit.es/producto/metodologia-ai-driven-development/?email=abasalo@trainingit.es)
-
-> [Edición lite con EscuelaIT](https://escuela.it/cursos/metodologias-desarrollo-inteligencia-artificial)
 

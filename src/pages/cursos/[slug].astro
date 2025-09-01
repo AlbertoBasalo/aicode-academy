@@ -69,6 +69,31 @@ const cta = {
     <header>
       <h1><PrimaryComment />{entry.data.title}</h1>
       <p>{entry.data.subtitle}<BlinkCursor /></p>
+      <nav aria-label="curso metadata">
+        <ul>
+          {
+            entry.data.category && (
+              <li>
+                <kbd>{entry.data.category}</kbd>
+              </li>
+            )
+          }
+          {
+            entry.data.level && (
+              <li>
+                <kbd>{entry.data.level}</kbd>
+              </li>
+            )
+          }
+          {
+            entry.data.duration && (
+              <li>
+                <kbd class="outline">{entry.data.duration}</kbd>
+              </li>
+            )
+          }
+        </ul>
+      </nav>
     </header>
 
     <main class="colored-headers">
