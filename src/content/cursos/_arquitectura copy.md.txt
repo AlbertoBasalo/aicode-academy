@@ -39,40 +39,41 @@ Las decisiones arquitectónicas definen el futuro de cualquier producto digital.
 
 ## Contenido
 
-### 1. Arquitectura de Software
+### 0. Introducción
 
-> La arquitectura en tiempos de IA
-- ¿Qué es la arquitectura de software?
-- Calidad y mantenibilidad
-- Aplicación con herramientas IA
+- 0.1. Rol de la arquitectura en un sistema moderno
+- 0.2. IA como actor en el diseño, documentación y evolución del software
+- 0.3. Herramientas y formatos que usaremos
 
-### 2. Arquitecturas modulares
+### 1. Estilos y fundamentos arquitectónicos
 
-> Separar responsabilidades
-- Tres capas clásicas: Presentación, Lógica de Negocio, Acceso a Datos
-- Arquitectura frontend: MVVM, MVP, etc.
-- Arquitectura backend: Controller, Service, Repository
+- 1.1. Arquitectura en capas, ports & adapters (hexagonal)
+- 1.2. Monolitos modulares vs microservicios vs serverless
+- 1.3. Cohesión, acoplamiento y separación de responsabilidades
 
-### 3. Arquitecturas limpias
+### 2. Patrones arquitectónicos aplicados
 
-> Separar el núcleo de los detalles
-- Dominio y aplicación
-- Arquitectura Hexagonal
-- Event Sourcing
+- 2.1. Patrones estructurales: façade, proxy, repository...
+- 2.2. Patrones de integración: pub/sub, API gateway, CQRS...
+- 2.3. Patrón DDD + Event Sourcing como estrategia de modelado y escalado
 
-### 4. Patrones arquitectónicos
+### 3. Documentación como parte del diseño
 
-> Soluciones con nombre
-- Creacionales: Singleton, Factory, Builder
-- Estructurales: Façade, Proxy, Adapter
-- Comportamiento: Strategy, Command, Observer
+- 3.1. C4 Model: contexto, contenedores, componentes, código
+- 3.2. ADRs: Architecture Decision Records
+- 3.3. Documentación viva para equipos e IA: formatos, herramientas y prompts
 
-### 5. Documentación como parte del diseño
+### 4. IA como soporte arquitectónico
 
-> Documentación viva
-- Diagramas C4 Model
-- Architecture Decision Records (ADRs)
-- Las pruebas como documentación
+- 4.1. Generación de escenarios y decisiones con LLMs
+- 4.2. Evaluación de decisiones con ayuda de agentes
+- 4.3. IA para mantener y evolucionar arquitectura en proyectos vivos
+
+### 5. Taller de diseño
+
+- 5.1. Caso práctico: sistema bancario o e-commerce modular
+- 5.2. Diagramas C4 + ADR + modelo hexagonal
+- 5.3. Simulación de evolución del sistema con ayuda de IA
 
 ## Características
 
@@ -84,7 +85,8 @@ Las decisiones arquitectónicas definen el futuro de cualquier producto digital.
 
 ### Herramientas que utilizaremos
 
-- **Markdown + Mermaid**: Para documentación estructurada
+- **Draw.io / Structurizr**: Para generar y exportar modelos C4
+- **Markdown + PlantUML / Mermaid**: Para documentación estructurada
 - **IA (ChatGPT, Copilot, etc.)**: Para generación y validación de escenarios
 - **VSCode + GitHub**: Flujo de trabajo técnico y documentación en repositorio
 - **TypeScript**: Lenguaje de programación ubicuo (válido para Java y C#)
