@@ -5,7 +5,7 @@ description: "Crea sistemas robustos y sostenibles aplicando principios de arqui
 slug: "arquitectura"
 category: "Metodología"
 level: "Avanzado"
-duration: "12-18 horas"
+duration: "18-24 horas"
 instructor: "Alberto Basalo"
 tags: ["Documentación", "Patrones", "C4", "ADR"]
 featured: false
@@ -14,20 +14,20 @@ order: 3
 
 ## Estilos y patrones para aplicar con IA
 
-Diseña software profesional con una visión completa: desde los patrones clásicos hasta las decisiones estratégicas que exige la integración de inteligencia artificial, pasando por documentación clara y modelos comprensibles por humanos y máquinas.
+Diseña **software profesional** con una visión completa: desde los patrones clásicos hasta las decisiones estratégicas que exige la integración de inteligencia artificial, pasando por documentación clara y modelos comprensibles **por humanos y máquinas**.
 
 ### Motivación
 
-Las decisiones arquitectónicas definen el futuro de cualquier producto digital. En un entorno donde la IA gana protagonismo, es más importante que nunca contar con modelos sólidos, bien documentados y adaptables a distintas estrategias de desarrollo y despliegue. Este curso no solo repasa las arquitecturas más relevantes, sino que también incorpora prácticas modernas de documentación como los diagramas C4, los ADR o el uso de modelos comprensibles para asistentes de IA.
+Las decisiones arquitectónicas definen el futuro de cualquier producto digital. En un entorno donde la IA gana protagonismo, es más importante que nunca contar con **modelos sólidos, bien documentados y adaptables** a distintas estrategias de desarrollo y despliegue. Este curso no solo repasa las arquitecturas más relevantes, sino que también incorpora prácticas modernas de documentación como los diagramas C4, los ADR o el uso de modelos comprensibles para asistentes de IA.
 
 ### Objetivos del Curso
 
-- Comprender los fundamentos de diseño arquitectónico: capas, responsabilidad, desacoplo.
-- Comparar distintos estilos: monolitos, microservicios, modularización, serverless.
-- Diseñar soluciones con arquitectura hexagonal y enfoque Domain-Driven.
-- Elaborar documentación útil y mantenible: C4, ADR, decision logs.
-- Incorporar el razonamiento y generación asistida por IA en tareas arquitectónicas.
-- Aplicar patrones y tácticas arquitectónicas en sistemas reales.
+- Comprender los **fundamentos de diseño** arquitectónico: capas, responsabilidad, desacoplo.
+- Comparar distintos **estilos**: monolitos, microservicios, modularización, serverless.
+- Diseñar soluciones con **arquitectura hexagonal** y enfoque Event-Driven.
+- Elaborar **documentación útil y mantenible**: C4, ADR, decision logs.
+- Incorporar el **razonamiento y generación asistida por IA** en tareas arquitectónicas.
+- Aplicar **patrones de diseño** en sistemas reales.
 
 ### Ediciones
 
@@ -49,7 +49,7 @@ Las decisiones arquitectónicas definen el futuro de cualquier producto digital.
 ### 2. Arquitecturas modulares
 
 > Separar responsabilidades
-- Tres capas clásicas: Presentación, Lógica de Negocio, Acceso a Datos
+- Capas técnicas y screaming architecture
 - Arquitectura frontend: MVVM, MVP, etc.
 - Arquitectura backend: Controller, Service, Repository
 
@@ -67,19 +67,25 @@ Las decisiones arquitectónicas definen el futuro de cualquier producto digital.
 - Estructurales: Façade, Proxy, Adapter
 - Comportamiento: Strategy, Command, Observer
 
-### 5. Documentación como parte del diseño
+### 5. Pruebas y puesta en producción
+> El trabajo no finaliza hasta que el usuario esté satisfecho.
+- Definir y verificar la unidad de desarrollo
+- Pruebas de integración
+- Despliegue limpio y ordenado
 
+### 6. Documentación como parte del diseño
 > Documentación viva
 - Diagramas C4 Model
 - Architecture Decision Records (ADRs)
-- Las pruebas como documentación
+- Documentar uso y soporte
+
 
 ## Características
 
 ### Prerrequisitos
 
-- Conocimiento sólido de diseño orientado a objetos y principios SOLID
-- Experiencia con desarrollo backend en Java, C#, TypeScript o similar
+- Conocimiento de programación orientada a objetos y principios SOLID
+- Experiencia con desarrollo backend en **Java, C#, TypeScript** o similar
 - Deseable familiaridad con Git y entornos colaborativos
 
 ### Herramientas que utilizaremos

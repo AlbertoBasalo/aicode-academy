@@ -50,44 +50,44 @@ Durante el curso se mostrarán varios proyectos prácticos usando distintas herr
 ### 1. Introducción La IA en el Desarrollo de Software
 
 > Cómo afecta la IA al desarrollo de software
-- 1.1. La industria del software y la IA
-- 1.2. Amenazas y oportunidades de la IA
-- 1.3. Herramientas IA para analistas y programadores
+- La industria del software y la IA
+- Amenazas y oportunidades de la IA
+- Herramientas IA para analistas y programadores
 
 ### 2. El ABC del desarrollo con IA
 
 > Cómo funciona el ciclo de desarrollo IA-Driven
-- 2.1. Procedimientos del ciclo de desarrollo IA-Driven
-- 2.2. Architect-Builder-Craftsman
-- 2.3. Pruebas de concepto, MVP y aplicaciones simples
+- Procedimientos del ciclo de desarrollo IA-Driven
+- Architect-Builder-Craftsman
+- Pruebas de concepto, MVP y aplicaciones simples
 
 ### 3. Análisis y diseño con IA
 
 > Cómo se hace el análisis y diseño con IA
-- 3.1. Análisis de requisitos
-- 3.2. Diseño de la solución
-- 3.3. Documentos para la generación de código
+- Análisis de requisitos
+- Diseño de la solución
+- Documentos para la generación de código
 
 ### 4. Generación de código con IA
 
 > Cómo se genera código con IA
-- 4.1. Generación aplicando reglas
-- 4.2. Uso de agentes para procesos complejos
-- 4.3. Planificación e implementación
+- Generación aplicando reglas
+- Uso de agentes para procesos complejos
+- Planificación e implementación
 
 ### 5. Verificación y mantenimiento con IA
 
 > Cómo se verifica y mantiene el código con IA
-- 5.1. Testing de integración
-- 5.2. Refactorización y patrones
-- 5.3. Documentación y versionado
+- Testing de integración
+- Refactorización y patrones
+- Documentación y versionado
 
 ### 6. Conclusión Generando confianza con el manifiesto AIDD
 
 > La importancia humana en la calidad del software
-- 6.1. Human in the loop
-- 6.2. AI Quality
-- 6.3. Confianza en el futuro
+- Human in the loop
+- AI Quality
+- Confianza en el futuro
 
 ## Características
 
