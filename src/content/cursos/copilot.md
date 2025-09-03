@@ -40,7 +40,7 @@ Para **aumentar tu productividad y la calidad de tu código usando Inteligencia 
 
 ## Contenido
 
-### 1. Visual Studio Code y GitHub Copilot
+### 1. Tu IDE con IA
 
 > Por qué usarlo y cómo configurarlo
   - El IDE y sus extensiones
