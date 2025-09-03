@@ -1,5 +1,5 @@
 ---
-title: "Github Copilot y VsCode"
+title: "VsCode y Github Copilot"
 subtitle: "Desarrollo profesional con VsCode y GitHub Copilot"
 description: "Herramientas IA de Microsoft consolidadas en el entorno empresarial. Configuración, instrucciones, modos de chat, herramientas MCP..."
 slug: "vs-code-copilot"
@@ -43,7 +43,7 @@ Para **aumentar tu productividad y la calidad de tu código usando Inteligencia 
 ### 1. Tu IDE con IA
 
 > Por qué usarlo y cómo configurarlo
-  - El IDE y sus extensiones
+  - El editor y sus extensiones
   - Auto-completado y sugerencias
   - El Chat, los modelos y la carpeta `.github`
 
