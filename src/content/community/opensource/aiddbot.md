@@ -63,9 +63,9 @@ Estos principios se implementan a través de tres roles:
 
 Y por último, sigue las mejores prácticas técnicas de:
 
-- **📒 Spec-Driven Development**: Focuses on defining clear specifications before implementation.
-- **📝 Prompt Engineering**: Involves crafting effective prompts to guide AI behavior.
-- **📚 Context Engineering**: Ensures relevant context is provided to the AI for better responses.
+- **📒 Spec-Driven Development**: Foco en definir especificaciones claras antes de la implementación.
+- **📝 Prompt Engineering**: Crear prompts efectivos para guiar el comportamiento de la IA.
+- **📚 Context Engineering**: Asegura que el contexto relevante se proporcione a la IA para mejorar las respuestas.
 
 > Work smarter, not harder, with _Ab_!
 
@@ -78,5 +78,4 @@ Y por último, sigue las mejores prácticas técnicas de:
   - [GitHub](https://github.com/albertobasalo)
 - **Blog de AIDDbot.com**: [AIDDbot.com](https://aiddbot.com)
 - **El repositorio de AIDDbot**: [GitHub/AIDDbot/AIDDbot](https://github.com/AIDDbot/AIDDbot)
-- **Academia en Español**: [AI code Academy](https://aicode.academy)
 - **Curso de formación**: [Aprende a usar GitHub Copilot profesionalmente](https://aicode.academy/cursos/vs-code-copilot/)

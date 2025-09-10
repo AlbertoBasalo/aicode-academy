@@ -48,33 +48,33 @@ Las decisiones arquitectónicas definen el futuro de cualquier producto digital.
 
 ### 2. Arquitecturas modulares
 
-> Separar responsabilidades
+> Separar responsabilidades para que el agente no se líe
 - Capas técnicas y screaming architecture
 - Arquitectura frontend: MVVM, MVP, etc.
 - Arquitectura backend: Controller, Service, Repository
 
 ### 3. Arquitecturas limpias
 
-> Separar el núcleo de los detalles
+> Separar el núcleo de los detalles para que el LLM sepa lo que importa
 - Dominio y aplicación
 - Arquitectura Hexagonal
 - Event Sourcing
 
 ### 4. Patrones arquitectónicos
 
-> Soluciones con nombre
+> Soluciones con nombre para tener prompts predefinidos
 - Creacionales: Singleton, Factory, Builder
-- Estructurales: Façade, Proxy, Adapter
+- Estructurales: Facade, Proxy, Adapter
 - Comportamiento: Strategy, Command, Observer
 
 ### 5. Pruebas y puesta en producción
-> El trabajo no finaliza hasta que el usuario esté satisfecho.
+> La IA aumenta la productividad, pero también la calidad
 - Definir y verificar la unidad de desarrollo
 - Pruebas de integración
 - Despliegue limpio y ordenado
 
 ### 6. Documentación como parte del diseño
-> Documentación viva
+> Documentación viva para humanos y máquinas
 - Diagramas C4 Model
 - Architecture Decision Records (ADRs)
 - Documentar uso y soporte
@@ -84,13 +84,13 @@ Las decisiones arquitectónicas definen el futuro de cualquier producto digital.
 
 ### Prerrequisitos
 
-- Conocimiento de programación orientada a objetos y principios SOLID
-- Experiencia con desarrollo backend en **Java, C#, TypeScript** o similar
-- Deseable familiaridad con Git y entornos colaborativos
+- Experiencia con editores/agentes con Inteligencia Artificial
+- Conocimiento de programación orientada a objetos y principios SOLID o de programación funcional.
+- Familiaridad con Git y entornos colaborativos
 
 ### Herramientas que utilizaremos
 
 - **Markdown + Mermaid**: Para documentación estructurada
-- **IA (ChatGPT, Copilot, etc.)**: Para generación y validación de escenarios
-- **VSCode + GitHub**: Flujo de trabajo técnico y documentación en repositorio
+- **IA (ChatGPT, Copilot, Cursor, Gemini, etc.)**: Para generación y validación de escenarios
+- **GitHub**: Flujo de trabajo y documentación en repositorio
 - **TypeScript**: Lenguaje de programación ubicuo (válido para Java y C#)
