@@ -65,7 +65,7 @@ Y por último, sigue las mejores prácticas técnicas de:
 
 - **📒 Spec-Driven Development**: Foco en definir especificaciones claras antes de la implementación.
 - **📝 Prompt Engineering**: Crear prompts efectivos para guiar el comportamiento de la IA.
-- **📚 Context Engineering**: Asegura que el contexto relevante se proporcione a la IA para mejorar las respuestas.
+- **📚 Context Engineering**: Asegura información relevante para la IA para mejorar las respuestas.
 
 > Work smarter, not harder, with _Ab_!
 

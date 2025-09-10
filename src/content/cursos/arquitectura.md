@@ -91,6 +91,6 @@ Las decisiones arquitectónicas definen el futuro de cualquier producto digital.
 ### Herramientas que utilizaremos
 
 - **Markdown + Mermaid**: Para documentación estructurada
-- **IA (ChatGPT, Copilot, Cursor, Gemini, etc.)**: Para generación y validación de escenarios
+- **IA (ChatGPT, Copilot, Claude, Gemini, etc.)**: Para generación y validación de escenarios
 - **GitHub**: Flujo de trabajo y documentación en repositorio
 - **TypeScript**: Lenguaje de programación ubicuo (válido para Java y C#)
