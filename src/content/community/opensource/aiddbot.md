@@ -61,6 +61,11 @@ Estos principios se implementan a través de tres roles:
 - **👷 Builder**: Centrado en la implementación y tareas de codificación.
 - **🧑‍🔧 Craftsman**: Asegura la calidad a través de pruebas y refinamiento.
 
+Y por último, sigue las mejores prácticas técnicas de:
+
+- **📒 Spec-Driven Development**: Focuses on defining clear specifications before implementation.
+- **📝 Prompt Engineering**: Involves crafting effective prompts to guide AI behavior.
+- **📚 Context Engineering**: Ensures relevant context is provided to the AI for better responses.
 
 > Work smarter, not harder, with _Ab_!
 
@@ -68,11 +73,10 @@ Estos principios se implementan a través de tres roles:
 
 - **Autor**: [Alberto Basalo](https://albertobasalo.dev)
 - **Redes sociales**:
-  - [X](https://x.com/albertobasalo)
+  - [X/Twitter](https://x.com/albertobasalo)
   - [LinkedIn](https://www.linkedin.com/in/albertobasalo/)
   - [GitHub](https://github.com/albertobasalo)
 - **Blog de AIDDbot.com**: [AIDDbot.com](https://aiddbot.com)
-- **Organización AIDDbot en GitHub**: [GitHub/AIDDbot](https://github.com/AIDDbot)
-- **Este repositorio**: [GitHub/AIDDbot/AIDDbot](https://github.com/AIDDbot/AIDDbot)
+- **El repositorio de AIDDbot**: [GitHub/AIDDbot/AIDDbot](https://github.com/AIDDbot/AIDDbot)
 - **Academia en Español**: [AI code Academy](https://aicode.academy)
 - **Curso de formación**: [Aprende a usar GitHub Copilot profesionalmente](https://aicode.academy/cursos/vs-code-copilot/)
