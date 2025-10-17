@@ -22,7 +22,7 @@ interface Props {
 const { curso } = Astro.props;
 ---
 
-<article class="colored-headers">
+<article class="">
   <header>
     <h2>
       <PrimaryComment />
@@ -59,7 +59,7 @@ const { curso } = Astro.props;
       </ul>
     </nav>
 
-    {curso.data.subtitle && <h4 class="secondary">{curso.data.subtitle}</h4>}
+    {curso.data.subtitle && <h4 class="">{curso.data.subtitle}</h4>}
     <p>{curso.data.description}</p>
 
     {

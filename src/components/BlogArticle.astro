@@ -18,7 +18,7 @@ interface Props {
 const { post } = Astro.props;
 ---
 
-<article class="colored-headers">
+<article>
   <header>
     <h2>
       <PrimaryComment />
@@ -28,7 +28,7 @@ const { post } = Astro.props;
       >
     </h2>
     <PostMeta date={post.data.date ?? ""} category={post.data.category ?? ""} />
-    <p class="secondary">{post.data.subtitle}</p>
+    <h4>{post.data.subtitle}</h4>
   </header>
   <small>{post.data.description}</small>
 </article>

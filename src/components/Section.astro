@@ -29,8 +29,8 @@ const id = section.title
   .replace(/-+/g, "-");
 ---
 
-<section id={id} class="container colored-headers">
-  <header class="center">
+<section id={id} class="container">
+  <header class="">
     <h2>{section.title}</h2>
     <span>{section.subtitle}</span>
   </header>
@@ -56,7 +56,7 @@ const id = section.title
   }
   {
     section.cta && (
-      <footer class="center">
+      <footer class="">
         <a
           href={section.cta.link}
           role="button"

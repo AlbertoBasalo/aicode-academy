@@ -1,6 +1,6 @@
 ---
 interface Props {
-	text: string;
+  text: string;
 }
 const { text } = Astro.props;
 ---
@@ -20,7 +20,7 @@ const { text } = Astro.props;
   document.querySelectorAll(".matrix-text").forEach((element) => {
     const el = element as HTMLElement;
     const text = el.getAttribute("data-value") || "";
-    const speed = 30;
+    const DELAY_MS = 20;
 
     let interval: NodeJS.Timeout | undefined = undefined;
     let iteration = 0;
@@ -46,6 +46,6 @@ const { text } = Astro.props;
     };
 
     // Start animation on page load
-    interval = setInterval(performIteration, speed);
+    interval = setInterval(performIteration, DELAY_MS);
   });
 </script>

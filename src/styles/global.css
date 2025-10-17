@@ -89,12 +89,19 @@ h4 {
   margin-bottom: 0.5rem;
 }
 
+a {}
+
 article,
 section {
   padding-left: 4%;
   padding-right: 4%;
   padding-top: 2%;
   padding-bottom: 2%;
+}
+
+article>footer,
+article>header {
+  background-color: var(--pico-background-color);
 }
 
 header {

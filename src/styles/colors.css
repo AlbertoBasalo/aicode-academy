@@ -8,20 +8,21 @@
   --ab-white: #fff;
   --ab-yellow: #fafa00;
   --ab-red: #ff0000;
-  --ab-light-gray: #dddddd;
+  --ab-light-gray: #fefefe;
   --ab-gray: #777777;
-  --ab-dark-gray: #444444;
+  --ab-dark-gray: #222222;
 }
 
 /* dark theme */
 [data-theme="dark"] {
   --pico-color: var(--ab-light-gray);
-  --pico-background-color: black;
+  --pico-background-color: var(--ab-dark-gray);
   --pico-primary: var(--ab-green);
   --pico-primary-hover: var(--ab-green);
   --pico-primary-background: var(--ab-light-green);
   --pico-primary-hover-background: var(--ab-green);
-  --pico-primary-inverse: black;
+  --pico-primary-inverse: var(--pico-background-color);
+  --pico-card-background-color: var(--pico-background-color);
   --pico-underline: var(--ab-light-green);
   --pico-primary-underline: var(--ab-light-green);
   --pico-secondary: var(--ab-light-blue);
@@ -31,17 +32,17 @@
   --pico-box-shadow: 0 0 2px 0 var(--pico-primary);
   --ab-theme-gray: var(--ab-dark-gray);
   --ab-gradient-primary:
-    linear-gradient(45deg,
+    linear-gradient(90deg,
       var(--ab-green) 0%,
-      var(--ab-light-blue) 25%,
       var(--ab-light-green) 50%,
-      var(--ab-blue) 75%);
+      var(--ab-light-blue) 75%,
+      var(--ab-blue) 90%);
   --ab-gradient-secondary:
     linear-gradient(45deg,
-      var(--ab-light-blue) 0%,
-      var(--ab-light-green) 25%,
-      var(--ab-blue) 50%,
-      var(--ab-green) 75%);
+      var(--ab-green) 0%,
+      var(--ab-light-green) 50%,
+      var(--ab-light-blue) 75%,
+      var(--ab-blue) 90%);
   color-scheme: dark;
 }
 
@@ -49,12 +50,12 @@
 [data-theme="light"],
 :root:not([data-theme="dark"]) {
   --pico-color: var(--ab-dark-gray);
-  --pico-background-color: white;
+  --pico-background-color: var(--ab-light-gray);
   --pico-primary: var(--ab-green);
   --pico-primary-hover: var(--ab-light-green);
   --pico-primary-background: var(--ab-green);
   --pico-primary-hover-background: var(--ab-light-green);
-  --pico-primary-inverse: white;
+  --pico-primary-inverse: var(--pico-background-color);
   --pico-underline: var(--ab-green);
   --pico-primary-underline: var(--ab-green);
   --pico-secondary: var(--ab-light-blue);
@@ -66,15 +67,15 @@
   --ab-gradient-primary:
     linear-gradient(45deg,
       var(--ab-green) 0%,
-      var(--ab-dark-blue) 25%,
       var(--ab-dark-green) 50%,
-      var(--ab-blue) 75%);
+      var(--ab-dark-blue) 75%,
+      var(--ab-blue) 90%);
   --ab-gradient-secondary:
-    linear-gradient(45deg,
-      var(--ab-dark-blue) 0%,
-      var(--ab-dark-green) 25%,
-      var(--ab-blue) 50%,
-      var(--ab-green) 75%);
+    linear-gradient(90deg,
+      var(--ab-green) 0%,
+      var(--ab-dark-green) 50%,
+      var(--ab-dark-blue) 75%,
+      var(--ab-blue) 90%);
   color-scheme: light;
 }
 
@@ -95,7 +96,11 @@ code {
 }
 
 a {
-  color: var(--pico-primary);
+  background: var(--ab-gradient-secondary);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
 }
 
 a:hover {

@@ -13,15 +13,15 @@ const { title, subtitle, cta } = hero;
 ---
 
 <section id="hero" class="container">
-  <header class="center">
+  <header class="">
     <h1 class="color"><MatrixText text={title} /></h1>
   </header>
-  <main class="center">
+  <main class="">
     <p>{subtitle}</p>
   </main>
   {
     cta && (
-      <footer class="center">
+      <footer class="">
         {cta.link && (
           <a
             role="button"
@@ -34,7 +34,7 @@ const { title, subtitle, cta } = hero;
           </a>
         )}
         {!cta.link && (
-          <h2 class="center primary">
+          <h2 class=" primary">
             <span>
               {cta.text}
               <BlinkCursor />

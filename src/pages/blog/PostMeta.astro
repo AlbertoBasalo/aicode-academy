@@ -28,12 +28,10 @@ const titleCaseCategory = category
 
 <nav aria-label="breadcrumb">
   <ul>
-    <li><a href="/blog/es/">Blog</a></li>
     <li><a href={`/blog/es/${category}`}>{titleCaseCategory}</a></li>
     <li>
-      <time datetime={fullDate}>{formattedDate}</time>
+      <kbd class="outline"><time datetime={fullDate}>{formattedDate}</time></kbd
+      >
     </li>
   </ul>
 </nav>
-
-

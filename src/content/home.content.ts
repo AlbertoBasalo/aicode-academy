@@ -21,7 +21,7 @@ export const HOME: Home = {
       "Aprende a desarrollar aplicaciones usando herramientas de IA para aumentar tu productividad y la calidad de tu código. Learn to code smarter con la academia de IA en español de Alberto Basalo.",
   },
   hero: {
-    title: "Ai_Code Academy",
+    title: "Ai code Academy",
     subtitle: "La IA no te quitará el trabajo, pero lo cambiará para siempre.",
     cards: [],
     cta: {
@@ -35,17 +35,17 @@ export const HOME: Home = {
       "Formación en español basada en la metodología AI-Driven Development.",
     cards: [
       {
-        title: "Metodología AI-DD",
+        title: "AI-DD",
         description:
-          "Las mejores prácticas para sacarle el máximo partido a las herramientas de IA.",
+          "Metodología con las mejores prácticas de desarrollo impulsada por IA para sacarle el máximo partido a las herramientas.",
       },
       {
-        title: "Proyectos real-world",
+        title: "Real-world",
         description:
           "Ejemplos con aplicaciones no triviales listas para producción. Con documentación y pruebas.",
       },
       {
-        title: "Experiencia empresarial",
+        title: "Custom",
         description:
           "Experiencia y adaptación a las necesidades (editor, lenguaje, etc.) de tu empresa.",
       },
