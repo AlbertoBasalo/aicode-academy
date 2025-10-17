@@ -32,7 +32,7 @@
   --pico-box-shadow: 0 0 2px 0 var(--pico-primary);
   --ab-theme-gray: var(--ab-dark-gray);
   --ab-gradient-primary:
-    linear-gradient(90deg,
+    linear-gradient(0deg,
       var(--ab-green) 0%,
       var(--ab-light-green) 50%,
       var(--ab-light-blue) 75%,
@@ -65,13 +65,13 @@
   --pico-box-shadow: 0 0 2px 0 var(--pico-primary);
   --ab-theme-gray: var(--ab-light-gray);
   --ab-gradient-primary:
-    linear-gradient(45deg,
+    linear-gradient(0deg,
       var(--ab-green) 0%,
       var(--ab-dark-green) 50%,
       var(--ab-dark-blue) 75%,
       var(--ab-blue) 90%);
   --ab-gradient-secondary:
-    linear-gradient(90deg,
+    linear-gradient(45deg,
       var(--ab-green) 0%,
       var(--ab-dark-green) 50%,
       var(--ab-dark-blue) 75%,
@@ -96,11 +96,11 @@ code {
 }
 
 a {
+  text-decoration: underline;
   background: var(--ab-gradient-secondary);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-decoration: none;
 }
 
 a:hover {

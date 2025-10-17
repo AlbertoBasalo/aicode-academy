@@ -25,7 +25,7 @@ const { title, subtitle, cta } = hero;
         {cta.link && (
           <a
             role="button"
-            class="outline secondary"
+            class="outline"
             href={cta.link}
             target="_blank"
             rel="noopener"
@@ -34,7 +34,7 @@ const { title, subtitle, cta } = hero;
           </a>
         )}
         {!cta.link && (
-          <h2 class=" primary">
+          <h2 class="primary">
             <span>
               {cta.text}
               <BlinkCursor />
