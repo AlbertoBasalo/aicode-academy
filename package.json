@@ -11,8 +11,8 @@
   "scripts": {
     "start": "bun run build &&npm run preview",
     "test": "echo 'No tests :-('",
+    "dev": "npm run chrome && astro dev",
     "chrome": "start chrome -incognito -auto-open-devtools-for-tabs http://localhost:4321",
-    "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",

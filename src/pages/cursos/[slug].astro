@@ -68,7 +68,7 @@ const cta = {
   <article class="colored-headers">
     <header>
       <h1><PrimaryComment />{entry.data.title}</h1>
-      <p>{entry.data.subtitle}<BlinkCursor /></p>
+
       <nav aria-label="curso metadata">
         <ul>
           {
@@ -92,8 +92,18 @@ const cta = {
               </li>
             )
           }
+          {
+            entry.data.tags &&
+              entry.data.tags.length > 0 &&
+              entry.data.tags.map((tag) => (
+                <li>
+                  <kbd>{tag}</kbd>
+                </li>
+              ))
+          }
         </ul>
       </nav>
+      <p>{entry.data.subtitle}<BlinkCursor /></p>
     </header>
 
     <main class="colored-headers">

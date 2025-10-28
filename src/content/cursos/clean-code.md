@@ -1,20 +1,20 @@
 ---
-title: "MODERN CLEAN CODE IN THE AI ERA"
-subtitle: "Código limpio moderno en la era I.A."
+title: "AI Clean Code"
+subtitle: "Código limpio moderno en la era de la IA"
 description: "Desarrolla código limpio y mantenible aplicando principios atemporales que siguen siendo válidos en la era de la IA."
 slug: "clean-code"
 category: "Metodología"
 level: "Básico"
 duration: "15-20 horas"
 instructor: "Alberto Basalo"
-tags: ["Clean Code", "IA", "Programación"]
+tags: ["Clean Code", "Code smells", "Programación"]
 featured: false
 order: 3
 ---
 
-## Limpiar el código en la era de la IA
+## Código más limpio y mantenible que nunca
 
-El código descuidado huele mal y empeora con el tiempo. La **artesanía del software** cuida el desarrollo ayudando a escribir **código limpio**. Y todo esto sigue siendo cierto en los tiempos de **IA**.
+El código descuidado huele mal y empeora con el tiempo. La **artesanía del software** cuida el desarrollo ayudando a escribir **código limpio**. Y todo esto sigue siendo cierto y más necesario que nunca en los tiempos de **IA**.
 
 ### Motivación
 
