@@ -1,10 +1,10 @@
 /* Modern CSS Reset and Global Styles */
 
 :root {
-  --pico-font-family: "Fira Mono", Consolas, monospace;
+  --pico-font-family: "Cascadia Code", Consolas, monospace;
   --pico-font-family-emoji: "Major Mono Display", Consolas, monospace;
   --pico-font-family-sans-serif: Tomorrow, Roboto, Helvetica, Arial, sans-serif;
-  --pico-font-family-monospace: "Fira Mono", Consolas, monospace;
+  --pico-font-family-monospace: "Cascadia Code", Consolas, monospace;
   --pico-border-radius: 0rem;
   --pico-typography-spacing-vertical: 0.6rem;
 }

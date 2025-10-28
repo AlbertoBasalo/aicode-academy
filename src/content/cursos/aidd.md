@@ -14,7 +14,7 @@ order: 1
 
 ## Metodología AI-Driven Development
 
-La IA no te quitará el trabajo, pero lo cambiará para siempre. Este curso te enseña los fundamentos y las herramientas que necesitas para mejorar tu productividad y la calidad de tu código
+La IA no te quitará el trabajo, pero lo cambiará para siempre. Este curso te enseña los fundamentos y las herramientas que necesitas para mejorar tu productividad y la calidad de tu código. Empleando **Spec-Driven Development** .
 
 [Edición bonificada Fundae con TrainingIT](https://www.trainingit.es/producto/metodologia-ai-driven-development/?email=abasalo@trainingit.es)
 
