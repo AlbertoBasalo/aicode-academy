@@ -9,7 +9,7 @@ duration: "18-24 horas"
 instructor: "Alberto Basalo"
 tags: ["Documentación", "Patrones", "C4", "ADR"]
 featured: false
-order: 4
+order: 7
 ---
 
 ## Estilos y patrones para aplicar con IA

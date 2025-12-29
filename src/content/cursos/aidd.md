@@ -9,7 +9,7 @@ duration: "12-18 horas"
 instructor: "Alberto Basalo"
 tags: ["AIDD", "Productividad", "Calidad"]
 featured: true
-order: 1
+order: 6
 ---
 
 ## Metodología AI-Driven Development

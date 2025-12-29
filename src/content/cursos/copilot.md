@@ -9,7 +9,7 @@ duration: "15-20 horas"
 instructor: "Alberto Basalo"
 tags: ["VsCode", "GitHub", "Copilot"]
 featured: false
-order: 2
+order: 4
 ---
 
 ## Configura y exprime GitHub Copilot en VsCode

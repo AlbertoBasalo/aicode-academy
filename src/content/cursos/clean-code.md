@@ -9,7 +9,7 @@ duration: "15-20 horas"
 instructor: "Alberto Basalo"
 tags: ["Clean Code", "Code smells", "Programación"]
 featured: false
-order: 3
+order: 5
 ---
 
 ## Código más limpio y mantenible que nunca
