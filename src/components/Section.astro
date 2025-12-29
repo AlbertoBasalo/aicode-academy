@@ -1,23 +1,6 @@
 ---
+import type { SectionProps } from "../types/section.types";
 import PrimaryComment from "./PrimaryComment.astro";
-
-export type SectionProps = {
-  title: string;
-  subtitle: string;
-  cards: Card[];
-  cta?: Cta;
-};
-
-type Card = {
-  title: string;
-  description: string;
-  cta?: Cta;
-};
-
-export type Cta = {
-  text: string;
-  link: string;
-};
 
 const { section } = Astro.props as { section: SectionProps };
 
@@ -41,14 +24,9 @@ const id = section.title
           <article>
             <h3>
               <PrimaryComment />
-              {card.title}
+              <span>{card.title?.trim()}</span>
             </h3>
             <p>{card.description}</p>
-            {card.cta && (
-              <a href={card.cta.link} role="button" class="outline">
-                {card.cta.text}
-              </a>
-            )}
           </article>
         ))}
       </main>

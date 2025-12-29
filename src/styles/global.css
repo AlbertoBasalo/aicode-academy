@@ -1,20 +1,56 @@
 /* Modern CSS Reset and Global Styles */
 
 :root {
-  --pico-font-family: "Cascadia Code", Consolas, monospace;
-  --pico-font-family-emoji: "Major Mono Display", Consolas, monospace;
-  --pico-font-family-sans-serif: Tomorrow, Roboto, Helvetica, Arial, sans-serif;
-  --pico-font-family-monospace: "Cascadia Code", Consolas, monospace;
+  /* The "Sci-Fi Sharp" Pack */
+  --pico-font-family-sans-serif: "Space Grotesk", sans-serif;
+  --pico-font-family-serif: "Geist", serif;
+  --pico-font-family: "Geist", system-ui, sans-serif;
+  --pico-font-family-monospace: "Geist Mono", monospace;
+  --pico-font-family-emoji: "Space Grotesk", monospace;
   --pico-border-radius: 0rem;
   --pico-typography-spacing-vertical: 0.6rem;
+  /* Readability Pro-Features */
+  --pico-line-height: 1.7;
+  --pico-typography-spacing-vertical: 1.5rem;
+  scroll-behavior: smooth;
 }
 
 body {
-  padding-top: 1%;
-  padding-bottom: 1%;
-  padding-left: 3%;
-  padding-right: 3%;
   font-family: var(--pico-font-family);
+  background-image: var(--ab-mesh-bg);
+  background-attachment: fixed;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Tactile Grain Overlay (2026 Trend) */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.03;
+  /* Barely visible "human" texture */
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  z-index: 9999;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--pico-font-family-sans-serif);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  text-transform: tight;
+}
+
+/* Custom Selection Glow */
+::selection {
+  background: var(--ab-cyan-electric);
+  color: var(--ab-deep-navy);
 }
 
 @media (min-width: 576px) {

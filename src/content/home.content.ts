@@ -1,4 +1,4 @@
-import type { SectionProps } from "../components/Section.astro";
+import type { SectionProps } from "../types/section.types";
 
 export type Home = {
   layout: {
@@ -21,7 +21,7 @@ export const HOME: Home = {
       "Aprende a desarrollar aplicaciones usando herramientas de IA para aumentar tu productividad y la calidad de tu código. Learn to code smarter con la academia de IA en español de Alberto Basalo.",
   },
   hero: {
-    title: "Ai code Academy",
+    title: "AI Code Academy",
     subtitle: "La IA no te quitará el trabajo, pero lo cambiará para siempre.",
     cards: [],
     cta: {
@@ -40,7 +40,7 @@ export const HOME: Home = {
           "Metodología con las mejores prácticas de desarrollo impulsada por IA para sacarle el máximo partido a las herramientas.",
       },
       {
-        title: "Real-world",
+        title: "Real World",
         description:
           "Ejemplos con aplicaciones no triviales listas para producción. Con documentación y pruebas.",
       },
@@ -65,7 +65,7 @@ export const HOME: Home = {
         description: "La IA afecta a todo el ciclo de vida del desarrollo. AIDD te ayuda a usarla con los tres modos: Architect, Builder y Craftsman.",
       },
       {
-        title: "Tecnologías",
+        title: "Tech Stack",
         description:
           "Cualquier modelo, editor y agente es bienvenido. AIDD te permite sacarle el máximo partido actual y adaptarte a los cambios.",
       },
@@ -95,7 +95,7 @@ export const HOME: Home = {
           "Claude, Gemini, GPT, Grok...",
       },
       {
-        title: "Herramientas",
+        title: "Tools",
         description:
           "MCPs, background agents...",
       }

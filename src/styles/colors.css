@@ -1,81 +1,121 @@
 :root {
-  --ab-light-green: #00ff00;
-  --ab-green: #00aa00;
-  --ab-dark-green: #007700;
-  --ab-light-blue: #00ffff;
-  --ab-blue: #00aaff;
-  --ab-dark-blue: #0077ff;
-  --ab-white: #fff;
-  --ab-yellow: #fafa00;
-  --ab-red: #ff0000;
-  --ab-light-gray: #fefefe;
-  --ab-gray: #777777;
-  --ab-dark-gray: #222222;
+  /* ========================================
+     CORE 2026 PALETTE - All colors defined here
+     ======================================== */
+
+  /* Dark Theme Base Colors */
+  --ab-deep-space: #020617;
+  --ab-deep-navy: #020617;
+  /* Alias for selection */
+  --ab-surface: #0f172a;
+
+  /* Light Theme Base Colors */
+  --ab-ice-white: #f8fafc;
+  --ab-light-surface: #f1f5f9;
+
+  /* Primary Accent - Cyan Spectrum */
+  --ab-cyan-primary: #00f2ff;
+  --ab-cyan-electric: #00f2ff;
+  /* Alias for selection */
+  --ab-cyan-deep: #0891b2;
+  /* Darker variant for light theme */
+
+  /* Secondary Accent - Teal Spectrum */
+  --ab-teal-liquid: #00ffc2;
+  --ab-teal-deep: #0d9488;
+  /* Darker variant for light theme */
+
+  /* Neutral Accents */
+  --ab-chrome: #cbd5e1;
+  --ab-slate: #64748b;
+
+  /* Glow Effects - Cyan */
+  --ab-cyan-glow-strong: rgba(0, 242, 255, 0.4);
+  --ab-cyan-glow-medium: rgba(0, 242, 255, 0.3);
+  --ab-cyan-glow-soft: rgba(0, 242, 255, 0.1);
+  --ab-cyan-glow-light: rgba(8, 145, 178, 0.15);
+
+  /* Glassmorphism - Dark Base */
+  --ab-glass-dark: rgba(15, 23, 42, 0.7);
+  --ab-glass-dark-border: rgba(255, 255, 255, 0.08);
+
+  /* Glassmorphism - Light Base */
+  --ab-glass-light: rgba(248, 250, 252, 0.7);
+  --ab-glass-light-border: rgba(0, 0, 0, 0.08);
+
+  /* Mesh Gradients */
+  --ab-mesh-dark: radial-gradient(at 0% 0%, hsla(185, 100%, 50%, 0.1) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, hsla(165, 100%, 75%, 0.08) 0px, transparent 50%),
+    radial-gradient(at 50% 50%, hsla(220, 100%, 10%, 1) 0px, transparent 100%);
+
+  --ab-mesh-light: radial-gradient(at 0% 0%, hsla(185, 100%, 50%, 0.08) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, hsla(165, 100%, 40%, 0.06) 0px, transparent 50%),
+    radial-gradient(at 50% 50%, hsla(220, 20%, 98%, 1) 0px, transparent 100%);
 }
 
-/* dark theme */
 [data-theme="dark"] {
-  --pico-color: var(--ab-light-gray);
-  --pico-background-color: var(--ab-dark-gray);
-  --pico-primary: var(--ab-green);
-  --pico-primary-hover: var(--ab-green);
-  --pico-primary-background: var(--ab-light-green);
-  --pico-primary-hover-background: var(--ab-green);
-  --pico-primary-inverse: var(--pico-background-color);
-  --pico-card-background-color: var(--pico-background-color);
-  --pico-underline: var(--ab-light-green);
-  --pico-primary-underline: var(--ab-light-green);
-  --pico-secondary: var(--ab-light-blue);
-  --pico-secondary-hover: var(--ab-blue);
-  --pico-secondary-background: var(--ab-dark-blue);
-  --pico-secondary-hover-background: var(--ab-blue);
-  --pico-box-shadow: 0 0 2px 0 var(--pico-primary);
-  --ab-theme-gray: var(--ab-dark-gray);
-  --ab-gradient-primary:
-    linear-gradient(0deg,
-      var(--ab-green) 0%,
-      var(--ab-light-green) 50%,
-      var(--ab-light-blue) 75%,
-      var(--ab-blue) 90%);
-  --ab-gradient-secondary:
-    linear-gradient(45deg,
-      var(--ab-green) 0%,
-      var(--ab-light-green) 50%,
-      var(--ab-light-blue) 75%,
-      var(--ab-blue) 90%);
+  /* Pico Mapping - Dark Theme */
+  --pico-background-color: var(--ab-deep-space);
+  --pico-color: var(--ab-ice-white);
+
+  --pico-primary: var(--ab-cyan-primary);
+  --pico-primary-hover: var(--ab-teal-liquid);
+  --pico-primary-background: var(--ab-cyan-primary);
+
+  --pico-secondary: var(--ab-teal-liquid);
+  --pico-secondary-hover: var(--ab-chrome);
+
+  --pico-card-background-color: var(--ab-surface);
+  --pico-border-radius: 1rem;
+  --pico-box-shadow: 0 10px 40px -10px var(--ab-cyan-glow-soft);
+
+  /* Theme-specific aliases */
+  --ab-glass: var(--ab-glass-dark);
+  --ab-glass-border: var(--ab-glass-dark-border);
+  --ab-mesh-bg: var(--ab-mesh-dark);
+  --ab-theme-gray: var(--ab-surface);
+
+  /* Gradients */
+  --ab-gradient-primary: linear-gradient(135deg, var(--ab-cyan-primary) 0%, var(--ab-teal-liquid) 100%);
+  --ab-gradient-secondary: linear-gradient(45deg, var(--ab-teal-liquid) 0%, var(--ab-chrome) 100%);
+
   color-scheme: dark;
 }
 
-/* light theme */
+/* Light Theme - Inverted from Dark Theme */
 [data-theme="light"],
 :root:not([data-theme="dark"]) {
-  --pico-color: var(--ab-dark-gray);
-  --pico-background-color: var(--ab-light-gray);
-  --pico-primary: var(--ab-green);
-  --pico-primary-hover: var(--ab-light-green);
-  --pico-primary-background: var(--ab-green);
-  --pico-primary-hover-background: var(--ab-light-green);
-  --pico-primary-inverse: var(--pico-background-color);
-  --pico-underline: var(--ab-green);
-  --pico-primary-underline: var(--ab-green);
-  --pico-secondary: var(--ab-light-blue);
-  --pico-secondary-hover: var(--ab-blue);
-  --pico-secondary-background: var(--ab-light-blue);
-  --pico-secondary-hover-background: var(--ab-blue);
-  --pico-box-shadow: 0 0 2px 0 var(--pico-primary);
-  --ab-theme-gray: var(--ab-light-gray);
-  --ab-gradient-primary:
-    linear-gradient(0deg,
-      var(--ab-green) 0%,
-      var(--ab-dark-green) 50%,
-      var(--ab-dark-blue) 75%,
-      var(--ab-blue) 90%);
-  --ab-gradient-secondary:
-    linear-gradient(45deg,
-      var(--ab-green) 0%,
-      var(--ab-dark-green) 50%,
-      var(--ab-dark-blue) 75%,
-      var(--ab-blue) 90%);
+  /* Pico Mapping - Light Theme */
+  --pico-background-color: var(--ab-ice-white);
+  --pico-color: var(--ab-deep-space);
+
+  --pico-primary: var(--ab-cyan-deep);
+  --pico-primary-hover: var(--ab-teal-deep);
+  --pico-primary-background: var(--ab-cyan-deep);
+  --pico-primary-hover-background: var(--ab-teal-deep);
+  --pico-primary-inverse: var(--ab-ice-white);
+  --pico-underline: var(--ab-cyan-deep);
+  --pico-primary-underline: var(--ab-cyan-deep);
+
+  --pico-secondary: var(--ab-teal-deep);
+  --pico-secondary-hover: var(--ab-chrome);
+  --pico-secondary-background: var(--ab-teal-deep);
+  --pico-secondary-hover-background: var(--ab-slate);
+
+  --pico-card-background-color: var(--ab-light-surface);
+  --pico-border-radius: 1rem;
+  --pico-box-shadow: 0 10px 40px -10px var(--ab-cyan-glow-light);
+
+  /* Theme-specific aliases */
+  --ab-glass: var(--ab-glass-light);
+  --ab-glass-border: var(--ab-glass-light-border);
+  --ab-mesh-bg: var(--ab-mesh-light);
+  --ab-theme-gray: var(--ab-light-surface);
+
+  /* Gradients */
+  --ab-gradient-primary: linear-gradient(135deg, var(--ab-cyan-deep) 0%, var(--ab-teal-deep) 100%);
+  --ab-gradient-secondary: linear-gradient(45deg, var(--ab-teal-deep) 0%, var(--ab-slate) 100%);
+
   color-scheme: light;
 }
 
