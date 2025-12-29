@@ -8,8 +8,6 @@ export type Home = {
   hero: SectionProps;
   aidd: SectionProps;
   why: SectionProps;
-  technologies: SectionProps;
-  us: SectionProps;
   cursos: SectionProps;
 };
 
@@ -37,7 +35,7 @@ export const HOME: Home = {
       {
         title: "AI-DD",
         description:
-          "Metodología con las mejores prácticas de desarrollo impulsada por IA para sacarle el máximo partido a las herramientas.",
+          "Metodología con las mejores prácticas para sacarle el máximo partido a la Inteligencia Artificial",
       },
       {
         title: "Real World",
@@ -45,9 +43,9 @@ export const HOME: Home = {
           "Ejemplos con aplicaciones no triviales listas para producción. Con documentación y pruebas.",
       },
       {
-        title: "Custom",
+        title: "Corporate",
         description:
-          "Experiencia y adaptación a las necesidades (editor, lenguaje, etc.) de tu empresa.",
+          "Experiencia y adaptación a las necesidades de tu empresa (editor, lenguaje, etc.) ",
       },
     ],
     cta: {
@@ -58,20 +56,20 @@ export const HOME: Home = {
   aidd: {
     title: "¿Qué es AI-Driven Development?",
     subtitle:
-      "Una metodología de desarrollo profesional para programadores de cualquier lenguaje.",
+      "Una metodología de programación con IA para aumentar tu productividad y la calidad de tu código.",
     cards: [
       {
-        title: "Agentes",
-        description: "La IA afecta a todo el ciclo de vida del desarrollo. AIDD te ayuda a usarla con los tres modos: Architect, Builder y Craftsman.",
+        title: "Human in the Loop",
+        description: "El programador es el estratega, colaborador y responsable.",
       },
       {
-        title: "Tech Stack",
+        title: "Rules Over Tools",
         description:
-          "Cualquier modelo, editor y agente es bienvenido. AIDD te permite sacarle el máximo partido actual y adaptarte a los cambios.",
+          "Instrucciones para que los agentes se comporten como se espera.",
       },
       {
-        title: "Calidad",
-        description: "Generar código rápidamente no vale de nada si no es de calidad y mantenible. Se necesitan pruebas y documentación.",
+        title: "Spec Driven Development",
+        description: "Especificaciones claras para un código mantenible y de calidad.",
       },
     ],
     cta: {
@@ -79,49 +77,17 @@ export const HOME: Home = {
       link: "/community/opensource/aiddbot",
     },
   },
-  technologies: {
-    title: "Tecnologías usadas",
-    subtitle:
-      "Esta lista es siempre provisional...",
-    cards: [
-      {
-        title: "Editores",
-        description:
-          "ClaudeCode, Cursor, GeminiCLI, Kiro, VsCode+Copilot...",
-      },
-      {
-        title: "Modelos",
-        description:
-          "Claude, Gemini, GPT, Grok...",
-      },
-      {
-        title: "Tools",
-        description:
-          "MCPs, background agents...",
-      }
-    ],
-  },
-  us: {
-    title: "AI code Academy",
-    subtitle:
-      "Una academia de IA en español para desarrolladores profesionales.",
-    cards: [],
-    cta: {
-      text: "Por Alberto Basalo",
-      link: "https://albertobasalo.dev",
-    },
-  },
   cursos: {
     title: "Cursos a medida para tu empresa/academia",
-    subtitle: "La IA y AIcode Academy se adaptan a tus necesidades.",
+    subtitle: "La I.A. y AI Code Academy se adaptan a tus necesidades.",
     cards: [
       {
         title: "Tu contenido",
-        description: "Escoge editor, modelo, lenguaje...",
+        description: "Escoge editor (VsCode, Cursor, etc.), modelo (Claude, Gemini, etc.), lenguaje (TypeScript, Java, C#, etc.)...",
       },
       {
         title: "Tu formato",
-        description: "En directo, con tu calendario, tu bonificación...",
+        description: "En directo o en video, con tu calendario, tu bonificación o tus requisitos...",
       },
     ],
     cta: {

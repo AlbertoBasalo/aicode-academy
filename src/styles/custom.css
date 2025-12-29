@@ -37,7 +37,7 @@ article:hover {
 .colored-headers h2,
 .colored-headers h3,
 .colored-headers h4 {
-  background: var(--ab-gradient-primary);
+  background: var(--pico-primary);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -58,7 +58,7 @@ article:hover {
 }
 
 .secondary {
-  background: var(--ab-gradient-secondary);
+  background: var(--ab-secondary);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
