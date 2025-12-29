@@ -66,7 +66,6 @@
   --pico-secondary-hover: var(--ab-chrome);
 
   --pico-card-background-color: var(--ab-surface);
-  --pico-border-radius: 1rem;
   --pico-box-shadow: 0 10px 40px -10px var(--ab-cyan-glow-soft);
 
   /* Theme-specific aliases */
@@ -103,7 +102,6 @@
   --pico-secondary-hover-background: var(--ab-slate);
 
   --pico-card-background-color: var(--ab-light-surface);
-  --pico-border-radius: 1rem;
   --pico-box-shadow: 0 10px 40px -10px var(--ab-cyan-glow-light);
 
   /* Theme-specific aliases */
@@ -136,7 +134,13 @@ code {
 }
 
 a {
-  text-decoration: underline;
+  background: var(--ab-gradient-secondary);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+[role="button"] {
   background: var(--ab-gradient-secondary);
   -webkit-background-clip: text;
   background-clip: text;

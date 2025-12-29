@@ -12,16 +12,16 @@ const { hero } = Astro.props as { hero: HeroProps };
 const { title, subtitle, cta } = hero;
 ---
 
-<section id="hero" class="container">
-  <header class="">
+<section id="hero" class="">
+  <header>
     <h1 class="color"><MatrixText text={title} /></h1>
   </header>
-  <main class="">
+  <main>
     <p>{subtitle}</p>
   </main>
   {
     cta && (
-      <footer class="">
+      <footer>
         {cta.link && (
           <a
             role="button"

@@ -19,11 +19,11 @@ const COMMUNITY = {
       "Comunidad de desarrolladores de AI Code Academy - OpenSource y Meetups",
   },
   hero: {
-    title: "Ai code Community",
+    title: "AI Code Community",
     subtitle: "Construyendo la comunidad de AI-Driven Development",
     cta: {
-      link: "https://www.linkedin.com/in/albertobasalo/",
-      text: "Contactame y únete a la comunidad",
+      link: "",
+      text: "Learn to code smarter",
     },
   },
   opensource: {
@@ -85,17 +85,13 @@ const COMMUNITY = {
 ---
 
 <Layout layout={COMMUNITY.layout}>
-  <article>
-    <header>
-      <Hero hero={COMMUNITY.hero} />
-    </header>
-    <main class="colored-headers">
-      <Section section={COMMUNITY.opensource} />
-      <Section section={COMMUNITY.meetups} />
-      <Section section={COMMUNITY.participation} />
-    </main>
-    <footer>
-      <Section section={COMMUNITY.cta} />
-    </footer>
-  </article>
+  <Hero hero={COMMUNITY.hero} />
+  <main>
+    <Section section={COMMUNITY.opensource} />
+    <Section section={COMMUNITY.meetups} />
+    <Section section={COMMUNITY.participation} />
+  </main>
+  <footer>
+    <Section section={COMMUNITY.cta} />
+  </footer>
 </Layout>

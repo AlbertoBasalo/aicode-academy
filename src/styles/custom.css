@@ -23,6 +23,8 @@ article {
   border-radius: var(--pico-border-radius);
   padding: 2.5rem !important;
   transition: transform 0.3s ease;
+  margin-left: 0rem !important;
+  margin-right: 0rem !important;
 }
 
 /* Hover effect for a "tactile" tech feel */

@@ -1,5 +1,5 @@
 ---
-title: "AiddBot"
+title: "AIDDbot"
 subtitle: "Un asistente que aumenta tu IDE para desarrollos profesionales con cualquier LLM."
 description: "AIDDbot es un conjunto de herramientas (prompts, instrucciones, agentes, etc.) para que puedas usar fácilmente toda la potencia de la IA en tu día a día."
 slug: "community/opensource/aiddbot"
@@ -8,7 +8,7 @@ cta:
   link: "https://github.com/aiddbot/aiddbot"
   text: "Repositorio en GitHub"
 ---
-## ❓¿Qué es AIDDbot?
+## ¿Qué es AIDDbot?
 
 **Es un asistente para ingenieros de software**  que ayuda con:
 
@@ -16,7 +16,7 @@ cta:
 - generación de código, 
 - pruebas y documentación.
 
-## ⚙️ ¿Cómo funciona?
+## ¿Cómo funciona?
 
 **Aumenta tu IDE y agente de desarrollo** con un conjunto de:
 
@@ -24,7 +24,7 @@ cta:
 - instrucciones o reglas 
 - herramientas y configuraciones.
 
-## 💗 ¿Por qué lo necesitas?
+## ¿Por qué lo necesitas?
 
 **Para desarrollar proyectos grandes y complejos**, que representan un reto con para los LLMs debido a:
 
@@ -32,18 +32,18 @@ cta:
 - alucinaciones por deficiencias en el entrenamiento y 
 - la necesidad de mantener la coherencia a lo largo del tiempo.
 
-## 🚀 ¿Por dónde empezar?
+## ¿Por dónde empezar?
 
 **Funciona con cualquier LLM** y con varios editores habilitados con IA:
 
-### [✔️ Listo: VsCode and GitHub Copilot](https://github.com/AIDDbot/AIDDbot/blob/main/docs/vscode_aiddbot.md)  
+### [Listo: VsCode and GitHub Copilot](https://github.com/AIDDbot/AIDDbot/blob/main/docs/vscode_aiddbot.md)  
 
 - _Cursor_, 🚧 En progreso
 - _ClaudeCode_, _GeminiCLI_ ⏳ Próximamente
   
 ---
 
-## 💭 Filosofía AIDD
+## Filosofía AIDD
 
 **AIDD** (AI-Driven Development) combina capacidades de IA con prácticas consolidadas de ingeniería de software para aumentar productividad, calidad de código y colaboración a lo largo de todo el ciclo de vida.
 

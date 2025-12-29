@@ -3,10 +3,10 @@
 :root {
   /* The "Sci-Fi Sharp" Pack */
   --pico-font-family-sans-serif: "Space Grotesk", sans-serif;
+  --pico-font-family-emoji: "Space Grotesk", monospace;
   --pico-font-family-serif: "Geist", serif;
   --pico-font-family: "Geist", system-ui, sans-serif;
   --pico-font-family-monospace: "Geist Mono", monospace;
-  --pico-font-family-emoji: "Space Grotesk", monospace;
   --pico-border-radius: 0rem;
   --pico-typography-spacing-vertical: 0.6rem;
   /* Readability Pro-Features */
@@ -65,12 +65,24 @@ h4 {
     padding-left: 8%;
     padding-right: 8%;
   }
+
+  article,
+  section {
+    padding-left: 3% !important;
+    padding-right: 3% !important;
+  }
 }
 
 @media (min-width: 1024px) {
   body {
     padding-left: 10%;
     padding-right: 10%;
+  }
+
+  article,
+  section {
+    padding-left: 5% !important;
+    padding-right: 5% !important;
   }
 }
 
@@ -79,12 +91,24 @@ h4 {
     padding-left: 15%;
     padding-right: 15%;
   }
+
+  article,
+  section {
+    padding-left: 7% !important;
+    padding-right: 7% !important;
+  }
 }
 
 @media (min-width: 1536px) {
   body {
     padding-left: 20%;
     padding-right: 20%;
+  }
+
+  article,
+  section {
+    padding-left: 10% !important;
+    padding-right: 10%;
   }
 }
 
@@ -158,7 +182,7 @@ mark {
 kbd {
   background-color: transparent;
   color: var(--pico-color);
-  border: 1px solid var(--pico-primary);
+  border-left: 1px solid var(--pico-primary);
   padding: 0.2rem 0.5rem;
   font-weight: bold;
 }

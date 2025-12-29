@@ -27,6 +27,16 @@ const id = section.title
               <span>{card.title?.trim()}</span>
             </h3>
             <p>{card.description}</p>
+            {card.cta && (
+              <a
+                href={card.cta?.link}
+                role="button"
+                class="outline"
+                target="_blank"
+              >
+                {card.cta?.text}
+              </a>
+            )}
           </article>
         ))}
       </main>
