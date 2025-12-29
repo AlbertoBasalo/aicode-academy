@@ -49,8 +49,8 @@ h4 {
 
 /* Custom Selection Glow */
 ::selection {
-  background: var(--ab-cyan-electric);
-  color: var(--ab-deep-navy);
+  background: var(--ab-selection-bg);
+  color: var(--ab-selection-color);
 }
 
 @media (min-width: 576px) {

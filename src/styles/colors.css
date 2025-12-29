@@ -1,12 +1,12 @@
 :root {
   /* ========================================
-     CORE 2026 PALETTE - All colors defined here
+     CORE 2026 PALETTE - Raw color definitions
+     These are the source values - DO NOT use directly outside :root
      ======================================== */
 
   /* Dark Theme Base Colors */
   --ab-deep-space: #020617;
   --ab-deep-navy: #020617;
-  /* Alias for selection */
   --ab-surface: #0f172a;
 
   /* Light Theme Base Colors */
@@ -16,14 +16,11 @@
   /* Primary Accent - Cyan Spectrum */
   --ab-cyan-primary: #00f2ff;
   --ab-cyan-electric: #00f2ff;
-  /* Alias for selection */
   --ab-cyan-deep: #0891b2;
-  /* Darker variant for light theme */
 
   /* Secondary Accent - Teal Spectrum */
   --ab-teal-liquid: #00ffc2;
   --ab-teal-deep: #0d9488;
-  /* Darker variant for light theme */
 
   /* Neutral Accents */
   --ab-chrome: #cbd5e1;
@@ -68,11 +65,30 @@
   --pico-card-background-color: var(--ab-surface);
   --pico-box-shadow: 0 10px 40px -10px var(--ab-cyan-glow-soft);
 
-  /* Theme-specific aliases */
+  /* ========================================
+     INTENTIONAL SEMANTIC VARIABLES
+     Use these outside of :root - they adapt to theme
+     ======================================== */
+
+  /* Surfaces & Backgrounds */
   --ab-glass: var(--ab-glass-dark);
   --ab-glass-border: var(--ab-glass-dark-border);
   --ab-mesh-bg: var(--ab-mesh-dark);
   --ab-theme-gray: var(--ab-surface);
+  --ab-code-bg: var(--ab-surface);
+
+  /* Selection */
+  --ab-selection-bg: var(--ab-cyan-electric);
+  --ab-selection-color: var(--ab-deep-navy);
+
+  /* Glow Effects */
+  --ab-glow-strong: var(--ab-cyan-glow-strong);
+  --ab-glow-medium: var(--ab-cyan-glow-medium);
+  --ab-glow-soft: var(--ab-cyan-glow-soft);
+
+  /* Text & Accents */
+  --ab-comment-color: var(--ab-teal-liquid);
+  --ab-accent-chrome: var(--ab-chrome);
 
   /* Gradients */
   --ab-gradient-primary: linear-gradient(135deg, var(--ab-cyan-primary) 0%, var(--ab-teal-liquid) 100%);
@@ -104,11 +120,30 @@
   --pico-card-background-color: var(--ab-light-surface);
   --pico-box-shadow: 0 10px 40px -10px var(--ab-cyan-glow-light);
 
-  /* Theme-specific aliases */
+  /* ========================================
+     INTENTIONAL SEMANTIC VARIABLES
+     Use these outside of :root - they adapt to theme
+     ======================================== */
+
+  /* Surfaces & Backgrounds */
   --ab-glass: var(--ab-glass-light);
   --ab-glass-border: var(--ab-glass-light-border);
   --ab-mesh-bg: var(--ab-mesh-light);
   --ab-theme-gray: var(--ab-light-surface);
+  --ab-code-bg: var(--ab-light-surface);
+
+  /* Selection */
+  --ab-selection-bg: var(--ab-cyan-deep);
+  --ab-selection-color: var(--ab-ice-white);
+
+  /* Glow Effects */
+  --ab-glow-strong: var(--ab-cyan-glow-strong);
+  --ab-glow-medium: var(--ab-cyan-glow-medium);
+  --ab-glow-soft: var(--ab-cyan-glow-soft);
+
+  /* Text & Accents */
+  --ab-comment-color: var(--ab-teal-deep);
+  --ab-accent-chrome: var(--ab-slate);
 
   /* Gradients */
   --ab-gradient-primary: linear-gradient(135deg, var(--ab-cyan-deep) 0%, var(--ab-teal-deep) 100%);
@@ -130,7 +165,7 @@ b {
 
 code {
   color: var(--pico-color);
-  background-color: var(--ab-theme-gray);
+  background-color: var(--ab-code-bg);
 }
 
 a {

@@ -11,7 +11,7 @@
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  filter: drop-shadow(0 0 12px var(--ab-cyan-glow-strong));
+  filter: drop-shadow(0 0 12px var(--ab-glow-strong));
 }
 
 .container,
@@ -29,8 +29,8 @@ article {
 
 /* Hover effect for a "tactile" tech feel */
 article:hover {
-  border-color: var(--ab-cyan-glow-medium);
-  box-shadow: 0 0 30px var(--ab-cyan-glow-soft);
+  border-color: var(--ab-glow-medium);
+  box-shadow: 0 0 30px var(--ab-glow-soft);
 }
 
 .color,
@@ -44,7 +44,7 @@ article:hover {
 }
 
 .comment {
-  color: var(--ab-teal-liquid);
+  color: var(--ab-comment-color);
   font-family: var(--pico-font-family-monospace);
   font-size: 0.9em;
   opacity: 0.9;
