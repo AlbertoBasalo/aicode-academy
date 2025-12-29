@@ -5,7 +5,7 @@ description: "Herramientas IA de Microsoft consolidadas en el entorno empresaria
 slug: "vs-code-copilot"
 category: "Herramientas"
 level: "Básico"
-duration: "15-20 horas"
+duration: "15-20 horas online"
 instructor: "Alberto Basalo"
 tags: ["VsCode", "GitHub", "Copilot"]
 featured: false

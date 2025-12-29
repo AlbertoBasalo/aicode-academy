@@ -5,7 +5,7 @@ description: "Desarrolla código limpio y mantenible aplicando principios atempo
 slug: "clean-code"
 category: "Metodología"
 level: "Básico"
-duration: "15-20 horas"
+duration: "15-20 horas online"
 instructor: "Alberto Basalo"
 tags: ["Clean Code", "Code smells", "Programación"]
 featured: false
