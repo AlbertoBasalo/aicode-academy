@@ -12,7 +12,7 @@ featured: false
 order: 3
 ---
 
-## Diseña y evoluciona la arquitectura de sistemas reales usando I.A.
+## Diseña y evoluciona la arquitectura de sistemas usando I.A.
 
 Muchos sistemas no colapsan por el volumen de código, sino porque su **arquitectura deja de acompañar la evolución del negocio**. Capas difusas, dependencias mal controladas y decisiones heredadas acaban convirtiendo el cambio en riesgo.
 
@@ -37,7 +37,7 @@ Al finalizar el curso, el alumno será capaz de usar la IA para:
 
 ## A quién va dirigido
 
-Este curso está orientado a **desarrolladores profesionales** que trabajan sobre sistemas existentes y necesitan **evolucionar su arquitectura sin romper el sistema ni sobredimensionarlo**.
+Este curso está orientado a **desarrolladores profesionales** que trabajan sobre sistemas existentes y necesitan **evolucionar su arquitectura sin romper el sistema ni sobre-dimensionarlo**.
 
 En particular, está pensado para:
 
@@ -47,7 +47,7 @@ En particular, está pensado para:
 * Equipos que quieren aplicar DDD y arquitectura limpia de forma pragmática.
 
 > No es un curso introductorio ni un curso teórico de arquitectura.
-Se asume experiencia previa trabajando con código real y sistemas en funcionamiento.
+> Se asume experiencia previa trabajando con código real y herramientas de IA.
 
 ---
 
@@ -124,7 +124,7 @@ El curso es **agnóstico en cuanto a tecnologías y frameworks**. Los conceptos 
 * Se propondrán ejercicios prácticos equivalentes en `Java` y `C#`.
 * Demos y prácticas válidas para entornos como `Cursor`, `Claude Code`, `Antigravity` o `Codex CLI`.
 
-El foco está en el **proceso, el criterio arquitectónico y la estrategia de evolución**, no en un lenguaje ni herramienta concretos.
+> El foco está en el **proceso, el criterio arquitectónico y la estrategia de evolución**, no en un lenguaje ni herramienta concretos.
 
 ---
 

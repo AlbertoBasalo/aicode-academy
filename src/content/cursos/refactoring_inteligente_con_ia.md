@@ -44,8 +44,8 @@ En particular, está pensado para:
 * Technical leads que buscan una estrategia práctica para evolucionar sistemas.
 * Equipos que quieren introducir IA en su flujo de trabajo sin perder control técnico.
 
-> No es un curso de iniciación a la programación ni un curso de patrones de diseño.
-Se asume experiencia previa leyendo y manteniendo código en producción.
+> No es un curso de código limpio ni patrones de diseño.
+> Se asume experiencia previa trabajando con código real y herramientas de IA.
 
 ---
 
@@ -121,7 +121,7 @@ El curso es **agnóstico en cuanto a tecnologías y frameworks**. Los conceptos 
 * Se propondrán ejercicios prácticos equivalentes en `Java` y `C#`.
 * Demos y prácticas válidas para entornos como `Cursor`, `Claude Code`, `Antigravity` o `Codex CLI`.
 
-El foco está en el **proceso, el criterio técnico y la estrategia de refactoring**, no en un lenguaje ni herramienta concretos.
+> El foco está en el **proceso, el criterio técnico y la estrategia de refactoring**, no en un lenguaje ni herramienta concretos.
 
 ---
 

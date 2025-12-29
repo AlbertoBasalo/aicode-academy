@@ -46,8 +46,8 @@ Este curso está orientado a **desarrolladores profesionales y perfiles técnico
 * Actúan como desarrolladores senior, technical leads o arquitectos.
 * Quieren una base metodológica sólida antes de profundizar en el uso de la IA.
 
-> No es un curso de programación básica ni un catálogo de herramientas de moda.
-Se asume experiencia previa en desarrollo de software.
+> No es un curso de introducción a la programación.
+> Se asume experiencia previa en desarrollo de software.
 
 ---
 
@@ -125,7 +125,7 @@ El curso es **agnóstico en cuanto a tecnologías y frameworks**. Los conceptos 
 * Se propondrán ejercicios prácticos equivalentes en `Java` y `C#`.
 * Demos y prácticas válidas para entornos como `Cursor`, `Claude Code`, `Antigravity` o `Codex CLI`.
 
-El foco está en el **proceso, la metodología y el criterio técnico**, no en un lenguaje ni herramienta concretos.
+> El foco está en el **proceso, la metodología y el criterio técnico**, no en un lenguaje ni herramienta concretos.
 
 ---
 
