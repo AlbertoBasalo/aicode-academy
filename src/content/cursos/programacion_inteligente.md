@@ -7,7 +7,7 @@ category: "Programación"
 level: "Básico"
 duration: "video 6h - directo 18h"
 instructor: "Alberto Basalo"
-tags: ["Tools", "Agents", "Prompts", "Specs", "Context", "Quality"]
+tags: ["Agents", "Skills", "Prompts", "Specs", "Context", "Quality"]
 featured: false
 order: 1
 ---
@@ -56,49 +56,49 @@ Este curso está orientado a **desarrolladores profesionales y perfiles técnico
 ### 1. Ecosistema y vibraciones
 
 ```markdown	
-- 1.1. Panorama actual del desarrollo con IA y sus actores
-- 1.2. Vibe coding: por qué surge y cuándo es peligroso
-- 1.3. Señales útiles frente a ruido, hype y automatismos
+- 1.1. Modelos, agentes, editores y herramientas
+- 1.2. Vibe coding, programar sin valorar la implementación
+- 1.1. AI-DD, metodología de desarrollo profesional para todo el SDLC
 ```
 
-### 2. Instrucciones para agentes
+### 2. Instrucciones y habilidades para agentes
 
 ```markdown	  
-- 2.1. Rol, responsabilidades y límites de un agente
-- 2.2. Instrucciones persistentes y normas de equipo
-- 2.3. Criterio humano y control de decisiones
+- 2.1. Reglas generales en AGENTS.md
+- 2.2. Instrucciones particulares contextuales
+- 2.3. Skills para optimizar el contexto de trabajo
 ```
 
-### 3. Bibliotecas de prompts
+### 3. Bibliotecas de comandos y utilidades
 
 ```markdown	  
-- 3.1. Prompts como activos versionables del equipo
-- 3.2. Clasificación por intención y tipo de tarea
-- 3.3. Evolución y mejora continua de la biblioteca
+- 3.1. Prompt as Code, ficheros en lenguaje formal
+- 3.2. Roles específicos con herramientas concretas
+- 3.3. Actualización y automatización usando MCPs
 ```
 
-### 4. Flujo de trabajo con especificaciones
+### 4. Flujo de trabajo basado en especificaciones
 
 ```markdown	  
-- 4.1. Lenguaje natural como entrada principal del proceso
-- 4.2. Especificaciones funcionales claras y verificables
-- 4.3. Uso de la IA para refinar, validar y detectar ambigüedades
+- 4.1. Análisis de requerimientos y documentación del sistema
+- 4.2. Especificaciones funcionales detalladas y verificables
+- 4.3. Ramas, planes y tareas de codificación
 ```
 
-### 5. Programar según el contexto
+### 5. Programar, verificar, documentar
 
 ```markdown	  
-- 5.1. Context engineering: qué información importa
-- 5.2. Programar con conocimiento del sistema y sus límites
-- 5.3. Evitar soluciones locales que rompen el conjunto
+- 5.1. Generar código es la parte fácil
+- 5.2. Verificar que funciona es la parte difícil
+- 5.3. Documentar los cambios es la parte crítica	
 ```
 
-### 6. Mantenimiento y calidad
+### 6. Calidad, productividad y mantenimiento
 
 ```markdown	  
-- 6.1. Testing asistido por IA a distintos niveles
-- 6.2. Documentación viva alineada con el código
-- 6.3. Uso de la IA para comprensión y evolución continua
+- 6.1. Aceptación e integración de las especificaciones
+- 6.2. Optimización del ciclo en paralelo y en la nube
+- 6.3. Correcciones y mejoras basadas en especificaciones
 ```
 
 ---
@@ -109,21 +109,19 @@ La IA se utiliza durante todo el curso como **instrumento metodológico**, no co
 
 Se trabajará de forma práctica sobre:
 
+* Definición de **instructions y skills** para contextos reales.
 * Diseño y mantenimiento de **bibliotecas de prompts**.
-* Definición de **reglas e instrucciones** para contextos reales.
 * Construcción de **especificaciones en lenguaje natural**.
-* Uso controlado de agentes para tareas técnicas concretas.
-* Evaluación crítica de las respuestas generadas por la IA.
+* Uso controlado de **agentes y herramientas** en todo el ciclo de desarrollo.
 
 ---
 
 ## Enfoque tecnológico
 
-El curso es **agnóstico en cuanto a tecnologías y frameworks**. Los conceptos y técnicas son aplicables a cualquier stack moderno.
+El curso es **agnóstico en cuanto a tecnologías de IA y frameworks de desarrollo**. Los conceptos y técnicas son aplicables a cualquier stack moderno.
 
 * Las demostraciones se realizarán en `Node.js` con `VSCode` y `GitHub Copilot`.
-* Se propondrán ejercicios prácticos equivalentes en `Java` y `C#`.
-* Demos y prácticas válidas para entornos como `Cursor`, `Claude Code`, `Antigravity` o `Codex CLI`.
+* Se propondrán ejercicios prácticos equivalentes en `Java` y `C#` válidas para entornos como `Cursor`, `Claude Code`, `Antigravity` o `Codex CLI`.
 
 > El foco está en el **proceso, la metodología y el criterio técnico**, no en un lenguaje ni herramienta concretos.
 
