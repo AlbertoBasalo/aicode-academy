@@ -25,6 +25,8 @@ article {
   transition: transform 0.3s ease;
   margin-left: 0rem !important;
   margin-right: 0rem !important;
+  max-width: 100%;
+  /* Override PicoCSS breakpoint-based max-width */
 }
 
 /* Hover effect for a "tactile" tech feel */
