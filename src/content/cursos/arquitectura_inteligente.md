@@ -11,135 +11,124 @@ tags: ["Documentation","Layers", "Clean", "DDD", "CQRS", "Microservices"]
 featured: false
 order: 3
 ---
+
 ## Diseño y evolución de aplicaciones con IA.
 
-Muchos sistemas no colapsan por el volumen de código, sino porque su **arquitectura deja de acompañar la evolución del negocio**. Capas difusas, dependencias mal controladas y decisiones heredadas acaban convirtiendo el cambio en riesgo.
+Muchos sistemas no colapsan por el volumen de código, sino porque su **arquitectura deja de acompañar la evolución del negocio**.
+Capas difusas, dependencias mal controladas y decisiones heredadas acaban convirtiendo el cambio en riesgo.
 
-En este curso aprenderás a **evolucionar la arquitectura de aplicaciones existentes en producción**, introduciendo estructura, límites y patrones de forma progresiva y pragmática. No se parte de un diseño ideal ni de un sistema greenfield, sino de software real que ya funciona y necesita seguir haciéndolo.
+Este curso propone un enfoque práctico de **la IA para evolucionar la arquitectura de aplicaciones en producción**, introduciendo estructura, límites y patrones de forma progresiva y pragmática. Se abordan las fases clave del diseño arquitectónico: establecer la base, definir capas, aplicar arquitectura limpia, modelar el dominio, escalar y distribuir.
 
-El enfoque es **práctico, incremental y agnóstico de tecnología**. La inteligencia artificial se utiliza como apoyo para el análisis, la documentación y la validación de decisiones arquitectónicas, pero siempre bajo criterio humano.
+El objetivo es pasar del diseño implícito a **trabajar con una arquitectura explícita**, donde la IA apoya el análisis y la documentación pero el criterio humano guía las decisiones de evolución del sistema.
 
 ---
 
 ## Objetivos del curso
 
-Al finalizar el curso, el alumno será capaz de usar la IA para:
+Al finalizar el curso, el alumno será capaz de:
 
-* Analizar y documentar la arquitectura real de una aplicación existente.
-* Establecer una base sólida para la evolución arquitectónica.
-* Diseño en capas con responsabilidades claras y dependencias controladas.
-* Aislar dominio y lógica de negocio aplicando arquitectura limpia.
-* Modelar el dominio con principios de DDD estratégico y táctico.
-* Preparar el sistema para escalar de forma controlada.
-
----
+- Analizar y documentar la arquitectura real de una aplicación existente.
+- Establecer una base sólida para la evolución arquitectónica.
+- Diseñar en capas con responsabilidades claras y dependencias controladas.
+- Aislar dominio y lógica de negocio aplicando arquitectura limpia.
+- Modelar el dominio con principios de DDD estratégico y táctico.
+- **Preparar el sistema para escalar de forma controlada.**
 
 ## A quién va dirigido
 
-Este curso está orientado a **desarrolladores profesionales** que trabajan sobre sistemas existentes y necesitan **evolucionar su arquitectura sin romper el sistema ni sobre-dimensionarlo**.
+Este curso está orientado a **desarrolladores profesionales** que:
 
-En particular, está pensado para:
+- Trabajan con grandes sistemas de alta demanda y complejidad.
+- Quieren conocer patrones de arquitectura y aplicarlos con IA.
+- Buscan una metodología para **evolucionar la arquitectura de forma pragmática**.
 
-* Desarrolladores full stack con experiencia en aplicaciones en producción.
-* Ingenieros que necesitan estructurar sistemas sin diseño explícito.
-* Technical leads responsables de decisiones de diseño y evolución.
-* Equipos que quieren aplicar DDD y arquitectura limpia de forma pragmática.
-
-> No es un curso introductorio ni un curso teórico de arquitectura.
+> No es un curso introductorio ni teórico sobre arquitectura.
 > Se asume experiencia previa trabajando con código real y herramientas de IA.
 
 ---
 
 ## Temario
 
-### 1. Establecer la base arquitectónica
+### 1. Análisis y documentación de la arquitectura real
 
 ```markdown	
-- 1.1. Documentación mínima y arquitectura real del sistema
-- 1.2. Uso de IA para análisis de dependencias, capas y flujos
-- 1.3. Evaluación del punto de partida arquitectónico
+- 1.1. Documentación funcional y del sistema.
+- 1.2. Diagramas de arquitectura y de dependencias.
+- 1.3. Registro de decisiones arquitectónicas (ADRs).
 ```
 
-### 2. Arquitectura en capas
+### 2. Capas de responsabilidad jerárquica
 
 ```markdown	  
 - 2.1. Separación de responsabilidades en sistemas existentes
-- 2.2. Errores comunes en capas mal definidas
-- 2.3. Control de dependencias entre capas
+- 2.2. Control de dependencias entre capas
+- 2.3. El cajón de sastre compartido
 ```
 
-### 3. Arquitectura limpia y puertos/adaptadores
+### 3. Independencia de los detalles, arquitectura limpia
 
 ```markdown	  
-- 3.1. Inversión de dependencias aplicada a sistemas reales
-- 3.2. Definición de puertos y contratos
-- 3.3. Aislamiento de frameworks, bases de datos y servicios externos
+- 3.1. Definición de puertos y contratos
+- 3.1. Implementación mediante adaptadores
+- 3.3. Inversión de dependencias aplicada
 ```
 
-### 4. DDD estratégico y táctico
+### 4. Modelo de datos, DDD táctico	
 
 ```markdown	  
-- 4.1. Identificación de límites y contextos
-- 4.2. Modelado del dominio con entidades y value objects
-- 4.3. Agregados, invariantes y consistencia
+- 4.1. Modelado del dominio con entidades y value objects
+- 4.2. Agregados, invariantes y consistencia
+- 4.3. Servicios y casos de uso
 ```
 
-### 5. Escalado horizontal y microservicios
+### 5. El monolito modular, DDD estratégico
 
 ```markdown	  
-- 5.1. Cuándo un monolito deja de ser suficiente
-- 5.2. Criterios reales para dividir servicios
-- 5.3. Riesgos y costes del escalado distribuido
+- 5.1. Identificación de límites y contextos
+- 5.2. Comunicación entre subsistemas
+- 5.3. Desarrollo y despliegue independiente con microservicios
 ```
 
-### 6. Eventos, colas y CQRS
-
+### 6. Escalado de rendimiento y complejidad
 ```markdown	  
-- 6.1. Eventos de dominio y mensajería
-- 6.2. Separación de lecturas y escrituras
-- 6.3. Introducción progresiva de complejidad distribuida
+- 6.1. Criterios reales para romper el monolito
+- 6.2. Rendimiento, separación de lecturas y escrituras con CQRS
+- 6.3. Complejidad, SDLC independiente con microservicios
 ```
 
 ---
 
 ## Uso práctico de la IA durante el curso
 
-La inteligencia artificial se utiliza a lo largo de todo el curso como **herramienta de apoyo al análisis y validación de decisiones arquitectónicas**, no como sustituto del criterio técnico.
+La IA se utiliza durante todo el curso como **instrumento metodológico**, no como fin en sí mismo.
 
 Se trabajará de forma práctica sobre:
 
-* Análisis asistido de estructuras, dependencias y flujos.
-* Generación y revisión de diagramas arquitectónicos.
-* Documentación de decisiones arquitectónicas (ADRs).
-* Evaluación comparativa de alternativas y trade-offs.
+- **Análisis asistido** de estructuras, dependencias y flujos.
+- **Refactoring arquitectónico** usando skills de IA.
+- **Documentación y pruebas** que permitan aplicar los cambios de forma segura.
 
----
+## Enfoque tecnológico agnóstico
 
-## Enfoque tecnológico
+El curso es **agnóstico en cuanto a tecnologías de IA y frameworks de desarrollo**. Los conceptos y técnicas son aplicables a cualquier stack moderno.
 
-El curso es **agnóstico en cuanto a tecnologías y frameworks**. Los conceptos y técnicas son aplicables a cualquier stack moderno.
+- Las demostraciones se realizarán en `Node.js` con `VSCode` y `GitHub Copilot`.
+- Válidas para entornos como `Java` y `C#` con `Cursor` o `Claude Code`.
 
-* Las demostraciones se realizarán en `Node.js` con `VSCode` y `GitHub Copilot`.
-* Se propondrán ejercicios prácticos equivalentes en `Java` y `C#`.
-* Demos y prácticas válidas para entornos como `Cursor`, `Claude Code`, `Antigravity` o `Codex CLI`.
-
-> El foco está en el **proceso, el criterio arquitectónico y la estrategia de evolución**, no en un lenguaje ni herramienta concretos.
-
----
+> El foco está en el **proceso, la metodología y el criterio técnico**, no en un lenguaje ni herramienta concretos.
 
 ## Propuesta de valor para la empresa
 
-* Mejora la mantenibilidad y escalabilidad del software.
-* Alinea decisiones técnicas con crecimiento del negocio.
-* Introduce el uso de IA en arquitectura de forma controlada y pragmática.
+- Mejora la **mantenibilidad y escalabilidad** del software.
+- Alinea **decisiones técnicas con crecimiento** del negocio.
+- Sienta las bases para **desarrollo a largo plazo** asistido por IA.
 
 ---
 
-## Relación con la suite formativa
+## Relación con la suite formativa inteligente
 
-* [**Programación Inteligente**](/cursos/programacion_inteligente) → base metodológica y conceptual.
-* [**Refactoring Inteligente**](/cursos/refactoring_inteligente) → ordenar, sanear y preparar el código existente.
-* **Arquitectura Inteligente** → estructurar, modelar y guiar la evolución del sistema.
+- [**Programación Inteligente**](/cursos/programacion_inteligente) → Generación eficiente de código con IA.
+- [**Refactoring Inteligente**](/cursos/refactoring_inteligente) → Modernización de código legacy con IA.
+- [**Arquitectura Inteligente**](/cursos/arquitectura_inteligente) → Diseño y evolución de aplicaciones con IA.
 
 Este curso es el **cierre avanzado** del itinerario formativo de ingeniería de software con IA.
-

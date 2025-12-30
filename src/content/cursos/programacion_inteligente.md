@@ -40,7 +40,7 @@ Este curso está orientado a **desarrolladores profesionales** que:
 
 - Ya están usando IA de forma informal y quieren ordenar su uso.
 - Necesitan introducir IA en su equipo sin perder calidad ni control.
-- Quieren una base metodológica sólida antes de profundizar en el uso de la IA.
+- Quieren una **base metodológica sólida** antes de profundizar en el uso de la IA.
 
 > No es un curso de introducción a la programación.
 > Se asume experiencia previa en desarrollo de software.
@@ -133,4 +133,4 @@ El curso es **agnóstico en cuanto a tecnologías de IA y frameworks de desarrol
 - [**Refactoring Inteligente**](/cursos/refactoring_inteligente) → Modernización de código legacy con IA.
 - [**Arquitectura Inteligente**](/cursos/arquitectura_inteligente) → Diseño y evolución de aplicaciones con IA.
 
-Este curso es la **puerta de entrada natural** al resto del itinerario formativo inteligente.
+Este curso es la **puerta de entrada natural** al resto del itinerario formativo de ingeniería de software con IA.

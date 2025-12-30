@@ -14,35 +14,33 @@ order: 2
 
 ## Modernización de código legacy con IA.
 
-El código legacy no es el problema: el problema es no entenderlo, no poder probarlo y no atreverse a tocarlo. En este curso aprenderás a **modernizar sistemas reales en producción** utilizando la inteligencia artificial como apoyo para el análisis, el refactoring y la toma de decisiones técnicas, sin perder el control del diseño ni del comportamiento del sistema.
+El código legacy no es el problema. El problema es **no entenderlo, no poder probarlo y no atreverse a tocarlo**.
+Cuando se trabaja sin estrategia, cada cambio es un riesgo y cada mejora se pospone indefinidamente.
 
-El enfoque es **práctico, incremental y agnóstico de tecnología**. No se trata de aplicar patrones por moda ni de reescribir sistemas desde cero, sino de **hacer que el código existente sea comprensible, testeable y evolucionable**. La IA se utiliza como asistente para acelerar el trabajo, pero siempre bajo criterio humano.
+Este curso propone un enfoque práctico para **modernizar sistemas reales en producción** utilizando la inteligencia artificial como apoyo para el análisis, el refactoring y la toma de decisiones técnicas. Se abordan las fases clave del trabajo con legacy: comprender el sistema, proteger su comportamiento, eliminar bloqueos, ordenar responsabilidades, consolidar lo común y preparar el futuro.
+
+El objetivo es pasar de temer el código heredado a **trabajar con una metodología**, donde la IA acelera el trabajo pero el criterio humano mantiene el control del diseño y la evolución del sistema.
 
 ---
 
 ## Objetivos del curso
 
-Al finalizar el curso, el alumno será capaz de usar la IA para:
+Al finalizar el curso, el alumno será capaz de:
 
-* Comprender y documentar el comportamiento real de sistemas legacy complejos.
-* Proteger el sistema con pruebas e2e para refactorizar con seguridad.
-* Eliminar bloqueos estructurales y aislar dependencias problemáticas u obsoletas.
-* Reorganizar el código en capas claras de responsabilidad.
-* Consolidar funcionalidad compartida en librerías comunes con intención y semántica.
-* Modernizar el código y dejar el sistema preparado para su evolución futura.
-
----
+- Comprender y documentar el comportamiento real de sistemas legacy complejos.
+- Proteger el sistema con pruebas e2e para refactorizar con seguridad.
+- Eliminar bloqueos estructurales y aislar dependencias problemáticas u obsoletas.
+- Reorganizar el código en capas claras de responsabilidad.
+- Consolidar funcionalidad compartida en librerías comunes con intención y semántica.
+- **Modernizar el código y preparar el sistema para evolución futura.**
 
 ## A quién va dirigido
 
-Este curso está orientado a **desarrolladores profesionales** que trabajan o han trabajado con código legacy en entornos reales de producción y necesitan modernizarlo sin asumir riesgos innecesarios.
+Este curso está orientado a **desarrolladores profesionales** que:
 
-En particular, está pensado para:
-
-* Desarrolladores backend con experiencia que mantienen sistemas existentes.
-* Ingenieros que necesitan refactorizar código legacy sin reescrituras completas.
-* Technical leads que buscan una estrategia práctica para evolucionar sistemas.
-* Equipos que quieren introducir IA en su flujo de trabajo sin perder control técnico.
+- Trabajan o han trabajado con código legacy en entornos reales de producción.
+- Necesitan refactorizar código existente sin reescrituras completas.
+- Buscan una estrategia práctica para **evolucionar sistemas con seguridad**.
 
 > No es un curso de código limpio ni patrones de diseño.
 > Se asume experiencia previa trabajando con código real y herramientas de IA.
@@ -103,40 +101,35 @@ En particular, está pensado para:
 
 ## Uso práctico de la IA durante el curso
 
-La inteligencia artificial se utiliza a lo largo de todo el curso como **herramienta de apoyo al análisis, refactoring y validación**, no como sustituto del criterio técnico. Este bloque no constituye un módulo independiente, sino un conjunto de prácticas transversales aplicadas en cada fase del proceso.
+La IA se utiliza durante todo el curso como **instrumento metodológico**, no como fin en sí mismo.
 
 Se trabajará de forma práctica sobre:
 
-* **Biblioteca de prompts** orientados a comprensión de código legacy, generación de documentación, propuestas de refactor y creación de tests.
-* **Reglas e instrucciones** para guiar a la IA y evitar respuestas genéricas o peligrosas en contextos de código en producción.
-* **Configuración y uso de agentes** como asistentes de análisis y refactoring, manteniendo siempre el control humano de las decisiones.
+- **Biblioteca de prompts** orientados a comprensión de código legacy, generación de documentación y propuestas de refactor.
+- **Reglas e instrucciones** para guiar a la IA y evitar respuestas genéricas o peligrosas en contextos de producción.
+- **Configuración y uso de agentes** como asistentes de análisis y refactoring, manteniendo siempre el control humano.
 
----
+## Enfoque tecnológico agnóstico
 
-## Enfoque tecnológico
+El curso es **agnóstico en cuanto a tecnologías de IA y frameworks de desarrollo**. Los conceptos y técnicas son aplicables a cualquier stack moderno.
 
-El curso es **agnóstico en cuanto a tecnologías y frameworks**. Los conceptos y técnicas son aplicables a cualquier stack moderno.
+- Las demostraciones se realizarán en `Node.js` con `VSCode` y `GitHub Copilot`.
+- Válidas para entornos como `Java` y `C#` con `Cursor` o `Claude Code`.
 
-* Las demostraciones se realizarán en `Node.js` con `VSCode` y `GitHub Copilot`.
-* Se propondrán ejercicios prácticos equivalentes en `Java` y `C#`.
-* Demos y prácticas válidas para entornos como `Cursor`, `Claude Code`, `Antigravity` o `Codex CLI`.
-
-> El foco está en el **proceso, el criterio técnico y la estrategia de refactoring**, no en un lenguaje ni herramienta concretos.
-
----
+> El foco está en el **proceso, la metodología y el criterio técnico**, no en un lenguaje ni herramienta concretos.
 
 ## Propuesta de valor para la empresa
 
-* Mejora la mantenibilidad y la vida útil del software existente.
-* Aumenta la productividad de equipos senior en código heredado.
-* Introduce el uso de IA de forma controlada, práctica y alineada con buenas prácticas.
+- Mejora la **mantenibilidad y la vida útil** del software existente.
+- Aumenta la **productividad de equipos senior** en código heredado.
+- Sienta las bases para **desarrollo a largo plazo** asistido por IA.
 
 ---
 
-## Relación con la suite formativa
+## Relación con la suite formativa inteligente
 
-* [**Programación Inteligente**](/cursos/programacion_inteligente) → base metodológica y conceptual.
-* **Refactoring Inteligente con IA** → aplicar IA sobre código existente con seguridad.
-* [**Arquitectura Inteligente**](/cursos/arquitectura_inteligente) → diseñar y evolucionar sistemas con criterio técnico.
+- [**Programación Inteligente**](/cursos/programacion_inteligente) → Generación eficiente de código con IA.
+- [**Refactoring Inteligente**](/cursos/refactoring_inteligente) → Modernización de código legacy con IA.
+- [**Arquitectura Inteligente**](/cursos/arquitectura_inteligente) → Diseño y evolución de aplicaciones con IA.
 
-Este curso es el **paso intermedio** entre la metodología base y la arquitectura avanzada.
+Este curso es el **paso intermedio** entre la metodología base y la arquitectura avanzada del itinerario formativo de ingeniería de software con IA.
