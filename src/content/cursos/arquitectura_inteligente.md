@@ -1,18 +1,17 @@
 ---
-title: "Arquitectura Inteligente con IA"
-subtitle: "Diseña y evoluciona la arquitectura de sistemas reales usando IA con criterio técnico"
-description: "Diseña y evoluciona la arquitectura de sistemas reales usando IA con criterio técnico"
-slug: "arquitectura_inteligente_con_ia"
-category: "Metodología"
+title: "Arquitectura Inteligente"
+subtitle: "Diseño y evolución de aplicaciones con IA."
+description: "Construye y mantén grandes soluciones de negocio usando  Inteligencia Artificial para aplicar patrones y buenas prácticas de Arquitectura de Software."
+slug: "arquitectura_inteligente"
+category: "Arquitectura"
 level: "Avanzado"
-duration: "6-18 h (video-online)"
+duration: "video 6h - directo 18h"
 instructor: "Alberto Basalo"
-tags: ["Arquitectura", "Patrones" ]
+tags: ["Documentation","Layers", "Clean", "DDD", "CQRS", "Microservices"]
 featured: false
 order: 3
 ---
-
-## Diseña y evoluciona la arquitectura de sistemas usando I.A.
+## Diseño y evolución de aplicaciones con IA.
 
 Muchos sistemas no colapsan por el volumen de código, sino porque su **arquitectura deja de acompañar la evolución del negocio**. Capas difusas, dependencias mal controladas y decisiones heredadas acaban convirtiendo el cambio en riesgo.
 
@@ -138,9 +137,9 @@ El curso es **agnóstico en cuanto a tecnologías y frameworks**. Los conceptos 
 
 ## Relación con la suite formativa
 
-* [**AI-Driven Development: De las Vibes a las Specs**](/cursos/aidd_de_vibes_a_specs) → base metodológica y conceptual.
-* [**Refactoring Inteligente con IA**](/cursos/refactoring_inteligente_con_ia) → ordenar, sanear y preparar el código existente.
-* **Arquitectura Inteligente con IA** → estructurar, modelar y guiar la evolución del sistema.
+* [**Programación Inteligente**](/cursos/programacion_inteligente) → base metodológica y conceptual.
+* [**Refactoring Inteligente**](/cursos/refactoring_inteligente) → ordenar, sanear y preparar el código existente.
+* **Arquitectura Inteligente** → estructurar, modelar y guiar la evolución del sistema.
 
 Este curso es el **cierre avanzado** del itinerario formativo de ingeniería de software con IA.
 

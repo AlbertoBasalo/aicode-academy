@@ -1,18 +1,18 @@
 ---
-title: "Refactoring Inteligente con IA"
-subtitle: "Moderniza código legacy usando IA con seguridad y pragmatismo"
-description: "Moderniza código legacy usando IA con seguridad y pragmatismo"
-slug: "refactoring_inteligente_con_ia"
+title: "Refactoring Inteligente"
+subtitle: "Modernización de código legacy con IA."
+description: "Aprende a aplicar las nuevas herramientas de Inteligencia Artificial sobre código legado para mantenerlo y modernizarlo con pragmatismo y seguridad."
+slug: "refactoring_inteligente"
 category: "Metodología"
-level: "Avanzado"
-duration: "6-18 h (video-online)"
+level: "Intermedio"
+duration: "video 6h - directo 18h"
 instructor: "Alberto Basalo"
-tags: ["Refactoring", "Legacy" ]
+tags: ["Docs", "Tests", "Smells", "Dependencies", "Abstractions", "Future"]
 featured: false
 order: 2
 ---
 
-## Moderniza código legacy con seguridad y pragmatismo usando I.A.
+## Modernización de código legacy con IA.
 
 El código legacy no es el problema: el problema es no entenderlo, no poder probarlo y no atreverse a tocarlo. En este curso aprenderás a **modernizar sistemas reales en producción** utilizando la inteligencia artificial como apoyo para el análisis, el refactoring y la toma de decisiones técnicas, sin perder el control del diseño ni del comportamiento del sistema.
 
@@ -135,8 +135,8 @@ El curso es **agnóstico en cuanto a tecnologías y frameworks**. Los conceptos 
 
 ## Relación con la suite formativa
 
-* [**AI-Driven Development: De las Vibes a las Specs**](/cursos/aidd_de_vibes_a_specs) → base metodológica y conceptual.
+* [**Programación Inteligente**](/cursos/programacion_inteligente) → base metodológica y conceptual.
 * **Refactoring Inteligente con IA** → aplicar IA sobre código existente con seguridad.
-* [**Arquitectura Inteligente con IA**](/cursos/arquitectura_inteligente_con_ia) → diseñar y evolucionar sistemas con criterio técnico.
+* [**Arquitectura Inteligente**](/cursos/arquitectura_inteligente) → diseñar y evolucionar sistemas con criterio técnico.
 
 Este curso es el **paso intermedio** entre la metodología base y la arquitectura avanzada.

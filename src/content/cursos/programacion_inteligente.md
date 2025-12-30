@@ -1,26 +1,26 @@
 ---
-title: "AI-Driven Development, de Vibes a Specs"
-subtitle: "Curso de metodología de programación con Inteligencia Artificial, de Vibes a Specs "
-description: "Curso de metodología de programación con Inteligencia Artificial, de Vibes a Specs"
-slug: "aidd_de_vibes_a_specs"
-category: "Metodología"
+title: "Programación Inteligente"
+subtitle: "Generación eficiente de código con IA."
+description: "Domina las técnicas y herramientas de programación con IA para desarrollos más productivos y de calidad, pasando del Vibe Coding a la Spec-Driven Development."
+slug: "programacion_inteligente"
+category: "Programación"
 level: "Básico"
-duration: "6-18 h (video-online)"
+duration: "video 6h - directo 18h"
 instructor: "Alberto Basalo"
-tags: ["AIDD", "Productividad", "Calidad"]
+tags: ["Tools", "Agents", "Prompts", "Specs", "Context", "Quality"]
 featured: false
 order: 1
 ---
 
-## Introducción al desarrollo de software usando I.A.
+## Generación eficiente de código con IA.
 
-El problema no es usar IA para programar. El problema es **usar IA sin criterio, sin estructura y sin control**.
-Cuando la IA se emplea como un generador de código impulsivo (“vibe coding”), se gana velocidad a corto plazo y se pierde calidad, coherencia y capacidad de mantenimiento.
+Cualquiera puede usar IA para programar. El problema es **usar IA sin criterio, sin estructura y sin control**.
+Cuando la IA se emplea como un generador de código impulsivo (_vibe coding_), se gana velocidad a corto plazo y se pierde calidad, coherencia y capacidad de mantenimiento.
 
 Este curso propone un enfoque **práctico y profesional** para trabajar con IA en el desarrollo de software, centrado en **cómo pensar, organizar y guiar su uso**, no en herramientas concretas.
-Se abordan los elementos clave del trabajo diario con IA: entender el ecosistema, definir instrucciones claras, crear activos reutilizables, trabajar desde especificaciones, programar con contexto y mantener la calidad en el tiempo.
+Se abordan los elementos clave del trabajo diario con IA: entender el ecosistema, definir instrucciones claras, crear activos reutilizables, trabajar desde especificaciones (_specs_), programar con contexto y mantener la calidad en el tiempo.
 
-El objetivo es pasar **de improvisar con IA a trabajar con un sistema**, donde el lenguaje natural, las reglas y las especificaciones guían el desarrollo de forma consistente.
+El objetivo es pasar **de improvisar con IA a trabajar con un sistema**, donde el lenguaje natural, las reglas y las especificaciones (_specs_) guían el desarrollo de forma consistente.
 
 ---
 

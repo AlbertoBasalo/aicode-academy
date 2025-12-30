@@ -91,18 +91,22 @@ const cta = {
               </li>
             )
           }
-          {
-            entry.data.tags &&
-              entry.data.tags.length > 0 &&
-              entry.data.tags.map((tag) => (
+        </ul>
+      </nav>
+      {
+        entry.data.tags && entry.data.tags.length > 0 && (
+          <nav aria-label="curso metadata">
+            <ul>
+              {entry.data.tags.map((tag) => (
                 <li>
                   <kbd>{tag}</kbd>
                 </li>
-              ))
-          }
-        </ul>
-      </nav>
-      <p>{entry.data.subtitle}<BlinkCursor /></p>
+              ))}
+            </ul>
+          </nav>
+        )
+      }
+      <p><span>{entry.data.description}</span><BlinkCursor /></p>
     </header>
 
     <main class="colored-headers">
