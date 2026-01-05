@@ -14,12 +14,11 @@ order: 1
 
 ## Generación eficiente de código con IA.
 
-Cualquiera puede usar IA para programar. Lo difícil es **mantener el control y la calidad**, aumentando la productividad.
-Cuando la IA se emplea como un generador de código impulsivo (_vibe coding_), se gana velocidad a corto plazo y se pierde calidad, coherencia y capacidad de mantenimiento.
+Cualquiera puede usar IA para programar, generando toneladas de código de forma impulsiva (_vibe coding_). Lo difícil es **mantener el control y la calidad**, aumentando la productividad.
 
-Este curso propone un enfoque práctico para trabajar con **IA en todo el ciclo de vida del desarrollo de software**, centrado en cómo pensar, organizar y guiar su uso en entornos profesionales. Se abordan los elementos clave del trabajo diario con IA: entender el ecosistema, definir instrucciones claras, crear activos reutilizables, trabajar desde especificaciones (**Spec-Driven Development**), programar con contexto y mantener la calidad en el tiempo.
+Este curso propone un enfoque profesional para trabajar con **IA en todo el ciclo de vida del desarrollo de software**. Se abordan las nuevas primitivas de programación con IA: skills, prompts, contexto, especificaciones (**Spec-Driven Development**), agentes y herramientas(**MCPs**).
 
-El objetivo es pasar de improvisar con IA a **trabajar con una metodología**, donde el lenguaje natural, las reglas y las especificaciones guían el desarrollo de forma consistente.
+Pasa de improvisar con IA a **programar en lenguaje natural con una metodología**, donde las reglas y las especificaciones guían el desarrollo de forma consistente.
 
 ---
 
@@ -27,11 +26,11 @@ El objetivo es pasar de improvisar con IA a **trabajar con una metodología**, d
 
 Al finalizar el curso, el alumno será capaz de:
 
-- Entender el ecosistema actual de desarrollo con IA y sus límites reales.
-- Definir instrucciones y habilidades para agentes alineadas con el equipo.
-- Crear y mantener bibliotecas de prompts reutilizables.
-- Desarrollar desde especificaciones detalladas en lenguaje natural.
-- Programar y testear con apoyo de IA.
+- Entender el ecosistema de productos y servicios de IA.
+- Definir instrucciones y habilidades para agentes.
+- Mantener bibliotecas de prompts y herramientas reutilizables.
+- Escribir especificaciones detalladas en lenguaje natural.
+- Programar, verificar y documentar con apoyo de IA.
 - **Mantener la calidad, aumentando la productividad.**
 
 ## A quién va dirigido
@@ -39,8 +38,8 @@ Al finalizar el curso, el alumno será capaz de:
 Este curso está orientado a **desarrolladores profesionales** que:
 
 - Ya están usando IA de forma informal y quieren ordenar su uso.
-- Necesitan introducir IA en su equipo sin perder calidad ni control.
-- Quieren una **base metodológica sólida** antes de profundizar en el uso de la IA.
+- Necesitan aumentar la productividad sin perder calidad ni control.
+- Quieren una **base metodológica sólida** antes de usar las herramientas.
 
 > No es un curso de introducción a la programación.
 > Se asume experiencia previa en desarrollo de software.
@@ -53,7 +52,7 @@ Este curso está orientado a **desarrolladores profesionales** que:
 
 ```markdown	
 - 1.1. Modelos, agentes, editores y herramientas
-- 1.2. Vibe coding, programar sin valorar la implementación
+- 1.2. Vibe coding, programar sin preocuparse por la implementación
 - 1.1. AI-DD, metodología de desarrollo profesional para todo el SDLC
 ```
 
