@@ -1,7 +1,7 @@
 ---
 title: "Programación Inteligente"
 subtitle: "Generación eficiente de código con IA."
-description: "Domina las técnicas y herramientas de programación con IA para desarrollos más productivos y de calidad, pasando del Vibe Coding a la Spec-Driven Development."
+description: "Domina las nuevas primitivas de programación con IA para desarrollos más productivos y de calidad; pasando del Vibe Coding a la Spec-Driven Development."
 slug: "programacion_inteligente"
 category: "Programación"
 level: "Básico"
@@ -41,7 +41,6 @@ Este curso está orientado a **desarrolladores profesionales** que:
 - Necesitan aumentar la productividad sin perder calidad ni control.
 - Quieren una **base metodológica sólida** antes de usar las herramientas.
 
-> No es un curso de introducción a la programación.
 > Se asume experiencia previa en desarrollo de software.
 > Los ejemplos se escribirán en inglés.
 

@@ -1,7 +1,7 @@
 ---
 title: "Arquitectura Inteligente"
 subtitle: "Diseño y evolución de aplicaciones con IA."
-description: "Construye y mantén grandes soluciones de negocio usando  Inteligencia Artificial para aplicar patrones y buenas prácticas de Arquitectura de Software."
+description: "Construye y mantén grandes soluciones de negocio usando Inteligencia Artificial para aplicar patrones y buenas prácticas de Arquitectura de Software."
 slug: "arquitectura_inteligente"
 category: "Arquitectura"
 level: "Avanzado"
@@ -42,8 +42,8 @@ Este curso está orientado a **desarrolladores profesionales** que:
 - Quieren conocer patrones de arquitectura y aplicarlos con IA.
 - Buscan una metodología para **evolucionar la arquitectura de forma pragmática**.
 
-> No es un curso introductorio ni teórico sobre arquitectura.
-> Se asume experiencia previa trabajando con código real y herramientas de IA.
+> Se asume experiencia programando con IA.
+> Los ejemplos se escribirán en inglés.
 
 ---
 

@@ -42,8 +42,8 @@ Este curso está orientado a **desarrolladores profesionales** que:
 - Necesitan refactorizar código existente sin reescrituras completas.
 - Buscan una estrategia práctica para **evolucionar sistemas con seguridad**.
 
-> No es un curso de código limpio ni patrones de diseño.
-> Se asume experiencia previa trabajando con código real y herramientas de IA.
+> Se asume experiencia programando con IA.
+> Los ejemplos se escribirán en inglés.
 
 ---
 
@@ -94,7 +94,7 @@ Este curso está orientado a **desarrolladores profesionales** que:
 ```markdown	  
 - 6.1. Actualización de versiones y dependencias
 - 6.2. Modernización de sintaxis y estilo de código
-- 6.3. Preparación del sistema para evolución futura
+- 6.3. Strangler Fig y otros patrones de evolución futura
 ```
 
 ---
@@ -113,7 +113,7 @@ Se trabajará de forma práctica sobre:
 
 El curso es **agnóstico en cuanto a tecnologías de IA y frameworks de desarrollo**. Los conceptos y técnicas son aplicables a cualquier stack moderno.
 
-- Las demostraciones se realizarán en `Node.js` con `VSCode` y `GitHub Copilot`.
+- Las demostraciones se realizarán en `Node` con `VSCode` y `GitHub Copilot`.
 - Válidas para entornos como `Java` y `C#` con `Cursor` o `Claude Code`.
 
 > El foco está en el **proceso, la metodología y el criterio técnico**, no en un lenguaje ni herramienta concretos.
