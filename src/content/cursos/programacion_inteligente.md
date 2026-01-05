@@ -16,9 +16,9 @@ order: 1
 
 Cualquiera puede usar IA para programar, generando toneladas de código de forma impulsiva (_vibe coding_). Lo difícil es **mantener el control y la calidad**, aumentando la productividad.
 
-Este curso propone un enfoque profesional para trabajar con **IA en todo el ciclo de vida del desarrollo de software**. Se abordan las nuevas primitivas de programación con IA: skills, prompts, contexto, especificaciones (**Spec-Driven Development**), agentes y herramientas(**MCPs**).
+Este curso propone un enfoque profesional para trabajar con **IA en todo el ciclo de vida del desarrollo de software**. Se abordan las nuevas _primitivas_ de programación con IA: skills, prompts, contexto, especificaciones (**Spec-Driven Development**), agentes y herramientas(**MCPs**).
 
-Pasa de improvisar con IA a **programar en lenguaje natural con una metodología**, donde las reglas y las especificaciones guían el desarrollo de forma consistente.
+Pasa de improvisar con IA a **programar en lenguaje natural con una metodología**, donde las reglas y las especificaciones guían el desarrollo de forma consistente siguiendo la metodología **AI- Driven Development**.
 
 ---
 
@@ -27,8 +27,8 @@ Pasa de improvisar con IA a **programar en lenguaje natural con una metodología
 Al finalizar el curso, el alumno será capaz de:
 
 - Entender el ecosistema de productos y servicios de IA.
+- Crear bibliotecas de prompts y herramientas reutilizables.
 - Definir instrucciones y habilidades para agentes.
-- Mantener bibliotecas de prompts y herramientas reutilizables.
 - Escribir especificaciones detalladas en lenguaje natural.
 - Programar, verificar y documentar con apoyo de IA.
 - **Mantener la calidad, aumentando la productividad.**
@@ -51,32 +51,33 @@ Este curso está orientado a **desarrolladores profesionales** que:
 ### 1. Ecosistema y vibraciones
 
 ```markdown	
-- 1.1. Modelos, agentes, editores y herramientas
-- 1.2. Vibe coding, programar sin preocuparse por la implementación
-- 1.1. AI-DD, metodología de desarrollo profesional para todo el SDLC
+- 1.1. Modelos, agentes y editores
+- 1.2. Vibe coding, sin preocuparse por el código	
+- 1.3. AI-DD, metodología para todo el SDLC
 ```
 
-### 2. Instrucciones y habilidades para agentes
+### 2. Bibliotecas y talleres
 
 ```markdown	  
-- 2.1. Reglas generales en AGENTS.md
-- 2.2. Instrucciones particulares contextuales
-- 2.3. Skills para optimizar el contexto de trabajo
+- 2.1. Prompt as Code, ficheros en lenguaje formal
+- 2.2. Agentes aumentados con MCPs
+- 2.3. Roles y trabajo en paralelo y en la nube
 ```
 
-### 3. Bibliotecas de comandos y utilidades
+### 3. Instrucciones y habilidades para agentes
 
 ```markdown	  
-- 3.1. Prompt as Code, ficheros en lenguaje formal
-- 3.2. Roles específicos con herramientas concretas
-- 3.3. Actualización y automatización usando MCPs
+- 3.1. Reglas generales en AGENTS.md
+- 3.2. Instrucciones particulares contextuales
+- 3.3. Skills para enseñar a tus agentes
 ```
+
 
 ### 4. Flujo de trabajo basado en especificaciones
 
 ```markdown	  
-- 4.1. Análisis de requerimientos y documentación del sistema
-- 4.2. Especificaciones funcionales detalladas y verificables
+- 4.1. Análisis de requerimientos y arquitectura del sistema
+- 4.2. Especificaciones funcionales detalladas
 - 4.3. Ramas, planes y tareas de codificación
 ```
 
@@ -92,8 +93,8 @@ Este curso está orientado a **desarrolladores profesionales** que:
 
 ```markdown	  
 - 6.1. Aceptación e integración de las especificaciones
-- 6.2. Optimización del ciclo en paralelo y en la nube
-- 6.3. Correcciones y mejoras basadas en especificaciones
+- 6.2. Orquestación en paralelo y en la nube
+- 6.3. Mejora continua del producto, herramientas y habilidades
 ```
 
 ---
@@ -105,18 +106,18 @@ La IA se utiliza durante todo el curso como **instrumento metodológico**, no co
 Se trabajará de forma práctica sobre:
 
 - Definición de **instructions y skills** para contextos reales.
-- Diseño y mantenimiento de **bibliotecas de prompts**.
-- Construcción de **especificaciones en lenguaje natural**.
-- Uso controlado de **agentes y herramientas** en todo el ciclo de desarrollo.
+- Diseño y mantenimiento de **prompts libraries**.
+- Construcción de **specs en lenguaje natural**.
+- Uso controlado de **agentes y MCPs** en todo el SDLC.
 
 ## Enfoque tecnológico agnóstico
 
 El curso es **agnóstico en cuanto a tecnologías de IA y frameworks de desarrollo**. Los conceptos y técnicas son aplicables a cualquier stack moderno.
 
-- Las demostraciones se realizarán en `Node.js` con `VSCode` y `GitHub Copilot`.
+- Las demostraciones se realizarán en `Node` con `VSCode` y `GitHub Copilot`.
 - Válidas para entornos como `Java` y `C#` con `Cursor` o `Claude Code`.
 
-> El foco está en el **proceso, la metodología y el criterio técnico**, no en un lenguaje ni herramienta concretos.
+> El foco está en **las primitivas y la metodología**, no en un lenguaje ni herramienta concretos.
 
 ## Propuesta de valor para la empresa
 
