@@ -16,9 +16,9 @@ order: 1
 
 Cualquiera puede usar IA para programar, generando toneladas de código de forma impulsiva (_vibe coding_). Lo difícil es **mantener el control y la calidad**, aumentando la productividad.
 
-Este curso propone un enfoque profesional para trabajar con **IA en todo el ciclo de vida del desarrollo de software**. Se abordan las nuevas _primitivas_ de programación con IA: skills, prompts, contexto, especificaciones (**Spec-Driven Development**), agentes y herramientas(**MCPs**).
+Este curso propone un enfoque profesional para trabajar con **IA en todo el ciclo de vida del desarrollo de software**. Se abordan las nuevas _primitivas de programación_: `skills`, `prompts`, context, especificaciones (**Spec-Driven Development**), agentes y `MCPs`.
 
-Pasa de improvisar con IA a **programar en lenguaje natural con una metodología**, donde las reglas y las especificaciones guían el desarrollo de forma consistente siguiendo la metodología **AI- Driven Development**.
+Pasa de improvisar con IA a **programar en lenguaje natural**, donde las reglas y las especificaciones guían el desarrollo de forma consistente siguiendo la metodología **AI-Driven Development**.
 
 ---
 
@@ -43,6 +43,7 @@ Este curso está orientado a **desarrolladores profesionales** que:
 
 > No es un curso de introducción a la programación.
 > Se asume experiencia previa en desarrollo de software.
+> Los ejemplos se escribirán en inglés.
 
 ---
 
@@ -51,7 +52,7 @@ Este curso está orientado a **desarrolladores profesionales** que:
 ### 1. Ecosistema y vibraciones
 
 ```markdown	
-- 1.1. Modelos, agentes y editores
+- 1.1. Modelos, agentes, editores y primitivas
 - 1.2. Vibe coding, sin preocuparse por el código	
 - 1.3. AI-DD, metodología para todo el SDLC
 ```
@@ -72,12 +73,11 @@ Este curso está orientado a **desarrolladores profesionales** que:
 - 3.3. Skills para enseñar a tus agentes
 ```
 
-
 ### 4. Flujo de trabajo basado en especificaciones
 
 ```markdown	  
 - 4.1. Análisis de requerimientos y arquitectura del sistema
-- 4.2. Especificaciones funcionales detalladas
+- 4.2. SDD, especificaciones funcionales detalladas
 - 4.3. Ramas, planes y tareas de codificación
 ```
 
@@ -94,7 +94,7 @@ Este curso está orientado a **desarrolladores profesionales** que:
 ```markdown	  
 - 6.1. Aceptación e integración de las especificaciones
 - 6.2. Orquestación en paralelo y en la nube
-- 6.3. Mejora continua del producto, herramientas y habilidades
+- 6.3. Mejora continua: producto, herramientas y primitivas
 ```
 
 ---
