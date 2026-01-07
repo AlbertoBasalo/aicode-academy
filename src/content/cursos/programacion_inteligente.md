@@ -16,9 +16,9 @@ order: 1
 
 Cualquiera puede usar IA para programar, generando toneladas de código de forma impulsiva (_vibe coding_). Lo difícil es **mantener el control y la calidad**, aumentando la productividad.
 
-Este curso propone un enfoque profesional para trabajar con **IA en todo el ciclo de vida del desarrollo de software**. Se abordan las nuevas _primitivas de programación_: `skills`, `prompts`, context, especificaciones (**Spec-Driven Development**), agentes y `MCPs`.
+Este curso propone un enfoque profesional para trabajar con **IA en todo el ciclo de vida del desarrollo de software**. Se abordan las nuevas _primitivas de programación_: `skills`, `prompts`, `context`, `specs` , `agents` y `MCPs`.
 
-Pasa de improvisar con IA a **programar en lenguaje natural**, donde las reglas y las especificaciones guían el desarrollo de forma consistente siguiendo la metodología **AI-Driven Development**.
+Pasa de improvisar con IA a **programar en lenguaje natural**, donde las especificaciones y las reglas guían el desarrollo de forma consistente siguiendo la metodología **AI-Driven Development**.
 
 ---
 
@@ -116,7 +116,7 @@ El curso es **agnóstico en cuanto a tecnologías de IA y frameworks de desarrol
 - Las demostraciones se realizarán en `Node` con `VSCode` y `GitHub Copilot`.
 - Válidas para entornos como `Java` y `C#` con `Cursor` o `Claude Code`.
 
-> El foco está en **las primitivas y la metodología**, no en un lenguaje ni herramienta concretos.
+> El foco está en **las primitivas y la metodología**, no en un lenguaje ni herramienta concretos. Especialmente los conceptos de **Spec-Driven Development**, **Context Engineering** y **Agent Skills**.
 
 ## Propuesta de valor para la empresa
 
