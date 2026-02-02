@@ -106,7 +106,7 @@ La IA se utiliza durante todo el curso como **instrumento metodológico**, no co
 Se trabajará de forma práctica sobre:
 
 - **Biblioteca de prompts** orientados a comprensión de código legacy, generación de documentación y propuestas de refactor.
-- **Reglas e instrucciones** para guiar a la IA y evitar respuestas genéricas o peligrosas en contextos de producción.
+- **Reglas y Habilidades** para guiar a la IA y evitar respuestas genéricas o peligrosas en contextos de producción.
 - **Configuración y uso de agentes** como asistentes de análisis y refactoring, manteniendo siempre el control humano.
 
 ## Enfoque tecnológico agnóstico
