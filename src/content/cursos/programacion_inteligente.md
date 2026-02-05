@@ -14,6 +14,9 @@ order: 1
 
 ## Generación eficiente de código con IA.
 
+- [Edición lite con Udemy](https://www.udemy.com/course/programacion-inteligente-desarrollo-profesional-con-ia/)
+- [Edición empresarial con TrainingIT](https://www.trainingit.es/producto/programacion-inteligente-ia/)
+
 Cualquiera puede usar IA para programar, generando toneladas de código de forma impulsiva (_vibe coding_). Lo difícil es **mantener el control y la calidad**, aumentando la productividad.
 
 Este curso propone un enfoque profesional para trabajar con **IA en todo el ciclo de vida del desarrollo de software**. Se abordan las nuevas _primitivas de programación_: `skills`, `prompts`, `context`, `specs` , `agents` y `MCPs`.
@@ -134,3 +137,6 @@ El curso es **agnóstico en cuanto a tecnologías de IA y frameworks de desarrol
 - [**Arquitectura Inteligente**](/cursos/arquitectura_inteligente) → Diseño y evolución de aplicaciones con IA.
 
 Este curso es la **puerta de entrada natural** al resto del itinerario formativo de ingeniería de software con IA.
+
+- [Edición lite con Udemy](https://www.udemy.com/course/programacion-inteligente-desarrollo-profesional-con-ia/)
+- [Edición empresarial con TrainingIT](https://www.trainingit.es/producto/programacion-inteligente-ia/)
