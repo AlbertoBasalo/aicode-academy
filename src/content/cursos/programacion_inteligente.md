@@ -12,10 +12,12 @@ featured: false
 order: 1
 ---
 
-## Generación eficiente de código con IA.
 
-- [Edición lite con Udemy](https://www.udemy.com/course/programacion-inteligente-desarrollo-profesional-con-ia/)
-- [Edición empresarial con TrainingIT](https://www.trainingit.es/producto/programacion-inteligente-ia/)
+#### Ediciones disponibles en video:
+- [Edición _lite_ con Udemy](https://www.udemy.com/course/programacion-inteligente-desarrollo-profesional-con-ia/)
+- [Edición **empresarial** con TrainingIT](https://www.trainingit.es/producto/programacion-inteligente-ia/)
+
+## Generación eficiente de código con IA.
 
 Cualquiera puede usar IA para programar, generando toneladas de código de forma impulsiva (_vibe coding_). Lo difícil es **mantener el control y la calidad**, aumentando la productividad.
 
@@ -50,6 +52,9 @@ Este curso está orientado a **desarrolladores profesionales** que:
 ---
 
 ## Temario
+
+> Edición _lite_ con [Udemy](https://www.udemy.com/course/programacion-inteligente-desarrollo-profesional-con-ia/), los tres primero módulos. 
+<br/> Edición **completa** con acceso a foro y soporte con [TrainingIT](https://www.trainingit.es/producto/programacion-inteligente-ia/).
 
 ### 1. Ecosistema y vibraciones
 
@@ -138,5 +143,6 @@ El curso es **agnóstico en cuanto a tecnologías de IA y frameworks de desarrol
 
 Este curso es la **puerta de entrada natural** al resto del itinerario formativo de ingeniería de software con IA.
 
-- [Edición lite con Udemy](https://www.udemy.com/course/programacion-inteligente-desarrollo-profesional-con-ia/)
-- [Edición empresarial con TrainingIT](https://www.trainingit.es/producto/programacion-inteligente-ia/)
+### Ediciones disponibles en video:
+- [Edición _lite_ con Udemy](https://www.udemy.com/course/programacion-inteligente-desarrollo-profesional-con-ia/)
+- [Edición **empresarial** con TrainingIT](https://www.trainingit.es/producto/programacion-inteligente-ia/)
