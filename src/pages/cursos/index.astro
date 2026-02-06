@@ -1,4 +1,5 @@
 ---
+import BlinkCursor from "@/src/components/BlinkCursor.astro";
 import Hero from "@/src/components/Hero.astro";
 import CursoList from "@components/CursoList.astro";
 import Section from "@components/Section.astro";
@@ -37,4 +38,47 @@ const cta = {
   <footer>
     <Section section={cta} />
   </footer>
+  <aside class="container">
+    <header class="colored-headers">
+      <h1>Programación Inteligente</h1>
+      <p>Versión Video</p>
+      <h3>Curso de desarrollo profesional con I.A.</h3>
+    </header>
+    <main>
+      <p>
+        Metodología AI-Driven Development dominar las nuevas primitivas de
+        programación con IA:
+        <code>specs, skills, prompts, context, agents y MCPs.</code>
+      </p>
+      <p>
+        <cite>
+          Más allá del Vibe Coding, crea software mantenible aplicando
+          herramientas IA a todo el ciclo de desarrollo.
+        </cite>
+      </p>
+      <p>
+        Aprovecha las ofertas de lanzamiento. <BlinkCursor />
+      </p>
+    </main>
+    <footer>
+      <section>
+        <a
+          role="button"
+          class="outline"
+          href="https://www.udemy.com/course/programacion-inteligente-desarrollo-profesional-con-ia/"
+          target="_blank"
+          rel="noopener">Edición lite en Udemy</a
+        >
+      </section>
+      <section>
+        <a
+          role="button"
+          class="outline"
+          href="https://www.trainingit.es/producto/programacion-inteligente-ia/"
+          target="_blank"
+          rel="noopener">Edición empresarial en TrainingIT</a
+        >
+      </section>
+    </footer>
+  </aside>
 </Layout>
