@@ -14,7 +14,7 @@ order: 1
 
 
 #### Ediciones disponibles en video:
-- [Edición _lite_ con Udemy](https://www.udemy.com/course/programacion-inteligente-desarrollo-profesional-con-ia/)
+- [Edición _lite_ con Udemy](https://www.udemy.com/course/programacion-inteligente-desarrollo-profesional-con-ia/?referralCode=C007FD1664EEB37226B8)
 - [Edición **empresarial** con TrainingIT](https://www.trainingit.es/producto/programacion-inteligente-ia/)
 
 ## Generación eficiente de código con IA.
@@ -53,7 +53,7 @@ Este curso está orientado a **desarrolladores profesionales** que:
 
 ## Temario
 
-> Edición _lite_ con [Udemy](https://www.udemy.com/course/programacion-inteligente-desarrollo-profesional-con-ia/), los tres primero módulos. 
+> Edición _lite_ con [Udemy](https://www.udemy.com/course/programacion-inteligente-desarrollo-profesional-con-ia/?referralCode=C007FD1664EEB37226B8), los tres primero módulos. 
 <br/> Edición **completa** con acceso a foro y soporte con [TrainingIT](https://www.trainingit.es/producto/programacion-inteligente-ia/).
 
 ### 1. Ecosistema y vibraciones
@@ -144,5 +144,5 @@ El curso es **agnóstico en cuanto a tecnologías de IA y frameworks de desarrol
 Este curso es la **puerta de entrada natural** al resto del itinerario formativo de ingeniería de software con IA.
 
 ### Ediciones disponibles en video:
-- [Edición _lite_ con Udemy](https://www.udemy.com/course/programacion-inteligente-desarrollo-profesional-con-ia/)
+- [Edición _lite_ con Udemy](https://www.udemy.com/course/programacion-inteligente-desarrollo-profesional-con-ia/?referralCode=C007FD1664EEB37226B8)
 - [Edición **empresarial** con TrainingIT](https://www.trainingit.es/producto/programacion-inteligente-ia/)
