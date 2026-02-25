@@ -2,7 +2,6 @@
 
 Guía de escritura para replicar el estilo de Alberto Basalo en artículos técnicos en español.
 
-Validada y calibrada con los artículos `18` a `25` de la serie.
 
 ## 1) Tono y voz
 
@@ -33,6 +32,8 @@ Validada y calibrada con los artículos `18` a `25` de la serie.
 - Tríadas memorables (`cerebro, nervios, manos`; `Agents, Skills, Specs`).
 - Preguntas retóricas para abrir secciones y mantener ritmo.
 - Frases puente cortas entre bloques para sostener continuidad.
+- Sentencias-faro en formato cita (`> ...`) para fijar tesis intermedias o cierre.
+- Ironía o provocación controlada (`herejía`, `elefante rosa`, `rant`) cuando refuerza el argumento técnico.
 
 ## 4) Estilo técnico
 
@@ -57,9 +58,11 @@ Validada y calibrada con los artículos `18` a `25` de la serie.
 - Español natural con tecnicismos en inglés solo cuando aportan precisión (`spec`, `tool-aware`, `scaffolding`).
 - Define siglas en la primera aparición (`Model Context Protocol (MCP)`).
 - Usa cursiva o negrita para enfatizar ideas-fuerza, no para decorar.
+- Acepta mayor densidad de énfasis en piezas de opinión (negrita para tesis, cursiva para matiz o ironía) sin saturar cada párrafo.
 - Evita jerga vacía y claims absolutos sin respaldo.
 - Acepta coloquialismos estratégicos para cercanía (`a lo loco`, `pues...`, `anda`) sin perder rigor.
 - Usa anglicismos de uso real en ingeniería (`prompt`, `workflow`, `toolkit`) cuando mejoran precisión.
+- Puedes introducir un mantra en inglés (`human in the loop`, `context engineering`) si aporta marco conceptual y no rompe fluidez.
 
 ## 7) Señales de autor (estables en 18-25)
 
@@ -99,3 +102,11 @@ Validada y calibrada con los artículos `18` a `25` de la serie.
 - ¿El cierre proyecta futuro y redefine el rol del desarrollador?
 - ¿Se mantiene voz propia (ensayo técnico) sin sonar a documentación?
 - ¿El registro elegido (ensayo vs tutorial) es coherente de principio a fin?
+
+## 10) Ajustes incorporados desde el artículo 26
+
+- En ensayo técnico, prioriza frases más compactas y directas aunque aumente la intensidad editorial.
+- Convierte afirmaciones nucleares en citas bloque cuando quieras que funcionen como axioma de trabajo.
+- En listas operativas, añade herramientas/comandos concretos cuando mejoren transferibilidad (`build`, `test`, `lint`, `cargo`, `make`).
+- Usa subtítulo de cierre explícito (`Conclusión`) cuando el artículo necesita remate de tesis y apertura al siguiente tema.
+- Permite H3 tácticos dentro de un H2 para secciones diagnósticas (`Señales de que...`) sin romper continuidad narrativa.
