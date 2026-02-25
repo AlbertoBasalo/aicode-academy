@@ -23,7 +23,7 @@
     "@picocss/pico": "^2.1.1"
   },
   "devDependencies": {
-    "@astrojs/sitemap": "^3.6.0",
-    "astro": "^5.16.6"
+    "@astrojs/sitemap": "^3.7.0",
+    "astro": "^5.17.3"
   }
 }
