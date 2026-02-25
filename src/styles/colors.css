@@ -6,8 +6,8 @@
      ======================================== */
 
   /* Dark Theme Base Colors */
-  --ab-deep-space: #0A1128;
-  --ab-deep-navy: #0A1128;
+  --ab-deep-space: #1B2A41;
+  --ab-deep-navy: #182946;
   --ab-surface: #121B33;
 
   /* Light Theme Base Colors */
@@ -54,7 +54,7 @@
 [data-theme="dark"] {
   /* Pico Mapping - Dark Theme */
   --pico-background-color: var(--ab-deep-space);
-  --pico-color: var(--ab-ice-white);
+  --pico-color: color-mix(in srgb, var(--ab-ice-white) 80%, var(--ab-mint-deep));
 
   --pico-primary: var(--ab-cyan-primary);
   --pico-primary-hover: var(--ab-cyan-vivid);
@@ -103,7 +103,7 @@
 :root:not([data-theme="dark"]) {
   /* Pico Mapping - Light Theme */
   --pico-background-color: var(--ab-ice-white);
-  --pico-color: var(--ab-deep-space);
+  --pico-color: color-mix(in srgb, var(--ab-deep-space) 80%, var(--ab-cyan-primary));
 
   --pico-primary: var(--ab-cyan-deep);
   --pico-primary-hover: var(--ab-cyan-primary);
