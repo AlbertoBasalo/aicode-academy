@@ -27,13 +27,16 @@ Guía de escritura para replicar el estilo de Alberto Basalo en artículos técn
 
 ## 3) Recursos retóricos característicos
 
-- Contraste pasado/futuro (`parece regresión`, `en realidad es revolución`).
+- Contraste pasado/futuro (`hace décadas haciamos`, `lo haremos de otra manera`).
+- Habal deirectamene al lector (`tú, tu equipo, tu empresa, tu industria`).
+- Escribe para programadores profesionales, no para principiantes.
 - Metáforas extensas (música, western, ciencia ficción, cuerpo humano) conectadas al argumento técnico.
 - Tríadas memorables (`cerebro, nervios, manos`; `Agents, Skills, Specs`).
 - Preguntas retóricas para abrir secciones y mantener ritmo.
 - Frases puente cortas entre bloques para sostener continuidad.
 - Sentencias-faro en formato cita (`> ...`) para fijar tesis intermedias o cierre.
 - Ironía o provocación controlada (`herejía`, `elefante rosa`, `rant`) cuando refuerza el argumento técnico.
+- No usa el constructo `no es X sino Y`.
 
 ## 4) Estilo técnico
 
