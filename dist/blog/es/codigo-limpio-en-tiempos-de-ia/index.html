@@ -6,12 +6,12 @@
 <p>Si no leemos el código, ¿a quién le importa que esté limpio?</p>
 </blockquote>
 <p>Con agentes generando y modificando ficheros de forma continua, parece razonable pensar que el <strong>código limpio</strong> pierde valor.<br>
-Si la máquina escribe para la máquina, podríamos aceptar cualquier cosa mientras funcione.</p>
+Si la IA escribe para la IA, podríamos aceptar cualquier cosa mientras funcione. Bye bye artesano del código, <em>welcome to the machine</em>.</p>
 <p>Pero nada más lejos de la realidad.</p>
 <hr>
 <h2 id="la-lectura-sigue-superando-a-la-escritura">La lectura sigue superando a la escritura</h2>
 <p>Aunque no lo lea un humano en cada iteración, el código sigue siendo leído una y otra vez.</p>
-<p>Y ese lector no es uno, son muchos:</p>
+<p>Y como decía <strong>Uncle Bob</strong>, ese proceso lector no es uno, son muchos, muchos más que el de escritura:</p>
 <ul>
 <li>el agente que implementa una feature,</li>
 <li>el agente que corrige un bug,</li>
@@ -20,9 +20,9 @@ Si la máquina escribe para la máquina, podríamos aceptar cualquier cosa mient
 <li>el agente que agrega o cambia funcionalidad,</li>
 <li>y tu yo del futuro cuando algo falle en producción.</li>
 </ul>
-<p>La diferencia es que antes se implicaba una parte de gusto personal y casi hasta emocional, y ahora es una cuestión de rendimiento cognitivo del sistema completo.</p>
+<p>La diferencia es que antes se implicaba una parte de gusto personal, y casi hasta emocional, y ahora es una cuestión de rendimiento cognitivo del sistema completo.</p>
 <hr>
-<h2 id="a-los-les-gusta-el-texto-dales-un-buen-lugar-de-trabajo">A los les gusta el texto, dales un buen lugar de trabajo.</h2>
+<h2 id="a-los-modelos-les-gusta-el-texto-dales-un-buen-alimento">A los modelos les gusta el texto, dales un buen alimento.</h2>
 <p>Todos sabemos que los modelos son especialmente buenos interpretando texto. Si este es claro, consistente y con intención explícita, mejor.<br>
 Cuando el código está mezclado, ambiguo o lleno de ruido, empeora la precisión de sus cambios, aumenta la probabilidad de efectos colaterales, y sube el coste de cada ciclo de corrección.</p>
 <blockquote>
@@ -32,7 +32,7 @@ Cuando el código está mezclado, ambiguo o lleno de ruido, empeora la precisió
 <h2 id="sin-exigir-limpieza-total-demasiado-pronto">Sin exigir limpieza total demasiado pronto</h2>
 <p>Pero, no conviene saturar al agente con una batería infinita de reglas de <strong>clean code</strong> durante la fase de programación inicial. Bastante tiene con traducir tu especificación natural a código que compile. Y que sea correcto, claro está.</p>
 <blockquote>
-<p>Como diría Kent Beck, “Primero hazlo, luego haz que funcione, luego hazlo mejor”.</p>
+<p>Como diría <strong>Kent Beck</strong>, <em>“Primero hazlo, luego haz que funcione, luego hazlo mejor”</em>.</p>
 </blockquote>
 <p>Para ello, puedes usar el siguiente flujo de trabajo:</p>
 <ul>
@@ -57,7 +57,7 @@ Cuando el código está mezclado, ambiguo o lleno de ruido, empeora la precisió
 <span class="line"><span style="color:#DCDCAA">dotnet</span><span style="color:#CE9178"> format</span></span>
 <span class="line"><span style="color:#DCDCAA">ktlint</span><span style="color:#569CD6"> -F</span></span></code></pre>
 <h3 id="paso-b-skills-especializadas-después">Paso B: skills especializadas después</h3>
-<p>Cuando lo básico ya está estable, entonces sí, busca y adapta skills para la limpieza. Te sugiero que eches un vistazo a <a href="https://skills.sh/">skills.sh</a> y <a href="https://github.com/github/awesome-copilot/">awesome-copilot</a> para ver las skills más populares.</p>
+<p>Cuando lo básico ya está estable, entonces sí, busca y adapta skills para la limpieza. Te sugiero que eches un vistazo a <a href="https://skills.sh/">skills.sh</a>, a <a href="https://github.com/github/awesome-copilot/">awesome-copilot</a> y las elecciones de <strong>Addy Osmani</strong> para ver las <code>skills</code> más populares.</p>
 <p>Te paso una lista, para que revises a ver si alguna se adapta a tu estilo y lenguaje de programación. Por ejemplo:</p>
 <ul>
 <li><a href="https://skills.sh/sickn33/antigravity-awesome-skills/clean-code">https://skills.sh/sickn33/antigravity-awesome-skills/clean-code</a></li>
@@ -65,13 +65,13 @@ Cuando el código está mezclado, ambiguo o lleno de ruido, empeora la precisió
 <li><a href="https://github.com/github/awesome-copilot/blob/main/instructions/object-calisthenics.instructions.md">https://github.com/github/awesome-copilot/blob/main/instructions/object-calisthenics.instructions.md</a></li>
 <li><a href="https://github.com/addyosmani/agent-skills/blob/main/.claude/commands/code-simplify.md">https://github.com/addyosmani/agent-skills/blob/main/.claude/commands/code-simplify.md</a></li>
 </ul>
-<h2 id="ajusta-y-aplica-rutinariamente-las-skills-que-te-interesen-tras-cada-sesión-de-programación-poro-a-poco-el-código-legado-humano-y-robótico-generado-se-irá-limpiando">Ajusta y aplica rutinariamente las skills que te interesen tras cada sesión de programación. Poro a poco, el código (legado humano y robótico generado) se irá limpiando.</h2>
+<h2 id="ajusta-y-aplica-rutinariamente-tus-skills-tras-cada-sesión-de-programación-poco-a-poco-el-código-legado-humano-y-robótico-generado-se-irá-limpiando">Ajusta y aplica rutinariamente tus <code>skills</code> tras cada sesión de programación. Poco a poco, el código (legado humano y robótico generado) se irá limpiando.</h2>
 <h2 id="conclusión">Conclusión</h2>
 <p>La pregunta inicial sigue siendo útil porque obliga a pensar:</p>
 <blockquote>
 <p>“Si no lo leerá un humano, ¿importa que esté limpio?”</p>
 </blockquote>
-<p>En mi opinión, sigue importando mucho. Incluso diría que más que nunca. Porque el código es la epressión de la solución a un problema en forma de texto.</p>
+<p>En mi opinión, sigue importando mucho. Incluso diría que más que nunca. Porque el código es la expresión de la solución a un problema en forma de texto.</p>
 <p>Cuanto más claro sea ese texto, mejores decisiones tomarán los agentes y menor será el coste de iterar.</p>
 <p>Así que, limpia tu código y el de tus agentes. Todos lo agradecerán.</p> </main> <footer> <blockquote> <p>No es magIA, es Tecnología.</p> <footer> <cite>— <a href="https://albertobasalo.dev" target="_blank">Alberto Basalo</a></cite> </footer> </blockquote> <p> <nav aria-label="breadcrumb"> <ul> <li><a href="/blog/es/procedimientos">Procedimientos</a></li> <li> <kbd class="outline"><time datetime="April 26, 2026">26/04/2026</time></kbd> </li> </ul> </nav> </p> </footer> </article>  </main> <footer data-astro-cid-mtxgg6pp> <main class="grid" data-astro-cid-mtxgg6pp> <section data-astro-cid-mtxgg6pp> <h3 class="logo color" data-astro-cid-mtxgg6pp><a href="/" data-astro-cid-mtxgg6pp>AI Code Academy</a></h3> <h4 data-astro-cid-mtxgg6pp><span class="comment">//</span>Learn to code smarter.</h4> <ul data-astro-cid-mtxgg6pp> <li data-astro-cid-mtxgg6pp> <a href="/blog/es" data-astro-cid-mtxgg6pp>Blog</a> </li><li data-astro-cid-mtxgg6pp> <a href="/cursos" data-astro-cid-mtxgg6pp>Cursos</a> </li><li data-astro-cid-mtxgg6pp> <a href="/community" data-astro-cid-mtxgg6pp>Community</a> </li> </ul> </section> <section data-astro-cid-mtxgg6pp> <h3 data-astro-cid-mtxgg6pp>Connect</h3> <ul data-astro-cid-mtxgg6pp> <li data-astro-cid-mtxgg6pp> <a href="https://linkedin.com/in/albertobasalo" target="_blank" data-astro-cid-mtxgg6pp> LinkedIn </a> </li><li data-astro-cid-mtxgg6pp> <a href="https://github.com/AlbertoBasalo" target="_blank" data-astro-cid-mtxgg6pp> GitHub </a> </li><li data-astro-cid-mtxgg6pp> <a href="https://twitter.com/AlbertoBasalo" target="_blank" data-astro-cid-mtxgg6pp> Twitter </a> </li><li data-astro-cid-mtxgg6pp> <a href="https://www.youtube.com/c/AlbertoBasalo71" target="_blank" data-astro-cid-mtxgg6pp> YouTube </a> </li> </ul> </section> <section data-astro-cid-mtxgg6pp> <h3 data-astro-cid-mtxgg6pp>Legal</h3> <ul data-astro-cid-mtxgg6pp> <li data-astro-cid-mtxgg6pp> <a href="/legal/privacy/" target="_blank" data-astro-cid-mtxgg6pp> Privacy Policy </a> </li><li data-astro-cid-mtxgg6pp> <a href="/legal/terms/" target="_blank" data-astro-cid-mtxgg6pp> Terms of Service </a> </li> </ul> </section> </main> <div data-astro-cid-mtxgg6pp> <p data-astro-cid-mtxgg6pp>
 &copy; 2026 AI Code Academy. All rights reserved. Created by <a href="https://albertobasalo.dev" target="_blank" data-astro-cid-mtxgg6pp>Alberto Basalo</a> </p> </div> </footer>  <script>
