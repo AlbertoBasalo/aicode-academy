@@ -20,9 +20,14 @@ Cosmic UI/UX design is a futuristic, sci-fi-inspired style characterized by dark
 
 ## Style Foundations
 - Visual style: playful, premium
-- Typography scale: 12/14/16/20/24/32 | Fonts: primary=Audiowide, display=Audiowide, mono=JetBrains Mono | weights=400
-- Color palette: primary, neutral, success, warning, danger | Tokens: primary=#3B82F6, secondary=#8B5CF6, success=#16A34A, warning=#D97706, danger=#DC2626, surface=#FFFFFF, text=#111827
+- Typography scale: 12/14/16/20/24/32 with fluid clamp behavior in narrow viewports | Fonts: primary=Roboto, display=Audiowide, mono=JetBrains Mono | weights=300, 400, 500, 600, 700
+- Color palette: primary, secondary, neutral, success, warning, danger | Tokens: primary=#3B82F6, secondary=#10B981, success=#16A34A, warning=#D97706, danger=#DC2626, surface=#FFFFFF, text=#111827
 - Spacing scale: 4/8/12/16/24/32
+
+## Responsive Layout Defaults
+- Use proportional gutters with `clamp()` instead of fixed breakpoint jumps.
+- Recommended tokens: `page-gutter=clamp(0.75rem, 4vw, 20%)`, `section-gutter=clamp(0.75rem, 2.6vw, 10%)`, `section-block=clamp(0.75rem, 1.8vw, 1.5rem)`.
+- Keep container/card internal padding fluid: `clamp(1rem, 3vw, 2.5rem)`.
 
 
 ## Accessibility
@@ -35,11 +40,13 @@ concise, confident, helpful
 - prefer semantic tokens over raw values
 - preserve visual hierarchy
 - keep interaction states explicit
+- prefer readable body typography (Roboto) and reserve Audiowide for display hierarchy
 
 ## Rules: Don't
 - avoid low contrast text
 - avoid inconsistent spacing rhythm
 - avoid ambiguous labels
+- avoid all-caps decorative fonts for long paragraphs
 
 ## Expected Behavior
 - Follow the foundations first, then component consistency.

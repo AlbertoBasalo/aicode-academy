@@ -21,7 +21,7 @@ article {
   -webkit-backdrop-filter: blur(16px);
   border: 1px solid var(--ab-glass-border);
   border-radius: var(--pico-border-radius);
-  padding: 2.5rem !important;
+  padding: clamp(1rem, 3vw, 2.5rem) !important;
   transition: transform 0.3s ease;
   margin-left: 0rem !important;
   margin-right: 0rem !important;
