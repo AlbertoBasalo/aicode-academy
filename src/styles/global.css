@@ -9,9 +9,11 @@
   --pico-border-radius: 0.5rem;
   --pico-line-height: 1.6;
   --pico-typography-spacing-vertical: 1rem;
-  --ab-page-gutter: clamp(0.75rem, 4vw, 20%);
-  --ab-section-gutter: clamp(0.75rem, 2.6vw, 10%);
+  --ab-body-gutter: clamp(0.5rem, 1.2vw, 1rem);
+  --ab-page-gutter: clamp(0.5rem, 2vw, 1.5rem);
+  --ab-section-gutter: clamp(0.5rem, 1.8vw, 1.25rem);
   --ab-section-block-space: clamp(0.75rem, 1.8vw, 1.5rem);
+  --ab-main-max-width: 64rem;
   scroll-behavior: smooth;
 }
 
@@ -21,6 +23,7 @@ body {
   background-image: var(--ab-mesh-bg);
   background-attachment: fixed;
   -webkit-font-smoothing: antialiased;
+  padding-inline: var(--ab-body-gutter);
 }
 
 /* Tactile Grain Overlay (2026 Trend) */
@@ -53,9 +56,10 @@ h4 {
   color: var(--ab-selection-color);
 }
 
-body {
-  padding-left: var(--ab-page-gutter);
-  padding-right: var(--ab-page-gutter);
+main {
+  max-width: min(100%, var(--ab-main-max-width));
+  margin-inline: auto;
+  padding-inline: var(--ab-page-gutter);
 }
 
 h1,
@@ -82,7 +86,7 @@ h2 {
 }
 
 h3 {
-  --pico-font-size: clamp(1.2rem, 1.05rem + 0.7vw, 1.5rem);
+  --pico-font-size: clamp(1.05rem, 0.95rem + 0.45vw, 1.3rem);
   --pico-line-height: 1.5;
   --pico-typography-spacing-top: 1rem;
   margin-bottom: 0.75rem;
@@ -101,6 +105,14 @@ section {
   padding-right: var(--ab-section-gutter);
   padding-top: var(--ab-section-block-space);
   padding-bottom: var(--ab-section-block-space);
+}
+
+@media (min-width: 768px) {
+  .grid:has(> section:nth-child(3)) > section :is(h2, h3, h4) {
+    font-size: clamp(1rem, 0.9rem + 0.35vw, 1.15rem);
+    line-height: 1.35;
+    overflow-wrap: anywhere;
+  }
 }
 
 article>footer,

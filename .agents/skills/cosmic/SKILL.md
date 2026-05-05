@@ -20,14 +20,15 @@ Cosmic UI/UX design is a futuristic, sci-fi-inspired style characterized by dark
 
 ## Style Foundations
 - Visual style: playful, premium
-- Typography scale: 12/14/16/20/24/32 with fluid clamp behavior in narrow viewports | Fonts: primary=Roboto, display=Audiowide, mono=JetBrains Mono | weights=300, 400, 500, 600, 700
+- Typography scale: fluid clamp-based, readability-first | Fonts: primary=Roboto, display=Audiowide, mono=Anonymous Pro | weights=400, 500, 600, 700
 - Color palette: primary, secondary, neutral, success, warning, danger | Tokens: primary=#3B82F6, secondary=#10B981, success=#16A34A, warning=#D97706, danger=#DC2626, surface=#FFFFFF, text=#111827
 - Spacing scale: 4/8/12/16/24/32
 
 ## Responsive Layout Defaults
 - Use proportional gutters with `clamp()` instead of fixed breakpoint jumps.
-- Recommended tokens: `page-gutter=clamp(0.75rem, 4vw, 20%)`, `section-gutter=clamp(0.75rem, 2.6vw, 10%)`, `section-block=clamp(0.75rem, 1.8vw, 1.5rem)`.
-- Keep container/card internal padding fluid: `clamp(1rem, 3vw, 2.5rem)`.
+- Recommended tokens: `body-gutter=clamp(0.5rem, 1.2vw, 1rem)`, `page-gutter=clamp(0.5rem, 2vw, 1.5rem)`, `section-gutter=clamp(0.5rem, 1.8vw, 1.25rem)`, `section-block=clamp(0.75rem, 1.8vw, 1.5rem)`.
+- Reading width must stay constrained with `main-max-width=64rem`.
+- In 3+ column section grids, reduce heading size and allow safe wraps to avoid visual word-cut.
 
 
 ## Accessibility

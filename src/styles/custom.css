@@ -5,7 +5,7 @@
 .logo {
   font-family: var(--pico-font-family-sans-serif);
   font-weight: 800;
-  letter-spacing: -0.05em;
+  letter-spacing: 0.06em;
   font-style: normal;
   background: var(--ab-gradient-primary);
   -webkit-background-clip: text;
@@ -21,8 +21,8 @@ article {
   -webkit-backdrop-filter: blur(16px);
   border: 1px solid var(--ab-glass-border);
   border-radius: var(--pico-border-radius);
-  padding: clamp(1rem, 3vw, 2.5rem) !important;
-  transition: transform 0.3s ease;
+  padding: var(--ab-container-padding) !important;
+  transition: transform 220ms ease, border-color 220ms ease, box-shadow 220ms ease;
   margin-left: 0rem !important;
   margin-right: 0rem !important;
   max-width: 100%;
@@ -31,6 +31,7 @@ article {
 
 /* Hover effect for a "tactile" tech feel */
 article:hover {
+  transform: translateY(-2px);
   border-color: var(--ab-glow-medium);
   box-shadow: 0 0 30px var(--ab-glow-soft);
 }
@@ -51,7 +52,7 @@ article:hover {
   font-size: 0.9em;
   opacity: 0.9;
   padding-left: 0rem;
-  padding-right: 0.5rem;
+  padding-right: 0rem;
 }
 
 .primary {
@@ -60,7 +61,7 @@ article:hover {
 }
 
 .secondary {
-  background: var(--ab-secondary);
+  background: var(--ab-gradient-secondary);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;

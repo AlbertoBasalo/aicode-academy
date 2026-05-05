@@ -13,14 +13,17 @@ typography:
   h1:
     fontFamily: "Audiowide"
     fontSize: 2rem
+  h3:
+    fontFamily: "Audiowide"
+    fontSize: "clamp(1.05rem, 0.95rem + 0.45vw, 1.3rem)"
   body-md:
     fontFamily: "Roboto"
     fontSize: 1rem
   label-caps:
-    fontFamily: "JetBrains Mono"
+    fontFamily: "Anonymous Pro"
     fontSize: 0.75rem
-  sourceScale: "12/14/16/20/24/32 with fluid clamp behavior"
-  weights: "300, 400, 500, 600, 700"
+  sourceScale: "fluid clamp-based, readability-first"
+  weights: "400, 500, 600, 700"
 rounded:
   sm: 4px
   md: 8px
@@ -42,7 +45,9 @@ Futuristic sci-fi aesthetic with dark themes, vibrant neon accents, and immersiv
 - **Typography weights:** 300, 400, 500, 600, 700
 - **Color palette:** primary, secondary, neutral, success, warning, danger
 - **Spacing scale:** 4/8/12/16/24/32
-- **Responsive spacing defaults:** page-gutter=clamp(0.75rem, 4vw, 20%), section-gutter=clamp(0.75rem, 2.6vw, 10%), section-block=clamp(0.75rem, 1.8vw, 1.5rem), card-padding=clamp(1rem, 3vw, 2.5rem)
+- **Responsive spacing defaults:** body-gutter=clamp(0.5rem, 1.2vw, 1rem), page-gutter=clamp(0.5rem, 2vw, 1.5rem), section-gutter=clamp(0.5rem, 1.8vw, 1.25rem), section-block=clamp(0.75rem, 1.8vw, 1.5rem)
+- **Readable content width:** main-max-width=64rem
+- **Dense grids (3+ sections):** reduce heading size and allow safe wrapping (`overflow-wrap: anywhere`) on section headings.
 
 ## Colors
 
