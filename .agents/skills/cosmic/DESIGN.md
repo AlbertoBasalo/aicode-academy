@@ -1,8 +1,8 @@
 ---
-name: Futuristic
+name: Cosmic
 colors:
   primary: "#3B82F6"
-  secondary: "#10B981"
+  secondary: "#8B5CF6"
   success: "#16A34A"
   warning: "#D97706"
   danger: "#DC2626"
@@ -12,15 +12,15 @@ colors:
 typography:
   h1:
     fontFamily: "Audiowide"
-    fontSize: 3rem
+    fontSize: 2rem
   body-md:
-    fontFamily: "Roboto"
+    fontFamily: "Audiowide"
     fontSize: 1rem
   label-caps:
-    fontFamily: "Anonymous Pro"
+    fontFamily: "JetBrains Mono"
     fontSize: 0.75rem
-  sourceScale: "desktop-first expressive scale"
-  weights: "100, 200, 300, 400, 500, 600, 700, 800, 900"
+  sourceScale: "12/14/16/20/24/32"
+  weights: "400"
 rounded:
   sm: 4px
   md: 8px
@@ -32,21 +32,21 @@ spacing:
 
 ## Overview
 
-Forward-looking design with tech-inspired typography, modern layouts, and a sleek, innovation-driven aesthetic.
+Futuristic sci-fi aesthetic with dark themes, vibrant neon accents, and immersive spatial elements.
 
 ## Style Foundations
 
-- **Visual style:** modern
-- **Typography scale:** desktop-first expressive scale
-- **Typography fonts:** primary=Roboto, display=Audiowide, mono=Anonymous Pro
-- **Typography weights:** 100, 200, 300, 400, 500, 600, 700, 800, 900
-- **Color palette:** primary, secondary, neutral, success, warning, danger
+- **Visual style:** playful, premium
+- **Typography scale:** 12/14/16/20/24/32
+- **Typography fonts:** primary=Audiowide, display=Audiowide, mono=JetBrains Mono
+- **Typography weights:** 400
+- **Color palette:** primary, neutral, success, warning, danger
 - **Spacing scale:** 4/8/12/16/24/32
 
 ## Colors
 
 - **Primary (#3B82F6):** Token from style foundations.
-- **Secondary (#10B981):** Green accent token that replaces purple tones.
+- **Secondary (#8B5CF6):** Token from style foundations.
 - **Success (#16A34A):** Token from style foundations.
 - **Warning (#D97706):** Token from style foundations.
 - **Danger (#DC2626):** Token from style foundations.

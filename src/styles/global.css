@@ -1,17 +1,14 @@
 /* Modern CSS Reset and Global Styles */
 
 :root {
-  /* The "Sci-Fi Sharp" Pack */
-  --pico-font-family-sans-serif: "Space Grotesk", sans-serif;
-  --pico-font-family-emoji: "Space Grotesk", monospace;
-  --pico-font-family-serif: "Geist", serif;
-  --pico-font-family: "Geist", system-ui, sans-serif;
-  --pico-font-family-monospace: "Geist Mono", monospace;
-  --pico-border-radius: 0rem;
-  --pico-typography-spacing-vertical: 0.6rem;
-  /* Readability Pro-Features */
-  --pico-line-height: 1.7;
-  --pico-typography-spacing-vertical: 1.5rem;
+  --pico-font-family-sans-serif: "Audiowide", "Roboto", sans-serif;
+  --pico-font-family-emoji: "Roboto", sans-serif;
+  --pico-font-family-serif: "Roboto", serif;
+  --pico-font-family: "Roboto", system-ui, sans-serif;
+  --pico-font-family-monospace: "Anonymous Pro", monospace;
+  --pico-border-radius: 0.5rem;
+  --pico-line-height: 1.6;
+  --pico-typography-spacing-vertical: 1rem;
   scroll-behavior: smooth;
 }
 
@@ -42,9 +39,8 @@ h2,
 h3,
 h4 {
   font-family: var(--pico-font-family-sans-serif);
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  text-transform: tight;
+  font-weight: 400;
+  letter-spacing: 0.01em;
 }
 
 /* Custom Selection Glow */
@@ -122,30 +118,30 @@ h6 {
 }
 
 h1 {
-  --pico-font-size: 2.5rem;
+  --pico-font-size: 3rem;
   --pico-line-height: 1.5;
-  --pico-typography-spacing-top: 3.5rem;
+  --pico-typography-spacing-top: 2rem;
   margin-bottom: 1rem;
 }
 
 h2 {
   --pico-font-size: 2rem;
   --pico-line-height: 1.5;
-  --pico-typography-spacing-top: 3rem;
+  --pico-typography-spacing-top: 1.5rem;
   margin-bottom: 1rem;
 }
 
 h3 {
   --pico-font-size: 1.5rem;
   --pico-line-height: 1.5;
-  --pico-typography-spacing-top: 2rem;
+  --pico-typography-spacing-top: 1rem;
   margin-bottom: 0.75rem;
 }
 
 h4 {
   --pico-font-size: 1.25rem;
   --pico-line-height: 1.5;
-  --pico-typography-spacing-top: 1.5rem;
+  --pico-typography-spacing-top: 0.75rem;
   margin-bottom: 0.5rem;
 }
 
@@ -153,8 +149,8 @@ article,
 section {
   padding-left: 4%;
   padding-right: 4%;
-  padding-top: 2%;
-  padding-bottom: 2%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 article>footer,
@@ -185,4 +181,12 @@ kbd {
   border-left: 1px solid var(--pico-primary);
   padding: 0.2rem 0.5rem;
   font-weight: bold;
+}
+
+a:focus-visible,
+[role="button"]:focus-visible,
+button:focus-visible,
+#theme-toggle:focus-visible {
+  outline: 2px solid var(--pico-primary);
+  outline-offset: 2px;
 }

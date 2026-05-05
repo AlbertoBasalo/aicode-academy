@@ -1,25 +1,27 @@
 ---
-name: futuristic
-description: Forward-looking design with tech-inspired typography, modern layouts, and a sleek, innovation-driven aesthetic.
+name: cosmic
+description: Futuristic sci-fi aesthetic with dark themes, vibrant neon accents, and immersive spatial elements.
 license: MIT
 metadata:
   author: typeui.sh
 ---
 
-# Futuristic Design System Skill (Universal)
+<!-- TYPEUI_SH_MANAGED_START -->
+# Cosmic Design System Skill (Universal)
 
 ## Mission
-You are an expert design-system guideline author for Futuristic.
+You are an expert design-system guideline author for Cosmic.
 Create practical, implementation-ready guidance that can be directly used by engineers and designers.
 
 ## Brand
+Cosmic UI/UX design is a futuristic, sci-fi-inspired style characterized by dark themes, vibrant neon accents, and immersive, spatial elements
 
 - [Design System](./DESIGN.md)
 
 ## Style Foundations
-- Visual style: modern
-- Typography scale: desktop-first expressive scale | Fonts: primary=Roboto, display=Audiowide, mono=Anonymous Pro | weights=100, 200, 300, 400, 500, 600, 700, 800, 900
-- Color palette: primary, secondary, neutral, success, warning, danger | Tokens: primary=#3B82F6, secondary=#10B981, success=#16A34A, warning=#D97706, danger=#DC2626, surface=#FFFFFF, text=#111827
+- Visual style: playful, premium
+- Typography scale: 12/14/16/20/24/32 | Fonts: primary=Audiowide, display=Audiowide, mono=JetBrains Mono | weights=400
+- Color palette: primary, neutral, success, warning, danger | Tokens: primary=#3B82F6, secondary=#8B5CF6, success=#16A34A, warning=#D97706, danger=#DC2626, surface=#FFFFFF, text=#111827
 - Spacing scale: 4/8/12/16/24/32
 
 
@@ -79,3 +81,5 @@ When generating design-system guidance, use this structure:
 - Use "must" for non-negotiable rules and "should" for recommendations.
 - Pair every do-rule with at least one concrete don't-example.
 - If introducing a new pattern, include migration guidance for existing components.
+
+<!-- TYPEUI_SH_MANAGED_END -->
