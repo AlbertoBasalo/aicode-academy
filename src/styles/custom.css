@@ -75,3 +75,9 @@ article:hover {
   text-align: center;
   padding: 6rem 1rem;
 }
+
+#hero > main {
+  margin-left: 0;
+  padding-left: 0;
+  padding-inline: 0;
+}

@@ -28,9 +28,9 @@ export const HOME: Home = {
     },
   },
   why: {
-    title: "¿Qué es AI-Code Academy?",
+    title: "¿Le sacas partido a la IA?",
     subtitle:
-      "Formación en español basada en la metodología AI-Driven Development.",
+      "Aprende la metodología A.I. Driven Development para aumentar el rendimiento y la calidad de tu código.",
     cards: [
       {
         title: "AI-DD",
@@ -45,31 +45,30 @@ export const HOME: Home = {
       {
         title: "Corporate",
         description:
-          "Experiencia y adaptación a las necesidades de tu empresa (editor, lenguaje, etc.) ",
+          "Experiencia y adaptación a las necesidades de tu empresa (editor, agente, lenguaje, etc.) ",
       },
     ],
     cta: {
-      text: "Ver cursos",
+      text: "Ver cursos de IA para desarrolladores",
       link: "/cursos/",
     },
   },
   aidd: {
     title: "¿Qué es AI-Driven Development?",
     subtitle:
-      "Una metodología de programación con IA para aumentar tu productividad y la calidad de tu código.",
+      "Una forma de trabajar con IA para generar software mantenible, testeable y profesional.",
     cards: [
       {
         title: "Human in the Loop",
-        description: "El programador es el estratega, colaborador y responsable.",
+        description: "El programador sigue tomando las decisiones importantes. La IA acelera el desarrollo.",
       },
       {
         title: "Rules Over Tools",
-        description:
-          "Instrucciones para que los agentes se comporten como se espera.",
+        description: "La productividad no depende del agente, sino del contexto y las reglas que recibe.",
       },
       {
         title: "Spec Driven Development",
-        description: "Especificaciones claras para un código mantenible y de calidad.",
+        description: "Especificaciones claras para alinear agentes, programadores y negocio.",
       },
     ],
     cta: {
