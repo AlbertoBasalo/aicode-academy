@@ -20,7 +20,7 @@ export const HOME: Home = {
   },
   hero: {
     title: "AI Code Academy",
-    subtitle: "La IA no te quitará el trabajo, pero lo cambiará para siempre.",
+    subtitle: "La IA no te quitará el trabajo, pero lo cambiará para siempre. Pasa del Vibe Coding al desarrollo mantenible",
     cards: [],
     cta: {
       text: "Learn to code smarter",
@@ -35,17 +35,17 @@ export const HOME: Home = {
       {
         title: "AI-DD",
         description:
-          "Metodología con las mejores prácticas para sacarle el máximo partido a la Inteligencia Artificial",
+          "Metodología con las mejores prácticas para sacarle el máximo partido a la Inteligencia Artificial. Más allá del Vibe Coding. I.A. en todo el ciclo de desarrollo.",
       },
       {
         title: "Real World",
         description:
-          "Ejemplos con aplicaciones no triviales listas para producción. Con documentación y pruebas.",
+          "Ejemplos con aplicaciones no triviales listas para producción. Con documentación y pruebas. Evita el código in-mantenible y los riesgos de producción.",
       },
       {
         title: "Corporate",
         description:
-          "Experiencia y adaptación a las necesidades de tu empresa (editor, agente, lenguaje, etc.) ",
+          "Experiencia y adaptación a las necesidades de tu empresa (editor, agente, lenguaje, etc.) Abraza la deuda técnica y moderniza tu código legacy con IA.",
       },
     ],
     cta: {
@@ -56,7 +56,7 @@ export const HOME: Home = {
   aidd: {
     title: "¿Qué es AI-Driven Development?",
     subtitle:
-      "Una forma de trabajar con IA para generar software mantenible, testeable y profesional.",
+      "Una metodología para usar IA durante todo el ciclo de desarrollo sin perder control, calidad ni mantenibilidad.",
     cards: [
       {
         title: "Human in the Loop",
