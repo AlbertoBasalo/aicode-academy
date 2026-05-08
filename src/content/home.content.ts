@@ -9,6 +9,7 @@ export type Home = {
   aidd: SectionProps;
   why: SectionProps;
   cursos: SectionProps;
+  us: SectionProps;
 };
 
 
@@ -20,7 +21,7 @@ export const HOME: Home = {
   },
   hero: {
     title: "AI Code Academy",
-    subtitle: "La IA no te quitará el trabajo, pero lo cambiará para siempre. Pasa del Vibe Coding al desarrollo mantenible",
+    subtitle: "La IA no te quitará el trabajo, pero lo cambiará para siempre. Pasa del Vibe Coding al desarrollo mantenible.",
     cards: [],
     cta: {
       text: "Learn to code smarter",
@@ -30,22 +31,22 @@ export const HOME: Home = {
   why: {
     title: "¿Le sacas partido a la IA?",
     subtitle:
-      "Aprende la metodología A.I. Driven Development para aumentar el rendimiento y la calidad de tu código.",
+      "Aprende la metodología A.I. Driven Development para aumentar tu rendimiento y la calidad de tu código.",
     cards: [
       {
         title: "AI-DD",
         description:
-          "Metodología con las mejores prácticas para sacarle el máximo partido a la Inteligencia Artificial. Más allá del Vibe Coding. I.A. en todo el ciclo de desarrollo.",
+          "Metodología con las mejores prácticas para aprovechar al máximo la Inteligencia Artificial. Más allá del Vibe Coding. I.A. en todo el ciclo de desarrollo.",
       },
       {
         title: "Real World",
         description:
-          "Ejemplos con aplicaciones no triviales listas para producción. Con documentación y pruebas. Evita el código in-mantenible y los riesgos de producción.",
+          "Ejemplos con aplicaciones no triviales listas para producción. Con documentación y pruebas. Genera código mantenible en producción.",
       },
       {
         title: "Corporate",
         description:
-          "Experiencia y adaptación a las necesidades de tu empresa (editor, agente, lenguaje, etc.) Abraza la deuda técnica y moderniza tu código legacy con IA.",
+          "Experiencia y adaptación a las necesidades de tu empresa (editor, agente, lenguaje, etc.) Amortiza la deuda técnica y moderniza tu código legacy con IA.",
       },
     ],
     cta: {
@@ -71,10 +72,7 @@ export const HOME: Home = {
         description: "Especificaciones claras para alinear agentes, programadores y negocio.",
       },
     ],
-    cta: {
-      text: "Conoce a AIDDbot",
-      link: "/community/opensource/aiddbot",
-    },
+
   },
   cursos: {
     title: "Cursos a medida para tu empresa/academia",
@@ -90,7 +88,17 @@ export const HOME: Home = {
       },
     ],
     cta: {
-      text: "Contacta con LinkedIn",
+      text: "Contacta con Alberto Basalo en LinkedIn",
+      link: "https://www.linkedin.com/in/albertobasalo/",
+    },
+  },
+  us: {
+    title: "Alberto Basalo",
+    subtitle:
+      "Programador profesional, formador y consultor combinando experiencia clásica con herramientas modernas.",
+    cards: [],
+    cta: {
+      text: "Contacta conmigo en LinkedIn",
       link: "https://www.linkedin.com/in/albertobasalo/",
     },
   },
