@@ -124,12 +124,17 @@ header {
   margin-bottom: 1rem;
 }
 
-[data-theme="light"] .light {
+#theme-toggle .light,
+#theme-toggle .dark {
   display: none;
 }
 
-[data-theme="dark"] .dark {
-  display: none;
+html[data-theme="light"] #theme-toggle .dark {
+  display: inline;
+}
+
+html[data-theme="dark"] #theme-toggle .light {
+  display: inline;
 }
 
 mark {
