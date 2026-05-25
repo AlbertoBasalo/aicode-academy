@@ -72,6 +72,10 @@ export const HOME: Home = {
         description: "Especificaciones claras para alinear agentes, programadores y negocio.",
       },
     ],
+    cta: {
+      text: "AIDDbot te ayuda a implementar AI-Driven Development",
+      link: "https://aiddbot.com/",
+    },
 
   },
   cursos: {
@@ -80,7 +84,7 @@ export const HOME: Home = {
     cards: [
       {
         title: "Tu contenido",
-        description: "Escoge editor (VsCode, Cursor, etc.), modelo (Claude, Gemini, etc.), lenguaje (TypeScript, Java, C#, etc.)...",
+        description: "Escoge editor (VsCode, Cursor, etc.) y agente (Claude, Gemini, Copilot, Codex, etc.)...",
       },
       {
         title: "Tu formato",
@@ -95,7 +99,7 @@ export const HOME: Home = {
   us: {
     title: "Alberto Basalo",
     subtitle:
-      "Programador profesional, formador y consultor combinando experiencia clásica con herramientas modernas.",
+      "Programador, consultor e instructor desde el siglo pasado.",
     cards: [],
     cta: {
       text: "Contacta conmigo en LinkedIn",
