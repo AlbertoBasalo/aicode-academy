@@ -21,7 +21,7 @@ export const HOME: Home = {
   },
   hero: {
     title: "AI Code Academy",
-    subtitle: "La IA no te quitará el trabajo, pero lo cambiará para siempre. Pasa del Vibe Coding al desarrollo mantenible.",
+    subtitle: "La IA no te quitará el trabajo, pero lo cambiará para siempre. ",
     cards: [],
     cta: {
       text: "Learn to code smarter",
@@ -36,12 +36,12 @@ export const HOME: Home = {
       {
         title: "AI-DD",
         description:
-          "Metodología con las mejores prácticas para aprovechar al máximo la Inteligencia Artificial. Más allá del Vibe Coding. I.A. en todo el ciclo de desarrollo.",
+          "Las mejores prácticas para aprovechar al máximo la Inteligencia Artificial. Pasa del Vibe Coding al desarrollo mantenible y de calidad con I.A. en todo el ciclo de desarrollo.",
       },
       {
         title: "Real World",
         description:
-          "Ejemplos con aplicaciones no triviales listas para producción. Con documentación y pruebas. Genera código mantenible en producción.",
+          "Ejemplos con aplicaciones no triviales listas para producción con documentación y pruebas. Genera y extrae convenciones y reglas de sistemas legados.",
       },
       {
         title: "Corporate",
