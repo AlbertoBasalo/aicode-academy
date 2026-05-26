@@ -4,5 +4,8 @@
   "markdown-pdf.includeDefaultStyles": true,
   "markdown-pdf.styles": [
     "temp/global.css"
+  ],
+  "cSpell.words": [
+    "Karpathy"
   ]
 }
