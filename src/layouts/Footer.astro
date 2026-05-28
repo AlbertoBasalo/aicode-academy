@@ -14,12 +14,6 @@ export const DOC_NAV: DocNavItem[] = [
 ];
 const currentYear = new Date().getFullYear();
 
-const localLinks = [
-  { href: "/blog/es", text: "Blog" },
-  { href: "/cursos", text: "Cursos" },
-  { href: "/community", text: "Community" },
-];
-
 const friendlyLinks = [
   { href: "https://albertobasalo.dev", text: "Alberto Basalo" },
   { href: "https://aiddbot.com", text: "AI-DD Bot" },
@@ -55,7 +49,7 @@ const legalLinks = [
       </ul>
     </section>
     <section>
-      <h3>Docs</h3>
+      <h3>Map</h3>
       <ul>
         {
           DOC_NAV.map((item) => (
