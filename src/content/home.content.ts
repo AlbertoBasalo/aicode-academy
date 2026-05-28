@@ -34,19 +34,14 @@ export const HOME: Home = {
       "Aprende la metodología A.I. Driven Development para aumentar tu rendimiento y la calidad de tu código.",
     cards: [
       {
-        title: "AI-DD",
+        title: "Spec Driven Development",
         description:
-          "Las mejores prácticas para aprovechar al máximo la Inteligencia Artificial. Pasa del Vibe Coding al desarrollo mantenible y de calidad con I.A. en todo el ciclo de desarrollo.",
+          "Pasa del Vibe Coding al desarrollo mantenible y de calidad. Especificaciones claras y reglas para alinear agentes, programadores y negocio.",
       },
       {
         title: "Real World",
         description:
-          "Ejemplos con aplicaciones no triviales listas para producción con documentación y pruebas. Genera y extrae convenciones y reglas de sistemas legados.",
-      },
-      {
-        title: "Corporate",
-        description:
-          "Experiencia y adaptación a las necesidades de tu empresa (editor, agente, lenguaje, etc.) Amortiza la deuda técnica y moderniza tu código legacy con IA.",
+          "Ejemplos con aplicaciones no triviales listas para producción con documentación y pruebas. No sólo greenfield, también software legacy.",
       },
     ],
     cta: {
@@ -73,7 +68,7 @@ export const HOME: Home = {
       },
     ],
     cta: {
-      text: "AIDDbot te ayuda a implementar AI-Driven Development",
+      text: "My agente AIDDbot te ayuda a implementar AI-Driven Development",
       link: "https://aiddbot.com/",
     },
 
@@ -102,8 +97,8 @@ export const HOME: Home = {
       "Programador, consultor e instructor desde el siglo pasado.",
     cards: [],
     cta: {
-      text: "Contacta conmigo en LinkedIn",
-      link: "https://www.linkedin.com/in/albertobasalo/",
+      text: "No es por presumir pero... mira mi portfolio de clientes",
+      link: "https://albertobasalo.dev/portfolio/",
     },
   },
 };

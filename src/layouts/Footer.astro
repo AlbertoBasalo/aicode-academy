@@ -1,11 +1,28 @@
 ---
 import PrimaryComment from "@components/PrimaryComment.astro";
+export type DocNavItem = {
+  href: string;
+  text: string;
+  external?: boolean;
+};
+const GITHUB_REPO = "https://github.com/AIDDbot/AIDDbot";
+
+export const DOC_NAV: DocNavItem[] = [
+  { href: "/blog/es", text: "Blog" },
+  { href: "/cursos", text: "Cursos" },
+  { href: "/community", text: "Community" },
+];
 const currentYear = new Date().getFullYear();
 
 const localLinks = [
   { href: "/blog/es", text: "Blog" },
   { href: "/cursos", text: "Cursos" },
   { href: "/community", text: "Community" },
+];
+
+const friendlyLinks = [
+  { href: "https://albertobasalo.dev", text: "Alberto Basalo" },
+  { href: "https://aiddbot.com", text: "AI-DD Bot" },
 ];
 
 const links = [
@@ -26,12 +43,29 @@ const legalLinks = [
   <main class="grid">
     <section>
       <h3 class="logo color"><a href="/">AI Code Academy</a></h3>
-      <h4><PrimaryComment />Learn to code smarter.</h4>
+      <h4><PrimaryComment /> Learn to code smarter.</h4>
       <ul>
         {
-          localLinks.map((link) => (
+          friendlyLinks.map((link) => (
             <li>
               <a href={link.href}>{link.text}</a>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+    <section>
+      <h3>Docs</h3>
+      <ul>
+        {
+          DOC_NAV.map((item) => (
+            <li>
+              <a
+                href={item.href}
+                {...(item.external && { target: "_blank", rel: "noopener" })}
+              >
+                {item.text}
+              </a>
             </li>
           ))
         }
