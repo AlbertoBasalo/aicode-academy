@@ -1,10 +1,10 @@
 ---
 title: "From Vibe Coders to AI-Native Engineers"
-subtitle: "Un programa avanzado de AI-Driven Development: del vibe coding a los sistemas autónomos"
+subtitle: "Un programa avanzado de AI-Driven Development: del humano en el bucle a los sistemas autónomos"
 slug: "ai-native-engineers"
-description: "Del vibe coding a los sistemas autónomos: aprende AI-Driven Development y dirige agentes IA alargando el bucle hasta entregar Away-from-Keyboard. (143)"
+description: "De la programción por impulso a los sistemas autónomos: aprende AI-Driven Development y dirige agentes IA alargando el bucle hasta entregar Away-from-Keyboard."
 category: "Programación"
-level: "Básico"
+level: "Avanzado"
 duration: "video 8h - directo 24h"
 instructor: "Alberto Basalo"
 tags: ["Agents", "Skills", "Specs", "Context", "Quality", "Harness", "Loop"]
@@ -51,7 +51,7 @@ Este curso está orientado a **desarrolladores profesionales** que:
 
 ## Temario
 
-### I - Human in the Loop
+### I - Human In The Loop
 
 #### 1 · Vibe Coding to AI-DD
 - **1.1 From Coding to Vibe Coding** — del flujo determinista a colaborar con agentes.
@@ -73,7 +73,7 @@ Demo: crecimiento de la app con múltiples features y AGENTS.md dinámico
 
 ---
 
-### II - Human on the Loop
+### II - Human On The Loop
 
 #### 3 · Spec-Driven Development
 - **3.1 Specs as Source of Truth** — EARS y criterios: el contrato único.
@@ -104,7 +104,7 @@ Demo: refactor profundo con red de seguridad basada en tests
 
 ---
 
-### III - Away from Keyboard
+### III - Away From Keyboard
 
 #### 6 · Harness Engineering
 - **6.1 Hooks & Control Points** — acciones deterministas en el ciclo; aquí vive el hook del changelog.
