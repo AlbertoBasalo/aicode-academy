@@ -9,7 +9,7 @@ duration: "video 6h - directo 18h"
 instructor: "Alberto Basalo"
 tags: ["Agents", "Skills", "Prompts", "Specs", "Context", "Quality"]
 featured: false
-order: 1
+order: 2
 ---
 
 
