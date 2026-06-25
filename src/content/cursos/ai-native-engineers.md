@@ -57,61 +57,61 @@ Este curso está orientado a **desarrolladores profesionales** que:
 
 ---
 
-## Temario
+# Temario
 
-### I - Human In The Loop
+## I - Human In The Loop
 
-#### 1 · Vibe Coding to AI-DD
+### 1 · Vibe Coding to AI-DD
 - **1.1 Vibe Coding** — iterara en bucles cortos hasta obtener un resultado.
 - **1.2 The AI coding Primitives** — prompts, rules y skills: los bloques base.
 - **1.3 AI-Driven Development** — optimiza la interacción humano-IA.
 
-#### 2 · Context Engineering
+### 2 · Context Engineering
 - **2.1 The Context Window** — cuánto cabe, qué se aprovecha y qué sobra.
 - **2.2 Context Selection** — priorizar lo relevante en cada momento.
 - **2.3 Deterministic rules** — establecer reglas para reducir la aleatoriedad.
 
 ---
 
-### II - Human On The Loop
+## II - Human On The Loop
 
-#### 3 · Spec-Driven Development
+### 3 · Spec-Driven Development
 - **3.1 Specs as Source of Truth** — Problema, solución y verificación en un contrato único.
 - **3.2 From Spec to planed task** — planificar la implementación para satisfacer el contrato.
 - **3.3 Writing code is the easy part** — planes y reglas para generar código y pruebas.
 
-#### 4 · Trust but Verify
+### 4 · Trust but Verify
 - **4.1 E2E Behavior Validation** — verificación funcional de la especificación.
 - **4.2 The fixing loop** — del fallo a la corrección y vuelta al test.
 - **4.3 The review loop** — revisión temprana para un código robusto y mantenible.
 
-#### 5 · Legacy Refactoring
+### 5 · Legacy Refactoring
 - **5.1 Reading the Legacy** — explorar soluciones y extraer reglas.
 - **5.2 Change Triage** — controla y facilitar el cambio funcional.
 - **5.3 Structural Refactoring** — planificar y documentar cambios en la implementación.
 
 ---
 
-### III - Away From Keyboard
+## III - Away From Keyboard
 
-#### 6 · Harness Engineering
+### 6 · Harness Engineering
 - **6.1 Hooks & Control Points** — acciones deterministas en el ciclo agente-modelo.
 - **6.2 MCP Integration** — conectar el agente al entorno real del proyecto.
 - **6.3 Subagents** — roles, habilidades y configuración de agentes secundarios.
 
-#### 7 · Agent Orchestration
+### 7 · Agent Orchestration
 - **7.1 The Session Window Problem** — por qué repartir antes de ahogar el contexto.
 - **7.2 Sequential vs Parallel** — modelos de coordinación y reparto de tareas.
 - **7.3 Context sharing** — enjambres de agentes con un objetivo común.
 
-#### 8 · Loop Engineering
+### 8 · Loop Engineering
 - **8.1 From Pipelines to Loops** — volver atrás para corregir o para hacer más cosas.
 - **8.2 Stop Conditions** — el necesario triage para saber cuando parar.
 - **8.3 Away From Keyboard** — confiar más, requiere comprobar más.
 
 ---
 
-### Summary
+## Summary
 
 Curso avanzado de desarrollo con IA para programadores profesionales que quieren evolucionar hacia un modelo AI-native de construcción de software. 
 
