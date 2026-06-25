@@ -39,6 +39,30 @@ const COMMUNITY = {
       },
     })),
   },
+  participation: {
+    title: "Ofertas y descuentos",
+    subtitle: "Únete a nuestra comunidad de AI-Driven Development",
+    cards: [
+      {
+        title: "Cursos en Udemy",
+        description:
+          "La versión lite y low-cost de los cursos de AI Code Academy",
+        cta: {
+          text: "Ver cursos en Udemy",
+          link: "https://www.udemy.com/user/alberto-basalo-3/",
+        },
+      },
+
+      {
+        title: "Cursor Pro",
+        description: "Descuento referido en la tarifa Pro del editor Cursor",
+        cta: {
+          text: "Ver descuentos en Cursor Pro",
+          link: "https://cursor.com/referral?code=HEBPDHXRFV9I",
+        },
+      },
+    ],
+  },
   meetups: {
     title: "Meetups",
     subtitle: "Encuentros, charlas y talleres para AI developers",
@@ -51,27 +75,7 @@ const COMMUNITY = {
       },
     })),
   },
-  participation: {
-    title: "¿Cómo participar?",
-    subtitle: "Únete a nuestra comunidad de AI-Driven Development",
-    cards: [
-      {
-        title: "Como desarrollador",
-        description:
-          "Únete a nuestros meetups, contribuye a los proyectos open source y comparte tu experiencia en la comunidad.",
-      },
-      {
-        title: "Como empresa",
-        description:
-          "Organiza un meetup en tu oficina, patrocina eventos de la comunidad y colabora en proyectos open source.",
-      },
-      {
-        title: "Como speaker",
-        description:
-          "Propón charlas sobre IA y desarrollo, comparte casos de uso reales y ayuda a otros desarrolladores.",
-      },
-    ],
-  },
+
   cta: {
     title: "¿Quieres organizar un meetup o contribuir?",
     subtitle: "Presencial o virtual, difunde la IA en tu comunidad",
@@ -88,8 +92,8 @@ const COMMUNITY = {
   <Hero hero={COMMUNITY.hero} />
   <main>
     <Section section={COMMUNITY.opensource} />
-    <Section section={COMMUNITY.meetups} />
     <Section section={COMMUNITY.participation} />
+    <Section section={COMMUNITY.meetups} />
   </main>
   <footer>
     <Section section={COMMUNITY.cta} />

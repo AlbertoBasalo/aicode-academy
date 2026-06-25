@@ -22,6 +22,14 @@ El secreto está en **adelantar el control**: cargar tu conocimiento en specs, t
 
 ---
 
+## AI tooling y development stacks
+
+Este curso está pensado para ser impartido y usado con cualquier herramienta de desarrollo con IA integrada. En concreto se ha probado con los IDEs `Antigravity`, `Cursor` y `VSCode` y con los arneses `ClaudeCode`, `Codex` y `Copilot`.
+
+Las demos y prácticas pueden adaptarse y desarrollarse para cualquier stack sobre los siguientes lenguajes : `C#`, `Java`, `JavaScript`, `TypeScript`.
+
+---
+
 ## Objetivos del curso
 
 Al finalizar la formación, el alumno será capaz de:
