@@ -55,59 +55,76 @@ Este curso está orientado a **desarrolladores profesionales** que:
 > Se asume experiencia previa en desarrollo de software.
 > Los ejemplos y materiales se escribirán en inglés.
 
+--- 
+
+### Hazlo tuyo.
+
+Puedo adaptar el contenido de este curso a tu stack tecnológico y al proceso de maduración de tue equipo. Es decir, podemos usar cualquier herramienta de IA y lenguaje de programación. Y podemos empezar desde dónde necesites y parar en el punto que consideres oportuno.
+
+Contacta con Alberto Basalo en [LinkedIn](https://www.linkedin.com/in/albertobasalo/)
+
+
 ---
 
 # Temario
 
 ## I - Human In The Loop
 
-### 1 · Vibe Coding to AI-DD
-- **1.1 Vibe Coding** — iterara en bucles cortos hasta obtener un resultado.
-- **1.2 The AI coding Primitives** — prompts, rules y skills: los bloques base.
-- **1.3 AI-Driven Development** — optimiza la interacción humano-IA.
+### 1 - Vibe Coding to AI-DD
+La relación humano-IA es la clave del éxito.
+- **1.1 Vibe Coding** — iterar en bucles cortos hasta obtener un resultado.
+- **1.2 Prompt Engineering** — reducir la interacción con mejores peticiones.
+- **1.3 AI Driven Development Primitives** — rules, skills y specs: los bloques básicos.
 
-### 2 · Context Engineering
-- **2.1 The Context Window** — cuánto cabe, qué se aprovecha y qué sobra.
-- **2.2 Context Selection** — priorizar lo relevante en cada momento.
-- **2.3 Deterministic rules** — establecer reglas para reducir la aleatoriedad.
+### 2 - Context Engineering
+Poco contexto genera alucinaciones, demasiado genera fatiga mental.
+- **2.1 The Context Window** — cuánto cabe, qué se aprovecha y cómo optimizarlo.
+- **2.2 Context Selection** — priorizar lo relevante para cada momento.
+- **2.3 Dynamic Documentation** — obtener y mantener información para reducir la aleatoriedad.
 
 ---
 
 ## II - Human On The Loop
 
-### 3 · Spec-Driven Development
-- **3.1 Specs as Source of Truth** — Problema, solución y verificación en un contrato único.
-- **3.2 From Spec to planed task** — planificar la implementación para satisfacer el contrato.
-- **3.3 Writing code is the easy part** — planes y reglas para generar código y pruebas.
+### 3 - Spec-Driven Development
+Verificación funcional de la especificación.
+- **3.1 Specs as Source of Truth** — problema, solución y verificación en un contrato único.
+- **3.2 From Spec to Planned Task** — planificar la implementación para satisfacer el contrato.
+- **3.3 Writing Code is the Easy Part** — procesos y reglas para generar código y pruebas.
 
-### 4 · Trust but Verify
-- **4.1 E2E Behavior Validation** — verificación funcional de la especificación.
-- **4.2 The fixing loop** — del fallo a la corrección y vuelta al test.
-- **4.3 The review loop** — revisión temprana para un código robusto y mantenible.
+### 4 - Trust but Verify
+Calidad automatizada comprobando la funcionalidad y la implementación.
+- **4.1 E2E Behavior Validation** — verificación funcional de la implementación.
+- **4.2 The Fixing Loop** — del fallo a la corrección y vuelta al test.
+- **4.3 The Review Loop** — revisión temprana para un código robusto y mantenible.
 
-### 5 · Legacy Refactoring
-- **5.1 Reading the Legacy** — explorar soluciones y extraer reglas.
-- **5.2 Change Triage** — controla y facilitar el cambio funcional.
-- **5.3 Structural Refactoring** — planificar y documentar cambios en la implementación.
+### 5 - Legacy Refactoring
+Comprensión, mantenimiento y evolución de sistemas legacy.
+- **5.1 Exploring the Legacy** — recorrer el árbol para extraer conocimiento.
+- **5.2 Change Triage** — controlar y facilitar el cambio funcional.
+- **5.3 Structural Refactoring** — planificar y documentar cambios profundos.
 
 ---
 
 ## III - Away From Keyboard
 
-### 6 · Harness Engineering
-- **6.1 Hooks & Control Points** — acciones deterministas en el ciclo agente-modelo.
-- **6.2 MCP Integration** — conectar el agente al entorno real del proyecto.
-- **6.3 Subagents** — roles, habilidades y configuración de agentes secundarios.
+### 6 - Harness Engineering
+Conectar los agentes al entorno industrial del proyecto con puntos de control deterministas.
+- **6.1 Hooks & Control Points** — acciones deterministas en el ciclo agente-modelo (TCR: Test && Commit || Revert).
+- **6.2 MCP Integration** — conectar el agente al entorno CI/CD del proyecto.
+- **6.3 Subagents** — roles, herramientas y configuración de agentes secundarios.
 
-### 7 · Agent Orchestration
-- **7.1 The Session Window Problem** — por qué repartir antes de ahogar el contexto.
-- **7.2 Sequential vs Parallel** — modelos de coordinación y reparto de tareas.
+### 7 - Agent Orchestration
+Orquestación de agentes con contextos independientes para escalar tareas complejas.
+- **7.1 The Session Window Problem** — por qué repartir antes de agotar el contexto de la sesión.
+- **7.2 Sequential vs Parallel** — modelos de coordinación y reparto de trabajos complejos.
 - **7.3 Context sharing** — enjambres de agentes con un objetivo común.
 
-### 8 · Loop Engineering
-- **8.1 From Pipelines to Loops** — volver atrás para corregir o para hacer más cosas.
-- **8.2 Stop Conditions** — el necesario triage para saber cuando parar.
-- **8.3 Away From Keyboard** — confiar más, requiere comprobar más.
+### 8 - Loop Engineering
+Diseñar loops autónomos con criterio de parada y rastro auditable.
+- **8.1 From Pipelines to Loops** — volver atrás para corregir o para seguir avanzando.
+- **8.2 Stop Conditions** — el necesario triage para saber cuándo parar.
+- **8.3 Away From Keyboard** — confiar más en la IA, requiere comprobar más (evitando la comprehension debt).
 
 ---
 
@@ -120,3 +137,4 @@ El programa sigue un único hilo conductor —alargar el bucle de desarrollo y d
 A lo largo del camino dominarás _prompt & context engineering_, _spec-driven development_, testing automatizado y quality gates, _refactoring_ de código legacy, _harness engineering_ (hooks, custom-tools y MCP), orquestación multi-agente, _observability_ y loops autónomos. 
 
 El objetivo es transformar cómo diseñas y construyes software: pasar de usar la IA como asistente a integrarla como núcleo del proceso de ingeniería.
+
