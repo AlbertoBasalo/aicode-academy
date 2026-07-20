@@ -62,8 +62,9 @@ const navItems: NavItem[] = [
 <script>
   const htmlElement = document.documentElement;
   const getTheme = () => htmlElement.getAttribute("data-theme");
-  const setTheme = (theme) => htmlElement.setAttribute("data-theme", theme);
-  const saveTheme = (theme) => localStorage.setItem("theme", theme);
+  const setTheme = (theme: string) =>
+    htmlElement.setAttribute("data-theme", theme);
+  const saveTheme = (theme: string) => localStorage.setItem("theme", theme);
   document.getElementById("theme-toggle")?.addEventListener("click", () => {
     const newTheme = getTheme() === "dark" ? "light" : "dark";
     setTheme(newTheme);
