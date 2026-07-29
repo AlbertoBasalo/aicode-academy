@@ -9,7 +9,7 @@ duration: "video 8h - directo 24h"
 instructor: "Alberto Basalo"
 tags: ["Agents", "Skills", "Specs", "Context", "Quality", "Harness", "Loop"]
 featured: true
-order: 1
+order: 10
 ---
 
 ## De programar con IA a dirigir agentes que programan
