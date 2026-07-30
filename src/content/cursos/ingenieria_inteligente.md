@@ -2,7 +2,7 @@
 title: "Ingeniería Inteligente"
 subtitle: "Build the system that builds the product: del humano en el bucle a los sistemas autónomos"
 slug: "ingenieria_inteligente"
-description: "No construyas el producto: construye el sistema que lo construye. Dirige agentes, grafos y loops autónomos que desarrollan software con tu calidad mientras tú te alejas del teclado"
+description: "No construyas el producto: construye el sistema que lo construye. Dirige agentes, grafos y loops autónomos que desarrollan software con la calidad que tú exigías mientras tú te alejas del teclado"
 category: "Programación"
 level: "Avanzado"
 duration: "video 8h - directo 24h"
@@ -16,7 +16,7 @@ order: 1
 
 Ya sabes programar con IA. Dominas los `prompts`, las `skills`, los `commands`... y sin embargo sigues ahí: aprobando cada paso, revisando cada _diff_, atado al teclado. El cuello de botella ya no es la herramienta, eres tú dentro del bucle.
 
-Este curso va de retirarte del bucle sin soltar el control, en tres etapas: **Human-In-The-Loop**, **Human-On-The-Loop** y **Away-From-Keyboard**. En cada una construyes menos producto y más sistema: _specs_ que verifican, arneses que vigilan, agentes que aprenden, grafos y loops que trabajan mientras tú no estás.
+Este curso va de retirarte de ese bucle sin perder el control, en tres etapas: **Human-In-The-Loop**, **Human-On-The-Loop** y **Away-From-Keyboard**. En cada una construyes menos producto y más sistema: _specs_ que verifican, arneses que vigilan, agentes que aprenden, grafos y loops que trabajan mientras tú no estás.
 
 El secreto está en **adelantar el control**: cargar tu conocimiento en specs, tests y arneses _antes_ de irte, para que el agente entregue con la calidad que tú habrías exigido. **No construyas el producto: construye el sistema que lo construye.** Eso es **AI-Driven Development**.
 
