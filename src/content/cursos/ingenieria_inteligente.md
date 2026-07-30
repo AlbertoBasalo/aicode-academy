@@ -66,7 +66,7 @@ Dirigir agentes con criterio será la habilidad que distinga a los ingenieros m�
 > Aumenta tu productividad sin sacrificar calidad.
 
 ### 1 - AI-DD in a Nutshell
-Repaso acelerado para nivelar al grupo: las primitivas se dominan, no se explican.
+Repaso acelerado de AI-Driven Development, las nuevas primitivas de programación con IA.
 - **1.1 From Vibe Coding to AI-DD** — rules, skills y specs: las primitivas básicas de IA-Driven Development.
 - **1.2 Context Engineering** — la ventana de contexto, selección de lo relevante y documentación dinámica.
 - **1.3 Agentic Prompt Engineering** — prompts que generan horas de trabajo, no solo respuestas.
@@ -99,12 +99,12 @@ Conectar los agentes al entorno industrial del proyecto con puntos de control de
 
 ## III - Away From Keyboard
 
-> No construyas solo el producto: construye el sistema que construye el producto.
+> No construyas el producto: construye el sistema que construye el producto.
 
 ### 5 - Custom Agents
 Agentes especializados que conocen tu dominio y aprenden de cada tarea.
 - **5.1 Subagents & Roles** — roles, herramientas y configuración de agentes secundarios.
-- **5.2 Domain-Specific Agents** — agentes a medida sobre SDKs para tus problemas y tu negocio.
+- **5.2 Domain-Specific Agents** — agentes a medida para tus problemas y tu negocio.
 - **5.3 Learning Agents** — actuar, aprender, reutilizar: skills que se actualizan con la experiencia.
 
 ### 6 - Agent Orchestration
@@ -116,7 +116,7 @@ Orquestación de agentes con contextos independientes para escalar tareas comple
 ### 7 - Agent Graphs
 Del pipeline lineal al grafo: componer pasos deterministas con pasos agénticos.
 - **7.1 From Pipelines to Graphs** — ramas, decisiones y puntos de retorno en el flujo de trabajo.
-- **7.2 Agentic Developer Workflows** — código determinista que invoca agentes: automatizar clases enteras de trabajo.
+- **7.2 Agentic Developer Workflows** — código determinista que invoca agentes para automatización compleja.
 - **7.3 Checkpoints & Observability** — estado persistente, rastro auditable y reanudación tras fallo.
 
 ### 8 - Loop Engineering
@@ -129,11 +129,11 @@ Loops autónomos con criterio de parada, métricas y confianza ganada.
 
 ## Summary
 
-Curso avanzado de desarrollo con IA para programadores profesionales que quieren evolucionar hacia un modelo AI-native de construcción de software. 
+Curso avanzado de desarrollo con IA para programadores profesionales que quieren evolucionar hacia un modelo _AI-native_ de construcción de software. 
 
 El programa sigue un único hilo conductor —alargar el bucle de desarrollo y distanciar la intervención humana en el tiempo— estructurado en tres etapas: **Human-In-The-Loop**, **Human-On-The-Loop** y **Away-From-Keyboard**. 
 
-A lo largo del camino repasarás las primitivas de AI-DD y dominarás _spec-driven development_ con quality gates, _refactoring_ de código legacy, _harness engineering_ (hooks, custom-tools, MCP y sandboxing), agentes de dominio que aprenden, orquestación multi-agente, grafos de trabajo determinista+agéntico, _observability_ y loops autónomos con métricas.
+A lo largo del camino repasarás las primitivas de AI-DD y dominarás _spec-driven development_ con quality gates, _refactoring_ de código legacy, _harness engineering_ (hooks, custom-tools, MCP y sandboxing), agentes de dominio que aprenden, orquestación multi-agente, grafos de trabajo determinista + agéntico, _observability_ y loops autónomos con métricas.
 
 El objetivo es un cambio de rol: dejar de escribir el software para dirigir el sistema que lo escribe, con métricas que demuestran que delegas más sin perder calidad. **No construyas el producto: construye el sistema que lo construye.**
 
