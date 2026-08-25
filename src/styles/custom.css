@@ -58,6 +58,14 @@ article:hover {
   -webkit-text-fill-color: transparent;
 }
 
+.cta-highlight {
+  background: var(--ab-gradient-secondary);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+}
+
 .center {
   display: flex;
   flex-direction: column;

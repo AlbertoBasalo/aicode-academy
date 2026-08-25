@@ -63,7 +63,7 @@ const communityCollection = defineCollection({
   schema: baseSchema.extend({
     date: z.string().optional(),
     cta: z.object({
-      link: z.string(),
+      link: z.string().optional(),
       text: z.string()
     }).optional()
   })

@@ -13,7 +13,7 @@ export type Card = {
 
 export type Cta = {
   text: string;
-  link: string;
+  link?: string;
 };
 
 
