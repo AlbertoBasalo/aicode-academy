@@ -1,5 +1,6 @@
 ---
 import type { SectionProps } from "../types/section.types";
+import CtaLink from "./CtaLink.astro";
 import PrimaryComment from "./PrimaryComment.astro";
 
 const { section } = Astro.props as { section: SectionProps };
@@ -27,16 +28,7 @@ const id = section.title
               <span>{card.title?.trim()}</span>
             </h3>
             <p>{card.description}</p>
-            {card.cta && (
-              <a
-                href={card.cta?.link}
-                role="button"
-                class="outline"
-                target="_blank"
-              >
-                {card.cta?.text}
-              </a>
-            )}
+            {card.cta && <CtaLink cta={card.cta} />}
           </article>
         ))}
       </main>
@@ -45,14 +37,7 @@ const id = section.title
   {
     section.cta && (
       <footer class="">
-        <a
-          href={section.cta.link}
-          role="button"
-          class="outline"
-          target="_blank"
-        >
-          {section.cta.text}
-        </a>
+        <CtaLink cta={section.cta} />
       </footer>
     )
   }

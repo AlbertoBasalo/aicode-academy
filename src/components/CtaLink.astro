@@ -1,0 +1,26 @@
+---
+import type { Cta } from "../types/section.types";
+
+const { cta, class: className = "outline" } = Astro.props as {
+  cta: Cta;
+  class?: string;
+};
+
+const hasLink = Boolean(cta.link?.trim());
+---
+
+{
+  hasLink ? (
+    <a
+      role="button"
+      class={className}
+      href={cta.link}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      {cta.text}
+    </a>
+  ) : (
+    <span class="cta-highlight">{cta.text}</span>
+  )
+}
