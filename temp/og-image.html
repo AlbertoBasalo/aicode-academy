@@ -50,7 +50,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 64px;
+      padding: 16px;
       border-top: 2px solid #3b82f6;
     }
 
@@ -61,7 +61,8 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      gap: 28px;
+      gap: 8px;
+      padding: 8px 12px;
       background: rgba(9, 15, 31, 0.64);
       border: 1px solid rgba(96, 165, 250, 0.32);
       border-radius: 8px;
@@ -72,9 +73,10 @@
     .brand {
       font-family: "Audiowide", "Roboto", sans-serif;
       font-weight: 400;
-      font-size: 76px;
-      letter-spacing: 0.06em;
-      line-height: 1.15;
+      font-size: 148px;
+      letter-spacing: 0;
+      line-height: 1.02;
+      max-width: 100%;
       background: linear-gradient(130deg, #3b82f6 0%, #22c55e 100%);
       -webkit-background-clip: text;
       background-clip: text;
@@ -84,9 +86,11 @@
 
     .tagline {
       font-family: "Roboto", sans-serif;
-      font-weight: 600;
-      font-size: 64px;
-      letter-spacing: 0.02em;
+      font-weight: 800;
+      font-size: 68px;
+      letter-spacing: -0.02em;
+      line-height: 1.05;
+      margin-top: 8px;
       background: linear-gradient(130deg, #60a5fa 0%, #4ade80 100%);
       -webkit-background-clip: text;
       background-clip: text;
@@ -96,10 +100,10 @@
     .url {
       font-family: "Anonymous Pro", monospace;
       font-weight: 700;
-      font-size: 32px;
-      letter-spacing: 0.16em;
+      font-size: 48px;
+      letter-spacing: 0.02em;
       color: #c4cede;
-      margin-top: 8px;
+      margin-top: 4px;
     }
   </style>
 </head>
@@ -107,7 +111,7 @@
 <body>
   <div class="frame">
     <div class="card">
-      <h1 class="brand">AI Code Academy</h1>
+      <h1 class="brand">AI Code<br />Academy</h1>
       <p class="tagline">Learn to code smarter</p>
       <p class="url">Con Alberto Basalo</p>
     </div>
